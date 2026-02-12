@@ -9,178 +9,21 @@
 }
 
 /* ================================
-   HERO
-================================ */
-.hero {
-  background-color: #0f2f36;
-  color: #ffffff;
-  padding: 110px 0 90px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: clamp(28px, 4vw, 42px);
-  font-weight: 600;
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
-
-.heroSubtitle {
-  font-size: clamp(16px, 2vw, 20px);
-  max-width: 750px;
-  margin: 0 auto;
-  opacity: 0.9;
-  line-height: 1.6;
-}
-
-/* ================================
    SECCIONES GENERALES
 ================================ */
-.section {
+section {
   padding: 90px 0;
-  background-color: #ffffff;
 }
 
-.sectionAlt {
-  padding: 90px 0;
-  background-color: #f4f7f8;
-}
-
-.section h2,
-.sectionAlt h2 {
-  font-size: clamp(24px, 3vw, 32px);
-  margin-bottom: 35px;
-  color: #0f2f36;
+section h2 {
+  font-size: 30px;
   font-weight: 600;
+  margin-bottom: 40px;
+  color: #0f2f36;
 }
 
-.section p,
-.sectionAlt p {
+section p {
   font-size: 16px;
   line-height: 1.7;
   color: #444;
-  margin-bottom: 20px;
-  max-width: 900px;
-}
-
-/* ================================
-   SOLUTION GRID
-================================ */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  margin-top: 30px;
-}
-
-.card {
-  background-color: #ffffff;
-  border: 1px solid #e3e7e9;
-  padding: 30px;
-  transition: all 0.3s ease;
-}
-
-.card h3 {
-  font-size: 18px;
-  color: #1f4e57;
-  margin-bottom: 12px;
-}
-
-.card p {
-  font-size: 15px;
-  color: #444;
-  line-height: 1.6;
-}
-
-.card:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
-}
-
-/* ================================
-   METODOLOGÍA
-================================ */
-.steps {
-  margin-top: 25px;
-  padding-left: 20px;
-}
-
-.steps li {
-  margin-bottom: 18px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #444;
-}
-
-.steps strong {
-  color: #1f4e57;
-}
-
-/* ================================
-   CLIENTES
-================================ */
-.clientsList {
-  margin-top: 20px;
-  padding-left: 20px;
-}
-
-.clientsList li {
-  margin-bottom: 12px;
-  font-size: 16px;
-  color: #444;
-}
-
-/* ================================
-   CTA FINAL
-================================ */
-.ctaSection {
-  background-color: #1f4e57;
-  color: #ffffff;
-  padding: 80px 0;
-  text-align: center;
-}
-
-.ctaSection h2 {
-  font-size: clamp(24px, 3vw, 30px);
-  margin-bottom: 15px;
-}
-
-.ctaSection p {
-  max-width: 700px;
-  margin: 0 auto 30px;
-  font-size: 16px;
-  opacity: 0.9;
-}
-
-.ctaButton {
-  display: inline-block;
-  padding: 14px 34px;
-  background-color: #ffffff;
-  color: #1f4e57;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border: 1px solid #ffffff;
-}
-
-.ctaButton:hover {
-  background-color: transparent;
-  color: #ffffff;
-}
-
-/* ================================
-   RESPONSIVE
-================================ */
-@media (max-width: 768px) {
-  .hero {
-    padding: 80px 0 60px;
-  }
-
-  .section,
-  .sectionAlt {
-    padding: 60px 0;
-  }
-
-  .grid {
-    gap: 20px;
-  }
 }

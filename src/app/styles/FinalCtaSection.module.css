@@ -1,0 +1,130 @@
+.section {
+  padding: 90px 20px;
+  background: #f5f6fb;
+}
+
+/* TITULO */
+.mainTitle {
+  max-width: 1000px;
+  margin: auto;
+  font-size: 38px;
+  color: #3d4ed7;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+
+.intro {
+  max-width: 1000px;
+  margin: auto;
+  color: #5d6472;
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+
+/* GRID DOS COLUMNAS */
+.grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: stretch;
+}
+
+/* IZQUIERDA */
+.leftBox {
+  background: #8a95c6;
+  color: #fff;
+  padding: 35px;
+  border-radius: 4px;
+}
+
+.leftBox h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.leftBox p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* DERECHA */
+.rightBox {
+  background: white;
+  padding: 35px;
+  border: 1px solid #dcdde6;
+  border-radius: 4px;
+}
+
+.company {
+  color: #3d4ed7;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.area {
+  color: #6a7280;
+  margin-bottom: 20px;
+}
+
+/* LISTA */
+.list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 10px;
+  color: #4b5563;
+}
+
+/* viñeta personalizada */
+.list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #3d4ed7;
+  font-weight: bold;
+}
+
+/* BOTON */
+.button {
+  background: #3d4ed7;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #2c3ac0;
+}
+
+/* FRASE FINAL */
+.quote {
+  max-width: 1000px;
+  margin: 40px auto 0;
+  font-style: italic;
+  color: #6b7280;
+  border-left: 4px solid #3d4ed7;
+  padding-left: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,121 @@
+.footer {
+  background: #1f2233;
+  color: #e5e6f0;
+  padding-top: 70px;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 6%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.column h3,
+.column h4 {
+  font-family: "Georgia", serif;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.logo {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #bfc2d8;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column ul li {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #bfc2d8;
+}
+
+/* ===============================
+   REDES SOCIALES
+================================ */
+
+.socials {
+  display: flex;
+  gap: 20px;
+  font-size: 22px;
+}
+
+.socials a {
+  color: #bfc2d8;
+  transition: all 0.3s ease;
+}
+
+.socials a:hover {
+  color: #6c72ff;
+  transform: translateY(-3px);
+}
+
+/* ===============================
+   BOTTOM BAR
+================================ */
+
+.bottom {
+  margin-top: 60px;
+  padding: 20px 6%;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  font-size: 13px;
+  color: #9fa3c4;
+}
+
+/* ===============================
+   WHATSAPP FLOAT
+================================ */
+
+.whatsappFloat {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  background: #25d366;
+  color: white;
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.whatsappFloat:hover {
+  transform: scale(1.1);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,90 @@
+/* ================================
+   SECTION
+================================ */
+
+.section {
+  background: #7f88b8; /* azul institucional */
+  padding: 100px 6%;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================================
+   TITLE
+================================ */
+
+.title {
+  font-size: 38px;
+  font-family: "Georgia", serif;
+  margin-bottom: 20px;
+}
+
+.intro {
+  max-width: 900px;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 60px;
+  color: #111;
+}
+
+/* ================================
+   GRID
+================================ */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 80px;
+}
+
+/* ================================
+   PHASE BLOCK
+================================ */
+
+.phase {
+  position: relative;
+}
+
+.number {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.line {
+  height: 3px;
+  background: #3b44d1;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.phase h3 {
+  font-size: 20px;
+  font-family: "Georgia", serif;
+  margin-bottom: 12px;
+}
+
+.phase p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #111;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+}

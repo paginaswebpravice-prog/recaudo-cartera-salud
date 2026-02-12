@@ -1,17 +1,33 @@
-import styles from "../page.module.css";
+"use client";
+
+import styles from "../styles/Hero.module.css";
 
 export default function Hero() {
   return (
-    <section className={styles.hero} aria-labelledby="hero-title">
+    <section className={styles.hero}>
+      <div className={styles.overlay} />
+
       <div className={styles.container}>
-        <h1 id="hero-title">
-          Gestión Estratégica de Cartera en el Sector Salud
+        <h1>
+          Su cartera en salud no es un problema jurídico. Es un problema de
+          recaudo.
         </h1>
 
-        <p className={styles.heroSubtitle}>
-          Soluciones jurídicas y administrativas para la recuperación eficiente
-          de cartera hospitalaria y cuentas médicas.
+        <p>
+          Recuperación estratégica de cartera para IPS, clínicas, hospitales y
+          proveedores del sector salud en Colombia. Enfoque doble carril,
+          comisión por resultados y cobertura nacional.
         </p>
+
+        <div className={styles.buttons}>
+          <a href="#contacto" className={styles.primaryBtn}>
+            Solicitar diagnóstico estratégico
+          </a>
+
+          <a href="#metodologia" className={styles.secondaryBtn}>
+            Conocer nuestra metodología
+          </a>
+        </div>
       </div>
     </section>
   );

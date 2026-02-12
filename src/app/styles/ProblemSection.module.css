@@ -1,0 +1,119 @@
+/* ================================
+   SECTION
+================================ */
+
+.section {
+  background: #f4f4f6;
+  padding: 90px 6%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================================
+   TITLE
+================================ */
+
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #4a4fcf;
+  margin-bottom: 50px;
+}
+
+/* ================================
+   GRID
+================================ */
+
+.grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* ================================
+   LEFT BOX
+================================ */
+
+.leftBox {
+  background: #7f87b8;
+  padding: 40px 30px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.highlight {
+  font-size: 18px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.highlightStrong {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* ================================
+   RIGHT CONTENT
+================================ */
+
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.intro {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 650px;
+}
+
+/* ================================
+   ITEMS
+================================ */
+
+.item {
+  padding-left: 20px;
+  border-left: 4px solid #4a4fcf;
+}
+
+.item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.item p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leftBox {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+  }
+}
