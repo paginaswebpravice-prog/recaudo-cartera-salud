@@ -1,141 +1,186 @@
-.page {
-  --background: #fafafa;
-  --foreground: #fff;
-
-  --text-primary: #000;
-  --text-secondary: #666;
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
-
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
-}
-
-.main {
-  display: flex;
-  min-height: 100vh;
+/* ================================
+   CONTENEDOR GLOBAL
+================================ */
+.container {
   width: 100%;
-  max-width: 800px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 5%;
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
+/* ================================
+   HERO
+================================ */
+.hero {
+  background-color: #0f2f36;
+  color: #ffffff;
+  padding: 110px 0 90px;
+  text-align: center;
 }
 
-.intro h1 {
-  max-width: 320px;
-  font-size: 40px;
+.hero h1 {
+  font-size: clamp(28px, 4vw, 42px);
   font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
-  color: var(--text-primary);
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
-.intro p {
-  max-width: 440px;
+.heroSubtitle {
+  font-size: clamp(16px, 2vw, 20px);
+  max-width: 750px;
+  margin: 0 auto;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* ================================
+   SECCIONES GENERALES
+================================ */
+.section {
+  padding: 90px 0;
+  background-color: #ffffff;
+}
+
+.sectionAlt {
+  padding: 90px 0;
+  background-color: #f4f7f8;
+}
+
+.section h2,
+.sectionAlt h2 {
+  font-size: clamp(24px, 3vw, 32px);
+  margin-bottom: 35px;
+  color: #0f2f36;
+  font-weight: 600;
+}
+
+.section p,
+.sectionAlt p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+  max-width: 900px;
+}
+
+/* ================================
+   SOLUTION GRID
+================================ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e3e7e9;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.card h3 {
   font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
+  color: #1f4e57;
+  margin-bottom: 12px;
 }
 
-.intro a {
-  font-weight: 500;
-  color: var(--text-primary);
+.card p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
 }
 
-.ctas {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 440px;
-  gap: 16px;
-  font-size: 14px;
+.card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
 }
 
-.ctas a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
-  cursor: pointer;
-  width: fit-content;
-  font-weight: 500;
+/* ================================
+   METODOLOGÍA
+================================ */
+.steps {
+  margin-top: 25px;
+  padding-left: 20px;
 }
 
-a.primary {
-  background: var(--text-primary);
-  color: var(--background);
-  gap: 8px;
+.steps li {
+  margin-bottom: 18px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
 }
 
-a.secondary {
-  border-color: var(--button-secondary-border);
+.steps strong {
+  color: #1f4e57;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
+/* ================================
+   CLIENTES
+================================ */
+.clientsList {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.clientsList li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #444;
+}
+
+/* ================================
+   CTA FINAL
+================================ */
+.ctaSection {
+  background-color: #1f4e57;
+  color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.ctaSection h2 {
+  font-size: clamp(24px, 3vw, 30px);
+  margin-bottom: 15px;
+}
+
+.ctaSection p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 14px 34px;
+  background-color: #ffffff;
+  color: #1f4e57;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid #ffffff;
+}
+
+.ctaButton:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 0 60px;
   }
 
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-}
-
-@media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
+  .section,
+  .sectionAlt {
+    padding: 60px 0;
   }
 
-  .intro {
-    gap: 16px;
-  }
-
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-
-  .page {
-    --background: #000;
-    --foreground: #000;
-
-    --text-primary: #ededed;
-    --text-secondary: #999;
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
+  .grid {
+    gap: 20px;
   }
 }
