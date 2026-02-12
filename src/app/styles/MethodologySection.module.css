@@ -3,9 +3,9 @@
 ================================ */
 
 .section {
-  background: #7f88b8; /* azul institucional */
+  background: #004a80; /* Azul institucional dominante */
   padding: 100px 6%;
-  color: #000;
+  color: #ffffff;
 }
 
 .container {
@@ -19,8 +19,9 @@
 
 .title {
   font-size: 38px;
-  font-family: "Georgia", serif;
+  font-weight: 600;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .intro {
@@ -28,7 +29,7 @@
   font-size: 16px;
   line-height: 1.7;
   margin-bottom: 60px;
-  color: #111;
+  color: #d9e6f2; /* Azul muy claro derivado para contraste */
 }
 
 /* ================================
@@ -47,32 +48,59 @@
 
 .phase {
   position: relative;
+  padding: 25px 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #5eb3e4; /* Acento azul claro */
+  transition: 0.3s ease;
 }
 
+.phase:hover {
+  border-left: 4px solid #f7c600; /* Dorado estratégico */
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Número de fase */
+
 .number {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
+  letter-spacing: 1px;
+  color: #5eb3e4; /* Azul técnico */
   display: block;
   margin-bottom: 8px;
 }
 
+/* Línea decorativa */
+
 .line {
   height: 3px;
-  background: #3b44d1;
-  width: 100%;
+  background: #5eb3e4;
+  width: 60px;
   margin-bottom: 16px;
+  transition: 0.3s ease;
 }
+
+.phase:hover .line {
+  background: #f7c600;
+  width: 90px;
+}
+
+/* Título fase */
 
 .phase h3 {
   font-size: 20px;
-  font-family: "Georgia", serif;
+  font-weight: 600;
   margin-bottom: 12px;
+  color: #ffffff;
 }
+
+/* Texto fase */
 
 .phase p {
   font-size: 15px;
   line-height: 1.7;
-  color: #111;
+  color: #cfd8e3; /* Gris claro adaptado al fondo azul */
 }
 
 /* ================================

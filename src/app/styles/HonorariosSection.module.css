@@ -3,9 +3,9 @@
 ================================ */
 
 .section {
-  background: #7f8cbf;
+  background: #004a80; /* Azul institucional */
   padding: 100px 6%;
-  color: #000;
+  color: #ffffff;
 }
 
 .container {
@@ -18,9 +18,10 @@
 ================================ */
 
 .title {
-  font-family: "Georgia", serif;
   font-size: 36px;
+  font-weight: 600;
   margin-bottom: 70px;
+  color: #ffffff;
 }
 
 /* ===============================
@@ -50,11 +51,15 @@
 }
 
 /* Donut circle */
+
 .circle {
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  background: conic-gradient(#3b44d1 0% 10%, #e6e6e6 10% 100%);
+  background: conic-gradient(
+    #f7c600 0% 10%,
+    /* Dorado estratégico */ rgba(255, 255, 255, 0.15) 10% 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,24 +71,27 @@
   position: absolute;
   width: 160px;
   height: 160px;
-  background: #7f8cbf;
+  background: #004a80;
   border-radius: 50%;
 }
 
 .circle span {
   position: relative;
   font-size: 36px;
-  font-family: "Georgia", serif;
+  font-weight: 600;
   z-index: 2;
+  color: #ffffff;
 }
 
 .comision {
   font-size: 16px;
   margin-bottom: 10px;
+  color: #5eb3e4;
 }
 
 .bold {
   font-weight: 600;
+  color: #ffffff;
 }
 
 /* ===============================
@@ -91,9 +99,9 @@
 ================================ */
 
 .subtitle {
-  font-family: "Georgia", serif;
   font-size: 24px;
   margin-bottom: 15px;
+  color: #5eb3e4; /* Azul técnico */
 }
 
 .description {
@@ -101,6 +109,7 @@
   line-height: 1.7;
   margin-bottom: 30px;
   max-width: 700px;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* ===============================
@@ -115,20 +124,27 @@
 }
 
 .card {
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 20px;
   background: rgba(255, 255, 255, 0.05);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  border-color: #5eb3e4;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .card h4 {
-  font-family: "Georgia", serif;
   margin-bottom: 8px;
   font-size: 16px;
+  color: #ffffff;
 }
 
 .card p {
   font-size: 14px;
   line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* ===============================
@@ -136,15 +152,15 @@
 ================================ */
 
 .fullCard {
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 20px;
   margin-bottom: 25px;
   background: rgba(255, 255, 255, 0.05);
 }
 
 .fullCard h4 {
-  font-family: "Georgia", serif;
   margin-bottom: 8px;
+  color: #ffffff;
 }
 
 /* ===============================
@@ -155,6 +171,7 @@
   font-size: 14px;
   line-height: 1.7;
   max-width: 750px;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* ===============================
