@@ -1,67 +1,122 @@
+"use client";
+
+import { motion } from "framer-motion";
 import styles from "../styles/ProblemSection.module.css";
 
 export default function ProblemSection() {
   return (
     <section className={styles.section} id="problema">
-      <div className={styles.container}>
-        <h2 className={styles.title}>
+      <motion.div
+        className={styles.container}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        {/* TITULO */}
+        <motion.h2
+          className={styles.title}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           El Problema Real del Sector Salud en Colombia
-        </h2>
+        </motion.h2>
 
         <div className={styles.grid}>
-          {/* Columna izquierda */}
-          <div className={styles.leftBox}>
-            <p className={styles.highlight}>
+          {/* COLUMNA IZQUIERDA */}
+          <motion.div
+            className={styles.leftBox}
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <motion.p
+              className={styles.highlight}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+              viewport={{ once: true }}
+            >
               El problema no es que no le deban
-            </p>
-            <p className={styles.highlightStrong}>
-              El problema es que no le pagan
-            </p>
-          </div>
+            </motion.p>
 
-          {/* Columna derecha */}
-          <div className={styles.rightContent}>
-            <p className={styles.intro}>
+            <motion.p
+              className={styles.highlightStrong}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.5, duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              El problema es que no le pagan
+            </motion.p>
+          </motion.div>
+
+          {/* COLUMNA DERECHA */}
+          <motion.div
+            className={styles.rightContent}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+              hidden: {},
+              visible: {
+                transition: {
+                  staggerChildren: 0.15,
+                },
+              },
+            }}
+          >
+            <motion.p
+              className={styles.intro}
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              transition={{ duration: 0.6 }}
+            >
               Las instituciones de salud en Colombia enfrentan desafíos críticos
               que amenazan su sostenibilidad financiera y operativa. Estos no
               son problemas aislados, sino una realidad sistémica que afecta el
               flujo de caja y la capacidad de prestación del servicio.
-            </p>
+            </motion.p>
 
-            <div className={styles.item}>
-              <h3>Glosas que nunca cierran</h3>
-              <p>
-                Procesos de revisión interminables que inmovilizan recursos
-                durante meses o años
-              </p>
-            </div>
-
-            <div className={styles.item}>
-              <h3>ADRES sin respuesta definitiva</h3>
-              <p>
-                Trámites administrativos que se extienden sin cronogramas claros
-                de pago
-              </p>
-            </div>
-
-            <div className={styles.item}>
-              <h3>EPS que dilatan sistemáticamente</h3>
-              <p>
-                Estrategias de postergación que envejecen la cartera y debilitan
-                la posición jurídica
-              </p>
-            </div>
-
-            <div className={styles.item}>
-              <h3>Riesgo inminente de prescripción</h3>
-              <p>
-                Pérdida definitiva del derecho de cobro por vencimiento de
-                términos legales
-              </p>
-            </div>
-          </div>
+            {[
+              {
+                title: "Glosas que nunca cierran",
+                text: "Procesos de revisión interminables que inmovilizan recursos durante meses o años",
+              },
+              {
+                title: "ADRES sin respuesta definitiva",
+                text: "Trámites administrativos que se extienden sin cronogramas claros de pago",
+              },
+              {
+                title: "EPS que dilatan sistemáticamente",
+                text: "Estrategias de postergación que envejecen la cartera y debilitan la posición jurídica",
+              },
+              {
+                title: "Riesgo inminente de prescripción",
+                text: "Pérdida definitiva del derecho de cobro por vencimiento de términos legales",
+              },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                className={styles.item}
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                transition={{ duration: 0.6 }}
+              >
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -29,7 +29,7 @@ export default function Home() {
       <BenefitsSection />
       <UseCaseSection />
       <DocumentationSection />
-      <FinalCtaSection id="contacto" />
+      <FinalCtaSection />
       <Footer />
     </main>
   );

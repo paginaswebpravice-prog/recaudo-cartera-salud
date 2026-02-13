@@ -1,4 +1,6 @@
 "use client";
+
+import { motion } from "framer-motion";
 import styles from "../styles/DocumentationSection.module.css";
 
 type Step = {
@@ -51,51 +53,136 @@ const stepsRow2: Step[] = [
 export default function DocumentationSection() {
   return (
     <section className={styles.section}>
-      <h2 className={styles.title}>Documentación Necesaria para Iniciar</h2>
+      {/* TÍTULO */}
+      <motion.h2
+        className={styles.title}
+        initial={{ y: 40, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+      >
+        Documentación Necesaria para Iniciar
+      </motion.h2>
 
-      <p className={styles.subtitle}>
+      {/* SUBTÍTULO */}
+      <motion.p
+        className={styles.subtitle}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         Para comenzar el diagnóstico estratégico de su cartera, necesitamos
         información básica que toda institución de salud maneja. Nuestro equipo
         le guiará en la organización de estos documentos.
-      </p>
+      </motion.p>
 
       {/* FILA 1 */}
-      <div className={styles.timeline}>
+      <motion.div
+        className={styles.timeline}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.15,
+            },
+          },
+        }}
+      >
         <div className={styles.row}>
           {stepsRow1.map((step, index) => (
-            <div key={index} className={styles.step}>
-              <div className={styles.circle}>{step.number}</div>
+            <motion.div
+              key={index}
+              className={styles.step}
+              variants={{
+                hidden: { y: 40, opacity: 0 },
+                visible: { y: 0, opacity: 1 },
+              }}
+              transition={{ duration: 0.6 }}
+            >
+              <motion.div
+                className={styles.circle}
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                transition={{ type: "spring", stiffness: 180 }}
+                viewport={{ once: true }}
+              >
+                {step.number}
+              </motion.div>
 
-              <div className={styles.card}>
+              <motion.div
+                className={styles.card}
+                whileHover={{ y: -5 }}
+                transition={{ duration: 0.3 }}
+              >
                 <h3>{step.title}</h3>
                 <p>{step.description}</p>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
 
       {/* FILA 2 */}
-      <div className={styles.timeline}>
+      <motion.div
+        className={styles.timeline}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.2,
+            },
+          },
+        }}
+      >
         <div className={styles.row}>
           {stepsRow2.map((step, index) => (
-            <div key={index} className={styles.step}>
-              <div className={styles.circle}>{step.number}</div>
+            <motion.div
+              key={index}
+              className={styles.step}
+              variants={{
+                hidden: { y: 40, opacity: 0 },
+                visible: { y: 0, opacity: 1 },
+              }}
+              transition={{ duration: 0.6 }}
+            >
+              <motion.div
+                className={styles.circle}
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                transition={{ type: "spring", stiffness: 180 }}
+                viewport={{ once: true }}
+              >
+                {step.number}
+              </motion.div>
 
-              <div className={styles.card}>
+              <motion.div className={styles.card} whileHover={{ y: -5 }}>
                 <h3>{step.title}</h3>
                 <p>{step.description}</p>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
 
-      <p className={styles.footer}>
+      {/* FOOTER */}
+      <motion.p
+        className={styles.footer}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         No se preocupe si no cuenta con toda la documentación completa. Parte de
         nuestro servicio incluye ayudarle a organizar y completar los
         expedientes.
-      </p>
+      </motion.p>
     </section>
   );
 }

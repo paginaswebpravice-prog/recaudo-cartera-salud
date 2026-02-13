@@ -1,69 +1,100 @@
+"use client";
+
+import { motion } from "framer-motion";
 import styles from "../styles/AppSection.module.css";
 
 export default function AppSection() {
   return (
     <section className={styles.section}>
-      <div className={styles.container}>
-        <h2 className={styles.title}>
+      <motion.div
+        className={styles.container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.2,
+            },
+          },
+        }}
+      >
+        {/* TITLE */}
+        <motion.h2
+          className={styles.title}
+          variants={{
+            hidden: { opacity: 0, y: 40 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 0.7 }}
+        >
           APP LEGAL PRAVICE: Control Total de su Cartera y Procesos Jurídicos,
           24/7
-        </h2>
+        </motion.h2>
 
-        <p className={styles.intro}>
-          La App Legal PRAVICE no es un simple portal de consulta. Es su centro
-          de control jurídico empresarial en tiempo real.
-        </p>
+        {/* INTRO */}
+        <motion.p
+          className={styles.intro}
+          variants={{
+            hidden: { opacity: 0, y: 30 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 0.6 }}
+        >
+          La App Legal PRAVICE no es un simple portal de consulta...
+        </motion.p>
 
-        <p className={styles.description}>
-          Diseñada para empresas, IPS, gerencias financieras y compañías con
-          volumen de cartera, la plataforma le permite tener visibilidad,
-          trazabilidad y comunicación directa sobre todos sus procesos. No es
-          información estática. Es control estratégico permanente.
-        </p>
+        <motion.p
+          className={styles.description}
+          variants={{
+            hidden: { opacity: 0, y: 30 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 0.6 }}
+        >
+          Diseñada para empresas, IPS, gerencias financieras y compañías...
+        </motion.p>
 
-        <div className={styles.grid}>
-          <div className={styles.card}>
-            <h3>Seguimiento 24 horas a sus procesos</h3>
-            <p>
-              Acceda en cualquier momento al estado actualizado de procesos
-              ejecutivos y declarativos, gestión de cobro, actuaciones
-              radicadas, medidas cautelares, reportes de recaudo y pagos
-              recibidos. Toda la información organizada por cliente, bloque o
-              proceso, con trazabilidad clara.
-            </p>
-          </div>
-
-          <div className={styles.card}>
-            <h3>Solicitud de asesorías online</h3>
-            <p>
-              Desde la misma plataforma puede solicitar asesoría jurídica
-              inmediata, agendar reuniones virtuales, consultar conceptos
-              legales y hacer seguimiento a requerimientos específicos. Su
-              equipo jurídico externo disponible sin desplazamientos.
-            </p>
-          </div>
-
-          <div className={styles.card}>
-            <h3>Chat jurídico directo</h3>
-            <p>
-              La App incluye un chat interno exclusivo para solicitudes en
-              tiempo real, peticiones de informes específicos, consulta de
-              avances y solicitud de documentos. Cada comunicación queda
-              registrada y trazable.
-            </p>
-          </div>
-
-          <div className={styles.card}>
-            <h3>Carga y gestión de documentos</h3>
-            <p>
-              Adjunte directamente facturas electrónicas, contratos, pagarés,
-              soportes contables, correos de aceptación y documentos
-              probatorios. Todo queda organizado por caso y respaldado
-              digitalmente.
-            </p>
-          </div>
-        </div>
-      </div>
+        {/* GRID */}
+        <motion.div className={styles.grid}>
+          {[
+            {
+              title: "Seguimiento 24 horas a sus procesos",
+              text: "Acceda en cualquier momento al estado actualizado de procesos ejecutivos y declarativos...",
+            },
+            {
+              title: "Solicitud de asesorías online",
+              text: "Desde la misma plataforma puede solicitar asesoría jurídica inmediata...",
+            },
+            {
+              title: "Chat jurídico directo",
+              text: "La App incluye un chat interno exclusivo para solicitudes en tiempo real...",
+            },
+            {
+              title: "Carga y gestión de documentos",
+              text: "Adjunte directamente facturas electrónicas, contratos, pagarés...",
+            },
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              className={styles.card}
+              variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              transition={{ duration: 0.6 }}
+              whileHover={{
+                y: -8,
+                transition: { duration: 0.3 },
+              }}
+            >
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

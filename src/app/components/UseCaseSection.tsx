@@ -1,70 +1,119 @@
+"use client";
+
+import { motion } from "framer-motion";
 import styles from "../styles/UseCaseSection.module.css";
 
 export default function UseCaseSection() {
   return (
     <section className={styles.section}>
-      <div className={styles.container}>
-        <h2 className={styles.title}>
+      <motion.div
+        className={styles.container}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        {/* TÍTULO */}
+        <motion.h2
+          className={styles.title}
+          initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
           Casos de Uso: Escenarios Reales de Recuperación
-        </h2>
+        </motion.h2>
 
-        <p className={styles.subtitle}>
+        {/* SUBTÍTULO */}
+        <motion.p
+          className={styles.subtitle}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           Estas son situaciones representativas de los casos que manejamos
           diariamente. Cada institución tiene características particulares, pero
           los patrones de cartera envejecida son similares en todo el sector
           salud colombiano.
-        </p>
+        </motion.p>
 
-        <div className={styles.grid}>
-          {/* Card grande izquierda */}
-          <div className={`${styles.card} ${styles.large}`}>
+        {/* GRID */}
+        <motion.div
+          className={styles.grid}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            hidden: {},
+            visible: {
+              transition: {
+                staggerChildren: 0.2,
+              },
+            },
+          }}
+        >
+          {/* CARD GRANDE */}
+          <motion.div
+            className={`${styles.card} ${styles.large}`}
+            variants={{
+              hidden: { y: 50, opacity: 0 },
+              visible: { y: 0, opacity: 1 },
+            }}
+            transition={{ duration: 0.7 }}
+            whileHover={{ y: -6 }}
+          >
             <h3>IPS con Cartera Glosada Acumulada</h3>
             <p>
               Institución de mediana complejidad con $4.000 millones en facturas
-              glosadas por EPS durante los últimos 3 años. Las glosas alegan
-              "falta de pertinencia" y "servicios no autorizados". La IPS
-              respondió las glosas pero nunca obtuvo pronunciamiento definitivo.
+              glosadas por EPS durante los últimos 3 años...
             </p>
             <p>
               Estrategia PRAVICE: Proceso declarativo con reconstrucción
-              probatoria completa de cada atención, incluidos soportes médicos y
-              jurisprudencia favorable. Medidas cautelares sobre cuentas de la
-              EPS.
+              probatoria completa de cada atención...
             </p>
-          </div>
+          </motion.div>
 
-          {/* Card derecha superior */}
-          <div className={`${styles.card} ${styles.medium}`}>
+          {/* CARD DERECHA SUPERIOR */}
+          <motion.div
+            className={`${styles.card} ${styles.medium}`}
+            variants={{
+              hidden: { x: 40, opacity: 0 },
+              visible: { x: 0, opacity: 1 },
+            }}
+            transition={{ duration: 0.7 }}
+            whileHover={{ y: -5 }}
+          >
             <h3>Proveedor de Tecnología con Facturas Aceptadas sin Pago</h3>
             <p>
-              Empresa proveedora de dispositivos médicos con $1.200 millones en
-              facturas radicadas hace 18 meses ante hospital público. Las
-              facturas fueron aceptadas administrativamente pero el pago nunca
-              se ejecutó por "restricciones presupuestales".
+              Empresa proveedora de dispositivos médicos con $1.200 millones...
             </p>
             <p>
               Estrategia PRAVICE: Proceso ejecutivo inmediato con embargo
-              preventivo de recursos del SGP destinados a salud. Negociación
-              paralela con la entidad territorial para pago programado.
+              preventivo...
             </p>
-          </div>
+          </motion.div>
 
-          {/* Card inferior izquierda */}
-          <div className={`${styles.card} ${styles.small}`}>
+          {/* CARD INFERIOR */}
+          <motion.div
+            className={`${styles.card} ${styles.small}`}
+            variants={{
+              hidden: { y: 40, opacity: 0 },
+              visible: { y: 0, opacity: 1 },
+            }}
+            transition={{ duration: 0.7 }}
+            whileHover={{ y: -5 }}
+          >
             <h3>Clínica con Riesgo de Prescripción Inminente</h3>
             <p>
-              Clínica especializada con $800 millones en cartera de ADRES con
-              más de 2.5 años de antigüedad. Sin gestión judicial previa y con
-              riesgo de prescripción en 6 meses.
+              Clínica especializada con $800 millones en cartera de ADRES...
             </p>
             <p>
-              Estrategia PRAVICE: Radicación urgente de demandas ejecutivas
-              antes del vencimiento de términos. Investigación patrimonial de
-              ADRES para identificar cuentas ejecutables.
+              Estrategia PRAVICE: Radicación urgente de demandas ejecutivas...
             </p>
-          </div>
-        </div>
-      </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
