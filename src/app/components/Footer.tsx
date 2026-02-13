@@ -5,6 +5,7 @@ import {
   faInstagram,
   faWhatsapp,
   faLinkedin,
+  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
@@ -54,13 +55,34 @@ export default function Footer() {
           <div className={styles.column}>
             <h4>Síguenos</h4>
             <div className={styles.socials}>
-              <a href="#" target="_blank">
+              <a
+                href="https://www.instagram.com/pravice_abogados/"
+                aria-label="Instagram Pravice Abogados"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
-              <a href="#" target="_blank">
+              <a
+                href="https://co.linkedin.com/company/praviceabogadosespecializados"
+                aria-label="LinkedIn Pravice Abogados"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
-              <a href="https://wa.me/573000000000" target="_blank">
+              <a
+                href="https://www.facebook.com/praviceabogadosespecializados"
+                aria-label="Facebook Pravice Abogados"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
+              <a
+                href="https://api.whatsapp.com/message/RE7FEN4IGOISD1?autoload=1&app_absent=0"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faWhatsapp} />
               </a>
             </div>
