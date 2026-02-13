@@ -1,35 +1,41 @@
+/* =========================
+   FOOTER PRINCIPAL
+========================= */
+
 .footer {
-  background: #1f2233;
-  color: #e5e6f0;
-  padding-top: 70px;
-  position: relative;
+  background: #004a80;
+  color: #ffffff;
+  padding: 80px 6% 30px;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 6%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
 }
 
+/* =========================
+   COLUMNAS
+========================= */
+
 .column h3,
 .column h4 {
-  font-family: "Georgia", serif;
-  margin-bottom: 20px;
-  color: #ffffff;
+  margin-bottom: 18px;
+  font-weight: 600;
 }
 
 .logo {
   font-size: 20px;
-  letter-spacing: 1px;
+  color: #f7c600; /* dorado institucional */
 }
 
 .description {
   font-size: 14px;
   line-height: 1.7;
-  color: #bfc2d8;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 280px;
 }
 
 .column ul {
@@ -39,83 +45,111 @@
 }
 
 .column ul li {
+  margin-bottom: 10px;
   font-size: 14px;
-  margin-bottom: 12px;
-  color: #bfc2d8;
+  color: rgba(255, 255, 255, 0.85);
 }
 
-/* ===============================
+/* Links */
+
+.column a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.column a:hover {
+  color: #f7c600;
+}
+
+/* =========================
    REDES SOCIALES
-================================ */
+========================= */
 
 .socials {
   display: flex;
-  gap: 20px;
-  font-size: 22px;
+  gap: 18px;
+  margin-top: 10px;
 }
 
 .socials a {
-  color: #bfc2d8;
-  transition: all 0.3s ease;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 16px;
+  transition: 0.3s ease;
 }
 
 .socials a:hover {
-  color: #6c72ff;
+  background: #f7c600;
+  color: #000;
   transform: translateY(-3px);
 }
 
-/* ===============================
+/* =========================
    BOTTOM BAR
-================================ */
+========================= */
 
 .bottom {
-  margin-top: 60px;
-  padding: 20px 6%;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 50px;
+  padding-top: 20px;
   text-align: center;
   font-size: 13px;
-  color: #9fa3c4;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-/* ===============================
-   WHATSAPP FLOAT
-================================ */
+/* =========================
+   BOTÓN FLOTANTE WHATSAPP
+========================= */
 
 .whatsappFloat {
   position: fixed;
-  right: 25px;
   bottom: 25px;
-  background: #25d366;
-  color: white;
-  font-size: 26px;
-  width: 55px;
-  height: 55px;
+  right: 25px;
+  width: 58px;
+  height: 58px;
+  background: #25d366; /* Verde oficial WhatsApp */
+  color: #ffffff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  z-index: 999;
   transition: all 0.3s ease;
-  z-index: 1000;
+  text-decoration: none;
 }
 
+/* Hover */
 .whatsappFloat:hover {
-  transform: scale(1.1);
+  background: #1ebe5d; /* Verde más oscuro */
+  transform: translateY(-5px) scale(1.05);
 }
 
-/* ===============================
+/* =========================
    RESPONSIVE
-================================ */
+========================= */
 
 @media (max-width: 1000px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
   }
 }
 
 @media (max-width: 600px) {
   .container {
     grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 60px 6% 25px;
   }
 }

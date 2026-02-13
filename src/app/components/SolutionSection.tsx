@@ -2,7 +2,7 @@ import styles from "../styles/SolutionSection.module.css";
 
 export default function SolutionSection() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="solucion">
       <div className={styles.container}>
         <h2 className={styles.title}>
           Nuestra Solución: Estrategia Doble Carril

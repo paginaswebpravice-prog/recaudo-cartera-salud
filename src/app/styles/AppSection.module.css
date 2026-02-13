@@ -1,5 +1,5 @@
 .section {
-  background-color: #f2f1f6;
+  background-color: #faf9f7; /* Fondo neutro elegante */
   padding: 80px 20px;
 }
 
@@ -8,58 +8,94 @@
   margin: 0 auto;
 }
 
+/* ===============================
+   TITLES
+================================ */
+
 .title {
   font-size: 38px;
   line-height: 1.2;
-  color: #3d3bb3;
+  color: #004a80; /* Azul institucional */
   margin-bottom: 24px;
+  font-weight: 600;
 }
 
 .intro {
   font-size: 16px;
-  color: #555;
+  color: #333;
   margin-bottom: 12px;
 }
 
 .description {
   font-size: 15px;
-  color: #666;
+  color: #555;
   max-width: 1000px;
   margin-bottom: 50px;
+  line-height: 1.7;
 }
+
+/* ===============================
+   GRID
+================================ */
 
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 25px;
 }
+
+/* ===============================
+   CARD
+================================ */
 
 .card {
   background: #ffffff;
-  border: 1px solid #dcdcdc;
-  padding: 24px;
-  border-radius: 6px;
-  transition: 0.2s ease;
+  border: 1px solid rgba(0, 74, 128, 0.08); /* Azul institucional muy sutil */
+  padding: 26px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+/* Línea superior estratégica */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #004a80;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .card:hover {
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 74, 128, 0.12);
+  transform: translateY(-6px);
+}
+
+/* Dorado aparece sutilmente en hover */
+.card:hover::before {
+  background: #f7c600;
 }
 
 .card h3 {
   font-size: 18px;
   margin-bottom: 14px;
-  color: #4a4a4a;
+  color: #000;
+  font-weight: 600;
 }
 
 .card p {
   font-size: 14px;
-  color: #666;
+  color: #555;
   line-height: 1.6;
 }
 
-/* Responsive */
+/* ===============================
+   RESPONSIVE
+================================ */
 
 @media (max-width: 1100px) {
   .grid {

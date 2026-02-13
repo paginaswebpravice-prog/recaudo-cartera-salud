@@ -1,75 +1,35 @@
 "use client";
 
-import { useState } from "react";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
 import styles from "../styles/NavBar.module.css";
-import Image from "next/image";
-
-const handleClick = () => {
-  window.open("", "_blank");
-};
+import Link from "next/link";
 
 export default function NavBar() {
-  const pathname = usePathname();
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
-    <header
-      className={`${styles.navbar} ${styles.scrolled}`}
-      style={{
-        position: "fixed",
-        top: "30px",
-        left: 0,
-        right: 0,
-        zIndex: 999,
-      }}
-    >
-      <nav className={styles.container}>
+    <header className={styles.navbar}>
+      <div className={styles.container}>
         {/* LOGO */}
-        <Link href="/" className={`${styles.logo} ${styles.dark}`}>
-          <Image src="/" alt="imagen" width={75} height={70} priority />
-        </Link>
+        <div className={styles.logo}>PRAVICE</div>
 
-        {/* MENÚ DESKTOP / MOBILE */}
-        <ul className={`${styles.links} ${menuOpen ? styles.active : ""}`}>
-          <li>
-            <Link href="/" onClick={() => setMenuOpen(false)}>
-              INICIO
-            </Link>
-          </li>
-          <li>
-            <Link href="/" onClick={() => setMenuOpen(false)}>
-              ÁREAS DE PRÁCTICA
-            </Link>
-          </li>
-          <li>
-            <Link href="/" onClick={() => setMenuOpen(false)}>
-              NUESTRO EQUIPO
-            </Link>
-          </li>
+        {/* MENU */}
+        <nav className={styles.menu}>
+          <a href="#inicio">Inicio</a>
+          <a href="#problema">Problema</a>
+          <a href="#solucion">Solución</a>
+          <a href="#metodologia">Metodología</a>
+          <a href="#clientes">Clientes</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
 
-          <li>
-            <Link href="/" onClick={() => setMenuOpen(false)}>
-              BLOG
-            </Link>
-          </li>
-        </ul>
-
-        <button className={styles.ctaButton} onClick={handleClick}>
-          PROGRAME UNA CONSULTA
-        </button>
-
-        {/* BOTÓN HAMBURGUESA */}
-        <div
-          className={styles.hamburger}
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        {/* BOTÓN APP */}
+        <div className={styles.cta}>
+          <Link
+            href="/https://legalapp.pravice.co/login.php"
+            className={styles.appButton}
+          >
+            Consultar mi caso
+          </Link>
         </div>
-      </nav>
+      </div>
     </header>
   );
 }

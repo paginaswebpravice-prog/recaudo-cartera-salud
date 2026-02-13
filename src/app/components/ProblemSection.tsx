@@ -2,7 +2,7 @@ import styles from "../styles/ProblemSection.module.css";
 
 export default function ProblemSection() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="problema">
       <div className={styles.container}>
         <h2 className={styles.title}>
           El Problema Real del Sector Salud en Colombia

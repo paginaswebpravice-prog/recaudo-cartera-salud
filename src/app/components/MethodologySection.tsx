@@ -2,7 +2,7 @@ import styles from "../styles/MethodologySection.module.css";
 
 export default function MethodologySection() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="metodologia">
       <div className={styles.container}>
         <h2 className={styles.title}>
           Metodología PRAVICE: 4 Fases para el Recaudo Efectivo

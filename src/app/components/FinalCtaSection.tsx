@@ -3,7 +3,7 @@ import styles from "../styles/FinalCtaSection.module.css";
 
 export default function FinalCtaSection() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="contacto">
       {/* TITULO SUPERIOR */}
       <h2 className={styles.mainTitle}>
         Recuperar Cartera no es Litigar. Es Proteger la Sostenibilidad de su

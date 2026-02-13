@@ -2,7 +2,7 @@ import styles from "../styles/ClientsSection.module.css";
 
 export default function ClientsSection() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="clientes">
       <div className={styles.container}>
         <h2 className={styles.title}>
           Nuestros Clientes: Instituciones del Sector Salud
