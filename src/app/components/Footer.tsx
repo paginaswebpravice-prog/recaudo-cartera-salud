@@ -26,16 +26,16 @@ export default function Footer() {
             <h4>Navegación</h4>
             <ul>
               <li>
-                <Link href="/">Inicio</Link>
+                <a href="#inicio">Inicio</a>
               </li>
               <li>
-                <Link href="/metodologia">Metodología</Link>
+                <a href="#metodologia">Metodología</a>
               </li>
               <li>
-                <Link href="/clientes">Clientes</Link>
+                <a href="#clientes">Clientes</a>
               </li>
               <li>
-                <Link href="/contacto">Contacto</Link>
+                <a href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>

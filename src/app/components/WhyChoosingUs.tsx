@@ -1,31 +1,34 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUserGroup,
+  faShieldHalved,
+  faScaleBalanced,
+  faChartLine,
+} from "@fortawesome/free-solid-svg-icons";
 import styles from "../styles/WhyChoosingUs.module.css";
 
 export default function WhyChoosingUs() {
   const items = [
     {
-      img: "/icon-team.jpg",
-      alt: "Equipo jurídico especializado en salud",
+      icon: faUserGroup,
       title: "Equipo Jurídico Especializado en Salud",
       text: "Nuestros abogados conocen profundamente la normativa sectorial, los procesos administrativos de EPS, ADRES y entidades territoriales. No somos cobradores tradicionales, somos estrategas jurídicos del sector salud.",
     },
     {
-      img: "/icon-cert.jpg",
-      alt: "Certificación Superintendencia Nacional de Salud",
+      icon: faShieldHalved,
       title: "Certificación Superintendencia Nacional de Salud",
       text: "Cumplimos todos los requisitos técnicos, éticos y operativos exigidos por el ente regulador. Esta certificación garantiza que nuestros procesos cumplen los más altos estándares del sector.",
     },
     {
-      img: "/icon-demand.jpg",
-      alt: "Solidez en presentación de demandas",
+      icon: faScaleBalanced,
       title: "Solidez en Presentación de Demandas",
       text: "Cada demanda es construida con rigor técnico y probatorio. Nuestros escritos judiciales están diseñados para resistir excepciones y acelerar los procesos hacia sentencia favorable.",
     },
     {
-      img: "/icon-strategy.jpg",
-      alt: "Recuperación eficiente y personalizada",
+      icon: faChartLine,
       title: "Recuperación Eficiente y Personalizada",
       text: "Entendemos que cada institución tiene necesidades diferentes. Diseñamos estrategias adaptadas a su realidad operativa, prioridades financieras y capacidad de gestión documental.",
     },
@@ -51,7 +54,7 @@ export default function WhyChoosingUs() {
           ¿Por Qué Elegir PRAVICE ABOGADOS?
         </motion.h2>
 
-        {/* GRID DE CARDS */}
+        {/* GRID */}
         <motion.div
           className={styles.grid}
           initial="hidden"
@@ -60,9 +63,7 @@ export default function WhyChoosingUs() {
           variants={{
             hidden: {},
             visible: {
-              transition: {
-                staggerChildren: 0.2,
-              },
+              transition: { staggerChildren: 0.2 },
             },
           }}
         >
@@ -84,7 +85,7 @@ export default function WhyChoosingUs() {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                <img src={item.img} alt={item.alt} />
+                <FontAwesomeIcon icon={item.icon} />
               </motion.div>
 
               <h3>{item.title}</h3>
@@ -93,7 +94,7 @@ export default function WhyChoosingUs() {
           ))}
         </motion.div>
 
-        {/* HIGHLIGHT FINAL */}
+        {/* HIGHLIGHT */}
         <motion.div
           className={styles.highlight}
           initial={{ opacity: 0, y: 40 }}
@@ -108,7 +109,6 @@ export default function WhyChoosingUs() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           />
-
           <p>
             <strong>Menos demandas, más resultados.</strong> Nuestra filosofía
             es judicializar solo cuando es estratégicamente necesario,

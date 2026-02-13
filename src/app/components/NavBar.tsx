@@ -16,8 +16,8 @@ export default function NavBar() {
           <Image
             src="/logo_pravice.png"
             alt="Logo PRAVICE Abogados"
-            width={70}
-            height={70}
+            width={60}
+            height={60}
             priority
           />
         </Link>
@@ -26,13 +26,14 @@ export default function NavBar() {
         <button
           className={styles.hamburger}
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Abrir menú"
         >
-          <span className={menuOpen ? styles.barActive : styles.bar}></span>
-          <span className={menuOpen ? styles.barActive : styles.bar}></span>
-          <span className={menuOpen ? styles.barActive : styles.bar}></span>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
         </button>
 
-        {/* MENU */}
+        {/* MENU + BOTÓN */}
         <nav className={`${styles.menu} ${menuOpen ? styles.menuOpen : ""}`}>
           <a href="#inicio" onClick={() => setMenuOpen(false)}>
             Inicio
@@ -53,27 +54,16 @@ export default function NavBar() {
             Contacto
           </a>
 
-          {/* Botón también visible en móvil */}
+          {/* ÚNICO BOTÓN */}
           <Link
             href="https://legalapp.pravice.co/login.php"
             target="_blank"
-            className={styles.appButtonMobile}
+            className={styles.appButton}
             onClick={() => setMenuOpen(false)}
           >
             Consultar mi caso
           </Link>
         </nav>
-
-        {/* BOTÓN DESKTOP */}
-        <div className={styles.cta}>
-          <Link
-            href="https://legalapp.pravice.co/login.php"
-            className={styles.appButton}
-            target="_blank"
-          >
-            Consultar mi caso
-          </Link>
-        </div>
       </div>
     </header>
   );
