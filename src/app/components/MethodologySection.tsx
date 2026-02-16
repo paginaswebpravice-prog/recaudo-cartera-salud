@@ -7,23 +7,23 @@ export default function MethodologySection() {
   const phases = [
     {
       number: "01",
-      title: "Diagnóstico y Segmentación Estratégica",
-      text: "Construcción de matriz maestra de cartera. Clasificación por ruta procesal óptima. Análisis de riesgo de prescripción por obligación. Identificación de facturas con mejor probabilidad de recaudo inmediato.",
+      title: "Diagnóstico y Segmentación de Cartera Hospitalaria",
+      text: "Construcción de matriz maestra de cartera para IPS y hospitales. Clasificación por tipo de deudor (EPS, ADRES, entidades públicas). Análisis de riesgo de prescripción por factura y determinación de la ruta procesal óptima para maximizar el recaudo.",
     },
     {
       number: "02",
-      title: "Gestión Prejurídica Estratégica",
-      text: "Requerimiento formal técnicamente estructurado. Mesas de trabajo con deudores dispuestos a negociar. Acuerdos de pago con garantías reales. Documentación que fortalece la posición judicial futura.",
+      title: "Gestión Prejurídica y Requerimiento Formal a EPS",
+      text: "Estructuración de requerimientos formales técnicamente sustentados. Mesas de trabajo con EPS y aseguradores. Negociación de acuerdos de pago con garantías. Documentación estratégica que fortalece la futura acción judicial.",
     },
     {
       number: "03",
-      title: "Judicialización Inteligente",
-      text: "Procesos ejecutivos homogéneos para agilizar trámite. Demandas declarativas con construcción probatoria robusta. Solicitud inmediata de medidas cautelares. Seguimiento activo de términos procesales.",
+      title: "Cobro Jurídico y Judicialización Estratégica",
+      text: "Interposición de procesos ejecutivos por facturas con título claro y demandas declarativas para cartera glosada. Solicitud inmediata de medidas cautelares, embargo de cuentas y seguimiento riguroso de términos procesales para evitar prescripción.",
     },
     {
       number: "04",
-      title: "Seguimiento y Control Continuo",
-      text: "Indicadores de recaudo actualizados mensualmente. Reportes periódicos con estado por factura. Trazabilidad documental completa. Comunicación permanente con el cliente.",
+      title: "Seguimiento, Control y Reporte de Recaudo",
+      text: "Indicadores mensuales de recuperación de cartera. Reportes detallados por factura. Trazabilidad documental completa y comunicación permanente con la institución de salud para garantizar transparencia y control financiero.",
     },
   ];
 
@@ -36,7 +36,7 @@ export default function MethodologySection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        {/* TITULO */}
+        {/* TITULO SEO */}
         <motion.h2
           className={styles.title}
           initial={{ opacity: 0, y: 30 }}
@@ -44,10 +44,11 @@ export default function MethodologySection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Metodología PRAVICE: 4 Fases para el Recaudo Efectivo
+          Metodología de Recuperación de Cartera para IPS y EPS en Colombia: 4
+          Fases Estratégicas
         </motion.h2>
 
-        {/* INTRO */}
+        {/* INTRO OPTIMIZADA */}
         <motion.p
           className={styles.intro}
           initial={{ opacity: 0 }}
@@ -55,13 +56,14 @@ export default function MethodologySection() {
           transition={{ delay: 0.2, duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Nuestro proceso está diseñado para maximizar la recuperación mientras
-          minimizamos el desgaste judicial innecesario. Cada fase tiene
-          objetivos medibles y entregables específicos que garantizan
-          transparencia y control total para nuestros clientes.
+          Nuestro modelo combina gestión prejurídica y cobro jurídico
+          especializado en el sector salud. Cada fase está diseñada para
+          maximizar la recuperación de cartera hospitalaria, reducir tiempos de
+          recaudo y proteger el derecho de cobro frente a EPS y entidades
+          públicas bajo el marco normativo colombiano.
         </motion.p>
 
-        {/* FASES */}
+        {/* GRID FASES */}
         <motion.div
           className={styles.grid}
           initial="hidden"
@@ -87,7 +89,6 @@ export default function MethodologySection() {
               transition={{ duration: 0.7 }}
               whileHover={{ y: -6 }}
             >
-              {/* NUMERO */}
               <motion.span
                 className={styles.number}
                 initial={{ scale: 0.8, opacity: 0 }}
@@ -98,7 +99,6 @@ export default function MethodologySection() {
                 {phase.number}
               </motion.span>
 
-              {/* LINEA ANIMADA */}
               <motion.div
                 className={styles.line}
                 initial={{ width: 0 }}
@@ -112,6 +112,13 @@ export default function MethodologySection() {
             </motion.div>
           ))}
         </motion.div>
+
+        {/* TEXTO SEO ESTRUCTURAL */}
+        <p className={styles.seoText}>
+          Metodología especializada en cobro jurídico a EPS, gestión de glosas,
+          procesos ejecutivos por facturas hospitalarias y recuperación de
+          cartera vencida en IPS en Colombia con prevención de prescripción.
+        </p>
       </motion.div>
     </section>
   );
