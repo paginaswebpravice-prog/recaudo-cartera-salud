@@ -13,7 +13,7 @@ export default function ProblemSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        {/* TITULO */}
+        {/* TITULO OPTIMIZADO */}
         <motion.h2
           className={styles.title}
           initial={{ opacity: 0, y: 30 }}
@@ -21,7 +21,8 @@ export default function ProblemSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          El Problema Real del Sector Salud en Colombia
+          Problemas de Cartera en IPS y Hospitales: La Crisis del Recaudo en el
+          Sector Salud Colombiano
         </motion.h2>
 
         <div className={styles.grid}>
@@ -40,7 +41,7 @@ export default function ProblemSection() {
               transition={{ delay: 0.3 }}
               viewport={{ once: true }}
             >
-              El problema no es que no le deban
+              El problema no es que exista cartera vencida en su IPS
             </motion.p>
 
             <motion.p
@@ -50,7 +51,7 @@ export default function ProblemSection() {
               transition={{ delay: 0.5, duration: 0.6 }}
               viewport={{ once: true }}
             >
-              El problema es que no le pagan
+              El problema es la falta de recaudo efectivo frente a EPS y ADRES
             </motion.p>
           </motion.div>
 
@@ -77,28 +78,29 @@ export default function ProblemSection() {
               }}
               transition={{ duration: 0.6 }}
             >
-              Las instituciones de salud en Colombia enfrentan desafíos críticos
-              que amenazan su sostenibilidad financiera y operativa. Estos no
-              son problemas aislados, sino una realidad sistémica que afecta el
-              flujo de caja y la capacidad de prestación del servicio.
+              Las IPS, clínicas y hospitales en Colombia enfrentan una crisis
+              estructural de recuperación de cartera. La acumulación de deuda
+              por parte de EPS y entidades públicas impacta directamente el
+              flujo de caja, la capacidad operativa y la sostenibilidad
+              financiera del sector salud.
             </motion.p>
 
             {[
               {
-                title: "Glosas que nunca cierran",
-                text: "Procesos de revisión interminables que inmovilizan recursos durante meses o años",
+                title: "Glosas médicas que no se resuelven",
+                text: "Objeciones técnicas y administrativas que inmovilizan cartera hospitalaria durante meses o años sin solución definitiva.",
               },
               {
-                title: "ADRES sin respuesta definitiva",
-                text: "Trámites administrativos que se extienden sin cronogramas claros de pago",
+                title: "Cartera con ADRES sin pago oportuno",
+                text: "Procesos administrativos extensos que retrasan el recaudo efectivo y afectan la liquidez de las instituciones.",
               },
               {
-                title: "EPS que dilatan sistemáticamente",
-                text: "Estrategias de postergación que envejecen la cartera y debilitan la posición jurídica",
+                title: "EPS que dilatan el pago sistemáticamente",
+                text: "Estrategias de postergación que envejecen la cartera vencida y debilitan la posición jurídica de la IPS.",
               },
               {
-                title: "Riesgo inminente de prescripción",
-                text: "Pérdida definitiva del derecho de cobro por vencimiento de términos legales",
+                title: "Riesgo de prescripción de cartera en salud",
+                text: "Pérdida del derecho de cobro por vencimiento de términos legales si no existe gestión jurídica oportuna.",
               },
             ].map((item, index) => (
               <motion.div
@@ -116,6 +118,14 @@ export default function ProblemSection() {
             ))}
           </motion.div>
         </div>
+
+        {/* TEXTO SEO ESTRUCTURAL */}
+        <p className={styles.seoText}>
+          La recuperación de cartera en el sector salud colombiano requiere
+          estrategia jurídica especializada en cobro a EPS, gestión de glosas,
+          procesos ante ADRES y prevención de prescripción de cartera
+          hospitalaria.
+        </p>
       </motion.div>
     </section>
   );
