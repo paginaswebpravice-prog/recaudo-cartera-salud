@@ -1,5 +1,4 @@
 import styles from "../styles/Footer.module.css";
-import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -17,8 +16,11 @@ export default function Footer() {
           <div className={styles.column}>
             <h3 className={styles.logo}>PRAVICE ABOGADOS</h3>
             <p className={styles.description}>
-              Firma especializada en recuperación de cartera del sector salud.
-              Estrategia jurídica inteligente con alineación total a resultados.
+              Firma jurídica especializada en recuperación de cartera
+              hospitalaria, cobro jurídico a EPS y procesos ejecutivos y
+              declarativos en el sector salud en Colombia. Acompañamos IPS,
+              clínicas y hospitales en la defensa estratégica de su flujo de
+              caja.
             </p>
           </div>
 
@@ -45,9 +47,10 @@ export default function Footer() {
           <div className={styles.column}>
             <h4>Contacto</h4>
             <ul>
-              <li>Bogotá, Colombia</li>
+              <li>Bogotá D.C., Colombia</li>
               <li>contacto@pravice.com</li>
               <li>+57 300 000 0000</li>
+              <li>Atención a nivel nacional</li>
             </ul>
           </div>
 
@@ -63,6 +66,7 @@ export default function Footer() {
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
+
               <a
                 href="https://co.linkedin.com/company/praviceabogadosespecializados"
                 aria-label="LinkedIn Pravice Abogados"
@@ -71,6 +75,7 @@ export default function Footer() {
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
+
               <a
                 href="https://www.facebook.com/praviceabogadosespecializados"
                 aria-label="Facebook Pravice Abogados"
@@ -79,9 +84,12 @@ export default function Footer() {
               >
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
+
               <a
                 href="https://api.whatsapp.com/message/RE7FEN4IGOISD1?autoload=1&app_absent=0"
+                aria-label="WhatsApp Pravice Abogados"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faWhatsapp} />
               </a>
@@ -89,12 +97,22 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* BOTTOM BAR */}
         <div className={styles.bottom}>
           <p>
-            © {new Date().getFullYear()} PRAVICE ABOGADOS. Todos los derechos
-            reservados.
+            © {new Date().getFullYear()} PRAVICE ABOGADOS S.A.S. Todos los
+            derechos reservados. Firma especializada en recuperación de cartera
+            en salud en Colombia.
           </p>
         </div>
+
+        {/* SEO OCULTO */}
+        <p className={styles.seoText}>
+          Abogados especialistas en recuperación de cartera en salud en
+          Colombia. Servicios de cobro jurídico a EPS, demandas contra entidades
+          del sistema de salud, reclamaciones ante ADRES, procesos ejecutivos y
+          declarativos para IPS, clínicas y hospitales con cobertura nacional.
+        </p>
       </footer>
 
       {/* BOTÓN FLOTANTE WHATSAPP */}
@@ -102,6 +120,8 @@ export default function Footer() {
         href="https://wa.me/573000000000"
         className={styles.whatsappFloat}
         target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp Pravice Abogados"
       >
         <FontAwesomeIcon icon={faWhatsapp} />
       </a>

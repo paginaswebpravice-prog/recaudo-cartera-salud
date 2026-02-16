@@ -134,6 +134,18 @@
 }
 
 /* =========================
+   SEO OCULTO
+========================= */
+
+.seoText {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* =========================
    RESPONSIVE
 ========================= */
 
