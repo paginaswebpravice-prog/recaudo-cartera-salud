@@ -6,40 +6,40 @@ import styles from "../styles/BeneficioSection.module.css";
 export default function BeneficioSection() {
   const sideItems = [
     {
-      title: "Visibilidad",
-      text: "Control en tiempo real de todos sus procesos",
+      title: "Visibilidad Jurídica 24/7",
+      text: "Control en tiempo real del estado de sus procesos de cobro frente a EPS y entidades públicas.",
     },
     {
-      title: "Trazabilidad",
-      text: "Historial completo documentado",
+      title: "Trazabilidad Documental",
+      text: "Historial completo de actuaciones, reportes y soportes jurídicos.",
     },
     {
-      title: "Eficiencia",
-      text: "Decisiones informadas basadas en datos",
+      title: "Eficiencia Financiera",
+      text: "Decisiones estratégicas basadas en datos procesales y proyección de recaudo.",
     },
   ];
 
   const infoItems = [
     {
-      title: "Proyectar recaudo",
-      text: "Anticipe flujos de caja basados en estado procesal",
+      title: "Proyección de recaudo",
+      text: "Anticipe flujos de caja según etapa procesal y probabilidades de recuperación.",
     },
     {
-      title: "Medir desempeño jurídico",
-      text: "Indicadores de gestión y tiempos procesales",
+      title: "Medición del desempeño jurídico",
+      text: "Indicadores de gestión, tiempos procesales y efectividad en recuperación de cartera.",
     },
     {
-      title: "Detectar cuellos de botella",
-      text: "Identifique retrasos y tome acción correctiva",
+      title: "Identificación de cuellos de botella",
+      text: "Detecte retrasos en procesos judiciales o administrativos y actúe oportunamente.",
     },
     {
-      title: "Tomar decisiones informadas",
-      text: "Información completa para estrategia financiera",
+      title: "Decisiones financieras informadas",
+      text: "Información consolidada para fortalecer su estrategia empresarial.",
     },
   ];
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="beneficios-app">
       <motion.div
         className={styles.container}
         initial={{ opacity: 0 }}
@@ -47,7 +47,7 @@ export default function BeneficioSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        {/* TITULO */}
+        {/* TITULO SEO */}
         <motion.h2
           className={styles.title}
           initial={{ y: 40, opacity: 0 }}
@@ -55,10 +55,10 @@ export default function BeneficioSection() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          Beneficio Estratégico para su Empresa
+          Beneficio Estratégico de la App Legal PRAVICE para su Empresa
         </motion.h2>
 
-        {/* SUBTITLE */}
+        {/* SUBTITLE OPTIMIZADO */}
         <motion.p
           className={styles.subtitle}
           initial={{ opacity: 0 }}
@@ -66,9 +66,10 @@ export default function BeneficioSection() {
           transition={{ delay: 0.2, duration: 0.8 }}
           viewport={{ once: true }}
         >
-          La App PRAVICE convierte la gestión jurídica en un sistema medible,
-          transparente, controlable y trazable. Funciona como su departamento
-          jurídico externalizado, con acceso permanente.
+          La App Legal PRAVICE transforma la recuperación de cartera
+          hospitalaria en un sistema medible, transparente y controlable.
+          Funciona como un departamento jurídico externalizado con enfoque
+          financiero y acceso permanente.
         </motion.p>
 
         <div className={styles.grid}>
@@ -129,7 +130,7 @@ export default function BeneficioSection() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              Enfoque Empresarial
+              Enfoque Empresarial y Financiero
             </motion.h3>
 
             {infoItems.map((item, index) => (
@@ -149,6 +150,13 @@ export default function BeneficioSection() {
             ))}
           </motion.div>
         </div>
+
+        {/* SEO SEMÁNTICO OCULTO */}
+        <p className={styles.seoText}>
+          Beneficios de la App Legal PRAVICE para IPS y hospitales en Colombia.
+          Sistema de control de procesos judiciales, recuperación de cartera a
+          EPS y proyección financiera basada en gestión jurídica.
+        </p>
       </motion.div>
     </section>
   );
