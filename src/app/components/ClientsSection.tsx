@@ -20,7 +20,7 @@ export default function ClientsSection() {
           },
         }}
       >
-        {/* TITLE */}
+        {/* TITLE SEO */}
         <motion.h2
           className={styles.title}
           variants={{
@@ -29,10 +29,10 @@ export default function ClientsSection() {
           }}
           transition={{ duration: 0.7 }}
         >
-          Nuestros Clientes: Instituciones del Sector Salud
+          Nuestros Clientes en el Sector Salud en Colombia
         </motion.h2>
 
-        {/* INTRO */}
+        {/* INTRO OPTIMIZADO */}
         <motion.p
           className={styles.intro}
           variants={{
@@ -41,7 +41,11 @@ export default function ClientsSection() {
           }}
           transition={{ duration: 0.7 }}
         >
-          Trabajamos con instituciones prestadoras de servicios...
+          Representamos instituciones prestadoras de servicios de salud con
+          cartera pendiente frente a EPS, ADRES y entidades públicas. Nuestra
+          experiencia en cobro jurídico y recuperación de cartera hospitalaria
+          nos permite adaptarnos a la estructura financiera y regulatoria de
+          cada organización.
         </motion.p>
 
         {/* GRID */}
@@ -49,27 +53,27 @@ export default function ClientsSection() {
           {[
             {
               img: "/IpsClinicas.jpg",
-              alt: "IPS y Clínicas en Colombia",
+              alt: "IPS y clínicas en Colombia con cartera en EPS",
               title: "IPS y Clínicas",
-              text: "Instituciones prestadoras de servicios de salud con cartera en EPS, ADRES y aseguradoras...",
+              text: "Instituciones prestadoras de servicios de salud con cuentas por cobrar frente a EPS, ADRES y aseguradoras.",
             },
             {
               img: "/Hospitales.jpg",
-              alt: "Hospitales públicos y privados",
+              alt: "Hospitales públicos y privados en Colombia",
               title: "Hospitales Públicos y Privados",
-              text: "Centros hospitalarios de mediana y alta complejidad con cartera acumulada...",
+              text: "Centros hospitalarios de mediana y alta complejidad con cartera acumulada y procesos de glosas.",
             },
             {
               img: "/Tecnologia.jpg",
-              alt: "Proveedores de tecnología en salud",
+              alt: "Empresas proveedoras de tecnología médica",
               title: "Proveedores de Tecnologías en Salud",
-              text: "Empresas que suministran dispositivos médicos, equipos diagnósticos...",
+              text: "Empresas que suministran dispositivos médicos, equipos diagnósticos y servicios especializados al sistema.",
             },
             {
               img: "/Laboratorio.jpg",
-              alt: "Prestadores de servicios especializados",
+              alt: "Laboratorios clínicos y centros de diagnóstico",
               title: "Prestadores de Servicios Especializados",
-              text: "Laboratorios clínicos, centros de diagnóstico y otros actores...",
+              text: "Laboratorios clínicos, centros de diagnóstico y otras entidades con facturación pendiente ante aseguradoras.",
             },
           ].map((client, index) => (
             <motion.div
@@ -85,6 +89,7 @@ export default function ClientsSection() {
               <motion.img
                 src={client.img}
                 alt={client.alt}
+                loading="lazy"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.4 }}
               />
@@ -95,7 +100,7 @@ export default function ClientsSection() {
           ))}
         </motion.div>
 
-        {/* HIGHLIGHT */}
+        {/* HIGHLIGHT ESTRATÉGICO */}
         <motion.div
           className={styles.highlight}
           variants={{
@@ -107,9 +112,19 @@ export default function ClientsSection() {
           <span className={styles.icon}>▣</span>
           <p>
             <strong>Especialización sectorial real:</strong> Conocemos la
-            regulación, los procesos administrativos, las dinámicas de glosas...
+            regulación del sistema de salud colombiano, los procesos de
+            auditoría, las glosas, los recobros y las dinámicas financieras
+            entre IPS, EPS y entidades estatales.
           </p>
         </motion.div>
+
+        {/* TEXTO SEO OCULTO */}
+        <p className={styles.seoText}>
+          Abogados especializados en recuperación de cartera para IPS,
+          hospitales, laboratorios y proveedores del sector salud en Colombia.
+          Cobro jurídico a EPS, ADRES y aseguradoras bajo modelo de comisión por
+          éxito.
+        </p>
       </motion.div>
     </section>
   );
