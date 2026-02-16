@@ -1,6 +1,6 @@
 .section {
-  padding: 100px 6%;
-  background: #faf9f7; /* fondo claro institucional */
+  padding: 120px 6%;
+  background: linear-gradient(180deg, #faf9f7 0%, #ffffff 100%);
 }
 
 /* =========================
@@ -9,22 +9,22 @@
 
 .mainTitle {
   max-width: 1000px;
-  margin: auto;
-  font-size: 38px;
+  margin: 0 auto 25px auto;
+  font-size: 40px;
   color: #004a80;
   font-weight: 600;
-  line-height: 1.3;
-  margin-bottom: 25px;
+  line-height: 1.25;
   text-align: center;
+  letter-spacing: -0.3px;
 }
 
 .intro {
-  max-width: 1000px;
-  margin: auto;
-  color: #555;
-  line-height: 1.7;
-  margin-bottom: 60px;
+  max-width: 950px;
+  margin: 0 auto 70px auto;
+  color: #5f6368;
+  line-height: 1.75;
   text-align: center;
+  font-size: 16px;
 }
 
 /* =========================
@@ -32,11 +32,11 @@
 ========================= */
 
 .grid {
-  max-width: 1100px;
+  max-width: 1150px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 50px;
   align-items: stretch;
 }
 
@@ -47,25 +47,29 @@
 .leftBox {
   background: #004a80;
   color: #ffffff;
-  padding: 40px;
-  border-radius: 8px;
+  padding: 45px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 74, 128, 0.15);
 }
 
 .leftBox h3 {
   font-size: 22px;
-  margin-bottom: 18px;
-  color: #f7c600; /* dorado acento */
+  margin-bottom: 20px;
+  color: #f7c600;
+  font-weight: 600;
 }
 
 .leftBox p {
-  line-height: 1.7;
-  margin-bottom: 15px;
-  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.75;
+  margin-bottom: 18px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 15px;
 }
 
 .bold {
   font-weight: 600;
   color: #ffffff;
+  font-size: 16px;
 }
 
 /* =========================
@@ -74,23 +78,27 @@
 
 .rightBox {
   background: #ffffff;
-  padding: 40px;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  padding: 45px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 74, 128, 0.08);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .company {
   color: #004a80;
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 21px;
+  margin-bottom: 6px;
   font-weight: 600;
 }
 
 .area {
   color: #5eb3e4;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-weight: 500;
+  font-size: 14px;
 }
 
 /* =========================
@@ -100,25 +108,25 @@
 .list {
   list-style: none;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .list li {
   position: relative;
-  padding-left: 20px;
-  margin-bottom: 12px;
+  padding-left: 22px;
+  margin-bottom: 14px;
   color: #444;
   line-height: 1.6;
   font-size: 14px;
 }
 
-/* Viñeta dorada */
+/* Viñeta dorada elegante */
 .list li::before {
-  content: "•";
+  content: "✔";
   position: absolute;
   left: 0;
   color: #f7c600;
-  font-weight: bold;
+  font-size: 13px;
 }
 
 /* =========================
@@ -128,18 +136,21 @@
 .button {
   background: #f7c600;
   color: #000;
-  padding: 14px 24px;
-  border-radius: 6px;
+  padding: 16px 24px;
+  border-radius: 8px;
   border: none;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: all 0.25s ease;
   width: 100%;
+  font-size: 15px;
+  box-shadow: 0 8px 18px rgba(247, 198, 0, 0.25);
 }
 
 .button:hover {
   background: #c4911a;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(196, 145, 26, 0.35);
 }
 
 /* =========================
@@ -147,13 +158,26 @@
 ========================= */
 
 .quote {
-  max-width: 1000px;
-  margin: 60px auto 0;
+  max-width: 950px;
+  margin: 80px auto 0 auto;
   font-style: italic;
-  color: #555;
+  color: #5f6368;
   border-left: 4px solid #f7c600;
-  padding-left: 18px;
-  line-height: 1.7;
+  padding-left: 20px;
+  line-height: 1.75;
+  font-size: 15px;
+}
+
+/* =========================
+   SEO TEXT (HIDDEN)
+========================= */
+
+.seoText {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /* =========================
@@ -163,9 +187,14 @@
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr;
+    gap: 35px;
   }
 
   .mainTitle {
     font-size: 30px;
+  }
+
+  .intro {
+    font-size: 15px;
   }
 }

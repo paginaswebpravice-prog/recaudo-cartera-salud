@@ -17,6 +17,7 @@ export default function FinalCtaSection() {
         Institución.
       </motion.h2>
 
+      {/* INTRO */}
       <motion.p
         className={styles.intro}
         initial={{ opacity: 0 }}
@@ -24,10 +25,12 @@ export default function FinalCtaSection() {
         transition={{ delay: 0.2, duration: 0.9 }}
         viewport={{ once: true }}
       >
-        Cada peso de cartera sin recaudar es un servicio de salud que prestó y
-        no le pagaron. Es inversión en equipos, personal, insumos y estructura
-        que comprometió su flujo de caja. En PRAVICE ABOGADOS entendemos que
-        recuperar cartera es defender la viabilidad financiera de su operación.
+        Cada peso de cartera sin recaudar es un servicio de salud que su
+        institución ya prestó y no le pagaron. Es inversión en equipos,
+        personal, insumos y estructura que comprometió su flujo de caja. En
+        PRAVICE ABOGADOS entendemos que la recuperación de cartera hospitalaria
+        no es solo un proceso jurídico: es una estrategia para proteger la
+        viabilidad financiera de su operación.
       </motion.p>
 
       {/* GRID DOS COLUMNAS */}
@@ -57,9 +60,9 @@ export default function FinalCtaSection() {
           <h3>No permita que la cartera envejecida ahogue su institución</h3>
 
           <p>
-            El tiempo corre en su contra. Cada día que pasa sin gestión
+            El tiempo corre en su contra. Cada día que pasa sin gestión jurídica
             estratégica es un día más cerca de la prescripción. Cada mes sin
-            recaudo es un mes más de deterioro en su flujo de caja.
+            recaudo es un mes adicional de deterioro en su flujo de caja.
           </p>
 
           <p className={styles.bold}>
@@ -98,7 +101,7 @@ export default function FinalCtaSection() {
               "Cobertura nacional en Colombia",
               "Equipo especializado en sector salud",
               "Modelo de comisión por resultados",
-              "Estrategia doble carril ejecutivo/declarativo",
+              "Estrategia doble carril ejecutivo y declarativo",
             ].map((item, index) => (
               <motion.li
                 key={index}
@@ -119,7 +122,7 @@ export default function FinalCtaSection() {
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            Agendar diagnóstico gratuito
+            Agendar diagnóstico estratégico sin costo
           </motion.button>
         </motion.div>
       </motion.div>
@@ -136,6 +139,15 @@ export default function FinalCtaSection() {
         supervivencia institucional. Y la supervivencia requiere acción
         estratégica inmediata.”
       </motion.p>
+
+      {/* SEO OCULTO */}
+      <p className={styles.seoText}>
+        Abogados especializados en recuperación de cartera en salud en Colombia.
+        Cobro jurídico a EPS, demandas contra EPS, procesos ejecutivos y
+        declarativos para IPS, clínicas y hospitales. Firma jurídica experta en
+        reclamaciones ante ADRES y estrategias legales para recuperación de
+        cartera hospitalaria con cobertura nacional.
+      </p>
     </section>
   );
 }
