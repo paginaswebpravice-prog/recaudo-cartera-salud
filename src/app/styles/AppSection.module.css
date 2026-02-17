@@ -104,19 +104,88 @@
 
 .ctaButton {
   display: inline-block;
-  padding: 14px 36px;
-  background: #004a80; /* Azul institucional */
+  padding: 16px 42px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+
+  /* Gradiente institucional */
+  background: linear-gradient(135deg, #004a80 0%, #006bb3 50%, #004a80 100%);
+
   color: #ffffff;
-  font-weight: 600;
-  border-radius: 40px;
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 18px rgba(0, 74, 128, 0.2);
+
+  box-shadow:
+    0 8px 25px rgba(0, 74, 128, 0.25),
+    0 0 0 rgba(247, 198, 0, 0.4);
 }
 
-.ctaButton:hover {
-  background: #f7c600; /* Dorado estratégico */
-  color: #004a80;
-  transform: translateY(-4px);
+/* Glow animado */
+.ctaButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+
+/* Efecto brillo */
+.ctaButton:hover::before {
+  animation: shine 0.9s ease forwards;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 16px 42px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+
+  /* Gradiente institucional */
+  background: linear-gradient(135deg, #004a80 0%, #006bb3 50%, #004a80 100%);
+
+  color: #ffffff;
+
+  box-shadow:
+    0 8px 25px rgba(0, 74, 128, 0.25),
+    0 0 0 rgba(247, 198, 0, 0.4);
+}
+
+/* Glow animado */
+.ctaButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+
+/* Efecto brillo */
+.ctaButton:hover::before {
+  animation: shine 0.9s ease forwards;
 }
 
 /* ============================

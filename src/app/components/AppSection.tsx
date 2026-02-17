@@ -107,13 +107,15 @@ export default function AppSection() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <Link
-            href="https://legalapp.pravice.co/login.php"
-            className={styles.ctaButton}
-            target="_blank"
-          >
-            Ingresar a la App Legal PRAVICE
-          </Link>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
+            <Link
+              href="https://legalapp.pravice.co/login.php"
+              className={styles.ctaButton}
+              target="_blank"
+            >
+              🚀 Ingresar a la App Legal PRAVICE
+            </Link>
+          </motion.div>
         </motion.div>
 
         {/* SEO SEMÁNTICO OCULTO */}
