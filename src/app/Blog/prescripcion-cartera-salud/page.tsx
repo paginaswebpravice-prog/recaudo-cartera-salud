@@ -1,4 +1,4 @@
-import styles from "./Prescripcion.module.css";
+import styles from "./Article.module.css";
 
 export const metadata = {
   title:

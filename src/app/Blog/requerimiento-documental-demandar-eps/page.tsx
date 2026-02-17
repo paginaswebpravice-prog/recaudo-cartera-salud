@@ -1,4 +1,4 @@
-import styles from "./Artcile.module.css";
+import styles from "./Article.module.css";
 
 export const metadata = {
   title: "Documentos para demandar una EPS por cartera | Checklist PRAVICE",
