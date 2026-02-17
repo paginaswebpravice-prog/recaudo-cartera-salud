@@ -1,4 +1,4 @@
-import styles from "./Respuesta.module.css";
+import styles from "./Article.module.css";
 
 export const metadata = {
   title: "Cómo responder a una EPS sobre compra de cartera | PRAVICE",
