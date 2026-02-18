@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Article.module.css";
 
 export const metadata = {
@@ -9,25 +10,34 @@ export const metadata = {
 export default function CobroEntesTerritoriales() {
   return (
     <main className={styles.wrapper}>
-      <article className={styles.article}>
-        {/* HEADER */}
-        <header className={styles.header}>
+      {/* HERO */}
+      <section className={styles.hero}>
+        <div className={styles.heroContainer}>
+          <Link href="/Blog" className={styles.backLink}>
+            ← Volver al Blog
+          </Link>
+
           <span className={styles.badge}>Sector salud público</span>
+
           <h1 className={styles.title}>
             Cobro de cartera a entes territoriales y secretarías de salud
           </h1>
+
           <p className={styles.subtitle}>
             Estrategia administrativa y judicial para recuperar recursos
             adeudados por servicios de salud.
           </p>
-        </header>
+        </div>
+      </section>
 
+      {/* CONTENIDO */}
+      <article className={styles.article}>
         {/* QUÉ TIPO DE CARTERA */}
         <section className={styles.section}>
           <h2>¿Qué tipo de cartera se puede cobrar?</h2>
           <p>La cartera frente a entes territoriales puede derivarse de:</p>
 
-          <ul className={styles.list}>
+          <ul className={styles.checklist}>
             <li>Atención a población pobre no asegurada (PNA)</li>
             <li>Servicios y tecnologías NO PBS</li>
             <li>Recursos por esfuerzo propio</li>
@@ -37,8 +47,9 @@ export default function CobroEntesTerritoriales() {
         </section>
 
         {/* CÓMO LO HACEMOS */}
-        <section className={styles.highlightSection}>
+        <section className={styles.sectionAlt}>
           <h2>Cómo estructuramos la recuperación</h2>
+
           <p>
             Primero se agota la ruta administrativa con radicación formal,
             consolidación de soportes y seguimiento técnico.
@@ -53,13 +64,16 @@ export default function CobroEntesTerritoriales() {
         </section>
 
         {/* BLOQUE ESTRATÉGICO */}
-        <section className={styles.strategyBox}>
+        <section className={styles.section}>
           <h2>Expediente sólido = mayor probabilidad de recaudo</h2>
-          <p>
-            La recuperación frente a entidades públicas exige precisión
-            documental, análisis contractual y estrategia procesal clara.
-            Improvisar aumenta tiempos y riesgo de pérdida.
-          </p>
+
+          <div className={styles.letterBox}>
+            <p>
+              La recuperación frente a entidades públicas exige precisión
+              documental, análisis contractual y estrategia procesal clara.
+              Improvisar aumenta tiempos y riesgo de pérdida.
+            </p>
+          </div>
         </section>
 
         {/* CTA */}

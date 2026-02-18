@@ -72,6 +72,10 @@ export default function BlogPage() {
           <h1 className={styles.heroTitle}>
             Blog Jurídico - Recuperación de Cartera EPS
           </h1>
+          {/* NUEVO BOTÓN */}
+          <Link href="/" className={styles.backLink}>
+            ← Volver al inicio
+          </Link>
           <p className={styles.heroSubtitle}>
             Información estratégica para IPS, clínicas y sector salud.
           </p>

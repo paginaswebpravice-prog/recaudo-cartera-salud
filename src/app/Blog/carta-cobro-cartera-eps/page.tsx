@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Article.module.css";
 
 export const metadata = {
@@ -9,19 +10,28 @@ export const metadata = {
 export default function CartaCobroEPS() {
   return (
     <main className={styles.wrapper}>
-      <article className={styles.article}>
-        {/* HERO */}
-        <header className={styles.header}>
+      {/* HERO */}
+      <section className={styles.hero}>
+        <div className={styles.heroContainer}>
+          <Link href="/Blog" className={styles.backLink}>
+            ← Volver al Blog
+          </Link>
+
           <span className={styles.badge}>Modelo profesional editable</span>
+
           <h1 className={styles.title}>
             Carta para cobro de cartera a las EPS
           </h1>
+
           <p className={styles.subtitle}>
             Una carta bien estructurada aumenta la probabilidad de pago y
             fortalece el camino hacia cobro jurídico si se requiere.
           </p>
-        </header>
+        </div>
+      </section>
 
+      {/* CONTENIDO */}
+      <article className={styles.article}>
         {/* CHECKLIST */}
         <section className={styles.section}>
           <h2>Checklist mínimo antes de enviar</h2>
@@ -39,7 +49,7 @@ export default function CartaCobroEPS() {
         </section>
 
         {/* MODELO DE CARTA */}
-        <section className={styles.section}>
+        <section className={styles.sectionAlt}>
           <h2>Modelo de carta (editable)</h2>
 
           <div className={styles.letterBox}>
@@ -91,7 +101,7 @@ export default function CartaCobroEPS() {
           </p>
         </section>
 
-        {/* FOOTER ESTRATÉGICO */}
+        {/* FOOTER */}
         <footer className={styles.footer}>
           <p>
             <strong>PRAVICE no compra cartera.</strong> La recupera con

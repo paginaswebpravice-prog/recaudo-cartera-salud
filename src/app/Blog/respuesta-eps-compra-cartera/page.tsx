@@ -1,4 +1,5 @@
 import styles from "./Article.module.css";
+import Link from "next/link";
 
 export const metadata = {
   title: "Cómo responder a una EPS sobre compra de cartera | PRAVICE",
@@ -9,28 +10,39 @@ export const metadata = {
 export default function ResponderCompraCartera() {
   return (
     <main className={styles.wrapper}>
-      <article className={styles.article}>
-        {/* HEADER */}
-        <header className={styles.header}>
+      {/* ================= HERO ================= */}
+      <section className={styles.hero}>
+        <div className={styles.heroContainer}>
+          <Link href="/Blog" className={styles.backLink}>
+            ← Volver al Blog
+          </Link>
+
           <span className={styles.badge}>Guía estratégica sector salud</span>
+
           <h1 className={styles.title}>
             Cómo responder a una EPS sobre “compra de cartera”
           </h1>
+
           <p className={styles.subtitle}>
             Qué decir correctamente para proteger el valor total de la
             obligación y evitar descuentos disfrazados de negociación.
           </p>
-        </header>
+        </div>
+      </section>
 
+      {/* ================= ARTICLE ================= */}
+      <article className={styles.article}>
         {/* ACLARACIÓN PRINCIPAL */}
-        <section className={styles.highlightSection}>
+        <section className={styles.sectionAlt}>
           <h2>Respuesta clara: PRAVICE no compra cartera</h2>
+
           <p>
             Si una EPS pregunta por compra de cartera, lo correcto es aclarar
             que <strong>no se compra</strong>, sino que se{" "}
             <strong>recupera efectivamente</strong> mediante estrategia jurídica
             estructurada (cobro prejurídico + proceso ejecutivo).
           </p>
+
           <p>
             Esto evita descuentos agresivos, protege el valor total de la
             obligación y mantiene la presión jurídica adecuada.
@@ -41,34 +53,33 @@ export default function ResponderCompraCartera() {
         <section className={styles.section}>
           <h2>Modelo de respuesta (lista para enviar)</h2>
 
-          <div className={styles.responseBox}>
-            <p>Cordial saludo. Gracias por su comunicación.</p>
+          <p>Cordial saludo. Gracias por su comunicación.</p>
 
-            <p>
-              Nos permitimos aclarar que{" "}
-              <strong>PRAVICE ABOGADOS S.A.S. no compra cartera</strong>.
-              Nuestro servicio consiste en la{" "}
-              <strong>recuperación efectiva</strong> de la cartera mediante
-              gestión prejurídica y, cuando aplique, acciones judiciales
-              (proceso ejecutivo) con medidas cautelares orientadas al recaudo.
-            </p>
+          <p>
+            Nos permitimos aclarar que{" "}
+            <strong>PRAVICE ABOGADOS S.A.S. no compra cartera</strong>. Nuestro
+            servicio consiste en la <strong>recuperación efectiva</strong> de la
+            cartera mediante gestión prejurídica y, cuando aplique, acciones
+            judiciales (proceso ejecutivo) con medidas cautelares orientadas al
+            recaudo.
+          </p>
 
-            <p>
-              Para avanzar, agradecemos confirmar responsable de cartera y
-              cronograma de pago verificable sobre las facturas relacionadas, o
-              en su defecto, agendar mesa de conciliación con propuesta formal.
-            </p>
+          <p>
+            Para avanzar, agradecemos confirmar responsable de cartera y
+            cronograma de pago verificable sobre las facturas relacionadas, o en
+            su defecto, agendar mesa de conciliación con propuesta formal.
+          </p>
 
-            <p>
-              Atentamente, <br />
-              PRAVICE ABOGADOS S.A.S.
-            </p>
-          </div>
+          <p>
+            Atentamente, <br />
+            PRAVICE ABOGADOS S.A.S.
+          </p>
         </section>
 
-        {/* CLAVE ESTRATÉGICA */}
-        <section className={styles.keySection}>
+        {/* BLOQUE OSCURO */}
+        <section className={styles.sectionHighlight}>
           <h2>Clave estratégica</h2>
+
           <p>
             No negocie el valor como si se tratara de una cesión o compra. Exija
             pago completo o acuerdo verificable, y active ruta ejecutiva si
@@ -76,11 +87,8 @@ export default function ResponderCompraCartera() {
           </p>
         </section>
 
-        {/* CTA FINAL */}
+        {/* CTA */}
         <footer className={styles.footer}>
-          <p>
-            ¿Necesita estructurar estrategia de recuperación frente a una EPS?
-          </p>
           <a href="/contacto" className={styles.ctaButton}>
             Solicitar evaluación estratégica
           </a>

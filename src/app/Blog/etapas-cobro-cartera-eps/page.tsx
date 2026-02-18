@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Article.module.css";
 
 export const metadata = {
@@ -9,15 +10,22 @@ export const metadata = {
 export default function CobroCarteraEPS() {
   return (
     <main className={styles.wrapper}>
-      <article className={styles.article}>
-        {/* HEADER */}
-        <header className={styles.header}>
+      {/* HERO */}
+      <section className={styles.hero}>
+        <div className={styles.heroContainer}>
+          <Link href="/Blog" className={styles.backLink}>
+            ← Volver al Blog
+          </Link>
+
           <span className={styles.badge}>Guía estratégica</span>
+
           <h1 className={styles.title}>
             Cobro de cartera EPS: etapas para un recaudo efectivo
           </h1>
-        </header>
+        </div>
+      </section>
 
+      <article className={styles.article}>
         {/* ETAPA 1 */}
         <section className={styles.section}>
           <h2>Etapa 1: Diagnóstico y segmentación</h2>
@@ -29,7 +37,7 @@ export default function CobroCarteraEPS() {
         </section>
 
         {/* ETAPA 2 */}
-        <section className={styles.section}>
+        <section className={styles.sectionAlt}>
           <h2>Etapa 2: Cobro prejurídico</h2>
           <p>
             Se realizan requerimientos formales, negociación estructurada y
@@ -50,7 +58,7 @@ export default function CobroCarteraEPS() {
         </section>
 
         {/* ETAPA 4 */}
-        <section className={styles.section}>
+        <section className={styles.sectionAlt}>
           <h2>Etapa 4: Medidas cautelares e investigación patrimonial</h2>
           <p>
             Identificar cuentas bancarias, activos y fuentes de recaudo mejora

@@ -1,4 +1,5 @@
 import styles from "./Article.module.css";
+import Link from "next/link";
 
 export const metadata = {
   title: "Documentos para demandar una EPS por cartera | Checklist PRAVICE",
@@ -9,24 +10,32 @@ export const metadata = {
 export default function DocumentosDemandarEPS() {
   return (
     <main className={styles.wrapper}>
-      <article className={styles.article}>
-        {/* HEADER */}
-        <header className={styles.header}>
+      {/* ================= HERO ================= */}
+      <section className={styles.hero}>
+        <div className={styles.heroContainer}>
+          <Link href="/Blog" className={styles.backLink}>
+            ← Volver al Blog
+          </Link>
+
           <span className={styles.badge}>Proceso ejecutivo sector salud</span>
+
           <h1 className={styles.title}>
             Documentos para demandar una EPS por cartera
           </h1>
+
           <p className={styles.subtitle}>
             Checklist mínimo para evitar inadmisiones y fortalecer el recaudo
             judicial.
           </p>
-        </header>
+        </div>
+      </section>
 
-        {/* DOCUMENTACIÓN MÍNIMA */}
+      {/* ================= ARTICLE ================= */}
+      <article className={styles.article}>
         <section className={styles.section}>
           <h2>Documentación mínima por factura</h2>
 
-          <ul className={styles.list}>
+          <ul className={styles.checklist}>
             <li>Factura en PDF (y XML si aplica)</li>
             <li>Prueba de radicación o acuse (fecha y hora verificables)</li>
             <li>
@@ -41,8 +50,7 @@ export default function DocumentosDemandarEPS() {
           </ul>
         </section>
 
-        {/* RECOMENDACIÓN CLAVE */}
-        <section className={styles.highlightSection}>
+        <section className={styles.sectionAlt}>
           <h2>Recomendación clave antes de demandar</h2>
           <p>
             Antes de presentar la demanda, es indispensable verificar
@@ -56,8 +64,7 @@ export default function DocumentosDemandarEPS() {
           </p>
         </section>
 
-        {/* BLOQUE ESTRATÉGICO */}
-        <section className={styles.strategyBox}>
+        <section className={styles.sectionHighlight}>
           <h2>Expedientes sin improvisación</h2>
           <p>
             Una demanda mal estructurada puede generar inadmisión, pérdida de
@@ -67,7 +74,6 @@ export default function DocumentosDemandarEPS() {
           </p>
         </section>
 
-        {/* CTA */}
         <footer className={styles.footer}>
           <p>
             PRAVICE estructura expedientes sólidos, orientados al recaudo

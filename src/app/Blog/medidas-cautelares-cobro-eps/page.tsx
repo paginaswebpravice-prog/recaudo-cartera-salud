@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Article.module.css";
 
 export const metadata = {
@@ -9,21 +10,29 @@ export const metadata = {
 export default function MedidasCautelaresEPS() {
   return (
     <main className={styles.wrapper}>
-      <article className={styles.article}>
-        {/* HEADER */}
-        <header className={styles.header}>
+      {/* HERO */}
+      <section className={styles.hero}>
+        <div className={styles.heroContainer}>
+          <Link href="/Blog" className={styles.backLink}>
+            ← Volver al Blog
+          </Link>
+
           <span className={styles.badge}>Proceso ejecutivo sector salud</span>
+
           <h1 className={styles.title}>
             Medidas cautelares para cobro de cartera a EPS
           </h1>
+
           <p className={styles.subtitle}>
             Cómo estructurar embargos e investigación patrimonial para asegurar
             el recaudo efectivo.
           </p>
-        </header>
+        </div>
+      </section>
 
+      <article className={styles.article}>
         {/* INTRO DESTACADA */}
-        <section className={styles.highlightSection}>
+        <section className={styles.sectionAlt}>
           <h2>¿Qué son las medidas cautelares y por qué aceleran el pago?</h2>
           <p>
             Las medidas cautelares permiten asegurar bienes y recursos del
@@ -40,7 +49,7 @@ export default function MedidasCautelaresEPS() {
         <section className={styles.section}>
           <h2>Embargos más efectivos en procesos contra EPS</h2>
 
-          <ul className={styles.list}>
+          <ul className={styles.checklist}>
             <li>Embargo de cuentas bancarias</li>
             <li>Embargo de créditos a favor del deudor</li>
             <li>Embargo de bienes registrables</li>
@@ -51,8 +60,8 @@ export default function MedidasCautelaresEPS() {
           </ul>
         </section>
 
-        {/* INVESTIGACIÓN PATRIMONIAL */}
-        <section className={styles.section}>
+        {/* INVESTIGACIÓN */}
+        <section className={styles.sectionAlt}>
           <h2>Investigación patrimonial: la pieza clave</h2>
           <p>
             Identificar activos, cuentas y fuentes de recaudo permite solicitar
@@ -65,8 +74,8 @@ export default function MedidasCautelaresEPS() {
           </p>
         </section>
 
-        {/* BLOQUE ESTRATÉGICO FINAL */}
-        <section className={styles.strategyBox}>
+        {/* BLOQUE ESTRATÉGICO */}
+        <section className={styles.sectionHighlight}>
           <h2>Estrategia cautelar desde el inicio</h2>
           <p>
             PRAVICE estructura el proceso ejecutivo con estrategia cautelar

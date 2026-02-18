@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Article.module.css";
 
 export const metadata = {
@@ -10,21 +11,29 @@ export const metadata = {
 export default function PrescripcionCarteraSalud() {
   return (
     <main className={styles.wrapper}>
-      <article className={styles.article}>
-        {/* HEADER */}
-        <header className={styles.header}>
+      {/* HERO */}
+      <section className={styles.hero}>
+        <div className={styles.heroContainer}>
+          <Link href="/Blog" className={styles.backLink}>
+            ← Volver al Blog
+          </Link>
+
           <span className={styles.badge}>Control de riesgo jurídico</span>
+
           <h1 className={styles.title}>
             Prescripción en cartera del sector salud
           </h1>
+
           <p className={styles.subtitle}>
             Cómo evitar perder el derecho de cobro por falta de acciones
             oportunas.
           </p>
-        </header>
+        </div>
+      </section>
 
+      <article className={styles.article}>
         {/* RIESGO REAL */}
-        <section className={styles.highlightSection}>
+        <section className={styles.sectionAlt}>
           <h2>El riesgo real</h2>
           <p>
             Entre más tiempo transcurra sin acciones estructuradas, mayor es el
@@ -41,7 +50,7 @@ export default function PrescripcionCarteraSalud() {
         <section className={styles.section}>
           <h2>Medidas prácticas para evitar la prescripción</h2>
 
-          <ul className={styles.list}>
+          <ul className={styles.checklist}>
             <li>Segmentación de cartera por antigüedad</li>
             <li>Requerimientos formales y trazables</li>
             <li>Acuerdos con cronograma verificable</li>
@@ -51,7 +60,7 @@ export default function PrescripcionCarteraSalud() {
         </section>
 
         {/* BLOQUE ESTRATÉGICO */}
-        <section className={styles.strategyBox}>
+        <section className={styles.sectionHighlight}>
           <h2>Estrategia preventiva desde el primer día</h2>
           <p>
             La prescripción no se combate cuando ya venció el término, sino

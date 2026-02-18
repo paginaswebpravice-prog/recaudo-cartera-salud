@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Article.module.css";
 
 export const metadata = {
@@ -9,22 +10,30 @@ export const metadata = {
 
 export default function ArticlePage() {
   return (
-    <main className={styles.pageWrapper}>
-      <article className={styles.article}>
-        {/* HERO */}
-        <header className={styles.hero}>
+    <main className={styles.wrapper}>
+      {/* HERO */}
+      <section className={styles.hero}>
+        <div className={styles.heroContainer}>
+          <Link href="/Blog" className={styles.backLink}>
+            ← Volver al Blog
+          </Link>
+
           <span className={styles.badge}>Guía práctica sector salud</span>
+
           <h1 className={styles.title}>
             Cómo recuperar la cartera de las EPS en Colombia
           </h1>
+
           <p className={styles.subtitle}>
             Estrategia jurídica real para IPS y clínicas: cobro prejurídico +
             proceso ejecutivo con enfoque en recaudo efectivo.
           </p>
-        </header>
+        </div>
+      </section>
 
-        {/* BLOQUE PROBLEMA */}
-        <section className={styles.problemBox}>
+      <article className={styles.article}>
+        {/* PROBLEMA */}
+        <section className={styles.sectionAlt}>
           <h2>El problema real</h2>
           <p>
             Las EPS retrasan pagos mediante glosas, devoluciones e
@@ -72,7 +81,7 @@ export default function ArticlePage() {
           </div>
         </section>
 
-        {/* MODELO DE CARTA */}
+        {/* CARTA */}
         <section className={styles.section}>
           <h2>Modelo de carta de cobro prejurídico</h2>
 
@@ -113,11 +122,11 @@ export default function ArticlePage() {
           </div>
         </section>
 
-        {/* PROCESO EJECUTIVO */}
+        {/* EJECUTIVO */}
         <section className={styles.sectionHighlight}>
           <h2>El proceso ejecutivo: la vía más efectiva</h2>
 
-          <ul>
+          <ul className={styles.highlightList}>
             <li>Mandamiento de pago judicial</li>
             <li>Embargo de cuentas y activos</li>
             <li>Consignaciones judiciales</li>
@@ -133,7 +142,7 @@ export default function ArticlePage() {
         {/* ERRORES */}
         <section className={styles.section}>
           <h2>Errores que frenan el recaudo</h2>
-          <ul>
+          <ul className={styles.checklist}>
             <li>No separar cartera exigible vs. discutida.</li>
             <li>Falta de trazabilidad documental.</li>
             <li>Dejar vencer términos de prescripción.</li>

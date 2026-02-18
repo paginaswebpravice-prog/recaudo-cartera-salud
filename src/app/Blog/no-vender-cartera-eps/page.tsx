@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Article.module.css";
 
 export const metadata = {
@@ -9,19 +10,27 @@ export const metadata = {
 export default function VenderOCobrarCartera() {
   return (
     <main className={styles.wrapper}>
-      <article className={styles.article}>
-        {/* HEADER */}
-        <header className={styles.header}>
+      {/* HERO */}
+      <section className={styles.hero}>
+        <div className={styles.heroContainer}>
+          <Link href="/Blog" className={styles.backLink}>
+            ← Volver al Blog
+          </Link>
+
           <span className={styles.badge}>Decisión estratégica</span>
+
           <h1 className={styles.title}>Por qué NO vender su cartera EPS</h1>
+
           <p className={styles.subtitle}>
             Recuperarla jurídicamente suele ser una alternativa más rentable y
             estratégica.
           </p>
-        </header>
+        </div>
+      </section>
 
+      <article className={styles.article}>
         {/* SECCIÓN 1 */}
-        <section className={styles.highlightSection}>
+        <section className={styles.sectionAlt}>
           <h2>Vender cartera suele implicar perder valor</h2>
           <p>
             La compra de cartera normalmente se realiza con descuentos
@@ -54,7 +63,7 @@ export default function VenderOCobrarCartera() {
         </section>
 
         {/* BLOQUE ESTRATÉGICO */}
-        <section className={styles.strategyBox}>
+        <section className={styles.sectionHighlight}>
           <h2>Maximizar recaudo vs. vender con descuento</h2>
           <p>
             Si el objetivo es proteger el valor de la cartera y mantener

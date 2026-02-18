@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Article.module.css";
 
 export const metadata = {
@@ -9,26 +10,35 @@ export const metadata = {
 export default function CobroCarteraADRES() {
   return (
     <main className={styles.wrapper}>
-      <article className={styles.article}>
-        {/* HEADER */}
-        <header className={styles.header}>
+      {/* HERO */}
+      <section className={styles.hero}>
+        <div className={styles.heroContainer}>
+          <Link href="/Blog" className={styles.backLink}>
+            ← Volver al Blog
+          </Link>
+
           <span className={styles.badge}>Recuperación sector salud</span>
+
           <h1 className={styles.title}>
             Cobro de cartera ante ADRES: cómo recuperar pagos pendientes o
             negados
           </h1>
+
           <p className={styles.subtitle}>
             Reclamación administrativa, respuesta a objeciones y ruta jurídica
             hasta lograr el recaudo efectivo.
           </p>
-        </header>
+        </div>
+      </section>
 
+      {/* CONTENIDO */}
+      <article className={styles.article}>
         {/* QUÉ SE PUEDE COBRAR */}
         <section className={styles.section}>
           <h2>¿Qué se puede cobrar ante ADRES?</h2>
           <p>Ante ADRES pueden reclamarse valores derivados de:</p>
 
-          <ul className={styles.list}>
+          <ul className={styles.checklist}>
             <li>
               Accidentes de tránsito con vehículos no asegurados o no
               identificados
@@ -45,7 +55,7 @@ export default function CobroCarteraADRES() {
         </section>
 
         {/* RUTA RECOMENDADA */}
-        <section className={styles.highlightSection}>
+        <section className={styles.sectionAlt}>
           <h2>Ruta recomendada para maximizar el recaudo</h2>
 
           <ol className={styles.orderedList}>
@@ -69,13 +79,16 @@ export default function CobroCarteraADRES() {
         </section>
 
         {/* BLOQUE ESTRATÉGICO */}
-        <section className={styles.strategyBox}>
+        <section className={styles.section}>
           <h2>Enfoque estratégico</h2>
-          <p>
-            El éxito en reclamaciones ante ADRES depende de la calidad
-            documental, la precisión técnica y la capacidad de escalar el caso
-            jurídicamente cuando la respuesta administrativa no es favorable.
-          </p>
+
+          <div className={styles.letterBox}>
+            <p>
+              El éxito en reclamaciones ante ADRES depende de la calidad
+              documental, la precisión técnica y la capacidad de escalar el caso
+              jurídicamente cuando la respuesta administrativa no es favorable.
+            </p>
+          </div>
         </section>
 
         {/* FOOTER */}

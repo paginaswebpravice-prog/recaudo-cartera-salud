@@ -1,66 +1,107 @@
-.pageWrapper {
+/* ================= WRAPPER ================= */
+
+.wrapper {
   background-color: #f8f9fa;
-  padding: 100px 20px;
+  min-height: 100vh;
 }
 
-.article {
-  max-width: 900px;
-  margin: 0 auto;
-  background: #ffffff;
-  padding: 70px;
-  border-radius: 16px;
-  box-shadow: 0px 25px 60px rgba(0, 59, 92, 0.08);
-}
-
-/* HERO */
+/* ================= HERO ================= */
 
 .hero {
-  margin-bottom: 50px;
+  padding: 110px 20px 90px 20px;
+  background: linear-gradient(135deg, #004a80 0%, #003b5c 60%, #002a45 100%);
+  color: #ffffff;
+  text-align: center;
+}
+
+.heroContainer {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.backLink:hover {
+  background: #f4c300;
+  color: #000;
+  transform: translateX(-4px);
 }
 
 .badge {
   display: inline-block;
-  background: #eef6fa;
-  color: #005f7f;
-  padding: 6px 14px;
+  background: #f4c300;
+  color: #000;
+  padding: 6px 16px;
   font-size: 13px;
+  font-weight: 600;
   border-radius: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .title {
   font-size: 38px;
-  color: #003b5c;
   line-height: 1.2;
 }
 
 .subtitle {
-  margin-top: 18px;
+  margin-top: 20px;
   font-size: 18px;
-  color: #555;
+  color: #dbe9f4;
 }
 
-/* PROBLEM BOX */
+/* ================= ARTICLE ================= */
 
-.problemBox {
-  background: #f1f5f8;
-  padding: 30px;
-  border-radius: 12px;
-  margin-bottom: 60px;
+.article {
+  max-width: 850px;
+  margin: -60px auto 100px auto;
+  background: #ffffff;
+  padding: 70px;
+  border-radius: 18px;
+  box-shadow: 0px 25px 55px rgba(0, 74, 128, 0.12);
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
 
 .section {
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
-.section h2 {
-  color: #003b5c;
+.sectionAlt {
+  margin-bottom: 70px;
+  padding: 35px;
+  background: #f3f8fc;
+  border-radius: 14px;
+}
+
+.section h2,
+.sectionAlt h2 {
+  color: #004a80;
   margin-bottom: 20px;
+  font-size: 24px;
 }
 
-/* STEPS */
+.section p,
+.sectionAlt p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+/* ================= STEPS ================= */
 
 .stepsGrid {
   display: grid;
@@ -68,16 +109,16 @@
 }
 
 .stepCard {
-  background: #f9fbfc;
+  background: #f9fbfd;
   padding: 25px;
   border-radius: 12px;
-  border-left: 4px solid #005f7f;
+  border-left: 4px solid #004a80;
 }
 
 .stepCard span {
   font-size: 22px;
   font-weight: bold;
-  color: #005f7f;
+  color: #004a80;
 }
 
 .stepCard h3 {
@@ -85,40 +126,40 @@
   color: #003b5c;
 }
 
-/* LETTER */
+/* ================= TIP + LETTER ================= */
 
 .tipBox {
   background: #eef6fa;
   padding: 15px;
-  border-left: 4px solid #005f7f;
+  border-left: 4px solid #004a80;
   border-radius: 6px;
   margin-bottom: 20px;
 }
 
 .letterBox {
-  background: #f9fbfc;
+  background: #f9fbfd;
   padding: 30px;
   border-radius: 12px;
-  border-left: 4px solid #003b5c;
+  border-left: 5px solid #004a80;
 }
 
-/* HIGHLIGHT SECTION */
+/* ================= HIGHLIGHT ================= */
 
 .sectionHighlight {
   background: #003b5c;
   color: white;
   padding: 40px;
   border-radius: 14px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .sectionHighlight h2 {
   color: white;
 }
 
-.sectionHighlight ul {
-  margin-top: 20px;
+.highlightList {
   padding-left: 20px;
+  margin-top: 20px;
 }
 
 .statement {
@@ -126,7 +167,28 @@
   font-weight: 500;
 }
 
-/* FAQ */
+/* ================= CHECKLIST ================= */
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+}
+
+.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #5eb3e4;
+  font-weight: bold;
+}
+
+/* ================= FAQ ================= */
 
 .faq {
   margin-top: 15px;
@@ -135,28 +197,21 @@
 .faq summary {
   cursor: pointer;
   font-weight: 600;
-  color: #003b5c;
+  color: #004a80;
 }
 
-/* CTA */
+/* ================= RESPONSIVE ================= */
 
-.ctaSection {
-  text-align: center;
-  padding-top: 50px;
-  border-top: 1px solid #e6e6e6;
-}
+@media (max-width: 768px) {
+  .article {
+    padding: 40px;
+  }
 
-.ctaButton {
-  display: inline-block;
-  margin-top: 20px;
-  background: #003b5c;
-  color: white;
-  padding: 14px 30px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
+  .title {
+    font-size: 30px;
+  }
 
-.ctaButton:hover {
-  background: #005f7f;
+  .hero {
+    padding: 90px 20px 70px 20px;
+  }
 }
