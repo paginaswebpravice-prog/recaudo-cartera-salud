@@ -1,5 +1,5 @@
 .section {
-  background-color: #faf9f7; /* Fondo neutro elegante */
+  background-color: #faf9f7;
   padding: 80px 20px;
 }
 
@@ -8,14 +8,12 @@
   margin: 0 auto;
 }
 
-/* ===============================
-   TITLES
-================================ */
+/* TITLES */
 
 .title {
   font-size: 38px;
   line-height: 1.2;
-  color: #004a80; /* Azul institucional */
+  color: #004a80;
   margin-bottom: 24px;
   font-weight: 600;
 }
@@ -34,9 +32,7 @@
   line-height: 1.7;
 }
 
-/* ===============================
-   GRID
-================================ */
+/* GRID */
 
 .grid {
   display: grid;
@@ -44,20 +40,17 @@
   gap: 25px;
 }
 
-/* ===============================
-   CARD
-================================ */
+/* CARD */
 
 .card {
   background: #ffffff;
-  border: 1px solid rgba(0, 74, 128, 0.08); /* Azul institucional muy sutil */
+  border: 1px solid rgba(0, 74, 128, 0.08);
   padding: 26px;
   border-radius: 8px;
   transition: 0.3s ease;
   position: relative;
 }
 
-/* Línea superior estratégica */
 .card::before {
   content: "";
   position: absolute;
@@ -75,7 +68,6 @@
   transform: translateY(-6px);
 }
 
-/* Dorado aparece sutilmente en hover */
 .card:hover::before {
   background: #f7c600;
 }
@@ -93,57 +85,34 @@
   line-height: 1.6;
 }
 
-/* ===============================
-   CTA BUTTON
-================================ */
+/* VIDEO NOTE */
+
+.videoNote {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 15px;
+  color: #444;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+/* BUTTONS */
 
 .ctaWrapper {
-  margin-top: 60px;
+  margin-top: 30px;
   text-align: center;
 }
 
-.ctaButton {
-  display: inline-block;
-  padding: 16px 42px;
-  font-weight: 700;
-  font-size: 16px;
-  border-radius: 50px;
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.4s ease;
-
-  /* Gradiente institucional */
-  background: linear-gradient(135deg, #004a80 0%, #006bb3 50%, #004a80 100%);
-
-  color: #ffffff;
-
-  box-shadow:
-    0 8px 25px rgba(0, 74, 128, 0.25),
-    0 0 0 rgba(247, 198, 0, 0.4);
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-/* Glow animado */
-.ctaButton::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -75%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255, 255, 255, 0.4),
-    transparent
-  );
-  transform: skewX(-25deg);
-}
-
-/* Efecto brillo */
-.ctaButton:hover::before {
-  animation: shine 0.9s ease forwards;
-}
+/* PRIMARY BUTTON */
 
 .ctaButton {
   display: inline-block;
@@ -152,61 +121,43 @@
   font-size: 16px;
   border-radius: 50px;
   text-decoration: none;
-  position: relative;
-  overflow: hidden;
   transition: all 0.4s ease;
-
-  /* Gradiente institucional */
   background: linear-gradient(135deg, #004a80 0%, #006bb3 50%, #004a80 100%);
-
   color: #ffffff;
-
-  box-shadow:
-    0 8px 25px rgba(0, 74, 128, 0.25),
-    0 0 0 rgba(247, 198, 0, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 74, 128, 0.25);
 }
 
-/* Glow animado */
-.ctaButton::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -75%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255, 255, 255, 0.4),
-    transparent
-  );
-  transform: skewX(-25deg);
+/* VIDEO BUTTON */
+
+.videoButton {
+  display: inline-block;
+  padding: 16px 42px;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #ffffff;
+  border: 2px solid #004a80;
+  color: #004a80;
 }
 
-/* Efecto brillo */
-.ctaButton:hover::before {
-  animation: shine 0.9s ease forwards;
+.videoButton:hover {
+  background: #004a80;
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 74, 128, 0.25);
 }
 
-/* ============================
-   SEO TEXT
-============================ */
+/* SEO */
 
 .seoText {
   position: absolute;
   width: 1px;
   height: 1px;
-  padding: 0;
-  margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
+/* RESPONSIVE */
 
 @media (max-width: 1100px) {
   .grid {

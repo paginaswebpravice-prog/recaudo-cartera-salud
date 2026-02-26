@@ -15,9 +15,7 @@ export default function AppSection() {
         variants={{
           hidden: {},
           visible: {
-            transition: {
-              staggerChildren: 0.2,
-            },
+            transition: { staggerChildren: 0.2 },
           },
         }}
       >
@@ -99,7 +97,21 @@ export default function AppSection() {
           ))}
         </motion.div>
 
-        {/* CTA */}
+        {/* VIDEO DESCRIPTION */}
+        <motion.p
+          className={styles.videoNote}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          Para conocer el funcionamiento completo de la plataforma, visualice
+          nuestra demostración oficial haciendo clic en
+          <strong> “Ver Video de la App Legal PRAVICE”</strong>. El contenido se
+          abrirá en una nueva ventana.
+        </motion.p>
+
+        {/* BUTTONS */}
         <motion.div
           className={styles.ctaWrapper}
           initial={{ opacity: 0, y: 40 }}
@@ -107,18 +119,33 @@ export default function AppSection() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
-            <Link
-              href="https://legalapp.pravice.co/login.php"
-              className={styles.ctaButton}
+          <div className={styles.buttonGroup}>
+            {/* LOGIN BUTTON */}
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
+              <Link
+                href="https://legalapp.pravice.co/login.php"
+                className={styles.ctaButton}
+                target="_blank"
+              >
+                🚀 Ingresar a la App Legal PRAVICE
+              </Link>
+            </motion.div>
+
+            {/* VIDEO BUTTON */}
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+              href="https://drive.google.com/file/d/1IIEGEpqNm_FiPhvKKWBSnr_iLbDXcBWV/view"
               target="_blank"
+              rel="noopener noreferrer"
+              className={styles.videoButton}
             >
-              🚀 Ingresar a la App Legal PRAVICE
-            </Link>
-          </motion.div>
+              ▶ Ver Video de la App Legal PRAVICE
+            </motion.a>
+          </div>
         </motion.div>
 
-        {/* SEO SEMÁNTICO OCULTO */}
+        {/* SEO TEXT */}
         <p className={styles.seoText}>
           App jurídica para seguimiento de procesos de cobro a EPS en Colombia.
           Plataforma digital para recuperación de cartera hospitalaria y control
