@@ -51,20 +51,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es-CO">
-      <head>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-2QR8XBPWXX"
           strategy="afterInteractive"
-        >
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-2QR8XBPWXX');
-  `}
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2QR8XBPWXX');
+      `}
         </Script>
-      </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
         <Footer />
       </body>
