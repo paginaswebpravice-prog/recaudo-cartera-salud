@@ -68,7 +68,7 @@ export default function MethodologySection() {
         viewport={{ once: true }}
       >
         <h2 className={styles.title}>
-          Metodología Efectiva para Recuperación de Cartera en Colombia:
+          Metodología para Recuperación de Cartera en Salud
           <span> 4 Fases Clave</span>
         </h2>
 

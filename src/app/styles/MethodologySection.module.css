@@ -22,9 +22,12 @@
   font-weight: 600;
   margin-bottom: 20px;
   color: #ffffff;
+  text-align: center;
 }
 
 .title span {
+  display: block; /* lo manda abajo */
+  margin-top: 10px;
   color: #f7c600;
 }
 
