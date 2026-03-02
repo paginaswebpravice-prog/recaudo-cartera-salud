@@ -65,6 +65,29 @@ export default function RootLayout({
         gtag('config', 'G-2QR8XBPWXX');
       `}
         </Script>
+
+        <Script id="schema-organization" type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "LegalService",
+              "name": "PRAVICE Abogados",
+              "url": "https://www.recaudocarteraipsyeps.com/",
+              "logo": "https://www.recaudocarteraipsyeps.com/logo.png",
+              "description": "Firma jurídica especializada en recuperación de cartera en salud en Colombia. Representamos IPS, clínicas y hospitales frente a EPS, ADRES y entidades públicas.",
+              "areaServed": {
+                "@type": "Country",
+                "name": "Colombia"
+              },
+              "serviceType": [
+                "Recuperación de cartera hospitalaria",
+                "Cobro jurídico a EPS",
+                "Demandas contra EPS",
+                "Procesos ejecutivos sector salud"
+              ]
+            }
+      `}
+        </Script>
         {children}
         <Footer />
       </body>
