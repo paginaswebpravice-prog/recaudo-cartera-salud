@@ -67,6 +67,63 @@ export const metadata = {
 export default function BlogPage() {
   return (
     <main className={styles.pageWrapper}>
+      {/* SCHEMA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            name: "Blog Jurídico - Recuperación de Cartera EPS",
+            description:
+              "Artículos especializados sobre recuperación de cartera EPS, ADRES y procesos ejecutivos para IPS y clínicas.",
+            url: "https://www.recaudocarteraipsyeps.com/Blog",
+            publisher: {
+              "@type": "Organization",
+              name: "Recaudo Cartera IPS y EPS",
+              url: "https://www.recaudocarteraipsyeps.com",
+            },
+            blogPost: [
+              {
+                "@type": "BlogPosting",
+                headline: "Cómo recuperar la cartera de las EPS en Colombia",
+                url: "https://www.recaudocarteraipsyeps.com/Blog/como-recuperar-cartera-eps-colombia",
+                description:
+                  "Estrategias legales para IPS y clínicas frente a mora prolongada de EPS.",
+              },
+              {
+                "@type": "BlogPosting",
+                headline: "Carta para cobro de cartera a una EPS",
+                url: "https://www.recaudocarteraipsyeps.com/Blog/carta-cobro-cartera-eps",
+                description:
+                  "Modelo estratégico y checklist documental previo a proceso judicial.",
+              },
+              {
+                "@type": "BlogPosting",
+                headline: "Cobro de cartera EPS: etapas",
+                url: "https://www.recaudocarteraipsyeps.com/Blog/etapas-cobro-cartera-eps",
+                description:
+                  "Desde el cobro prejurídico hasta el proceso ejecutivo.",
+              },
+              {
+                "@type": "BlogPosting",
+                headline: "Cómo responder a una EPS por compra de cartera",
+                url: "https://www.recaudocarteraipsyeps.com/Blog/respuesta-eps-compra-cartera",
+                description:
+                  "Qué implica la compra de cartera y cómo proteger su flujo financiero.",
+              },
+              {
+                "@type": "BlogPosting",
+                headline: "Medidas cautelares en cobro EPS",
+                url: "https://www.recaudocarteraipsyeps.com/Blog/medidas-cautelares-cobro-eps",
+                description:
+                  "Embargos y estrategias para garantizar recaudo efectivo.",
+              },
+            ],
+          }),
+        }}
+      />
+
       <section className={styles.hero}>
         <div className={styles.heroContainer}>
           <h1 className={styles.heroTitle}>
