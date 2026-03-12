@@ -1,14 +1,71 @@
 /* ========================================
-   NAVBAR BASE
+HEADER (TOPBAR + NAVBAR)
 ======================================== */
 
-.navbar {
+.header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
   background: #ffffff;
   border-bottom: 1px solid rgba(0, 74, 128, 0.1);
-  z-index: 1000;
+}
+
+/* ========================================
+TOPBAR
+======================================== */
+
+.topbar {
+  width: 100%;
+  background: #004a80;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.topbarContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topInfo {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.topInfo span {
+  opacity: 0.9;
+}
+
+/* REDES */
+
+.socials {
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+}
+
+.socials a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #f7c600;
+}
+
+/* ========================================
+NAVBAR
+======================================== */
+
+.navbar {
+  width: 100%;
 }
 
 .container {
@@ -18,12 +75,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
 }
 
-/* ========================================
-   LOGO
-======================================== */
+/* LOGO */
 
 .logo {
   display: flex;
@@ -31,7 +85,7 @@
 }
 
 /* ========================================
-   MENU DESKTOP
+MENU DESKTOP
 ======================================== */
 
 .menu {
@@ -43,13 +97,14 @@
 .menu a {
   text-decoration: none;
   font-size: 14px;
-  color: #333;
+  color: #000;
   font-weight: 500;
-  transition: 0.3s ease;
+  transition: 0.3s;
   position: relative;
 }
 
-/* Línea elegante */
+/* Línea hover */
+
 .menu a::after {
   content: "";
   position: absolute;
@@ -58,7 +113,7 @@
   width: 0%;
   height: 2px;
   background: #004a80;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .menu a:hover {
@@ -69,9 +124,7 @@
   width: 100%;
 }
 
-/* ========================================
-   BOTÓN ÚNICO
-======================================== */
+/* BOTÓN */
 
 .appButton {
   background: #004a80;
@@ -81,7 +134,7 @@
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: 0.3s;
   margin-left: 10px;
 }
 
@@ -90,7 +143,7 @@
 }
 
 /* ========================================
-   HAMBURGER
+HAMBURGER
 ======================================== */
 
 .hamburger {
@@ -106,16 +159,24 @@
   width: 26px;
   height: 3px;
   background: #004a80;
-  transition: 0.3s ease;
 }
 
 /* ========================================
-   MOBILE / TABLET
+MOBILE
 ======================================== */
 
 @media (max-width: 992px) {
   .hamburger {
     display: flex;
+  }
+
+  .topInfo {
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .topInfo span:nth-child(3) {
+    display: none;
   }
 
   .menu {
@@ -124,15 +185,19 @@
     right: 0;
     width: 100%;
     background: #ffffff;
+
     flex-direction: column;
     align-items: flex-start;
+
     padding: 30px 6%;
     gap: 20px;
 
     transform: translateY(-120%);
     opacity: 0;
     pointer-events: none;
+
     transition: 0.4s ease;
+
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   }
 
@@ -146,7 +211,6 @@
     font-size: 16px;
   }
 
-  /* El botón ahora se comporta como item del menú */
   .appButton {
     margin-top: 10px;
     width: 100%;

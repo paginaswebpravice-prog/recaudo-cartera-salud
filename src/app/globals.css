@@ -36,10 +36,7 @@ a {
 }
 html {
   scroll-behavior: smooth;
-}
-
-.hero {
-  margin-top: 80px;
+  scroll-padding-top: 130px;
 }
 
 @media (prefers-color-scheme: dark) {
