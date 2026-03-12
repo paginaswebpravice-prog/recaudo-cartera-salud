@@ -47,7 +47,7 @@
 }
 
 .card:hover {
-  border-color: #5eb3e4;
+  border-color: #f7c600;
   transform: translateY(-4px);
 }
 
@@ -64,6 +64,10 @@
   font-size: 26px;
   color: #ffffff;
   transition: 0.3s ease;
+}
+
+.icon:hover {
+  background: #f7c600;
 }
 
 .icon img {
@@ -86,7 +90,7 @@
 .card p {
   font-size: 14.5px;
   line-height: 1.7;
-  color: #808080;
+  color: #000;
 }
 
 /* ================================
@@ -99,8 +103,8 @@
   margin-top: 80px;
   align-items: flex-start;
   padding: 30px;
-  background: #f4f8fb; /* Fondo azul muy sutil */
-  border-left: 4px solid #f7c600; /* Dorado estratégico */
+  background: #f4f8fb;
+  border-left: 4px solid #f7c600;
 }
 
 .highlightLine {

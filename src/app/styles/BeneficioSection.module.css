@@ -21,7 +21,7 @@
 
 .subtitle {
   max-width: 800px;
-  color: #555;
+  color: #000;
   margin-bottom: 50px;
   line-height: 1.7;
 }
@@ -117,7 +117,7 @@
   top: 0;
   width: 4px;
   height: 100%;
-  background: #004a80;
+  background: #f7c600;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
@@ -128,7 +128,7 @@
 }
 
 .infoCard:hover::before {
-  background: #f7c600;
+  background: #004a80;
 }
 
 /* ===============================

@@ -21,7 +21,7 @@
 .intro {
   max-width: 950px;
   margin: 0 auto 70px auto;
-  color: #5f6368;
+  color: #000;
   line-height: 1.75;
   text-align: center;
   font-size: 16px;
@@ -95,7 +95,7 @@
 }
 
 .area {
-  color: #5eb3e4;
+  color: #004a80;
   margin-bottom: 30px;
   font-weight: 500;
   font-size: 14px;
@@ -115,7 +115,7 @@
   position: relative;
   padding-left: 22px;
   margin-bottom: 14px;
-  color: #444;
+  color: #000;
   line-height: 1.6;
   font-size: 14px;
 }
@@ -161,7 +161,7 @@
   max-width: 950px;
   margin: 80px auto 0 auto;
   font-style: italic;
-  color: #5f6368;
+  color: #000;
   border-left: 4px solid #f7c600;
   padding-left: 20px;
   line-height: 1.75;

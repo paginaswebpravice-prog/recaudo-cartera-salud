@@ -78,7 +78,7 @@
 }
 
 .intro {
-  color: #808080;
+  color: #000;
   font-size: 16px;
   line-height: 1.7;
   max-width: 650px;
@@ -90,12 +90,12 @@
 
 .item {
   padding-left: 20px;
-  border-left: 4px solid #5eb3e4;
+  border-left: 4px solid #f7c600;
   transition: all 0.3s ease;
 }
 
 .item:hover {
-  border-left: 4px solid #004a80;
+  border-left: 4px solid #c4911a;
   transform: translateX(4px);
 }
 
@@ -108,7 +108,7 @@
 
 .item p {
   font-size: 15px;
-  color: #808080;
+  color: #000;
   line-height: 1.6;
 }
 

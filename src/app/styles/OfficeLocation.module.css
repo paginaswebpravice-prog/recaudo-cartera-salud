@@ -1,0 +1,89 @@
+/* SECTION */
+
+.section {
+  padding: 100px 20px;
+  background: #ffffff;
+}
+
+/* CONTAINER */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* HEADER */
+
+.header {
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #004a80;
+  margin-bottom: 14px;
+}
+
+.description {
+  max-width: 720px;
+  margin: 0 auto;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* MAP */
+
+.mapWrapper {
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 35px;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.mapWrapper:hover {
+  transform: scale(1.01);
+  border-color: #f7c600;
+}
+
+.mapWrapper iframe {
+  border: none;
+}
+
+/* ADDRESS CARD */
+
+.addressCard {
+  background: #ffffff;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 25px;
+
+  border-radius: 12px;
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.addressCard h3 {
+  color: #004a80;
+  margin-bottom: 12px;
+}
+
+.addressCard p {
+  margin: 5px 0;
+  color: #000;
+  opacity: 0.8;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 30px;
+  }
+}

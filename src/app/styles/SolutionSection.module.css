@@ -25,7 +25,7 @@
 
 .intro {
   max-width: 900px;
-  color: #808080; /* Gris profesional */
+  color: #000;
   font-size: 16px;
   line-height: 1.7;
   margin-bottom: 50px;
@@ -85,7 +85,7 @@
 
 .grid p {
   font-size: 15px;
-  color: #808080;
+  color: #000;
   line-height: 1.7;
 }
 
@@ -102,7 +102,7 @@
 .card {
   background: #f4f4f6;
   padding: 25px;
-  border-top: 4px solid #5eb3e4; /* Acento azul claro */
+  border-top: 4px solid #f7c600; /* Acento azul claro */
   transition: 0.3s ease;
 }
 

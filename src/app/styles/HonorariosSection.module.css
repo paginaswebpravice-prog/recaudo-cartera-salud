@@ -58,7 +58,7 @@
   border-radius: 50%;
   background: conic-gradient(
     #f7c600 0% 10%,
-    /* Dorado estratégico */ rgba(255, 255, 255, 0.15) 10% 100%
+    rgba(255, 255, 255, 0.15) 10% 100%
   );
   display: flex;
   align-items: center;
@@ -86,7 +86,7 @@
 .comision {
   font-size: 16px;
   margin-bottom: 10px;
-  color: #5eb3e4;
+  color: #f7c600;
 }
 
 .bold {
@@ -101,7 +101,7 @@
 .subtitle {
   font-size: 24px;
   margin-bottom: 15px;
-  color: #5eb3e4; /* Azul técnico */
+  color: #f7c600; /* Azul técnico */
 }
 
 .description {
@@ -131,7 +131,7 @@
 }
 
 .card:hover {
-  border-color: #5eb3e4;
+  border-color: #f7c600;
   background: rgba(255, 255, 255, 0.08);
 }
 

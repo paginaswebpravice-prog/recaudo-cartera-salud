@@ -3,7 +3,7 @@
   background: linear-gradient(180deg, #faf9f7 0%, #ffffff 100%);
   text-align: center;
   position: relative;
-  overflow: visible; /* 👈 importante */
+  overflow: visible;
 }
 
 /* =========================
@@ -20,7 +20,7 @@
 .subtitle {
   max-width: 900px;
   margin: 0 auto 70px auto;
-  color: #5f6368;
+  color: #000;
   line-height: 1.75;
   font-size: 16px;
 }
@@ -31,7 +31,7 @@
 
 .timeline {
   width: 100%;
-  max-width: 1200px; /* 👈 límite real */
+  max-width: 1200px;
   margin: 0 auto 80px auto;
 }
 
@@ -41,7 +41,7 @@
 
 .row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 👈 3 columnas fijas */
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 
@@ -89,6 +89,7 @@
   padding: 28px 24px;
   border-radius: 12px;
   border: 1px solid rgba(0, 74, 128, 0.08);
+  border-top: 3px solid #f7c600;
   text-align: left;
   min-height: 190px;
   transition: all 0.3s ease;
@@ -107,7 +108,7 @@
 }
 
 .card p {
-  color: #5f6368;
+  color: #000;
   font-size: 14px;
   line-height: 1.65;
 }
@@ -119,7 +120,7 @@
 .footer {
   max-width: 850px;
   margin: 60px auto 0;
-  color: #5f6368;
+  color: #000;
   font-size: 14px;
   line-height: 1.7;
 }

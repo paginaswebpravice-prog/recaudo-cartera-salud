@@ -58,7 +58,7 @@
 .container p {
   font-size: 17px;
   line-height: 1.7;
-  color: #808080; /* Gris profesional */
+  color: #000; /* Gris profesional */
   max-width: 750px;
   margin-bottom: 32px;
 }
@@ -85,8 +85,8 @@
 }
 
 .primaryBtn:hover {
-  background-color: #5eb3e4;
-  border-color: #5eb3e4;
+  background-color: #f7c600;
+  border-color: #f7c600;
   color: #000;
 }
 
