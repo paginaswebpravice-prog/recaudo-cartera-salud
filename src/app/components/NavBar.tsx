@@ -39,13 +39,28 @@ export default function NavBar() {
             </div>
 
             <div className={styles.socials}>
-              <a href="#" target="_blank">
+              <a
+                href="https://co.linkedin.com/company/praviceabogadosespecializados"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Linkedin Pravice Abogados"
+              >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
-              <a href="#" target="_blank">
+              <a
+                href="https://www.facebook.com/praviceabogadosespecializados"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook Pravice Abogados"
+              >
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
-              <a href="#" target="_blank">
+              <a
+                href="https://www.instagram.com/pravice_abogados/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram Pravice Abogados"
+              >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>
