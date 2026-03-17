@@ -3,9 +3,9 @@ import styles from "./Article.module.css";
 
 export const metadata = {
   title:
-    "Cómo recuperar la cartera de las EPS en Colombia | Guía legal PRAVICE",
+    "Cómo recuperar cartera de EPS en Colombia | Guía legal para IPS y clínicas en Bogotá",
   description:
-    "Aprenda cómo recuperar la cartera de las EPS en Colombia: etapas de cobro, carta prejurídica, proceso ejecutivo y medidas cautelares.",
+    "Aprenda cómo recuperar cartera de EPS en Colombia con estrategias legales efectivas. Guía para IPS y clínicas en Bogotá: cobro prejurídico, proceso ejecutivo y recuperación real de cartera en salud.",
 };
 
 export default function ArticlePage() {
@@ -25,39 +25,69 @@ export default function ArticlePage() {
           </h1>
 
           <p className={styles.subtitle}>
-            Estrategia jurídica real para IPS y clínicas: cobro prejurídico +
+            Estrategia jurídica aplicada para IPS, clínicas y proveedores de
+            salud en Bogotá y Colombia: desde el cobro prejurídico hasta el
             proceso ejecutivo con enfoque en recaudo efectivo.
           </p>
         </div>
       </section>
 
       <article className={styles.article}>
+        {/* INTRO SEO */}
+        <section className={styles.section}>
+          <h2>Cobro de cartera a EPS en Colombia: el reto del sector salud</h2>
+
+          <p>
+            El cobro de cartera a EPS en Colombia es uno de los principales
+            desafíos financieros para IPS, clínicas y proveedores de servicios
+            de salud, especialmente en ciudades como Bogotá donde la operación
+            asistencial es más alta. La acumulación de cartera vencida impacta
+            directamente el flujo de caja y la sostenibilidad de las
+            instituciones.
+          </p>
+
+          <p>
+            Una estrategia adecuada de recuperación de cartera en el sector
+            salud permite transformar cuentas en mora en ingresos reales,
+            evitando pérdidas por prescripción o negociaciones desfavorables.
+          </p>
+        </section>
+
         {/* PROBLEMA */}
         <section className={styles.sectionAlt}>
-          <h2>El problema real</h2>
+          <h2>El problema real en el recaudo de cartera EPS</h2>
+
           <p>
-            Las EPS retrasan pagos mediante glosas, devoluciones e
-            inconsistencias documentales. Sin estrategia jurídica, la cartera
-            envejece, prescribe o termina vendiéndose con descuentos agresivos.
+            En Colombia, las EPS suelen retrasar pagos mediante glosas,
+            devoluciones, auditorías extensas e inconsistencias documentales.
+            Esto genera incertidumbre y dificulta la recuperación oportuna de la
+            cartera.
           </p>
+
           <p>
-            Recuperar cartera EPS exige separar lo exigible de lo discutido y
-            activar presión jurídica cuando corresponde.
+            Sin una estrategia legal clara, muchas IPS y clínicas en Bogotá
+            terminan acumulando cartera envejecida que pierde valor o se negocia
+            con descuentos agresivos.
+          </p>
+
+          <p>
+            La clave está en identificar qué cartera es exigible y activar
+            mecanismos jurídicos oportunos para lograr el pago.
           </p>
         </section>
 
         {/* ETAPAS */}
         <section className={styles.section}>
-          <h2>Etapas estratégicas para recuperar cartera EPS</h2>
+          <h2>Etapas estratégicas para recuperar cartera EPS en Colombia</h2>
 
           <div className={styles.stepsGrid}>
             <div className={styles.stepCard}>
               <span>1</span>
               <h3>Diagnóstico y control de términos</h3>
               <p>
-                Análisis de antigüedad, radicación, saldos, abonos y riesgo de
-                prescripción. Aquí se define qué va a cobro persuasivo y qué
-                debe ir directamente a ejecución.
+                Análisis de antigüedad, radicación, saldos, glosas y riesgo de
+                prescripción. Se define qué cartera va a cobro prejurídico y
+                cuál debe pasar directamente a proceso ejecutivo.
               </p>
             </div>
 
@@ -65,8 +95,9 @@ export default function ArticlePage() {
               <span>2</span>
               <h3>Cobro prejurídico estructurado</h3>
               <p>
-                Requerimientos formales, negociación estratégica y acuerdos con
-                trazabilidad verificable.
+                Envío de requerimientos formales, negociación estratégica y
+                acuerdos de pago con trazabilidad verificable. Esta etapa es
+                clave en el cobro de cartera en salud en Colombia.
               </p>
             </div>
 
@@ -74,8 +105,9 @@ export default function ArticlePage() {
               <span>3</span>
               <h3>Proceso ejecutivo con medidas cautelares</h3>
               <p>
-                Mandamiento de pago, embargos y aseguramiento patrimonial para
-                maximizar el recaudo.
+                Inicio de demanda ejecutiva, obtención de mandamiento de pago y
+                aplicación de embargos para garantizar el recaudo efectivo de la
+                cartera.
               </p>
             </div>
           </div>
@@ -83,36 +115,45 @@ export default function ArticlePage() {
 
         {/* CARTA */}
         <section className={styles.section}>
-          <h2>Modelo de carta de cobro prejurídico</h2>
+          <h2>Modelo de carta de cobro prejurídico a EPS</h2>
+
+          <p>
+            Una carta de cobro bien estructurada aumenta significativamente la
+            probabilidad de pago y fortalece la posición jurídica en Colombia
+            ante un eventual proceso ejecutivo.
+          </p>
 
           <div className={styles.tipBox}>
-            Adjunte relación de facturas, fecha de radicación, vencimiento y
-            saldo actualizado. La trazabilidad acelera el pago.
+            Adjunte siempre relación detallada de facturas, fechas de
+            radicación, vencimientos y saldos. La trazabilidad documental es
+            clave en el cobro de cartera en el sector salud.
           </div>
 
           <div className={styles.letterBox}>
             <p>
               <strong>Asunto:</strong> Requerimiento formal de pago - Cartera
-              vencida
+              vencida sector salud
             </p>
             <p>
               Señores
               <br />
               [Nombre EPS]
               <br />
-              Área de Cartera
+              Área de Cartera - Colombia
             </p>
             <p>
               Por medio de la presente requerimos el pago de las facturas
-              relacionadas en anexo por valor total de $______.
+              relacionadas en anexo, correspondientes a servicios de salud
+              prestados y debidamente radicados, por un valor total de $______.
             </p>
             <p>
-              Solicitamos cancelar dentro de los cinco (5) días hábiles
+              Solicitamos realizar el pago dentro de los cinco (5) días hábiles
               siguientes a la recepción de esta comunicación.
             </p>
             <p>
-              En caso de no obtener pago, procederemos con proceso ejecutivo y
-              solicitud de medidas cautelares orientadas al recaudo efectivo.
+              En caso de no obtener respuesta o pago, procederemos a iniciar las
+              acciones legales correspondientes en Colombia, incluyendo proceso
+              ejecutivo y medidas cautelares.
             </p>
             <p>
               Atentamente,
@@ -124,49 +165,78 @@ export default function ArticlePage() {
 
         {/* EJECUTIVO */}
         <section className={styles.sectionHighlight}>
-          <h2>El proceso ejecutivo: la vía más efectiva</h2>
+          <h2>
+            El proceso ejecutivo: la vía más efectiva para recuperar cartera
+          </h2>
 
           <ul className={styles.highlightList}>
-            <li>Mandamiento de pago judicial</li>
-            <li>Embargo de cuentas y activos</li>
+            <li>Mandamiento de pago emitido por juez</li>
+            <li>Embargo de cuentas bancarias y activos</li>
             <li>Consignaciones judiciales</li>
-            <li>Acuerdos con garantías ejecutables</li>
+            <li>Acuerdos de pago con respaldo legal</li>
           </ul>
 
           <p className={styles.statement}>
-            PRAVICE no compra cartera. La recuperamos jurídicamente para evitar
-            descuentos y maximizar el recaudo.
+            En PRAVICE no compramos cartera. Implementamos estrategias legales
+            en Colombia para maximizar el recaudo y evitar pérdidas por
+            descuentos.
           </p>
         </section>
 
         {/* ERRORES */}
         <section className={styles.section}>
-          <h2>Errores que frenan el recaudo</h2>
+          <h2>Errores comunes en el cobro de cartera en salud</h2>
+
           <ul className={styles.checklist}>
-            <li>No separar cartera exigible vs. discutida.</li>
+            <li>No separar cartera exigible de la cartera en discusión.</li>
             <li>Falta de trazabilidad documental.</li>
             <li>Dejar vencer términos de prescripción.</li>
-            <li>No planear embargos desde el inicio.</li>
+            <li>No planear medidas cautelares desde el inicio.</li>
           </ul>
+        </section>
+
+        {/* CIERRE SEO */}
+        <section className={styles.section}>
+          <h2>
+            Recuperación de cartera EPS en Bogotá y Colombia con respaldo legal
+          </h2>
+
+          <p>
+            La recuperación de cartera en el sector salud requiere una
+            estrategia integral que combine gestión administrativa y acciones
+            jurídicas oportunas. En PRAVICE acompañamos a IPS, clínicas y
+            empresas del sector salud en Bogotá y toda Colombia en la
+            estructuración de procesos efectivos de cobro.
+          </p>
         </section>
 
         {/* FAQ */}
         <section className={styles.section}>
-          <h2>Preguntas frecuentes</h2>
+          <h2>Preguntas frecuentes sobre cobro de cartera EPS</h2>
 
           <details className={styles.faq}>
-            <summary>¿Cuándo pasar de prejurídico a ejecutivo?</summary>
+            <summary>¿Cuándo iniciar un proceso ejecutivo en Colombia?</summary>
             <p>
-              Cuando existe obligación clara, expresa y exigible y no hay pago
-              tras requerimiento formal.
+              Cuando existe una obligación clara, expresa y exigible y no se ha
+              obtenido pago tras el requerimiento formal.
+            </p>
+          </details>
+
+          <details className={styles.faq}>
+            <summary>
+              ¿El cobro prejurídico realmente funciona en el sector salud?
+            </summary>
+            <p>
+              Sí, cuando se estructura correctamente puede acelerar pagos y
+              evitar procesos judiciales innecesarios.
             </p>
           </details>
 
           <details className={styles.faq}>
             <summary>¿PRAVICE compra cartera EPS?</summary>
             <p>
-              No. Implementamos estrategias jurídicas de recuperación enfocadas
-              en recaudo efectivo.
+              No. Nos enfocamos en la recuperación legal de cartera en Colombia
+              mediante estrategias efectivas de recaudo.
             </p>
           </details>
         </section>

@@ -1,33 +1,35 @@
 /* ================= WRAPPER ================= */
 
 .wrapper {
-  background-color: #f8f9fa;
+  background-color: #f5f7fa;
   min-height: 100vh;
 }
 
 /* ================= HERO ================= */
 
 .hero {
-  padding: 110px 20px 90px 20px;
-  background: linear-gradient(135deg, #004a80 0%, #003b5c 60%, #002a45 100%);
+  padding: 120px 20px 100px 20px;
+  background: linear-gradient(135deg, #004a80 0%, #005c99 60%, #3a8ec1 100%);
   color: #ffffff;
   text-align: center;
 }
 
 .heroContainer {
-  max-width: 850px;
+  max-width: 900px;
   margin: 0 auto;
 }
+
+/* BOTÓN VOLVER */
 
 .backLink {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-size: 14px;
   font-weight: 600;
   padding: 8px 18px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 30px;
   color: #ffffff;
   text-decoration: none;
@@ -35,42 +37,55 @@
 }
 
 .backLink:hover {
-  background: #f4c300;
-  color: #000000;
+  background: #f7c600;
+  color: #000;
   transform: translateX(-4px);
 }
 
+/* BADGE */
+
 .badge {
   display: inline-block;
-  background: #f4c300;
-  color: #000000;
-  padding: 6px 16px;
+  background: #f7c600;
+  color: #000;
+  padding: 7px 18px;
   font-size: 13px;
   font-weight: 600;
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
 }
 
+.badge:hover {
+  background: #c4911a;
+}
+
+/* TITULOS */
+
 .title {
-  font-size: 38px;
+  font-size: 40px;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 .subtitle {
   margin-top: 20px;
   font-size: 18px;
-  color: #dbe9f4;
+  color: #e2eef6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ================= ARTICLE CARD ================= */
 
 .article {
-  max-width: 850px;
-  margin: -60px auto 100px auto;
+  max-width: 900px;
+  margin: -70px auto 100px auto;
   background: #ffffff;
   padding: 70px;
   border-radius: 18px;
-  box-shadow: 0px 25px 55px rgba(0, 74, 128, 0.12);
+  box-shadow: 0px 30px 70px rgba(0, 74, 128, 0.12);
 }
 
 /* ================= SECTIONS ================= */
@@ -82,31 +97,36 @@
 .section h2 {
   color: #004a80;
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 .section p {
-  color: #555;
+  color: #1a1a1a;
   line-height: 1.8;
   font-size: 16px;
   margin-bottom: 18px;
 }
 
+/* SECCIÓN ALTERNATIVA */
+
 .sectionAlt {
   margin-bottom: 70px;
-  padding: 35px;
-  background: #f3f8fc;
+  padding: 40px;
+  background: #f4f8fb;
   border-radius: 14px;
+  border: 1px solid rgba(0, 74, 128, 0.08);
 }
 
 .sectionAlt h2 {
   color: #004a80;
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 .sectionAlt p {
-  color: #555;
+  color: #1a1a1a;
   line-height: 1.8;
   font-size: 16px;
 }
@@ -120,39 +140,46 @@
 
 .checklist li {
   position: relative;
-  padding-left: 28px;
-  margin-bottom: 12px;
-  color: #555;
+  padding-left: 30px;
+  margin-bottom: 14px;
+  color: #000;
+  font-weight: 500;
 }
 
 .checklist li::before {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #5eb3e4;
+  color: #f7c600;
   font-weight: bold;
 }
 
 /* ================= LETTER BOX ================= */
 
 .letterBox {
-  background: #f9fbfd;
-  padding: 35px;
+  background: #ffffff;
+  padding: 40px;
   border-radius: 14px;
   border-left: 5px solid #004a80;
-  line-height: 1.8;
-  color: #444;
+  line-height: 1.9;
+  color: #000;
   margin-bottom: 70px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 /* ================= FOOTER ================= */
 
 .footer {
-  margin-top: 50px;
+  margin-top: 60px;
   padding-top: 40px;
   border-top: 1px solid #e6e6e6;
   text-align: center;
   font-size: 15px;
+  color: #333;
+}
+
+.footer strong {
+  color: #004a80;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -168,5 +195,9 @@
 
   .hero {
     padding: 90px 20px 70px 20px;
+  }
+
+  .sectionAlt {
+    padding: 25px;
   }
 }
