@@ -3,6 +3,12 @@ import styles from "./Blog.module.css";
 
 const articles = [
   {
+    title: "Fabián Cardona asume la presidencia de EPS Sanitas",
+    slug: "fabian-cardona-presidente-eps-sanitas",
+    description:
+      "El médico Fabián Cardona fue designado como nuevo presidente de EPS Sanitas tras una reorganización del grupo Keralty en Colombia.",
+  },
+  {
     title: "Cómo recuperar la cartera de las EPS en Colombia",
     slug: "como-recuperar-cartera-eps-colombia",
     description:
@@ -86,6 +92,13 @@ export default function BlogPage() {
             blogPost: [
               {
                 "@type": "BlogPosting",
+                headline: "Fabián Cardona asume la presidencia de EPS Sanitas",
+                url: "https://www.recaudocarteraipsyeps.com/Blog/fabian-cardona-presidente-eps-sanitas",
+                description:
+                  "El médico Fabián Cardona fue designado como nuevo presidente de EPS Sanitas tras una reorganización del grupo Keralty en Colombia.",
+              },
+              {
+                "@type": "BlogPosting",
                 headline: "Cómo recuperar la cartera de las EPS en Colombia",
                 url: "https://www.recaudocarteraipsyeps.com/Blog/como-recuperar-cartera-eps-colombia",
                 description:
@@ -118,6 +131,27 @@ export default function BlogPage() {
                 url: "https://www.recaudocarteraipsyeps.com/Blog/medidas-cautelares-cobro-eps",
                 description:
                   "Embargos y estrategias para garantizar recaudo efectivo.",
+              },
+              {
+                "@type": "BlogPosting",
+                headline: "Cobro a entes territoriales y secretarías de salud",
+                url: "https://www.recaudocarteraipsyeps.com/Blog/cobro-entes-territoriales-salud",
+                description: "PNA y esfuerzo propio en el sector salud.",
+              },
+              {
+                "@type": "BlogPosting",
+                headline: "Prescripción en cartera salud",
+                url: "https://www.recaudocarteraipsyeps.com/Blog/prescripcion-cartera-salud",
+                description:
+                  "Alternativas jurídicas más rentables que la venta de cartera.",
+              },
+              {
+                "@type": "BlogPosting",
+                headline:
+                  "Requerimiento documental mínimo para demandar una EPS",
+                url: "https://www.recaudocarteraipsyeps.com/Blog/requerimiento-documental-demandar-eps",
+                description:
+                  "Checklist jurídico para reducir riesgos procesales.",
               },
             ],
           }),

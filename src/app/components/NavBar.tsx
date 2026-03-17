@@ -96,22 +96,22 @@ export default function NavBar() {
             <nav
               className={`${styles.menu} ${menuOpen ? styles.menuOpen : ""}`}
             >
-              <a href="#inicio" onClick={() => setMenuOpen(false)}>
+              <a href="/#inicio" onClick={() => setMenuOpen(false)}>
                 Inicio
               </a>
-              <a href="#problema" onClick={() => setMenuOpen(false)}>
+              <a href="/#problema" onClick={() => setMenuOpen(false)}>
                 Problema
               </a>
-              <a href="#solucion" onClick={() => setMenuOpen(false)}>
+              <a href="/#solucion" onClick={() => setMenuOpen(false)}>
                 Solución
               </a>
-              <a href="#metodologia" onClick={() => setMenuOpen(false)}>
+              <a href="/#metodologia" onClick={() => setMenuOpen(false)}>
                 Metodología
               </a>
-              <a href="#clientes" onClick={() => setMenuOpen(false)}>
+              <a href="/#clientes" onClick={() => setMenuOpen(false)}>
                 Clientes
               </a>
-              <a href="#contacto" onClick={() => setMenuOpen(false)}>
+              <a href="/#contacto" onClick={() => setMenuOpen(false)}>
                 Contacto
               </a>
               <a href="/Blog" onClick={() => setMenuOpen(false)}>
