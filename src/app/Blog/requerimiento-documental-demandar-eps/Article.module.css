@@ -1,7 +1,7 @@
 /* ================= WRAPPER ================= */
 
 .wrapper {
-  background-color: #f8f9fa;
+  background-color: #f5f9fc;
   min-height: 100vh;
 }
 
@@ -9,7 +9,7 @@
 
 .hero {
   padding: 110px 20px 90px 20px;
-  background: linear-gradient(135deg, #004a80 0%, #003b5c 60%, #002a45 100%);
+  background: linear-gradient(135deg, #004a80 0%, #005c99 60%, #0070b8 100%);
   color: #ffffff;
   text-align: center;
 }
@@ -27,7 +27,7 @@
   font-size: 14px;
   font-weight: 600;
   padding: 8px 18px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.18);
   border-radius: 30px;
   color: #ffffff;
   text-decoration: none;
@@ -35,14 +35,16 @@
 }
 
 .backLink:hover {
-  background: #f4c300;
+  background: #f7c600;
   color: #000;
   transform: translateX(-4px);
 }
 
+/* ================= BADGE ================= */
+
 .badge {
   display: inline-block;
-  background: #f4c300;
+  background: #f7c600;
   color: #000;
   padding: 6px 16px;
   font-size: 13px;
@@ -50,6 +52,8 @@
   border-radius: 20px;
   margin-bottom: 20px;
 }
+
+/* ================= TEXT ================= */
 
 .title {
   font-size: 34px;
@@ -59,7 +63,7 @@
 .subtitle {
   margin-top: 18px;
   font-size: 17px;
-  color: #dbe9f4;
+  color: #e3f2fb;
 }
 
 /* ================= ARTICLE ================= */
@@ -70,7 +74,7 @@
   background: #ffffff;
   padding: 70px;
   border-radius: 18px;
-  box-shadow: 0px 25px 55px rgba(0, 74, 128, 0.12);
+  box-shadow: 0px 20px 45px rgba(0, 74, 128, 0.1);
 }
 
 /* ================= SECTIONS ================= */
@@ -82,8 +86,9 @@
 .sectionAlt {
   margin-bottom: 70px;
   padding: 35px;
-  background: #f3f8fc;
+  background: #eaf4fb;
   border-radius: 14px;
+  border: 1px solid rgba(0, 74, 128, 0.08);
 }
 
 .section h2,
@@ -91,11 +96,12 @@
   color: #004a80;
   margin-bottom: 20px;
   font-size: 24px;
+  font-weight: 700;
 }
 
 .section p,
 .sectionAlt p {
-  color: #555;
+  color: #1a1a1a;
   line-height: 1.8;
   font-size: 16px;
 }
@@ -103,15 +109,19 @@
 /* ================= DARK BLOCK ================= */
 
 .sectionHighlight {
-  background: #003b5c;
-  color: white;
+  background: linear-gradient(135deg, #004a80, #005c99);
+  color: #ffffff;
   padding: 40px;
   border-radius: 14px;
   margin-bottom: 70px;
 }
 
 .sectionHighlight h2 {
-  color: white;
+  color: #ffffff;
+}
+
+.sectionHighlight p {
+  color: #e3f2fb;
 }
 
 /* ================= CHECKLIST ================= */
@@ -125,13 +135,14 @@
   position: relative;
   padding-left: 28px;
   margin-bottom: 12px;
+  color: #1a1a1a;
 }
 
 .checklist li::before {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #5eb3e4;
+  color: #c4911a;
   font-weight: bold;
 }
 
@@ -145,7 +156,11 @@
 
 .footer p {
   margin-bottom: 15px;
-  color: #555;
+  color: #333;
+}
+
+.footer strong {
+  color: #004a80;
 }
 
 /* ================= RESPONSIVE ================= */

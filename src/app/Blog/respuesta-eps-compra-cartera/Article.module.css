@@ -1,7 +1,7 @@
 /* ================= WRAPPER ================= */
 
 .wrapper {
-  background-color: #f8f9fa;
+  background-color: #f5f9fc; /* más limpio que gris */
   min-height: 100vh;
 }
 
@@ -9,7 +9,7 @@
 
 .hero {
   padding: 110px 20px 90px 20px;
-  background: linear-gradient(135deg, #004a80 0%, #003b5c 60%, #002a45 100%);
+  background: linear-gradient(135deg, #004a80 0%, #005c99 60%, #003b5c 100%);
   color: #ffffff;
   text-align: center;
 }
@@ -27,7 +27,7 @@
   font-size: 14px;
   font-weight: 600;
   padding: 8px 18px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.18);
   border-radius: 30px;
   color: #ffffff;
   text-decoration: none;
@@ -35,14 +35,16 @@
 }
 
 .backLink:hover {
-  background: #f4c300;
+  background: #f7c600;
   color: #000;
   transform: translateX(-4px);
 }
 
+/* ================= BADGE ================= */
+
 .badge {
   display: inline-block;
-  background: #f4c300;
+  background: #f7c600;
   color: #000;
   padding: 6px 16px;
   font-size: 13px;
@@ -51,15 +53,18 @@
   margin-bottom: 20px;
 }
 
+/* ================= TEXT ================= */
+
 .title {
   font-size: 36px;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 .subtitle {
   margin-top: 18px;
   font-size: 17px;
-  color: #dbe9f4;
+  color: #e3f2fb; /* más suave y elegante */
 }
 
 /* ================= ARTICLE ================= */
@@ -70,7 +75,7 @@
   background: #ffffff;
   padding: 70px;
   border-radius: 18px;
-  box-shadow: 0px 25px 55px rgba(0, 74, 128, 0.12);
+  box-shadow: 0px 25px 55px rgba(0, 74, 128, 0.1);
 }
 
 /* ================= SECTIONS ================= */
@@ -82,8 +87,9 @@
 .sectionAlt {
   margin-bottom: 70px;
   padding: 35px;
-  background: #f3f8fc;
+  background: #eaf4fb; /* azul muy suave */
   border-radius: 14px;
+  border: 1px solid rgba(0, 74, 128, 0.08);
 }
 
 .section h2,
@@ -91,11 +97,12 @@
   color: #004a80;
   margin-bottom: 20px;
   font-size: 24px;
+  font-weight: 700;
 }
 
 .section p,
 .sectionAlt p {
-  color: #555;
+  color: #1a1a1a; /* negro suave, mejor lectura */
   line-height: 1.8;
   font-size: 16px;
 }
@@ -103,20 +110,31 @@
 /* ================= DARK STRATEGY BLOCK ================= */
 
 .sectionHighlight {
-  background: #003b5c;
-  color: white;
+  background: linear-gradient(135deg, #004a80, #003b5c);
+  color: #ffffff;
   padding: 40px;
   border-radius: 14px;
   margin-bottom: 70px;
 }
 
 .sectionHighlight h2 {
-  color: white;
+  color: #ffffff;
 }
 
 .sectionHighlight p {
+  color: #e3f2fb;
   line-height: 1.8;
   font-size: 16px;
+}
+
+/* ================= OPTIONAL DETAIL (PRO) ================= */
+
+.section strong {
+  color: #004a80;
+}
+
+.sectionAlt strong {
+  color: #004a80;
 }
 
 /* ================= RESPONSIVE ================= */

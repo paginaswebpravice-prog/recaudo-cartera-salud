@@ -10,13 +10,11 @@ import UseCaseSection from "./components/UseCaseSection";
 import FinalCtaSection from "./components/FinalCtaSection";
 import BenefitsSection from "./components/BenefitsSection";
 import DocumentationSection from "./components/DocumentationSection";
-import NavBar from "./components/NavBar";
 import OfficeLocation from "./components/OfficeLocation";
 
 export default function Home() {
   return (
     <main>
-      <NavBar />
       <Hero />
       <ProblemSection />
       <SolutionSection />

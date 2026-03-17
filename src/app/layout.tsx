@@ -5,6 +5,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Footer from "./components/Footer";
 import Script from "next/script";
+import NavBar from "./components/NavBar";
 
 config.autoAddCss = false;
 
@@ -88,6 +89,7 @@ export default function RootLayout({
             }
       `}
         </Script>
+        <NavBar />
         {children}
         <Footer />
       </body>
