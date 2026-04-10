@@ -103,7 +103,7 @@ MENU DESKTOP
   position: relative;
 }
 
-/* Línea hover */
+/* Hover línea */
 
 .menu a::after {
   content: "";
@@ -124,7 +124,117 @@ MENU DESKTOP
   width: 100%;
 }
 
-/* BOTÓN */
+/* ========================================
+DROPDOWN
+======================================== */
+
+.dropdown {
+  position: relative;
+}
+
+/* 🔥 BOTÓN RESET TOTAL */
+
+.dropdownBtn {
+  all: unset;
+
+  cursor: pointer;
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  position: relative;
+}
+
+/* Hover igual que links */
+
+.dropdownBtn:hover {
+  color: #004a80;
+}
+
+/* Línea animada */
+
+.dropdownBtn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #004a80;
+  transition: 0.3s;
+}
+
+.dropdownBtn:hover::after {
+  width: 100%;
+}
+
+/* Flecha */
+
+.arrow {
+  font-size: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotación en hover */
+
+.dropdown:hover .arrow {
+  transform: rotate(180deg);
+}
+
+/* MENÚ */
+
+.dropdownMenu {
+  position: absolute;
+  top: 140%;
+  left: 0;
+
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 12px 0;
+  min-width: 220px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+
+  transition: all 0.25s ease;
+  z-index: 1000;
+}
+
+/* Activar hover */
+
+.dropdown:hover .dropdownMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Items */
+
+.dropdownMenu a {
+  display: block;
+  padding: 10px 18px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.dropdownMenu a:hover {
+  background: rgba(0, 74, 128, 0.08);
+  color: #004a80;
+  padding-left: 22px;
+}
+
+/* ========================================
+BOTÓN CTA
+======================================== */
 
 .appButton {
   background: #004a80;
@@ -216,5 +326,31 @@ MOBILE
     width: 100%;
     text-align: center;
     padding: 12px;
+  }
+
+  /* 🔥 DROPDOWN MOBILE */
+
+  .dropdownMenu {
+    position: static;
+    box-shadow: none;
+    padding: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: none;
+    width: 100%;
+  }
+
+  .dropdown.open .dropdownMenu {
+    display: block;
+  }
+
+  .dropdownBtn {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .dropdown.open .arrow {
+    transform: rotate(180deg);
   }
 }

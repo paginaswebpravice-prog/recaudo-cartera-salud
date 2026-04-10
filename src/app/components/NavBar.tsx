@@ -18,6 +18,11 @@ import {
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+  const toggleDropdown = (name: string) => {
+    setOpenDropdown(openDropdown === name ? null : name);
+  };
 
   return (
     <>
@@ -43,7 +48,6 @@ export default function NavBar() {
                 href="https://co.linkedin.com/company/praviceabogadosespecializados"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Linkedin Pravice Abogados"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
@@ -51,7 +55,6 @@ export default function NavBar() {
                 href="https://www.facebook.com/praviceabogadosespecializados"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Facebook Pravice Abogados"
               >
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
@@ -59,7 +62,6 @@ export default function NavBar() {
                 href="https://www.instagram.com/pravice_abogados/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram Pravice Abogados"
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
@@ -85,7 +87,6 @@ export default function NavBar() {
             <button
               className={styles.hamburger}
               onClick={() => setMenuOpen(!menuOpen)}
-              aria-label="Abrir menú"
             >
               <span className={styles.bar}></span>
               <span className={styles.bar}></span>
@@ -108,21 +109,59 @@ export default function NavBar() {
               <a href="/#metodologia" onClick={() => setMenuOpen(false)}>
                 Metodología
               </a>
-              <a href="/#clientes" onClick={() => setMenuOpen(false)}>
-                Clientes
-              </a>
-              <a href="/#contacto" onClick={() => setMenuOpen(false)}>
-                Contacto
-              </a>
-              <a href="/Blog" onClick={() => setMenuOpen(false)}>
+
+              {/* 🔥 SERVICIOS */}
+              <div
+                className={`${styles.dropdown} ${
+                  openDropdown === "servicios" ? styles.open : ""
+                }`}
+              >
+                <div
+                  className={styles.dropdownBtn}
+                  onClick={() => toggleDropdown("servicios")}
+                >
+                  Servicios <span className={styles.arrow}>▼</span>
+                </div>
+
+                <div className={styles.dropdownMenu}>
+                  <Link href="/Servicios/recuperacion-cartera">
+                    Recuperación de cartera
+                  </Link>
+                  <Link href="/Servicios/conciliacion">Conciliación</Link>
+                  <Link href="/Servicios/litigios">Litigios</Link>
+                  <Link href="/Servicios/derecho-empresarial">
+                    Derecho empresarial
+                  </Link>
+                </div>
+              </div>
+
+              {/* 🔥 SECTORES */}
+              <div
+                className={`${styles.dropdown} ${
+                  openDropdown === "sectores" ? styles.open : ""
+                }`}
+              >
+                <div
+                  className={styles.dropdownBtn}
+                  onClick={() => toggleDropdown("sectores")}
+                >
+                  Sectores <span className={styles.arrow}>▼</span>
+                </div>
+
+                <div className={styles.dropdownMenu}>
+                  <Link href="/Sectores/salud">Sector salud</Link>
+                  <Link href="/Sectores/empresas">Empresas</Link>
+                </div>
+              </div>
+
+              <Link href="/Blog" onClick={() => setMenuOpen(false)}>
                 Blog
-              </a>
+              </Link>
 
               <Link
                 href="https://legalapp.pravice.co/login.php"
                 target="_blank"
                 className={styles.appButton}
-                onClick={() => setMenuOpen(false)}
               >
                 Consultar mi caso
               </Link>
