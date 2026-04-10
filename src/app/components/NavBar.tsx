@@ -97,7 +97,7 @@ export default function NavBar() {
             <nav
               className={`${styles.menu} ${menuOpen ? styles.menuOpen : ""}`}
             >
-              <a href="/#inicio" onClick={() => setMenuOpen(false)}>
+              <a href="/" onClick={() => setMenuOpen(false)}>
                 Inicio
               </a>
               <a href="/#problema" onClick={() => setMenuOpen(false)}>
