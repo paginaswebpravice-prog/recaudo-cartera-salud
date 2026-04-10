@@ -1,0 +1,280 @@
+/* =========================
+BASE
+========================= */
+
+.pageWrapper {
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+  color: #000;
+}
+
+/* =========================
+HERO (LIMPIO + ELEGANTE)
+========================= */
+
+.hero {
+  padding: 140px 20px 80px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.heroContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 13px; /* 🔥 sube un poco */
+  font-weight: 600;
+  color: #004a80;
+  background: rgba(0, 74, 128, 0.08);
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 20px; /* 🔥 antes 18 */
+  color: #555;
+  line-height: 1.8; /* 🔥 más aire */
+}
+
+/* =========================
+BOTONES
+========================= */
+
+.actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.primary {
+  background: #004a80;
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.primary:hover {
+  background: #00365c;
+}
+
+.secondary {
+  border: 1px solid #004a80;
+  color: #004a80;
+  padding: 14px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.secondary:hover {
+  background: #004a80;
+  color: #fff;
+}
+
+/* =========================
+SECCIONES
+========================= */
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 90px 20px;
+}
+
+.section {
+  margin-bottom: 90px;
+}
+
+.subtitle {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+  color: #666;
+  max-width: 720px;
+  margin: 0 auto 30px;
+  line-height: 1.9; /* 🔥 más legible */
+  font-size: 18px; /* 🔥 antes implícito ~16 */
+}
+
+/* =========================
+GRID
+========================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  border: 1px solid #e5e5e5;
+  padding: 24px;
+  border-radius: 10px;
+  text-align: center;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  border-color: #004a80;
+  transform: translateY(-3px);
+}
+
+.card h3 {
+  font-size: 17px;
+  color: #004a80;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px; /* 🔥 antes 14 */
+  color: #666;
+  line-height: 1.7;
+}
+
+/* =========================
+INFO GRID
+========================= */
+
+.infoGrid {
+  display: grid;
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.infoGrid div {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 14px;
+}
+
+.infoGrid h4 {
+  font-size: 16px;
+  color: #004a80;
+}
+
+.infoGrid p {
+  font-size: 16px; /* 🔥 antes 14 */
+  color: #666;
+  line-height: 1.7;
+}
+
+/* =========================
+BOXES
+========================= */
+
+.highlightBox {
+  border-left: 4px solid #f7c600;
+  background: #fff;
+  padding: 18px;
+  margin-top: 20px;
+  font-size: 16px; /* 🔥 */
+  line-height: 1.7;
+}
+
+.warningBox {
+  border-left: 4px solid #ff4d4f;
+  background: #fff;
+  padding: 18px;
+  margin-top: 20px;
+  font-size: 16px; /* 🔥 */
+  line-height: 1.7;
+}
+
+/* =========================
+BENEFICIOS
+========================= */
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.benefits span {
+  border: 1px solid #ddd;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 15px; /* 🔥 antes 13 */
+  transition: 0.2s;
+}
+
+.benefits span:hover {
+  border-color: #004a80;
+  color: #004a80;
+}
+
+/* =========================
+CTA
+========================= */
+
+.cta {
+  border-top: 1px solid #eee;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.ctaTitle {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.ctaText {
+  max-width: 650px;
+  margin: 0 auto 25px;
+  color: #666;
+  font-size: 18px; /* 🔥 */
+  line-height: 1.8;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .text {
+    font-size: 17px;
+  }
+
+  .card p,
+  .infoGrid p {
+    font-size: 15px;
+  }
+}

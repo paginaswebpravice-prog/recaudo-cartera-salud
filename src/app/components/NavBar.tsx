@@ -124,13 +124,16 @@ export default function NavBar() {
                 </div>
 
                 <div className={styles.dropdownMenu}>
-                  <Link href="/Servicios/recuperacion-cartera">
-                    Recuperación de cartera
+                  <Link href="/Servicios/recuperacion-cartera-eps">
+                    Recuperación de cartera EPS
                   </Link>
-                  <Link href="/Servicios/conciliacion">Conciliación</Link>
-                  <Link href="/Servicios/litigios">Litigios</Link>
-                  <Link href="/Servicios/derecho-empresarial">
-                    Derecho empresarial
+                  <Link href="/Servicios/cobro-adres">Cobro ADRES</Link>
+                  <Link href="/Servicios/cartera-glosada">Cartera glosada</Link>
+                  <Link href="/Servicios/proceso-ejecutivo-eps">
+                    Proceso ejecutivo EPS
+                  </Link>
+                  <Link href="/Servicios/medidas-cautelares-eps">
+                    Medidas cautelares EPS
                   </Link>
                 </div>
               </div>
@@ -149,8 +152,9 @@ export default function NavBar() {
                 </div>
 
                 <div className={styles.dropdownMenu}>
-                  <Link href="/Sectores/salud">Sector salud</Link>
-                  <Link href="/Sectores/empresas">Empresas</Link>
+                  <Link href="/Sectores/ips">IPS</Link>
+                  <Link href="/Sectores/clinicas">Clinicas</Link>
+                  <Link href="/Sectores/hospitales">Hospitales</Link>
                 </div>
               </div>
 
