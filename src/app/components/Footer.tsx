@@ -29,16 +29,19 @@ export default function Footer() {
             <h4>Navegación</h4>
             <ul>
               <li>
-                <a href="#inicio">Inicio</a>
+                <a href="/#inicio">Inicio</a>
               </li>
               <li>
-                <a href="#metodologia">Metodología</a>
+                <a href="/#metodologia">Metodología</a>
               </li>
               <li>
-                <a href="#clientes">Clientes</a>
+                <a href="/#clientes">Clientes</a>
               </li>
               <li>
-                <a href="#contacto">Contacto</a>
+                <a href="/#contacto">Contacto</a>
+              </li>
+              <li>
+                <a href="/Blog">Blog</a>
               </li>
             </ul>
           </div>
