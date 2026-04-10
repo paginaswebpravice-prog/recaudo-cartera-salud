@@ -168,7 +168,13 @@ export default function BlogPage() {
             ← Volver al inicio
           </Link>
           <p className={styles.heroSubtitle}>
-            Información estratégica para IPS, clínicas y sector salud.
+            Blog jurídico especializado en recuperación de cartera EPS en
+            Colombia. Encuentra guías completas sobre cobro de cartera en el
+            sector salud, procesos ejecutivos, medidas cautelares, cartera ante
+            ADRES, prescripción, compra de cartera y estrategias legales para
+            IPS, clínicas y prestadores de servicios de salud. Contenido
+            diseñado para optimizar el recaudo, reducir la mora y proteger el
+            flujo financiero de las instituciones de salud en Colombia.
           </p>
         </div>
       </section>
