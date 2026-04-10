@@ -194,6 +194,40 @@ export default function BlogPage() {
           ))}
         </div>
       </section>
+
+      {/* ================= CTA FINAL ================= */}
+      <section className={styles.cta}>
+        <div className={styles.ctaContainer}>
+          <h2 className={styles.ctaTitle}>
+            ¿Tienes cartera pendiente con EPS o entidades de salud?
+          </h2>
+
+          <p className={styles.ctaText}>
+            Nuestro equipo jurídico especializado en recuperación de cartera en
+            Colombia asesora a IPS, clínicas y prestadores de salud en procesos
+            de cobro prejurídico, judicial, medidas cautelares y estrategias
+            frente a EPS, ADRES y entidades territoriales. Protege tu flujo
+            financiero y optimiza tu recaudo con respaldo legal experto.
+          </p>
+
+          <div className={styles.ctaActions}>
+            <Link
+              href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+              className={styles.ctaPrimary}
+            >
+              Solicitar asesoría
+            </Link>
+
+            <a
+              href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+              target="_blank"
+              className={styles.ctaSecondary}
+            >
+              Hablar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
