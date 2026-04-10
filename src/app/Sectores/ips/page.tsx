@@ -43,16 +43,28 @@ export default function IPSPage() {
       <main className={styles.container}>
         {/* PROBLEMÁTICA */}
         <section className={styles.section}>
-          <h2 className={styles.subtitle}>
+          <motion.h2
+            className={styles.subtitle}
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             Problemáticas recurrentes en las IPS en Colombia
-          </h2>
+          </motion.h2>
 
-          <p className={styles.text}>
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             En el contexto del sistema de salud colombiano, las IPS enfrentan
             múltiples factores que afectan su estabilidad financiera. Estas
             situaciones no solo impactan la liquidez, sino también la capacidad
             de operación y crecimiento.
-          </p>
+          </motion.p>
 
           <div className={styles.grid}>
             {[
@@ -69,68 +81,107 @@ export default function IPSPage() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.04 }}
               >
                 <p>{item}</p>
               </motion.div>
             ))}
           </div>
 
-          <div className={styles.warningBox}>
+          <motion.div
+            className={styles.warningBox}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
             ⚠ La acumulación de cartera en las IPS puede comprometer la
             continuidad del servicio y generar riesgos operativos críticos.
-          </div>
+          </motion.div>
         </section>
 
         {/* CONTEXTO FINANCIERO */}
         <section className={styles.section}>
-          <h2 className={styles.subtitle}>Impacto financiero en las IPS</h2>
+          <motion.h2
+            className={styles.subtitle}
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            Impacto financiero en las IPS
+          </motion.h2>
 
-          <p className={styles.text}>
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             La falta de liquidez derivada de la cartera pendiente afecta
             directamente la operación diaria de las IPS en Colombia. Esto se
             traduce en limitaciones para invertir, contratar personal o ampliar
             servicios, generando un efecto en cadena dentro del sistema de
             salud.
-          </p>
+          </motion.p>
 
           <div className={styles.infoGrid}>
-            <div>
-              <h4>✔ Flujo de caja limitado</h4>
-              <p>
-                Dificultad para cubrir gastos operativos básicos como nómina,
-                insumos y proveedores.
-              </p>
-            </div>
-
-            <div>
-              <h4>✔ Restricción en crecimiento</h4>
-              <p>
-                Imposibilidad de expandir servicios o mejorar infraestructura.
-              </p>
-            </div>
-
-            <div>
-              <h4>✔ Riesgo operativo</h4>
-              <p>Impacto en la continuidad de la atención a pacientes.</p>
-            </div>
-
-            <div>
-              <h4>✔ Desbalance financiero</h4>
-              <p>Incremento de pasivos frente a ingresos no percibidos.</p>
-            </div>
+            {[
+              {
+                title: "✔ Flujo de caja limitado",
+                text: "Dificultad para cubrir gastos operativos básicos como nómina, insumos y proveedores.",
+              },
+              {
+                title: "✔ Restricción en crecimiento",
+                text: "Imposibilidad de expandir servicios o mejorar infraestructura.",
+              },
+              {
+                title: "✔ Riesgo operativo",
+                text: "Impacto en la continuidad de la atención a pacientes.",
+              },
+              {
+                title: "✔ Desbalance financiero",
+                text: "Incremento de pasivos frente a ingresos no percibidos.",
+              },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <h4>{item.title}</h4>
+                <p>{item.text}</p>
+              </motion.div>
+            ))}
           </div>
 
-          <div className={styles.highlightBox}>
+          <motion.div
+            className={styles.highlightBox}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
             ✔ Una gestión inadecuada de cartera puede convertirse en uno de los
             principales factores de riesgo financiero para una IPS en Colombia.
-          </div>
+          </motion.div>
         </section>
 
         {/* TIPOS DE IPS */}
         <section className={styles.section}>
-          <h2 className={styles.subtitle}>
+          <motion.h2
+            className={styles.subtitle}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             Tipos de IPS y sus particularidades
-          </h2>
+          </motion.h2>
 
           <div className={styles.grid}>
             {[
@@ -140,35 +191,67 @@ export default function IPSPage() {
               "Redes de prestación de servicios en salud",
               "Prestadores independientes",
             ].map((item, i) => (
-              <div key={i} className={styles.card}>
+              <motion.div
+                key={i}
+                className={styles.card}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.04 }}
+              >
                 <p>{item}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </section>
 
         {/* NECESIDAD ESTRATÉGICA */}
         <section className={styles.section}>
-          <h2 className={styles.subtitle}>
+          <motion.h2
+            className={styles.subtitle}
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             Necesidad de estrategias especializadas
-          </h2>
+          </motion.h2>
 
-          <p className={styles.text}>
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             Frente a este panorama, las IPS en Colombia requieren implementar
             estrategias estructuradas que permitan mejorar la gestión de
             cartera, optimizar procesos internos y fortalecer su estabilidad
             financiera en el mediano y largo plazo.
-          </p>
+          </motion.p>
 
-          <div className={styles.highlightBox}>
+          <motion.div
+            className={styles.highlightBox}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
             Muchas IPS están migrando hacia modelos más estructurados de gestión
             financiera para reducir riesgos y mejorar su capacidad de recaudo.
-          </div>
+          </motion.div>
         </section>
 
         {/* CTA */}
         <section id="contacto" className={styles.cta}>
-          <div className={styles.ctaContent}>
+          <motion.div
+            className={styles.ctaContent}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <h2 className={styles.ctaTitle}>
               Fortalece la estabilidad financiera de tu IPS
             </h2>
@@ -193,7 +276,7 @@ export default function IPSPage() {
                 Hablar por WhatsApp
               </a>
             </div>
-          </div>
+          </motion.div>
         </section>
       </main>
     </>
