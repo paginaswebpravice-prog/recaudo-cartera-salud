@@ -48,6 +48,12 @@ export default function Footer() {
                 <a href="/#inicio">Inicio</a>
               </li>
               <li>
+                <a href="/#problema">Problema</a>
+              </li>
+              <li>
+                <a href="/#solucion">Solucion</a>
+              </li>
+              <li>
                 <a href="/#metodologia">Metodología</a>
               </li>
               <li>
@@ -95,6 +101,12 @@ export default function Footer() {
               >
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
+              <a
+                href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faWhatsapp} />
+              </a>
             </div>
           </div>
         </div>
@@ -114,7 +126,7 @@ export default function Footer() {
 
       {/* BOTÓN WHATSAPP */}
       <a
-        href="https://api.whatsapp.com/message/RE7FEN4IGOISD1?autoload=1&app_absent=0"
+        href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
         className={styles.whatsappFloat}
         target="_blank"
         rel="noopener noreferrer"
