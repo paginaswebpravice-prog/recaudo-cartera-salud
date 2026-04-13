@@ -37,7 +37,7 @@ export default function Hero() {
           Jurídica Especializada
         </motion.h1>
 
-        {/* DESCRIPCIÓN OPTIMIZADA */}
+        {/* DESCRIPCIÓN */}
         <motion.p
           variants={{
             hidden: { opacity: 0, y: 30 },
@@ -62,6 +62,7 @@ export default function Hero() {
           }}
           transition={{ duration: 0.8 }}
         >
+          {/* CTA PRINCIPAL */}
           <motion.a
             href="#contacto"
             className={styles.primaryBtn}
@@ -71,6 +72,7 @@ export default function Hero() {
             Diagnóstico gratuito de cartera IPS
           </motion.a>
 
+          {/* CTA SECUNDARIO */}
           <motion.a
             href="#metodologia"
             className={styles.secondaryBtn}
@@ -79,9 +81,23 @@ export default function Hero() {
           >
             Conocer metodología de recaudo
           </motion.a>
+
+          {/* NUEVO CTA WHATSAPP (ALTA CONVERSIÓN) */}
+          <motion.a
+            href="https://wa.me/573114659315"
+            target="_blank"
+            className={styles.whatsappBtn}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+          >
+            Hablar con un abogado ahora
+          </motion.a>
         </motion.div>
 
-        {/* TEXTO SEO ADICIONAL (ayuda a IA y Google) */}
+        {/* SEO TEXT */}
         <p className={styles.seoText}>
           Servicio especializado en recuperación de cartera hospitalaria, cobro
           jurídico a EPS y gestión estratégica de cartera vencida en Colombia

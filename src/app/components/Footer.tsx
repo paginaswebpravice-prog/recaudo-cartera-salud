@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "../styles/Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -6,8 +8,24 @@ import {
   faLinkedin,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
+import { useEffect, useState } from "react";
 
 export default function Footer() {
+  const [showCTA, setShowCTA] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowCTA(true);
+
+      // Se oculta después de 10 segundos
+      setTimeout(() => {
+        setShowCTA(false);
+      }, 10000);
+    }, 15000); // aparece cada 15s
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <footer className={styles.footer}>
@@ -17,10 +35,8 @@ export default function Footer() {
             <h3 className={styles.logo}>PRAVICE ABOGADOS</h3>
             <p className={styles.description}>
               Firma jurídica especializada en recuperación de cartera
-              hospitalaria, cobro jurídico a EPS y procesos ejecutivos y
-              declarativos en el sector salud en Colombia. Acompañamos IPS,
-              clínicas y hospitales en la defensa estratégica de su flujo de
-              caja.
+              hospitalaria, cobro jurídico a EPS y procesos ejecutivos en el
+              sector salud en Colombia.
             </p>
           </div>
 
@@ -57,74 +73,51 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* COLUMNA 4 - REDES */}
+          {/* REDES */}
           <div className={styles.column}>
             <h4>Síguenos</h4>
             <div className={styles.socials}>
               <a
                 href="https://www.instagram.com/pravice_abogados/"
-                aria-label="Instagram Pravice Abogados"
                 target="_blank"
-                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
-
               <a
                 href="https://co.linkedin.com/company/praviceabogadosespecializados"
-                aria-label="LinkedIn Pravice Abogados"
                 target="_blank"
-                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
-
               <a
                 href="https://www.facebook.com/praviceabogadosespecializados"
-                aria-label="Facebook Pravice Abogados"
                 target="_blank"
-                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faFacebook} />
-              </a>
-
-              <a
-                href="https://api.whatsapp.com/message/RE7FEN4IGOISD1?autoload=1&app_absent=0"
-                aria-label="WhatsApp Pravice Abogados"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faWhatsapp} />
               </a>
             </div>
           </div>
         </div>
 
-        {/* BOTTOM BAR */}
         <div className={styles.bottom}>
-          <p>
-            © {new Date().getFullYear()} PRAVICE ABOGADOS S.A.S. Todos los
-            derechos reservados. Firma especializada en recuperación de cartera
-            en salud en Colombia.
-          </p>
+          <p>© {new Date().getFullYear()} PRAVICE ABOGADOS S.A.S.</p>
         </div>
-
-        {/* SEO OCULTO */}
-        <p className={styles.seoText}>
-          Abogados especialistas en recuperación de cartera en salud en
-          Colombia. Servicios de cobro jurídico a EPS, demandas contra entidades
-          del sistema de salud, reclamaciones ante ADRES, procesos ejecutivos y
-          declarativos para IPS, clínicas y hospitales con cobertura nacional.
-        </p>
       </footer>
 
-      {/* BOTÓN FLOTANTE WHATSAPP */}
+      {/* CTA FLOTANTE */}
+      {showCTA && (
+        <div className={styles.whatsappCTA}>
+          💬 ¿Necesitas asesoría legal? <br />
+          <span>Habla con un abogado ahora</span>
+        </div>
+      )}
+
+      {/* BOTÓN WHATSAPP */}
       <a
         href="https://api.whatsapp.com/message/RE7FEN4IGOISD1?autoload=1&app_absent=0"
         className={styles.whatsappFloat}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="WhatsApp Pravice Abogados"
       >
         <FontAwesomeIcon icon={faWhatsapp} />
       </a>

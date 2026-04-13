@@ -112,6 +112,24 @@
   box-shadow: 0 6px 18px rgba(0, 74, 128, 0.15);
 }
 
+/* BOTÓN WHATSAPP HERO */
+.whatsappBtn {
+  padding: 14px 26px;
+  background-color: #25d366;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #25d366;
+  transition: all 0.3s ease;
+}
+
+.whatsappBtn:hover {
+  background-color: #1ebe5d;
+  border-color: #1ebe5d;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.25);
+}
+
 /* ============================
    SEO TEXT (Visible solo para buscadores)
 ============================ */
