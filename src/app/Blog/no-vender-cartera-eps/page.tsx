@@ -1,85 +1,53 @@
-import Link from "next/link";
-import styles from "./Article.module.css";
+import NoVenderCarteraEps from "./NoVenderCarteraEps";
 
 export const metadata = {
   title: "¿Conviene vender la cartera a una EPS? Mejor recupérela | PRAVICE",
   description:
     "Por qué no conviene vender cartera EPS con descuento. PRAVICE no compra cartera: la recupera efectivamente con estrategia jurídica y proceso ejecutivo.",
+  alternates: {
+    canonical: "https://recaudocarteraipsyeps.com/Blog/no-vender-cartera-eps",
+  },
+  openGraph: {
+    title: "¿Conviene vender la cartera a una EPS o recuperarla?",
+    description:
+      "Análisis estratégico sobre vender cartera EPS vs recuperarla jurídicamente en Colombia.",
+    type: "article",
+    url: "https://recaudocarteraipsyeps.com/Blog/no-vender-cartera-eps",
+  },
 };
 
-export default function VenderOCobrarCartera() {
+export default function Page() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "¿Conviene vender la cartera a una EPS? Mejor recupérela",
+    description:
+      "Análisis sobre por qué vender cartera EPS implica pérdida de valor frente a una estrategia jurídica de recuperación en Colombia.",
+    inLanguage: "es-CO",
+    mainEntityOfPage:
+      "https://recaudocarteraipsyeps.com/Blog/no-vender-cartera-eps",
+    author: {
+      "@type": "Organization",
+      name: "PRAVICE",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "PRAVICE",
+    },
+  };
+
   return (
-    <main className={styles.wrapper}>
-      {/* HERO */}
-      <section className={styles.hero}>
-        <div className={styles.heroContainer}>
-          <Link href="/Blog" className={styles.backLink}>
-            ← Volver al Blog
-          </Link>
+    <>
+      {/* SCHEMA SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema),
+        }}
+      />
 
-          <span className={styles.badge}>Decisión estratégica</span>
-
-          <h1 className={styles.title}>Por qué NO vender su cartera EPS</h1>
-
-          <p className={styles.subtitle}>
-            Recuperarla jurídicamente suele ser una alternativa más rentable y
-            estratégica.
-          </p>
-        </div>
-      </section>
-
-      <article className={styles.article}>
-        {/* SECCIÓN 1 */}
-        <section className={styles.sectionAlt}>
-          <h2>Vender cartera suele implicar perder valor</h2>
-          <p>
-            La compra de cartera normalmente se realiza con descuentos
-            significativos sobre el valor real de la obligación.
-          </p>
-          <p>
-            En muchos casos, la necesidad de liquidez lleva a aceptar
-            porcentajes reducidos que no reflejan el monto total adeudado.
-          </p>
-          <p>
-            Una recuperación jurídica bien estructurada, en cambio, busca el
-            pago del valor completo y permite utilizar herramientas como medidas
-            cautelares dentro del proceso ejecutivo.
-          </p>
-        </section>
-
-        {/* SECCIÓN 2 */}
-        <section className={styles.section}>
-          <h2>PRAVICE no compra cartera</h2>
-          <p>
-            PRAVICE implementa recuperación efectiva mediante gestión
-            prejurídica y, cuando es necesario, proceso judicial con enfoque en
-            recaudo real.
-          </p>
-          <p>
-            El modelo se basa en honorarios asociados a resultados, alineando
-            intereses con el cliente y priorizando el pago efectivo sobre la
-            negociación con descuento.
-          </p>
-        </section>
-
-        {/* BLOQUE ESTRATÉGICO */}
-        <section className={styles.sectionHighlight}>
-          <h2>Maximizar recaudo vs. vender con descuento</h2>
-          <p>
-            Si el objetivo es proteger el valor de la cartera y mantener
-            posición jurídica sólida, una estrategia estructurada suele ser
-            superior a una cesión con descuento inmediato.
-          </p>
-        </section>
-
-        {/* CTA */}
-        <footer className={styles.footer}>
-          <p>
-            Antes de vender su cartera, evalúe jurídicamente su potencial de
-            recuperación.
-          </p>
-        </footer>
-      </article>
-    </main>
+      {/* CONTENT */}
+      <NoVenderCarteraEps />
+    </>
   );
 }

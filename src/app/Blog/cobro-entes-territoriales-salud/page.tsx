@@ -1,167 +1,57 @@
-import Link from "next/link";
-import styles from "./Article.module.css";
+import CobroEntesTerritoriales from "./CobroEntesTerritoriales";
 
 export const metadata = {
   title:
     "Cobro de cartera a entes territoriales en Colombia | IPS, clínicas y sector salud",
   description:
     "Guía completa para el cobro de cartera a entes territoriales y secretarías de salud en Colombia. Estrategias administrativas, conciliación y cobro judicial para IPS y clínicas en Bogotá y todo el país.",
+  alternates: {
+    canonical:
+      "https://recaudocarteraipsyeps.com/Blog/cobro-entes-territoriales-salud",
+  },
+  openGraph: {
+    title:
+      "Cobro de cartera a entes territoriales en Colombia | IPS y clínicas",
+    description:
+      "Estrategia integral para recuperación de cartera frente a secretarías de salud y entidades públicas en Colombia.",
+    type: "article",
+    url: "https://recaudocarteraipsyeps.com/Blog/cobro-entes-territoriales-salud",
+  },
 };
 
-export default function CobroEntesTerritoriales() {
+export default function Page() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline:
+      "Cobro de cartera a entes territoriales en Colombia | IPS, clínicas y sector salud",
+    description:
+      "Guía sobre estrategias administrativas y jurídicas para el cobro de cartera a entes territoriales en Colombia.",
+    inLanguage: "es-CO",
+    mainEntityOfPage:
+      "https://recaudocarteraipsyeps.com/Blog/cobro-entes-territoriales-salud",
+    author: {
+      "@type": "Organization",
+      name: "PRAVICE",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "PRAVICE",
+    },
+  };
+
   return (
-    <main className={styles.wrapper}>
-      {/* HERO */}
-      <section className={styles.hero}>
-        <div className={styles.heroContainer}>
-          <Link href="/Blog" className={styles.backLink}>
-            ← Volver al Blog
-          </Link>
+    <>
+      {/* SCHEMA SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema),
+        }}
+      />
 
-          <span className={styles.badge}>Sector salud público</span>
-
-          <h1 className={styles.title}>
-            Cobro de cartera a entes territoriales en Colombia
-          </h1>
-
-          <p className={styles.subtitle}>
-            Estrategia integral para IPS, clínicas y proveedores de salud en
-            Bogotá y Colombia que buscan recuperar cartera vencida frente a
-            secretarías de salud y entidades públicas.
-          </p>
-        </div>
-      </section>
-
-      {/* CONTENIDO */}
-      <article className={styles.article}>
-        {/* INTRO SEO */}
-        <section className={styles.section}>
-          <h2>Cobro de cartera en el sector salud público en Colombia</h2>
-
-          <p>
-            El cobro de cartera a entes territoriales en Colombia es un proceso
-            complejo que afecta directamente la liquidez de IPS, clínicas y
-            prestadores de servicios de salud. En ciudades como Bogotá, donde el
-            volumen de atención es alto, la recuperación oportuna de estos
-            recursos es clave para la sostenibilidad financiera del sector.
-          </p>
-
-          <p>
-            A diferencia del cobro a EPS, este tipo de cartera requiere una
-            estrategia especializada que combine gestión administrativa,
-            conocimiento normativo y una adecuada preparación para un eventual
-            cobro jurídico ante la jurisdicción contencioso-administrativa.
-          </p>
-        </section>
-
-        {/* TIPOS DE CARTERA */}
-        <section className={styles.section}>
-          <h2>¿Qué tipo de cartera se puede cobrar a entes territoriales?</h2>
-
-          <p>
-            En Colombia, las obligaciones a cargo de entes territoriales y
-            secretarías de salud pueden originarse en diferentes conceptos
-            dentro del sistema de salud:
-          </p>
-
-          <ul className={styles.checklist}>
-            <li>Atención a población pobre no asegurada (PNA)</li>
-            <li>Servicios y tecnologías NO PBS</li>
-            <li>Recursos por esfuerzo propio de las entidades territoriales</li>
-            <li>Eventos especiales o emergencias sanitarias</li>
-            <li>Obligaciones contractuales o convenios interadministrativos</li>
-          </ul>
-        </section>
-
-        {/* PROBLEMA REAL */}
-        <section className={styles.section}>
-          <h2>Principales dificultades en el recaudo</h2>
-
-          <p>
-            Muchas IPS y clínicas en Bogotá y Colombia enfrentan barreras como
-            demoras administrativas, falta de trazabilidad documental,
-            inconsistencias en soportes o ausencia de gestión oportuna. Esto
-            incrementa la cartera vencida y dificulta su recuperación.
-          </p>
-
-          <p>
-            Sin una estrategia clara, el cobro de cartera en el sector salud
-            público puede prolongarse durante años o incluso perderse por
-            errores en la estructuración del expediente.
-          </p>
-        </section>
-
-        {/* ESTRATEGIA */}
-        <section className={styles.sectionAlt}>
-          <h2>Cómo estructurar una estrategia efectiva de cobro</h2>
-
-          <p>
-            En PRAVICE abordamos el cobro de cartera a entes territoriales en
-            Colombia mediante una estrategia integral:
-          </p>
-
-          <ul className={styles.checklist}>
-            <li>
-              Consolidación de soportes administrativos, clínicos y financieros
-            </li>
-            <li>Validación de la exigibilidad de las obligaciones</li>
-            <li>Radicación formal y seguimiento ante la entidad pública</li>
-            <li>Gestión de conciliaciones cuando son procedentes</li>
-            <li>
-              Preparación de demanda para cobro judicial ante la jurisdicción
-              competente
-            </li>
-          </ul>
-
-          <p>
-            Este enfoque permite reducir riesgos, mejorar la trazabilidad y
-            aumentar la probabilidad de recaudo efectivo.
-          </p>
-        </section>
-
-        {/* BLOQUE ESTRATÉGICO */}
-        <section className={styles.section}>
-          <h2>Un expediente sólido marca la diferencia</h2>
-
-          <div className={styles.letterBox}>
-            <p>
-              El éxito en el cobro de cartera a entes territoriales en Colombia
-              depende de la calidad del expediente. La correcta estructuración
-              de soportes, el análisis contractual y la estrategia jurídica son
-              determinantes para lograr el pago.
-            </p>
-
-            <p>
-              En el sector salud, improvisar en el cobro puede generar pérdidas
-              significativas. Por eso, una gestión profesional es clave para
-              garantizar resultados.
-            </p>
-          </div>
-        </section>
-
-        {/* CIERRE SEO */}
-        <section className={styles.section}>
-          <h2>
-            Recuperación de cartera en Bogotá y Colombia con respaldo legal
-          </h2>
-
-          <p>
-            La recuperación de cartera en el sector salud público exige
-            experiencia, estrategia y conocimiento del marco normativo
-            colombiano. En PRAVICE acompañamos a IPS, clínicas y empresas del
-            sector salud en Bogotá y todo el país en la estructuración de
-            procesos efectivos de cobro administrativo y judicial.
-          </p>
-        </section>
-
-        {/* CTA */}
-        <footer className={styles.footer}>
-          <p>
-            <strong>PRAVICE no compra cartera.</strong> La recupera mediante
-            estrategias legales enfocadas en resultados reales en Colombia.
-          </p>
-        </footer>
-      </article>
-    </main>
+      {/* CONTENT */}
+      <CobroEntesTerritoriales />
+    </>
   );
 }
