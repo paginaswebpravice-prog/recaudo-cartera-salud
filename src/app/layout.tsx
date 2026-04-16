@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Recuperación de Cartera en Salud | PRAVICE Abogados",
     description:
       "Recuperación estratégica de cartera hospitalaria. Demandas contra EPS y procesos ejecutivos en Colombia.",
-    url: "https://www.recaudocarteraipsyeps.com/",
+    url: "https://recaudocarteraipsyeps.com/",
     siteName: "PRAVICE Abogados",
     locale: "es_CO",
     type: "website",
@@ -73,8 +73,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LegalService",
               "name": "PRAVICE Abogados",
-              "url": "https://www.recaudocarteraipsyeps.com/",
-              "logo": "https://www.recaudocarteraipsyeps.com/logo.png",
+              "url": "https://recaudocarteraipsyeps.com/",
+              "logo": "https://recaudocarteraipsyeps.com/logo.png",
               "description": "Firma jurídica especializada en recuperación de cartera en salud en Colombia. Representamos IPS, clínicas y hospitales frente a EPS, ADRES y entidades públicas.",
               "areaServed": {
                 "@type": "Country",
