@@ -3,9 +3,9 @@ import CarteraGlosadaContent from "./CarteraGlosadaContent";
 
 export const metadata: Metadata = {
   title:
-    "Recuperación de cartera glosada en Colombia | Gestión de glosas EPS para IPS y clínicas",
+    "Cartera glosada en Colombia: cómo recuperar dinero retenido por EPS en IPS y clínicas",
   description:
-    "Recupere cartera glosada en Colombia. Servicio especializado para IPS y clínicas: gestión, respuesta y levantamiento de glosas EPS con enfoque técnico y jurídico.",
+    "Recupere cartera glosada en Colombia con estrategias técnicas y jurídicas. Gestión de glosas EPS para IPS y clínicas enfocada en maximizar el recaudo y evitar pérdidas financieras.",
 
   alternates: {
     canonical: "https://recaudocarteraipsyeps.com/Servicios/cartera-glosada",
@@ -13,9 +13,9 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Recuperación de cartera glosada en EPS para IPS y clínicas en Colombia",
+      "Cómo recuperar cartera glosada en EPS en Colombia | Estrategia para IPS y clínicas",
     description:
-      "Gestione y recupere glosas en Colombia con estrategia técnica y jurídica. Mejore su recaudo y reduzca pérdidas.",
+      "Gestión especializada de glosas en Colombia. Aumente el recaudo de su IPS o clínica y recupere dinero retenido por EPS.",
     url: "https://recaudocarteraipsyeps.com/Servicios/cartera-glosada",
     siteName: "Recaudo Cartera IPS y EPS",
     locale: "es_CO",

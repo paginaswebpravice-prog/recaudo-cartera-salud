@@ -19,7 +19,8 @@ export default function ProcesoEjecutivoEpsContent() {
           </span>
 
           <h1 className={styles.title}>
-            Proceso ejecutivo para cobro de cartera EPS en Colombia
+            Demanda ejecutiva contra EPS en Colombia: recuperación de cartera,
+            embargos y cobro efectivo
           </h1>
 
           <p className={styles.description}>
@@ -50,7 +51,7 @@ export default function ProcesoEjecutivoEpsContent() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            ¿Cuándo es necesario demandar a una EPS?
+            ¿Cuándo iniciar una demanda ejecutiva contra una EPS en Colombia?
           </motion.h2>
 
           <div className={styles.grid}>
@@ -82,7 +83,7 @@ export default function ProcesoEjecutivoEpsContent() {
         {/* QUE ES */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Qué es un proceso ejecutivo en el sector salud?
+            ¿Qué es un proceso ejecutivo contra EPS y cómo funciona en Colombia?
           </h2>
 
           <p className={styles.text}>
@@ -128,7 +129,8 @@ export default function ProcesoEjecutivoEpsContent() {
         {/* SOLUCIÓN */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Nuestro servicio de proceso ejecutivo contra EPS
+            Servicio jurídico de proceso ejecutivo para cobro de cartera EPS en
+            Colombia
           </h2>
 
           <p className={styles.text}>
@@ -160,7 +162,7 @@ export default function ProcesoEjecutivoEpsContent() {
         {/* PROCESO */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Cómo llevamos el proceso ejecutivo?
+            ¿Cómo se desarrolla un proceso ejecutivo contra EPS paso a paso?
           </h2>
 
           <div className={styles.grid}>
@@ -183,7 +185,7 @@ export default function ProcesoEjecutivoEpsContent() {
         {/* BENEFICIOS */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Beneficios del proceso ejecutivo para tu IPS
+            Beneficios del proceso ejecutivo contra EPS para IPS y clínicas
           </h2>
 
           <div className={styles.benefits}>
@@ -199,7 +201,7 @@ export default function ProcesoEjecutivoEpsContent() {
         {/* DIFERENCIAL */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Por qué iniciar un proceso con nosotros?
+            ¿Por qué iniciar un proceso ejecutivo con nosotros en Colombia?
           </h2>
 
           <p className={styles.text}>
@@ -219,7 +221,7 @@ export default function ProcesoEjecutivoEpsContent() {
         <section id="contacto" className={styles.cta}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Inicia tu proceso ejecutivo y recupera tu cartera
+              Inicia tu proceso ejecutivo contra EPS y recupera tu cartera hoy
             </h2>
 
             <p className={styles.ctaText}>

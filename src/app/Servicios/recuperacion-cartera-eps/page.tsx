@@ -3,9 +3,9 @@ import RecuperacionCarteraEpsContent from "./RecuperacionCarteraEpsContent";
 
 export const metadata: Metadata = {
   title:
-    "Recuperación de cartera EPS en Colombia y Bogotá | Servicio para IPS y clínicas",
+    "Cómo recuperar cartera EPS en Colombia | IPS, clínicas y prestadores de salud",
   description:
-    "Recupere cartera EPS en Colombia con estrategias jurídicas, prejurídicas y judiciales. Servicio especializado para IPS, clínicas y prestadores de salud.",
+    "Aprenda cómo recuperar cartera EPS en Colombia con estrategias jurídicas, prejurídicas y judiciales. Servicio especializado para IPS, clínicas y prestadores de salud.",
 
   alternates: {
     canonical:
@@ -13,9 +13,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Recuperación de cartera EPS en Colombia para IPS y clínicas",
+    title:
+      "Cómo recuperar cartera EPS en Colombia para IPS y clínicas (Guía legal)",
     description:
-      "Mejore su flujo de caja recuperando cartera EPS en Colombia con estrategias legales y financieras especializadas.",
+      "Mejore su flujo de caja aprendiendo cómo recuperar cartera EPS en Colombia con estrategias legales y financieras especializadas.",
     url: "https://recaudocarteraipsyeps.com/Servicios/recuperacion-cartera-eps",
     siteName: "Recaudo Cartera IPS y EPS",
     locale: "es_CO",
@@ -39,7 +40,7 @@ export default function Page() {
             {
               "@context": "https://schema.org",
               "@type": "Service",
-              name: "Recuperación de cartera EPS en Colombia",
+              name: "Cómo recuperar cartera EPS en Colombia para IPS y clínicas",
               description:
                 "Servicio especializado en recuperación de cartera EPS para IPS, clínicas y prestadores de salud en Colombia.",
               areaServed: {
@@ -58,26 +59,26 @@ export default function Page() {
               mainEntity: [
                 {
                   "@type": "Question",
-                  name: "¿Cuánto tiempo tarda recuperar cartera EPS?",
+                  name: "¿Cómo recuperar cartera EPS en Colombia rápidamente?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Depende del estado de la cartera, pudiendo ir desde gestión prejurídica hasta procesos judiciales de mediano plazo.",
+                    text: "Con una estrategia jurídica estructurada que incluya gestión prejurídica, negociación y procesos judiciales si es necesario.",
                   },
                 },
                 {
                   "@type": "Question",
-                  name: "¿Se puede recuperar cartera antigua?",
+                  name: "¿Es posible recuperar cartera EPS antigua en Colombia?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Sí, siempre que no haya prescrito y exista soporte documental adecuado.",
+                    text: "Sí, siempre que la obligación no haya prescrito y exista soporte documental suficiente.",
                   },
                 },
                 {
                   "@type": "Question",
-                  name: "¿Qué pasa si la EPS no paga?",
+                  name: "¿Qué hacer si la EPS no paga la cartera en Colombia?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Se pueden iniciar procesos ejecutivos y aplicar medidas cautelares para garantizar el pago.",
+                    text: "Se pueden iniciar acciones jurídicas, procesos ejecutivos y medidas cautelares para asegurar el pago.",
                   },
                 },
               ],

@@ -84,7 +84,8 @@ export default function BlogClient() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Blog Jurídico - Recuperación de Cartera EPS
+            Cómo recuperar cartera EPS en Colombia: Blog jurídico para IPS y
+            clínicas
           </motion.h1>
 
           <motion.div
@@ -103,13 +104,11 @@ export default function BlogClient() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            Blog jurídico especializado en recuperación de cartera EPS en
+            Blog jurídico especializado en cómo recuperar cartera EPS en
             Colombia. Encuentra guías completas sobre cobro de cartera en el
             sector salud, procesos ejecutivos, medidas cautelares, cartera ante
             ADRES, prescripción, compra de cartera y estrategias legales para
-            IPS, clínicas y prestadores de servicios de salud. Contenido
-            diseñado para optimizar el recaudo, reducir la mora y proteger el
-            flujo financiero de las instituciones de salud en Colombia.
+            IPS, clínicas y prestadores de servicios de salud.
           </motion.p>
         </motion.div>
       </section>
@@ -152,21 +151,11 @@ export default function BlogClient() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <motion.h2
-            className={styles.ctaTitle}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-          >
-            ¿Tienes cartera pendiente con EPS o entidades de salud?
+          <motion.h2 className={styles.ctaTitle}>
+            ¿Tienes cartera EPS pendiente de recuperación en Colombia?
           </motion.h2>
 
-          <motion.p
-            className={styles.ctaText}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-          >
+          <motion.p className={styles.ctaText}>
             Nuestro equipo jurídico especializado en recuperación de cartera en
             Colombia asesora a IPS, clínicas y prestadores de salud en procesos
             de cobro prejurídico, judicial, medidas cautelares y estrategias

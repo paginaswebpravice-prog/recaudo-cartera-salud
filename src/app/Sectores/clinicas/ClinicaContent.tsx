@@ -42,7 +42,8 @@ export default function ClinicasContent() {
           </span>
 
           <h1 className={styles.title}>
-            Clínicas en Colombia: rentabilidad, facturación y flujo de caja
+            Clínicas en Colombia: cómo mejorar rentabilidad, facturación y flujo
+            de caja en el sistema EPS
           </h1>
 
           <p className={styles.description}>
@@ -75,7 +76,7 @@ export default function ClinicasContent() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Principales desafíos en clínicas privadas
+            Principales desafíos financieros en clínicas privadas en Colombia
           </motion.h2>
 
           <motion.p
@@ -135,7 +136,8 @@ export default function ClinicasContent() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Impacto directo en la rentabilidad
+            Impacto financiero de la cartera en la rentabilidad de clínicas en
+            Colombia
           </motion.h2>
 
           <motion.p
@@ -147,26 +149,25 @@ export default function ClinicasContent() {
           >
             La rentabilidad de una clínica no depende únicamente de cuánto
             factura, sino de su capacidad para convertir esa facturación en
-            ingresos reales. La acumulación de cartera afecta indicadores
-            financieros clave y limita la toma de decisiones estratégicas.
+            ingresos reales.
           </motion.p>
 
           <div className={styles.infoGrid}>
             {[
               {
-                title: "✔ Pérdida de liquidez",
+                title: "✔ Pérdida de liquidez en clínicas",
                 text: "Ingresos no percibidos afectan la operación diaria.",
               },
               {
-                title: "✔ Reducción de márgenes",
+                title: "✔ Reducción de márgenes financieros",
                 text: "Costos fijos altos frente a ingresos demorados.",
               },
               {
-                title: "✔ Limitación en inversión",
+                title: "✔ Limitación en crecimiento",
                 text: "Dificultad para modernizar infraestructura o tecnología.",
               },
               {
-                title: "✔ Riesgo financiero",
+                title: "✔ Riesgo financiero elevado",
                 text: "Desbalance entre ingresos proyectados y reales.",
               },
             ].map((item, i) => (
@@ -191,20 +192,19 @@ export default function ClinicasContent() {
             viewport={{ once: true }}
           >
             ✔ Facturar no es suficiente: el verdadero indicador es el recaudo
-            efectivo y la eficiencia financiera de la clínica.
+            efectivo en clínicas de Colombia.
           </motion.div>
         </section>
 
         {/* OPERACIÓN */}
         <section className={styles.section}>
           <motion.h2 className={styles.subtitle}>
-            Complejidad operativa en clínicas
+            Complejidad operativa y administrativa en clínicas en Colombia
           </motion.h2>
 
           <motion.p className={styles.text}>
             Las clínicas manejan altos volúmenes de pacientes, facturación y
-            procesos administrativos, lo que incrementa la complejidad en la
-            gestión financiera y operativa.
+            procesos administrativos.
           </motion.p>
 
           <div className={styles.grid}>
@@ -226,13 +226,12 @@ export default function ClinicasContent() {
         <section id="contacto" className={styles.cta}>
           <motion.div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Mejora la rentabilidad de tu clínica
+              Mejora la rentabilidad de tu clínica en Colombia
             </h2>
 
             <p className={styles.ctaText}>
               Optimizar el flujo de caja y la gestión financiera es clave para
-              garantizar el crecimiento y sostenibilidad de las clínicas en
-              Colombia.
+              garantizar el crecimiento y sostenibilidad de las clínicas.
             </p>
 
             <div className={styles.actions}>

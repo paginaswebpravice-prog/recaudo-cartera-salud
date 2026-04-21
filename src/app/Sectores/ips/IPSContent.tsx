@@ -17,7 +17,7 @@ export default function IPSContent() {
           <span className={styles.badge}>Sector salud en Colombia</span>
 
           <h1 className={styles.title}>
-            IPS en Colombia: desafíos financieros y sostenibilidad operativa
+            IPS en Colombia: crisis financiera, cartera vencida y flujo de caja
           </h1>
 
           <p className={styles.description}>
@@ -44,7 +44,7 @@ export default function IPSContent() {
         {/* PROBLEMÁTICA */}
         <section className={styles.section}>
           <motion.h2 className={styles.subtitle}>
-            Problemáticas recurrentes en las IPS en Colombia
+            Principales problemas financieros de las IPS en Colombia
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -78,7 +78,7 @@ export default function IPSContent() {
         {/* IMPACTO */}
         <section className={styles.section}>
           <motion.h2 className={styles.subtitle}>
-            Impacto financiero en las IPS
+            Impacto de la crisis financiera en las IPS en Colombia
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -92,19 +92,19 @@ export default function IPSContent() {
           <div className={styles.infoGrid}>
             {[
               {
-                title: "✔ Flujo de caja limitado",
+                title: "✔ Flujo de caja limitado en IPS",
                 text: "Dificultad para cubrir gastos operativos básicos como nómina, insumos y proveedores.",
               },
               {
-                title: "✔ Restricción en crecimiento",
+                title: "✔ Restricción en crecimiento institucional",
                 text: "Imposibilidad de expandir servicios o mejorar infraestructura.",
               },
               {
-                title: "✔ Riesgo operativo",
+                title: "✔ Riesgo operativo en IPS",
                 text: "Impacto en la continuidad de la atención a pacientes.",
               },
               {
-                title: "✔ Desbalance financiero",
+                title: "✔ Desbalance financiero en el sector salud",
                 text: "Incremento de pasivos frente a ingresos no percibidos.",
               },
             ].map((item, i) => (
@@ -124,7 +124,7 @@ export default function IPSContent() {
         {/* TIPOS */}
         <section className={styles.section}>
           <motion.h2 className={styles.subtitle}>
-            Tipos de IPS y sus particularidades
+            Tipos de IPS en Colombia y sus desafíos operativos
           </motion.h2>
 
           <div className={styles.grid}>
@@ -145,7 +145,7 @@ export default function IPSContent() {
         {/* NECESIDAD */}
         <section className={styles.section}>
           <motion.h2 className={styles.subtitle}>
-            Necesidad de estrategias especializadas
+            Estrategias para mejorar la sostenibilidad financiera de las IPS
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -165,7 +165,7 @@ export default function IPSContent() {
         <section id="contacto" className={styles.cta}>
           <motion.div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Fortalece la estabilidad financiera de tu IPS
+              Fortalece la sostenibilidad financiera de tu IPS en Colombia
             </h2>
 
             <p className={styles.ctaText}>

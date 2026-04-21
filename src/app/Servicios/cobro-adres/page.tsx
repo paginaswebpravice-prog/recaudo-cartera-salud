@@ -2,18 +2,20 @@ import { Metadata } from "next";
 import CobroAdresContent from "./CobroAdresContent";
 
 export const metadata: Metadata = {
-  title: "Cobro de cartera ante ADRES en Colombia | IPS y clínicas",
+  title:
+    "Cómo cobrar cartera ante ADRES en Colombia: guía para IPS y clínicas (SOAT, NO PBS y ECAT)",
   description:
-    "Recupere cartera ante ADRES en Colombia. Servicio para IPS y clínicas: NO PBS, SOAT, ECAT, recobros y reclamaciones con enfoque técnico y jurídico.",
+    "Recupere cartera ante ADRES en Colombia sin devoluciones. Estrategia técnica y jurídica para IPS y clínicas en SOAT, NO PBS, ECAT y recobros.",
 
   alternates: {
     canonical: "https://recaudocarteraipsyeps.com/Servicios/cobro-adres",
   },
 
   openGraph: {
-    title: "Cobro de cartera ADRES en Colombia para IPS y clínicas",
+    title:
+      "Cobro de cartera ADRES en Colombia: cómo evitar devoluciones y recuperar dinero de EPS",
     description:
-      "Gestione y recupere cartera ante ADRES en Colombia evitando devoluciones y maximizando el recaudo efectivo.",
+      "Guía para IPS y clínicas en Colombia sobre cobro ante ADRES (SOAT, NO PBS, ECAT y recobros) con enfoque técnico y jurídico.",
     url: "https://recaudocarteraipsyeps.com/Servicios/cobro-adres",
     siteName: "Recaudo Cartera IPS y EPS",
     locale: "es_CO",

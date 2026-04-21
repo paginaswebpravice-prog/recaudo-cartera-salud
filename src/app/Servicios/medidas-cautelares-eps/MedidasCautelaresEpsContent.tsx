@@ -19,7 +19,8 @@ export default function MedidasCautelaresEpsContent() {
           </span>
 
           <h1 className={styles.title}>
-            Medidas cautelares para asegurar el pago de cartera EPS
+            Embargos y medidas cautelares contra EPS en Colombia para asegurar
+            el pago de cartera
           </h1>
 
           <p className={styles.description}>
@@ -51,7 +52,8 @@ export default function MedidasCautelaresEpsContent() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Riesgos de no asegurar el pago de la cartera
+            Riesgos de no aplicar medidas cautelares en el cobro a EPS en
+            Colombia
           </motion.h2>
 
           <div className={styles.grid}>
@@ -83,7 +85,8 @@ export default function MedidasCautelaresEpsContent() {
         {/* QUE SON */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Qué son las medidas cautelares en el cobro a EPS?
+            ¿Qué son las medidas cautelares para EPS y por qué aseguran el
+            recaudo?
           </h2>
 
           <p className={styles.text}>
@@ -127,7 +130,8 @@ export default function MedidasCautelaresEpsContent() {
         {/* SOLUCIÓN */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Nuestro servicio de medidas cautelares contra EPS
+            Servicio jurídico de embargos y medidas cautelares contra EPS en
+            Colombia
           </h2>
 
           <p className={styles.text}>
@@ -159,7 +163,7 @@ export default function MedidasCautelaresEpsContent() {
         {/* PROCESO */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Cómo implementamos las medidas cautelares?
+            ¿Cómo se aplican las medidas cautelares contra EPS paso a paso?
           </h2>
 
           <div className={styles.grid}>
@@ -181,7 +185,9 @@ export default function MedidasCautelaresEpsContent() {
 
         {/* BENEFICIOS */}
         <section className={styles.section}>
-          <h2 className={styles.subtitle}>Beneficios para tu IPS o clínica</h2>
+          <h2 className={styles.subtitle}>
+            Beneficios de aplicar medidas cautelares en el cobro a EPS
+          </h2>
 
           <div className={styles.benefits}>
             <span>✔ Mayor probabilidad de recaudo</span>
@@ -196,7 +202,7 @@ export default function MedidasCautelaresEpsContent() {
         {/* DIFERENCIAL */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Por qué son clave las medidas cautelares?
+            ¿Por qué las medidas cautelares son clave en el cobro a EPS?
           </h2>
 
           <p className={styles.text}>
@@ -215,7 +221,8 @@ export default function MedidasCautelaresEpsContent() {
         <section id="contacto" className={styles.cta}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Asegura el pago de tu cartera con medidas cautelares
+              Asegura el pago de cartera con medidas cautelares contra EPS en
+              Colombia
             </h2>
 
             <p className={styles.ctaText}>

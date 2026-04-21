@@ -18,8 +18,10 @@ export default function CobroAdresContent() {
             Cobro de cartera ADRES en Colombia
           </span>
 
+          {/* H1 OPTIMIZADO CTR */}
           <h1 className={styles.title}>
-            Cobro de cartera ante ADRES en Colombia para IPS y clínicas
+            Cómo cobrar cartera ante ADRES en Colombia sin devoluciones (SOAT,
+            NO PBS y ECAT)
           </h1>
 
           <p className={styles.description}>
@@ -50,7 +52,7 @@ export default function CobroAdresContent() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Problemas frecuentes en el cobro ante ADRES
+            Errores que causan devoluciones en el cobro ante ADRES en Colombia
           </motion.h2>
 
           <div className={styles.grid}>
@@ -82,7 +84,8 @@ export default function CobroAdresContent() {
         {/* QUE ES ADRES */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Qué es ADRES y qué tipo de cartera se puede cobrar?
+            Qué es ADRES en Colombia y qué cartera puedes recuperar (SOAT, NO
+            PBS, ECAT)
           </h2>
 
           <p className={styles.text}>
@@ -122,7 +125,7 @@ export default function CobroAdresContent() {
         {/* SOLUCIÓN */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Nuestro servicio de recuperación de cartera ante ADRES
+            Servicio especializado para recuperar cartera ante ADRES en Colombia
           </h2>
 
           <p className={styles.text}>
@@ -149,7 +152,7 @@ export default function CobroAdresContent() {
         {/* PROCESO */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Cómo gestionamos el cobro ante ADRES?
+            Cómo hacemos el cobro ante ADRES paso a paso en Colombia
           </h2>
 
           <div className={styles.grid}>
@@ -172,7 +175,8 @@ export default function CobroAdresContent() {
         {/* BENEFICIOS */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Beneficios para tu institución de salud
+            Beneficios de recuperar cartera ADRES para IPS y clínicas en
+            Colombia
           </h2>
 
           <div className={styles.benefits}>
@@ -189,7 +193,8 @@ export default function CobroAdresContent() {
         <section id="contacto" className={styles.cta}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Recupera tu cartera ante ADRES sin errores
+              Recupera cartera ante ADRES en Colombia sin errores ni
+              devoluciones
             </h2>
 
             <p className={styles.ctaText}>

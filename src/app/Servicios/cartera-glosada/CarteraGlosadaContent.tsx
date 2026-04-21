@@ -15,11 +15,13 @@ export default function CarteraGlosadaContent() {
           transition={{ duration: 0.6 }}
         >
           <span className={styles.badge}>
-            Gestión de cartera glosada en Colombia
+            Recuperación de cartera glosada en Colombia
           </span>
 
+          {/* H1 OPTIMIZADO CTR */}
           <h1 className={styles.title}>
-            Recuperación de cartera glosada en EPS para IPS y clínicas
+            Cómo recuperar cartera glosada en Colombia: dinero retenido por EPS
+            en IPS y clínicas
           </h1>
 
           <p className={styles.description}>
@@ -50,7 +52,7 @@ export default function CarteraGlosadaContent() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Problemas comunes en la cartera glosada en Colombia
+            Errores más comunes en la gestión de cartera glosada en Colombia
           </motion.h2>
 
           <div className={styles.grid}>
@@ -82,7 +84,7 @@ export default function CarteraGlosadaContent() {
         {/* QUE ES GLOSA */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Qué es una glosa y por qué afecta tu cartera?
+            Qué es una glosa en EPS y cómo afecta la cartera de tu IPS o clínica
           </h2>
 
           <p className={styles.text}>
@@ -131,7 +133,7 @@ export default function CarteraGlosadaContent() {
         {/* SOLUCIÓN */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Nuestro servicio de gestión de cartera glosada
+            Servicio especializado para recuperar cartera glosada en Colombia
           </h2>
 
           <p className={styles.text}>
@@ -163,7 +165,7 @@ export default function CarteraGlosadaContent() {
         {/* PROCESO */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Cómo trabajamos la recuperación de glosas?
+            Cómo recuperamos cartera glosada paso a paso en Colombia
           </h2>
 
           <div className={styles.grid}>
@@ -186,7 +188,7 @@ export default function CarteraGlosadaContent() {
         {/* BENEFICIOS */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Beneficios para tu institución de salud
+            Beneficios de recuperar cartera glosada en EPS para tu IPS o clínica
           </h2>
 
           <div className={styles.benefits}>
@@ -203,7 +205,7 @@ export default function CarteraGlosadaContent() {
         <section id="contacto" className={styles.cta}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Recupera tu cartera glosada de forma estratégica
+              Recupera cartera glosada en Colombia antes de que se pierda
             </h2>
 
             <p className={styles.ctaText}>

@@ -17,7 +17,8 @@ export default function HospitalesContent() {
           <span className={styles.badge}>Sector hospitalario en Colombia</span>
 
           <h1 className={styles.title}>
-            Hospitales en Colombia: sostenibilidad, presupuesto y operación
+            Hospitales en Colombia: crisis financiera, sostenibilidad y flujo de
+            caja
           </h1>
 
           <p className={styles.description}>
@@ -51,7 +52,8 @@ export default function HospitalesContent() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Desafíos estructurales en hospitales
+            Principales problemas financieros y operativos en hospitales en
+            Colombia
           </motion.h2>
 
           <motion.p
@@ -110,7 +112,7 @@ export default function HospitalesContent() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Impacto en la sostenibilidad hospitalaria
+            Impacto de la crisis financiera en la sostenibilidad hospitalaria
           </motion.h2>
 
           <motion.p
@@ -129,19 +131,19 @@ export default function HospitalesContent() {
           <div className={styles.infoGrid}>
             {[
               {
-                title: "✔ Déficit financiero",
+                title: "✔ Déficit financiero en hospitales",
                 text: "Desbalance entre ingresos proyectados y recursos disponibles.",
               },
               {
-                title: "✔ Limitación en atención",
+                title: "✔ Limitación en la atención de pacientes",
                 text: "Restricciones para ampliar cobertura o mejorar servicios.",
               },
               {
-                title: "✔ Afectación del personal",
-                text: "Dificultades en contratación y pago de talento humano.",
+                title: "✔ Afectación del talento humano en salud",
+                text: "Dificultades en contratación y pago de personal médico.",
               },
               {
-                title: "✔ Riesgo institucional",
+                title: "✔ Riesgo institucional en hospitales",
                 text: "Impacto en la continuidad y calidad del servicio de salud.",
               },
             ].map((item, i) => (
@@ -159,16 +161,15 @@ export default function HospitalesContent() {
           </div>
 
           <motion.div className={styles.highlightBox}>
-            ✔ La sostenibilidad de un hospital depende de su capacidad para
-            gestionar recursos de manera eficiente y garantizar el flujo de
-            ingresos.
+            ✔ La sostenibilidad hospitalaria depende del flujo de caja y la
+            eficiencia en la gestión de cartera.
           </motion.div>
         </section>
 
         {/* OPERACIÓN */}
         <section className={styles.section}>
           <motion.h2 className={styles.subtitle}>
-            Complejidad operativa hospitalaria
+            Complejidad operativa en hospitales de alta demanda en Colombia
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -195,7 +196,7 @@ export default function HospitalesContent() {
         {/* NECESIDAD */}
         <section className={styles.section}>
           <motion.h2 className={styles.subtitle}>
-            Necesidad de gestión estratégica
+            Estrategias para mejorar la sostenibilidad financiera hospitalaria
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -215,7 +216,7 @@ export default function HospitalesContent() {
         <section id="contacto" className={styles.cta}>
           <motion.div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Fortalece la sostenibilidad de tu hospital
+              Mejora la sostenibilidad de tu hospital en Colombia
             </h2>
 
             <p className={styles.ctaText}>

@@ -19,7 +19,7 @@ export default function RecuperacionCarteraEpsContent() {
           </span>
 
           <h1 className={styles.title}>
-            Recuperación de cartera EPS en Colombia para IPS, clínicas y
+            Cómo recuperar cartera EPS en Colombia para IPS, clínicas y
             prestadores de salud
           </h1>
 
@@ -46,7 +46,7 @@ export default function RecuperacionCarteraEpsContent() {
         {/* ================= CONTEXTO ================= */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Qué es la recuperación de cartera EPS en Colombia?
+            ¿Qué es la recuperación efectiva de cartera EPS en Colombia?
           </h2>
 
           <p className={styles.text}>
@@ -68,7 +68,7 @@ export default function RecuperacionCarteraEpsContent() {
         {/* ================= PROBLEMAS ================= */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Principales problemas en la cartera de EPS
+            Problemas más comunes que impiden recuperar cartera EPS en Colombia
           </h2>
 
           <div className={styles.grid}>
@@ -104,7 +104,7 @@ export default function RecuperacionCarteraEpsContent() {
         <section id="contacto" className={styles.cta}>
           <div>
             <h2 className={styles.ctaTitle}>
-              Recupera tu cartera con respaldo legal experto
+              Recupera tu cartera EPS en Colombia con respaldo jurídico experto
             </h2>
 
             <p className={styles.ctaText}>
