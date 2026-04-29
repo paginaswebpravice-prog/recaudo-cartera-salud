@@ -18,10 +18,10 @@ export default function CobroAdresContent() {
             Cobro de cartera ADRES en Colombia
           </span>
 
-          {/* H1 OPTIMIZADO CTR */}
+          {/* H1 OPTIMIZADO */}
           <h1 className={styles.title}>
-            Cómo cobrar cartera ante ADRES en Colombia sin devoluciones (SOAT,
-            NO PBS y ECAT)
+            Cómo cobrar cartera ante ADRES en Colombia sin devoluciones y
+            recuperar dinero retenido (SOAT, NO PBS y ECAT)
           </h1>
 
           <p className={styles.description}>
@@ -36,7 +36,7 @@ export default function CobroAdresContent() {
               Solicitar asesoría
             </a>
             <a href="/Blog" className={styles.secondary}>
-              Ver artículos relacionados
+              Ver guías y casos reales
             </a>
           </div>
         </motion.div>
@@ -46,13 +46,8 @@ export default function CobroAdresContent() {
       <main className={styles.container}>
         {/* PROBLEMA */}
         <section className={styles.section}>
-          <motion.h2
-            className={styles.subtitle}
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            Errores que causan devoluciones en el cobro ante ADRES en Colombia
+          <motion.h2 className={styles.subtitle}>
+            Errores que generan devoluciones en el cobro ante ADRES en Colombia
           </motion.h2>
 
           <div className={styles.grid}>
@@ -85,7 +80,7 @@ export default function CobroAdresContent() {
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
             Qué es ADRES en Colombia y qué cartera puedes recuperar (SOAT, NO
-            PBS, ECAT)
+            PBS, ECAT y recobros)
           </h2>
 
           <p className={styles.text}>
@@ -126,6 +121,7 @@ export default function CobroAdresContent() {
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
             Servicio especializado para recuperar cartera ante ADRES en Colombia
+            (sin devoluciones)
           </h2>
 
           <p className={styles.text}>
@@ -152,7 +148,7 @@ export default function CobroAdresContent() {
         {/* PROCESO */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Cómo hacemos el cobro ante ADRES paso a paso en Colombia
+            Cómo hacer el cobro ante ADRES paso a paso en Colombia
           </h2>
 
           <div className={styles.grid}>
@@ -175,8 +171,7 @@ export default function CobroAdresContent() {
         {/* BENEFICIOS */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Beneficios de recuperar cartera ADRES para IPS y clínicas en
-            Colombia
+            Beneficios del cobro ante ADRES para IPS y clínicas en Colombia
           </h2>
 
           <div className={styles.benefits}>
@@ -193,8 +188,8 @@ export default function CobroAdresContent() {
         <section id="contacto" className={styles.cta}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Recupera cartera ante ADRES en Colombia sin errores ni
-              devoluciones
+              Recupera cartera ante ADRES en Colombia sin devoluciones ni
+              errores
             </h2>
 
             <p className={styles.ctaText}>
@@ -210,6 +205,7 @@ export default function CobroAdresContent() {
               <a
                 href="https://api.whatsapp.com/send/?phone=573114659315"
                 target="_blank"
+                rel="noopener noreferrer"
                 className={styles.secondary}
               >
                 Hablar por WhatsApp

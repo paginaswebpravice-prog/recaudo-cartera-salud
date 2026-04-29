@@ -19,8 +19,8 @@ export default function RecuperacionCarteraEpsContent() {
           </span>
 
           <h1 className={styles.title}>
-            Cómo recuperar cartera EPS en Colombia para IPS, clínicas y
-            prestadores de salud
+            Cómo recuperar cartera EPS en Colombia rápido: guía legal para IPS,
+            clínicas y prestadores de salud
           </h1>
 
           <p className={styles.description}>
@@ -46,7 +46,8 @@ export default function RecuperacionCarteraEpsContent() {
         {/* ================= CONTEXTO ================= */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Qué es la recuperación efectiva de cartera EPS en Colombia?
+            Recuperación de cartera EPS en Colombia: qué es y cómo funciona
+            realmente
           </h2>
 
           <p className={styles.text}>
@@ -68,7 +69,8 @@ export default function RecuperacionCarteraEpsContent() {
         {/* ================= PROBLEMAS ================= */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Problemas más comunes que impiden recuperar cartera EPS en Colombia
+            Problemas que impiden recuperar cartera EPS en Colombia (y cómo
+            evitarlos)
           </h2>
 
           <div className={styles.grid}>
@@ -104,7 +106,7 @@ export default function RecuperacionCarteraEpsContent() {
         <section id="contacto" className={styles.cta}>
           <div>
             <h2 className={styles.ctaTitle}>
-              Recupera tu cartera EPS en Colombia con respaldo jurídico experto
+              Recupera cartera EPS en Colombia hoy con respaldo jurídico experto
             </h2>
 
             <p className={styles.ctaText}>
@@ -121,6 +123,7 @@ export default function RecuperacionCarteraEpsContent() {
               <a
                 href="https://api.whatsapp.com"
                 target="_blank"
+                rel="noopener noreferrer"
                 className={styles.secondary}
               >
                 Hablar por WhatsApp

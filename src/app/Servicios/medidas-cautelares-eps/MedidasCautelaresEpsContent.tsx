@@ -15,12 +15,12 @@ export default function MedidasCautelaresEpsContent() {
           transition={{ duration: 0.6 }}
         >
           <span className={styles.badge}>
-            Medidas cautelares contra EPS en Colombia
+            Embargos a EPS y medidas cautelares en Colombia
           </span>
 
           <h1 className={styles.title}>
-            Embargos y medidas cautelares contra EPS en Colombia para asegurar
-            el pago de cartera
+            Cómo embargar EPS en Colombia y asegurar el pago de cartera para IPS
+            y clínicas
           </h1>
 
           <p className={styles.description}>
@@ -52,8 +52,7 @@ export default function MedidasCautelaresEpsContent() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Riesgos de no aplicar medidas cautelares en el cobro a EPS en
-            Colombia
+            Riesgos de no embargar a una EPS en Colombia y perder tu cartera
           </motion.h2>
 
           <div className={styles.grid}>
@@ -85,8 +84,8 @@ export default function MedidasCautelaresEpsContent() {
         {/* QUE SON */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Qué son las medidas cautelares para EPS y por qué aseguran el
-            recaudo?
+            Qué son las medidas cautelares contra EPS en Colombia y cómo
+            aseguran el recaudo
           </h2>
 
           <p className={styles.text}>
@@ -130,8 +129,7 @@ export default function MedidasCautelaresEpsContent() {
         {/* SOLUCIÓN */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Servicio jurídico de embargos y medidas cautelares contra EPS en
-            Colombia
+            Servicio jurídico para embargar EPS en Colombia y recuperar cartera
           </h2>
 
           <p className={styles.text}>
@@ -163,7 +161,7 @@ export default function MedidasCautelaresEpsContent() {
         {/* PROCESO */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Cómo se aplican las medidas cautelares contra EPS paso a paso?
+            Cómo embargar una EPS paso a paso en Colombia y asegurar el pago
           </h2>
 
           <div className={styles.grid}>
@@ -186,7 +184,8 @@ export default function MedidasCautelaresEpsContent() {
         {/* BENEFICIOS */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Beneficios de aplicar medidas cautelares en el cobro a EPS
+            Beneficios de embargar EPS en Colombia para asegurar el recaudo de
+            cartera
           </h2>
 
           <div className={styles.benefits}>
@@ -202,7 +201,7 @@ export default function MedidasCautelaresEpsContent() {
         {/* DIFERENCIAL */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Por qué las medidas cautelares son clave en el cobro a EPS?
+            Por qué embargar EPS es clave para recuperar cartera en Colombia
           </h2>
 
           <p className={styles.text}>
@@ -221,8 +220,7 @@ export default function MedidasCautelaresEpsContent() {
         <section id="contacto" className={styles.cta}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Asegura el pago de cartera con medidas cautelares contra EPS en
-              Colombia
+              Embarga EPS en Colombia y asegura el pago real de tu cartera
             </h2>
 
             <p className={styles.ctaText}>
@@ -239,6 +237,7 @@ export default function MedidasCautelaresEpsContent() {
               <a
                 href="https://api.whatsapp.com/send/?phone=573114659315"
                 target="_blank"
+                rel="noopener noreferrer"
                 className={styles.secondary}
               >
                 Hablar con un abogado

@@ -1,16 +1,20 @@
 import NoVenderCarteraEps from "./NoVenderCarteraEps";
 
 export const metadata = {
-  title: "¿Conviene vender la cartera a una EPS? Mejor recupérela | PRAVICE",
+  title:
+    "¿Conviene vender la cartera EPS en Colombia? Mejor recupérela con estrategia jurídica | PRAVICE",
   description:
-    "Por qué no conviene vender cartera EPS con descuento. PRAVICE no compra cartera: la recupera efectivamente con estrategia jurídica y proceso ejecutivo.",
+    "Descubra por qué vender cartera EPS implica pérdida de valor. PRAVICE recupera cartera con estrategia jurídica, proceso ejecutivo y resultados reales en Colombia.",
+
   alternates: {
     canonical: "https://recaudocarteraipsyeps.com/Blog/no-vender-cartera-eps",
   },
+
   openGraph: {
-    title: "¿Conviene vender la cartera a una EPS o recuperarla?",
+    title:
+      "¿Vender cartera EPS o recuperarla en Colombia? Decisión estratégica clave",
     description:
-      "Análisis estratégico sobre vender cartera EPS vs recuperarla jurídicamente en Colombia.",
+      "Análisis jurídico y financiero sobre vender cartera EPS vs recuperarla con estrategias legales en Colombia.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/no-vender-cartera-eps",
   },
@@ -20,9 +24,10 @@ export default function Page() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "¿Conviene vender la cartera a una EPS? Mejor recupérela",
+    headline:
+      "¿Conviene vender la cartera EPS en Colombia? Mejor recupérela con estrategia jurídica",
     description:
-      "Análisis sobre por qué vender cartera EPS implica pérdida de valor frente a una estrategia jurídica de recuperación en Colombia.",
+      "Análisis sobre por qué vender cartera EPS reduce el valor frente a la recuperación jurídica en Colombia.",
     inLanguage: "es-CO",
     mainEntityOfPage:
       "https://recaudocarteraipsyeps.com/Blog/no-vender-cartera-eps",
@@ -38,7 +43,6 @@ export default function Page() {
 
   return (
     <>
-      {/* SCHEMA SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -46,7 +50,6 @@ export default function Page() {
         }}
       />
 
-      {/* CONTENT */}
       <NoVenderCarteraEps />
     </>
   );

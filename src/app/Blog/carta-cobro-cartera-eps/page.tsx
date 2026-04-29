@@ -2,14 +2,15 @@ import CartaCobroEPS from "./CartaCobroEPS";
 
 export const metadata = {
   title:
-    "Carta para cobro de cartera a EPS en Colombia | Modelo editable para IPS y clínicas",
+    "Carta de cobro de cartera a EPS en Colombia | Modelo profesional editable para IPS y clínicas (guía legal)",
   description:
     "Descarga modelo de carta para cobro de cartera a EPS en Colombia. Guía profesional para IPS, clínicas y proveedores de salud en Bogotá y todo el país. Mejora tu recaudo prejurídico y reduce la mora.",
   alternates: {
     canonical: "https://recaudocarteraipsyeps.com/Blog/carta-cobro-cartera-eps",
   },
   openGraph: {
-    title: "Carta para cobro de cartera a EPS en Colombia | Modelo editable",
+    title:
+      "Carta de cobro de cartera a EPS en Colombia | Modelo editable para IPS y clínicas",
     description:
       "Modelo profesional de carta para cobro de cartera a EPS en Colombia para IPS y clínicas.",
     type: "article",
@@ -22,7 +23,7 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Carta para cobro de cartera a EPS en Colombia | Modelo editable para IPS y clínicas",
+      "Carta de cobro de cartera a EPS en Colombia | Modelo profesional editable para IPS y clínicas",
     description:
       "Guía práctica y modelo editable de carta para cobro de cartera a EPS en Colombia para IPS, clínicas y proveedores de salud.",
     inLanguage: "es-CO",

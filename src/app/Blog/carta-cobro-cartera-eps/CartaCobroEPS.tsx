@@ -13,10 +13,13 @@ export default function CartaCobroEPS() {
             ← Volver al Blog
           </Link>
 
-          <span className={styles.badge}>Modelo profesional editable</span>
+          <span className={styles.badge}>
+            Modelo profesional editable para cobro a EPS
+          </span>
 
           <h1 className={styles.title}>
-            Carta para cobro de cartera a las EPS en Colombia
+            Carta de cobro de cartera a EPS en Colombia: modelo editable para
+            IPS y clínicas
           </h1>
 
           <p className={styles.subtitle}>
@@ -31,7 +34,9 @@ export default function CartaCobroEPS() {
       {/* CONTENIDO */}
       <article className={styles.article}>
         <section className={styles.section}>
-          <h2>Cobro de cartera en el sector salud en Colombia</h2>
+          <h2>
+            Cómo funciona el cobro de cartera a EPS en Colombia (guía práctica)
+          </h2>
 
           <p>
             El cobro de cartera a EPS en Colombia es uno de los principales
@@ -51,7 +56,9 @@ export default function CartaCobroEPS() {
         </section>
 
         <section className={styles.section}>
-          <h2>Checklist mínimo antes de iniciar el cobro a una EPS</h2>
+          <h2>
+            Checklist obligatorio antes de enviar una carta de cobro a una EPS
+          </h2>
 
           <ul className={styles.checklist}>
             <li>
@@ -68,7 +75,9 @@ export default function CartaCobroEPS() {
         </section>
 
         <section className={styles.sectionAlt}>
-          <h2>Modelo de carta para cobro de cartera a EPS (editable)</h2>
+          <h2>
+            Modelo de carta de cobro a EPS en Colombia (editable paso a paso)
+          </h2>
 
           <div className={styles.letterBox}>
             <p>
@@ -118,7 +127,9 @@ export default function CartaCobroEPS() {
         </section>
 
         <section className={styles.section}>
-          <h2>¿Qué hacer si la EPS no paga o dilata el proceso?</h2>
+          <h2>
+            Qué hacer si la EPS no responde a la carta de cobro en Colombia
+          </h2>
           <p>
             En muchos casos en Colombia, las EPS responden con glosas,
             objeciones o dilaciones administrativas. Ante esto, es fundamental
@@ -128,7 +139,7 @@ export default function CartaCobroEPS() {
         </section>
 
         <section className={styles.section}>
-          <h2>Errores comunes en el cobro de cartera en salud</h2>
+          <h2>Errores más comunes al enviar una carta de cobro a EPS</h2>
 
           <ul className={styles.checklist}>
             <li>No documentar correctamente la radicación</li>
@@ -140,7 +151,8 @@ export default function CartaCobroEPS() {
 
         <section className={styles.section}>
           <h2>
-            Recuperación de cartera en Bogotá y Colombia con estrategia legal
+            Recuperación de cartera en Bogotá y Colombia con cartas de cobro
+            efectivas
           </h2>
 
           <p>

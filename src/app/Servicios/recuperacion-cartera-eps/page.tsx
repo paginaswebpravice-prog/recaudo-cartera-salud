@@ -3,7 +3,7 @@ import RecuperacionCarteraEpsContent from "./RecuperacionCarteraEpsContent";
 
 export const metadata: Metadata = {
   title:
-    "Cómo recuperar cartera EPS en Colombia | IPS, clínicas y prestadores de salud",
+    "Recuperación de cartera EPS en Colombia | Cómo recuperar pagos de IPS y clínicas rápido y sin pérdida de dinero",
   description:
     "Aprenda cómo recuperar cartera EPS en Colombia con estrategias jurídicas, prejurídicas y judiciales. Servicio especializado para IPS, clínicas y prestadores de salud.",
 
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Cómo recuperar cartera EPS en Colombia para IPS y clínicas (Guía legal)",
+      "Cómo recuperar cartera EPS en Colombia rápido | Estrategias legales para IPS y clínicas",
     description:
       "Mejore su flujo de caja aprendiendo cómo recuperar cartera EPS en Colombia con estrategias legales y financieras especializadas.",
     url: "https://recaudocarteraipsyeps.com/Servicios/recuperacion-cartera-eps",
@@ -40,7 +40,7 @@ export default function Page() {
             {
               "@context": "https://schema.org",
               "@type": "Service",
-              name: "Cómo recuperar cartera EPS en Colombia para IPS y clínicas",
+              name: "Recuperación de cartera EPS en Colombia para IPS, clínicas y prestadores de salud",
               description:
                 "Servicio especializado en recuperación de cartera EPS para IPS, clínicas y prestadores de salud en Colombia.",
               areaServed: {

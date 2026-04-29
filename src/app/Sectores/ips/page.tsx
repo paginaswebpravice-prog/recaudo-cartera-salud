@@ -3,9 +3,9 @@ import IPSContent from "./IPSContent";
 
 export const metadata: Metadata = {
   title:
-    "IPS en Colombia: crisis financiera, cartera y flujo de caja | Cómo mejorar sostenibilidad",
+    "IPS en Colombia 2026: crisis financiera, cartera EPS y flujo de caja (guía completa)",
   description:
-    "Análisis de las IPS en Colombia: crisis de cartera, problemas de flujo de caja y estrategias para mejorar la sostenibilidad financiera y el recaudo.",
+    "Análisis profundo de las IPS en Colombia: crisis de cartera EPS, problemas de flujo de caja y estrategias para mejorar sostenibilidad financiera y recaudo.",
   keywords: [
     "IPS en Colombia",
     "cartera IPS Colombia",
@@ -19,9 +19,10 @@ export const metadata: Metadata = {
     canonical: "https://recaudocarteraipsyeps.com/Sectores/ips",
   },
   openGraph: {
-    title: "IPS en Colombia: crisis financiera, cartera y flujo de caja",
+    title:
+      "IPS en Colombia 2026: crisis financiera, cartera EPS y sostenibilidad",
     description:
-      "Descubre los principales problemas financieros de las IPS en Colombia y cómo mejorar su sostenibilidad y recaudo.",
+      "Descubre los principales problemas financieros de las IPS en Colombia y cómo mejorar su sostenibilidad y flujo de caja.",
     url: "https://recaudocarteraipsyeps.com/Sectores/ips",
     siteName: "Recaudo Cartera IPS y EPS",
     locale: "es_CO",
@@ -43,9 +44,9 @@ export default function Page() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            name: "IPS en Colombia: crisis financiera, cartera y flujo de caja",
+            name: "IPS en Colombia 2026: crisis financiera, cartera EPS y sostenibilidad",
             description:
-              "Análisis del impacto financiero, cartera y sostenibilidad de las IPS en Colombia.",
+              "Análisis del impacto financiero, cartera EPS y sostenibilidad de las IPS en Colombia.",
             url: "https://recaudocarteraipsyeps.com/Sectores/ips",
             inLanguage: "es",
             about: [

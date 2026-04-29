@@ -13,10 +13,13 @@ export default function EtapasCobroCarteraEPS() {
             ← Volver al Blog
           </Link>
 
-          <span className={styles.badge}>Guía estratégica</span>
+          <span className={styles.badge}>
+            Guía práctica de recuperación de cartera en salud
+          </span>
 
           <h1 className={styles.title}>
-            Cobro de cartera EPS en Colombia: etapas para un recaudo efectivo
+            Cómo cobrar cartera a EPS en Colombia paso a paso: etapas del
+            recaudo efectivo para IPS y clínicas
           </h1>
 
           <p className={styles.subtitle}>
@@ -29,7 +32,10 @@ export default function EtapasCobroCarteraEPS() {
 
       <article className={styles.article}>
         <section className={styles.section}>
-          <h2>Cobro de cartera EPS en el sector salud en Colombia</h2>
+          <h2>
+            Cobro de cartera a EPS en Colombia: por qué es clave para la
+            sostenibilidad financiera
+          </h2>
 
           <p>
             El cobro de cartera a EPS en Colombia es un proceso crítico para la
@@ -43,7 +49,9 @@ export default function EtapasCobroCarteraEPS() {
         </section>
 
         <section className={styles.section}>
-          <h2>Etapa 1: Diagnóstico y segmentación de la cartera</h2>
+          <h2>
+            Etapa 1: Diagnóstico y segmentación de cartera EPS en Colombia
+          </h2>
 
           <p>
             Se analiza antigüedad, radicación, saldos, glosas y riesgo de
@@ -57,7 +65,10 @@ export default function EtapasCobroCarteraEPS() {
         </section>
 
         <section className={styles.sectionAlt}>
-          <h2>Etapa 2: Cobro prejurídico estructurado</h2>
+          <h2>
+            Etapa 2: Cobro prejurídico estructurado para recuperación de cartera
+            EPS
+          </h2>
 
           <p>
             Se realizan requerimientos formales de pago y negociaciones con
@@ -71,7 +82,9 @@ export default function EtapasCobroCarteraEPS() {
         </section>
 
         <section className={styles.section}>
-          <h2>Etapa 3: Proceso ejecutivo</h2>
+          <h2>
+            Etapa 3: Proceso ejecutivo para cobro de cartera EPS en Colombia
+          </h2>
 
           <p>
             Cuando la obligación es exigible, se inicia proceso ejecutivo con
@@ -84,7 +97,9 @@ export default function EtapasCobroCarteraEPS() {
         </section>
 
         <section className={styles.sectionAlt}>
-          <h2>Etapa 4: Medidas cautelares</h2>
+          <h2>
+            Etapa 4: Medidas cautelares para asegurar el pago de cartera EPS
+          </h2>
 
           <p>
             Se identifican cuentas, activos y fuentes de pago para embargos
@@ -98,7 +113,7 @@ export default function EtapasCobroCarteraEPS() {
         </section>
 
         <section className={styles.section}>
-          <h2>Una estrategia integral marca la diferencia</h2>
+          <h2>Estrategia integral de cobro de cartera EPS en Colombia</h2>
 
           <p>
             El éxito no depende solo de demandar, sino de estructurar todo el

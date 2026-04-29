@@ -13,10 +13,13 @@ export default function NoticiaSanitasCardona() {
             ← Volver al Blog
           </Link>
 
-          <span className={styles.badge}>Noticias sector salud Colombia</span>
+          <span className={styles.badge}>
+            Noticias del sector salud en Colombia
+          </span>
 
           <h1 className={styles.title}>
-            Fabián Cardona asume la presidencia de EPS Sanitas en Colombia
+            Fabián Cardona es nombrado nuevo presidente de EPS Sanitas en
+            Colombia: impacto en cartera y pagos a IPS
           </h1>
 
           <p className={styles.subtitle}>
@@ -29,7 +32,7 @@ export default function NoticiaSanitasCardona() {
 
       <article className={styles.article}>
         <section className={styles.section}>
-          <h2>Nuevo liderazgo en EPS Sanitas</h2>
+          <h2>Nuevo liderazgo en EPS Sanitas y su impacto en Colombia</h2>
 
           <p>
             El nombramiento de Fabián Cardona como presidente de EPS Sanitas
@@ -43,7 +46,7 @@ export default function NoticiaSanitasCardona() {
         </section>
 
         <section className={styles.sectionAlt}>
-          <h2>Perfil estratégico de liderazgo en salud</h2>
+          <h2>Perfil de liderazgo y visión estratégica en el sector salud</h2>
 
           <p>
             Su experiencia está enfocada en eficiencia operativa y
@@ -57,7 +60,10 @@ export default function NoticiaSanitasCardona() {
         </section>
 
         <section className={styles.section}>
-          <h2>Impacto en el cobro de cartera a EPS en Colombia</h2>
+          <h2>
+            Impacto del cambio en EPS Sanitas sobre el cobro de cartera en
+            Colombia
+          </h2>
 
           <ul className={styles.checklist}>
             <li>Reorganización de prioridades de pago</li>
@@ -68,7 +74,7 @@ export default function NoticiaSanitasCardona() {
         </section>
 
         <section className={styles.sectionAlt}>
-          <h2>¿Qué significa para IPS y clínicas en Bogotá?</h2>
+          <h2>¿Qué significa este cambio para IPS y clínicas en Bogotá?</h2>
 
           <p>
             Estos cambios pueden generar ajustes en pagos y tiempos de
@@ -82,7 +88,7 @@ export default function NoticiaSanitasCardona() {
         </section>
 
         <section className={styles.section}>
-          <h2>Claves para el recaudo de cartera</h2>
+          <h2>Claves para la recuperación de cartera en el sector salud</h2>
 
           <div className={styles.letterBox}>
             <p>
@@ -98,7 +104,9 @@ export default function NoticiaSanitasCardona() {
         </section>
 
         <section className={styles.section}>
-          <h2>Conclusión</h2>
+          <h2>
+            Conclusión sobre EPS Sanitas y el sistema de salud en Colombia
+          </h2>
 
           <p>
             Los cambios en EPS Sanitas reflejan transformaciones en el sistema
@@ -112,7 +120,7 @@ export default function NoticiaSanitasCardona() {
         </section>
 
         <section className={styles.sectionAlt}>
-          <h2>Fuente</h2>
+          <h2>Fuente oficial de la información</h2>
 
           <a
             href="https://consultorsalud.com/fabian-cardona-asume-la-presidencia-eps-sanitas/"

@@ -2,7 +2,7 @@ import EtapasCobroCarteraEPS from "./EtapasCobroCarteraEPS";
 
 export const metadata = {
   title:
-    "Cobro de cartera EPS en Colombia: etapas para un recaudo efectivo | IPS y clínicas en Bogotá",
+    "Cómo cobrar cartera a EPS en Colombia paso a paso | Etapas del recaudo efectivo para IPS y clínicas",
   description:
     "Guía completa sobre el cobro de cartera a EPS en Colombia. Conozca las etapas: diagnóstico, cobro prejurídico, proceso ejecutivo y medidas cautelares para IPS y clínicas en Bogotá.",
   alternates: {
@@ -10,9 +10,10 @@ export const metadata = {
       "https://recaudocarteraipsyeps.com/Blog/etapas-cobro-cartera-eps",
   },
   openGraph: {
-    title: "Cobro de cartera EPS en Colombia: etapas para un recaudo efectivo",
+    title:
+      "Cómo cobrar cartera a EPS en Colombia paso a paso | Guía para IPS y clínicas",
     description:
-      "Estrategia integral de recuperación de cartera EPS en Colombia para IPS y clínicas.",
+      "Estrategia integral de recuperación de cartera EPS en Colombia: etapas clave para recaudo efectivo.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/etapas-cobro-cartera-eps",
   },
@@ -23,7 +24,7 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Cobro de cartera EPS en Colombia: etapas para un recaudo efectivo",
+      "Cómo cobrar cartera a EPS en Colombia paso a paso | Etapas para recaudo efectivo",
     description:
       "Guía sobre etapas del cobro de cartera EPS en Colombia: diagnóstico, prejurídico, proceso ejecutivo y medidas cautelares.",
     inLanguage: "es-CO",
@@ -41,7 +42,6 @@ export default function Page() {
 
   return (
     <>
-      {/* SCHEMA SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -49,7 +49,6 @@ export default function Page() {
         }}
       />
 
-      {/* CONTENT */}
       <EtapasCobroCarteraEPS />
     </>
   );

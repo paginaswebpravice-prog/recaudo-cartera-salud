@@ -17,7 +17,8 @@ export default function IPSContent() {
           <span className={styles.badge}>Sector salud en Colombia</span>
 
           <h1 className={styles.title}>
-            IPS en Colombia: crisis financiera, cartera vencida y flujo de caja
+            IPS en Colombia: crisis financiera, cartera EPS y flujo de caja en
+            riesgo
           </h1>
 
           <p className={styles.description}>
@@ -44,7 +45,8 @@ export default function IPSContent() {
         {/* PROBLEMÁTICA */}
         <section className={styles.section}>
           <motion.h2 className={styles.subtitle}>
-            Principales problemas financieros de las IPS en Colombia
+            Crisis financiera en IPS: principales problemas con EPS y cartera
+            vencida en Colombia
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -78,7 +80,7 @@ export default function IPSContent() {
         {/* IMPACTO */}
         <section className={styles.section}>
           <motion.h2 className={styles.subtitle}>
-            Impacto de la crisis financiera en las IPS en Colombia
+            Impacto de la crisis de flujo de caja en las IPS en Colombia
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -124,7 +126,7 @@ export default function IPSContent() {
         {/* TIPOS */}
         <section className={styles.section}>
           <motion.h2 className={styles.subtitle}>
-            Tipos de IPS en Colombia y sus desafíos operativos
+            Tipos de IPS en Colombia y sus desafíos en cartera y operación
           </motion.h2>
 
           <div className={styles.grid}>
@@ -145,7 +147,8 @@ export default function IPSContent() {
         {/* NECESIDAD */}
         <section className={styles.section}>
           <motion.h2 className={styles.subtitle}>
-            Estrategias para mejorar la sostenibilidad financiera de las IPS
+            Estrategias para mejorar la sostenibilidad financiera de las IPS en
+            Colombia
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -165,7 +168,8 @@ export default function IPSContent() {
         <section id="contacto" className={styles.cta}>
           <motion.div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Fortalece la sostenibilidad financiera de tu IPS en Colombia
+              Mejora la sostenibilidad financiera y flujo de caja de tu IPS en
+              Colombia
             </h2>
 
             <p className={styles.ctaText}>

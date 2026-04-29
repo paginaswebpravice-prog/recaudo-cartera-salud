@@ -3,7 +3,7 @@ import HospitalesContent from "./HospitalesContent";
 
 export const metadata: Metadata = {
   title:
-    "Hospitales en Colombia: problemas financieros, sostenibilidad y flujo de caja | Guía completa",
+    "Hospitales en Colombia 2026: crisis financiera, cartera EPS y flujo de caja (guía completa)",
   description:
     "Análisis del sector hospitalario en Colombia: sostenibilidad, crisis financiera, cartera con EPS y estrategias para mejorar flujo de caja y operación hospitalaria.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Hospitales en Colombia: crisis financiera, cartera y sostenibilidad",
+      "Hospitales en Colombia 2026: crisis financiera, cartera EPS y sostenibilidad",
     description:
       "Descubre los principales problemas financieros de los hospitales en Colombia y cómo mejorar su sostenibilidad y flujo de caja.",
     url: "https://recaudocarteraipsyeps.com/Sectores/hospitales",
@@ -44,7 +44,7 @@ export default function Page() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            name: "Hospitales en Colombia: crisis financiera, sostenibilidad y cartera",
+            name: "Hospitales en Colombia 2026: crisis financiera, cartera EPS y sostenibilidad hospitalaria",
             description:
               "Análisis del sector hospitalario en Colombia: problemas financieros, cartera con EPS y sostenibilidad institucional.",
             url: "https://recaudocarteraipsyeps.com/Sectores/hospitales",

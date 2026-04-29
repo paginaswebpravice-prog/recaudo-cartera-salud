@@ -13,23 +13,27 @@ export default function PrescripcionCarteraSalud() {
             ← Volver al Blog
           </Link>
 
-          <span className={styles.badge}>Control de riesgo jurídico</span>
+          <span className={styles.badge}>Riesgo crítico en cartera EPS</span>
 
           <h1 className={styles.title}>
-            Prescripción de cartera en el sector salud en Colombia
+            Prescripción de cartera en salud en Colombia: cómo evitar perder
+            millones por vencimiento del cobro
           </h1>
 
           <p className={styles.subtitle}>
-            Estrategias para IPS, clínicas y prestadores de salud en Bogotá y
-            Colombia que buscan evitar la pérdida del derecho de cobro frente a
-            EPS.
+            Estrategias legales para IPS, clínicas y prestadores de salud en
+            Bogotá y Colombia que buscan evitar la pérdida del derecho de cobro
+            frente a EPS.
           </p>
         </div>
       </section>
 
       <article className={styles.article}>
         <section className={styles.section}>
-          <h2>Prescripción de cartera EPS en Colombia</h2>
+          <h2>
+            Prescripción de cartera EPS en Colombia: el riesgo que puede hacerle
+            perder todo el cobro
+          </h2>
 
           <p>
             La prescripción es uno de los mayores riesgos financieros para IPS y
@@ -43,7 +47,10 @@ export default function PrescripcionCarteraSalud() {
         </section>
 
         <section className={styles.sectionAlt}>
-          <h2>El riesgo de no actuar a tiempo</h2>
+          <h2>
+            El error más costoso en el sector salud: no actuar antes del
+            vencimiento
+          </h2>
 
           <p>La falta de gestión oportuna reduce la probabilidad de recaudo.</p>
 
@@ -56,7 +63,9 @@ export default function PrescripcionCarteraSalud() {
         </section>
 
         <section className={styles.section}>
-          <h2>Cómo evitar la prescripción</h2>
+          <h2>
+            Cómo evitar la prescripción de cartera en Colombia (guía práctica)
+          </h2>
 
           <ul className={styles.checklist}>
             <li>Segmentar cartera por antigüedad</li>
@@ -70,7 +79,9 @@ export default function PrescripcionCarteraSalud() {
         </section>
 
         <section className={styles.sectionAlt}>
-          <h2>Interrupción de la prescripción</h2>
+          <h2>
+            Interrupción de la prescripción: cómo proteger legalmente su cartera
+          </h2>
 
           <p>
             Puede lograrse mediante requerimientos formales o procesos
@@ -81,7 +92,7 @@ export default function PrescripcionCarteraSalud() {
         </section>
 
         <section className={styles.sectionHighlight}>
-          <h2>Estrategia preventiva</h2>
+          <h2>Estrategia preventiva para no perder cartera EPS en Colombia</h2>
 
           <p>
             La prescripción se evita con control temprano y acciones oportunas.
@@ -91,7 +102,9 @@ export default function PrescripcionCarteraSalud() {
         </section>
 
         <section className={styles.section}>
-          <h2>Proteja su cartera</h2>
+          <h2>
+            Cómo proteger y maximizar el recaudo de cartera en el sector salud
+          </h2>
 
           <p>
             Una estrategia adecuada permite maximizar el recaudo y reducir

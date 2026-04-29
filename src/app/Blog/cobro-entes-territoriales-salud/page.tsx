@@ -2,16 +2,16 @@ import CobroEntesTerritoriales from "./CobroEntesTerritoriales";
 
 export const metadata = {
   title:
-    "Cobro de cartera a entes territoriales en Colombia | IPS, clínicas y sector salud",
+    "Cómo cobrar cartera a entes territoriales en Colombia | Guía para IPS, clínicas y secretarías de salud",
   description:
-    "Guía completa para el cobro de cartera a entes territoriales y secretarías de salud en Colombia. Estrategias administrativas, conciliación y cobro judicial para IPS y clínicas en Bogotá y todo el país.",
+    "Guía completa para el cobro de cartera a entes territoriales en Colombia. Estrategias administrativas, conciliación y cobro judicial para IPS y clínicas en Bogotá y todo el país.",
   alternates: {
     canonical:
       "https://recaudocarteraipsyeps.com/Blog/cobro-entes-territoriales-salud",
   },
   openGraph: {
     title:
-      "Cobro de cartera a entes territoriales en Colombia | IPS y clínicas",
+      "Cómo recuperar cartera de entes territoriales en Colombia | IPS y clínicas",
     description:
       "Estrategia integral para recuperación de cartera frente a secretarías de salud y entidades públicas en Colombia.",
     type: "article",
@@ -24,7 +24,7 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Cobro de cartera a entes territoriales en Colombia | IPS, clínicas y sector salud",
+      "Cómo cobrar cartera a entes territoriales en Colombia | Guía para IPS, clínicas y sector salud",
     description:
       "Guía sobre estrategias administrativas y jurídicas para el cobro de cartera a entes territoriales en Colombia.",
     inLanguage: "es-CO",

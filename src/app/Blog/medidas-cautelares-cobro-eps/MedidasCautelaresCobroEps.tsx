@@ -13,10 +13,13 @@ export default function MedidasCautelaresEPS() {
             ← Volver al Blog
           </Link>
 
-          <span className={styles.badge}>Proceso ejecutivo sector salud</span>
+          <span className={styles.badge}>
+            Estrategias de recaudo en salud en Colombia
+          </span>
 
           <h1 className={styles.title}>
-            Medidas cautelares para cobro de cartera a EPS en Colombia
+            Medidas cautelares contra EPS en Colombia: embargos y estrategias
+            para recuperar cartera vencida
           </h1>
 
           <p className={styles.subtitle}>
@@ -30,8 +33,8 @@ export default function MedidasCautelaresEPS() {
       <article className={styles.article}>
         <section className={styles.section}>
           <h2>
-            Cobro de cartera a EPS en Colombia: la importancia de las medidas
-            cautelares
+            Medidas cautelares en el cobro de cartera a EPS en Colombia: ¿por
+            qué son clave?
           </h2>
 
           <p>
@@ -46,7 +49,10 @@ export default function MedidasCautelaresEPS() {
         </section>
 
         <section className={styles.sectionAlt}>
-          <h2>¿Qué son las medidas cautelares?</h2>
+          <h2>
+            ¿Qué son las medidas cautelares y cómo funcionan contra EPS en
+            Colombia?
+          </h2>
 
           <p>
             Son decisiones judiciales que permiten asegurar bienes o recursos
@@ -60,7 +66,9 @@ export default function MedidasCautelaresEPS() {
         </section>
 
         <section className={styles.section}>
-          <h2>Embargos más efectivos contra EPS</h2>
+          <h2>
+            Embargos más efectivos en Colombia para recuperar cartera de EPS
+          </h2>
 
           <ul className={styles.checklist}>
             <li>Embargo de cuentas bancarias</li>
@@ -76,7 +84,9 @@ export default function MedidasCautelaresEPS() {
         </section>
 
         <section className={styles.sectionAlt}>
-          <h2>Investigación patrimonial</h2>
+          <h2>
+            Investigación patrimonial de EPS en Colombia: cómo asegurar el pago
+          </h2>
 
           <p>Permite identificar activos y fuentes de ingreso del deudor.</p>
 
@@ -87,7 +97,10 @@ export default function MedidasCautelaresEPS() {
         </section>
 
         <section className={styles.sectionHighlight}>
-          <h2>Estrategia cautelar desde el inicio</h2>
+          <h2>
+            Estrategia de medidas cautelares desde el inicio del proceso
+            judicial
+          </h2>
 
           <p>La estrategia debe incluir medidas cautelares desde la demanda.</p>
 
@@ -95,7 +108,10 @@ export default function MedidasCautelaresEPS() {
         </section>
 
         <section className={styles.section}>
-          <h2>Recuperación efectiva de cartera EPS</h2>
+          <h2>
+            Recuperación efectiva de cartera EPS en Colombia con embargos y
+            medidas cautelares
+          </h2>
 
           <p>
             Integrar medidas cautelares en la estrategia jurídica aumenta el

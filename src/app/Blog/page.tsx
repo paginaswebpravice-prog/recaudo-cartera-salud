@@ -3,9 +3,9 @@ import BlogClient from "./BlogClient";
 
 export const metadata: Metadata = {
   title:
-    "Cómo recuperar cartera EPS en Colombia | Blog jurídico para IPS y clínicas",
+    "Cómo recuperar cartera EPS en Colombia y evitar pérdidas | Blog jurídico para IPS y clínicas",
   description:
-    "Blog jurídico especializado en cómo recuperar cartera EPS en Colombia. Guías sobre cobro de cartera, ADRES, procesos ejecutivos, medidas cautelares y estrategias legales para IPS y clínicas en Bogotá y Colombia.",
+    "Blog jurídico especializado en recuperación de cartera EPS en Colombia. Guías sobre cobro de cartera, ADRES, procesos ejecutivos, medidas cautelares y estrategias legales para IPS y clínicas en Bogotá y Colombia.",
 
   alternates: {
     canonical: "https://recaudocarteraipsyeps.com/Blog",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Cómo recuperar cartera EPS en Colombia | Blog jurídico para IPS y clínicas",
+      "Cómo recuperar cartera EPS en Colombia y evitar pérdidas | Blog jurídico para IPS y clínicas",
     description:
       "Guías legales prácticas para recuperar cartera EPS, ADRES y procesos judiciales en Colombia.",
     url: "https://recaudocarteraipsyeps.com/Blog",
@@ -44,7 +44,6 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-
       <BlogClient />
     </>
   );

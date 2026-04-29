@@ -2,17 +2,18 @@ import RequerimientoDocumentalDemandar from "./RequerimientoDocumentalDemandar";
 
 export const metadata = {
   title:
-    "Documentos para demandar una EPS por cartera en Colombia | Checklist para IPS y clínicas en Bogotá",
+    "Documentos para demandar una EPS por cartera en Colombia (Checklist completo para IPS y clínicas en Bogotá)",
   description:
-    "Checklist completo de documentos para demandar una EPS por cartera en Colombia. Requisitos para IPS y clínicas en Bogotá: facturas, soportes, radicación y proceso ejecutivo.",
+    "Checklist completo de documentos para demandar una EPS por cartera en Colombia. Requisitos reales para IPS y clínicas en Bogotá: facturas, soportes, radicación y estrategia para proceso ejecutivo exitoso.",
   alternates: {
     canonical:
       "https://recaudocarteraipsyeps.com/Blog/requerimiento-documental-demandar-eps",
   },
   openGraph: {
-    title: "Documentos para demandar una EPS por cartera en Colombia",
+    title:
+      "Documentos para demandar una EPS por cartera en Colombia | Checklist legal completo",
     description:
-      "Checklist de requisitos para demandas ejecutivas contra EPS en Colombia.",
+      "Checklist de requisitos reales para demandas ejecutivas contra EPS en Colombia para IPS y clínicas.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/requerimiento-documental-demandar-eps",
   },
@@ -22,7 +23,8 @@ export default function Page() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Documentos para demandar una EPS por cartera en Colombia",
+    headline:
+      "Documentos para demandar una EPS por cartera en Colombia | Checklist legal para IPS y clínicas",
     description:
       "Guía sobre requisitos documentales para estructurar demandas ejecutivas contra EPS en Colombia.",
     inLanguage: "es-CO",
@@ -40,7 +42,6 @@ export default function Page() {
 
   return (
     <>
-      {/* SCHEMA SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -48,7 +49,6 @@ export default function Page() {
         }}
       />
 
-      {/* CONTENT */}
       <RequerimientoDocumentalDemandar />
     </>
   );

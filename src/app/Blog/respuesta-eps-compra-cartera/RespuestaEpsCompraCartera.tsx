@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import styles from "./Article.module.css";
 
@@ -11,15 +13,18 @@ export default function ResponderCompraCarteraArticle() {
             ← Volver al Blog
           </Link>
 
-          <span className={styles.badge}>Guía estratégica sector salud</span>
+          <span className={styles.badge}>
+            Estrategia crítica en cartera EPS
+          </span>
 
           <h1 className={styles.title}>
-            Cómo responder a una EPS sobre compra de cartera en Colombia
+            Cómo responder a una EPS que quiere comprar su cartera en Colombia
+            sin perder dinero
           </h1>
 
           <p className={styles.subtitle}>
-            Estrategia para IPS, clínicas y prestadores de salud en Bogotá y
-            Colombia que buscan evitar descuentos y proteger el valor real de su
+            Estrategia legal para IPS, clínicas y prestadores de salud en Bogotá
+            y Colombia para evitar descuentos y proteger el 100% del valor de su
             cartera.
           </p>
         </div>
@@ -30,7 +35,8 @@ export default function ResponderCompraCarteraArticle() {
         {/* INTRO SEO */}
         <section className={styles.section}>
           <h2>
-            Compra de cartera en el sector salud: una práctica común en Colombia
+            Compra de cartera en el sector salud en Colombia: una práctica que
+            puede costarle dinero a las IPS
           </h2>
 
           <p>
@@ -56,13 +62,15 @@ export default function ResponderCompraCarteraArticle() {
 
         {/* ACLARACIÓN PRINCIPAL */}
         <section className={styles.sectionAlt}>
-          <h2>Respuesta clara: no se compra cartera, se recupera</h2>
+          <h2>
+            Respuesta correcta: no vender la cartera, sino recuperarla al 100%
+          </h2>
 
           <p>
             Frente a este tipo de solicitudes, la posición jurídica adecuada en
-            el cobro de cartera a EPS en Colombia es clara:{" "}
-            <strong>la cartera no se vende ni se cede con descuento</strong>, se{" "}
-            <strong>recupera mediante estrategia estructurada</strong>.
+            el cobro de cartera a EPS en Colombia es clara:
+            <strong> la cartera no se vende ni se descuenta</strong>, se
+            <strong> recupera mediante estrategia estructurada</strong>.
           </p>
 
           <p>
@@ -74,13 +82,16 @@ export default function ResponderCompraCarteraArticle() {
           <p>
             Esta postura es especialmente relevante para IPS y clínicas en
             Bogotá, donde los volúmenes de cartera pueden ser altos y los
-            descuentos impactan significativamente el flujo de caja.
+            descuentos impactan directamente el flujo de caja.
           </p>
         </section>
 
         {/* MODELO DE RESPUESTA */}
         <section className={styles.section}>
-          <h2>Modelo de respuesta para EPS (listo para usar)</h2>
+          <h2>
+            Modelo de respuesta a EPS cuando proponen compra de cartera (listo
+            para usar)
+          </h2>
 
           <p>
             A continuación, un modelo de respuesta recomendado para
@@ -118,7 +129,10 @@ export default function ResponderCompraCarteraArticle() {
 
         {/* ERRORES COMUNES */}
         <section className={styles.sectionAlt}>
-          <h2>Errores comunes al negociar con EPS en Colombia</h2>
+          <h2>
+            Errores más costosos al negociar compra de cartera con EPS en
+            Colombia
+          </h2>
 
           <p>
             En el cobro de cartera en el sector salud, muchas IPS y clínicas en
@@ -128,8 +142,8 @@ export default function ResponderCompraCarteraArticle() {
 
           <p>
             Entre los errores más comunes se encuentran aceptar descuentos
-            elevados, negociar sin soportes claros o dilatar la toma de
-            decisiones sin activar mecanismos de cobro efectivos.
+            elevados, negociar sin soportes claros o dilatar decisiones
+            estratégicas.
           </p>
 
           <p>
@@ -140,11 +154,13 @@ export default function ResponderCompraCarteraArticle() {
 
         {/* BLOQUE ESTRATÉGICO */}
         <section className={styles.sectionHighlight}>
-          <h2>Clave estratégica en el recaudo de cartera EPS</h2>
+          <h2>
+            Clave estratégica para IPS: cómo maximizar el recaudo frente a EPS
+          </h2>
 
           <p>
             En el contexto del sector salud en Colombia, la clave no está en
-            negociar rápidamente, sino en negociar estratégicamente.
+            negociar rápido, sino en negociar estratégicamente.
           </p>
 
           <p>
@@ -154,16 +170,15 @@ export default function ResponderCompraCarteraArticle() {
           </p>
 
           <p>
-            Cuando existe incumplimiento o dilación, la activación oportuna del
-            proceso ejecutivo es determinante para lograr resultados reales de
-            recaudo.
+            Cuando existe incumplimiento o dilación, la activación del proceso
+            ejecutivo es determinante para lograr resultados reales de recaudo.
           </p>
         </section>
 
         {/* CIERRE SEO */}
         <section className={styles.section}>
           <h2>
-            Estrategia jurídica para el cobro de cartera en salud en Bogotá y
+            Estrategia legal para proteger el 100% de la cartera en Bogotá y
             Colombia
           </h2>
 
@@ -185,8 +200,8 @@ export default function ResponderCompraCarteraArticle() {
           <p>
             ¿Le están proponiendo compra de cartera en Bogotá o Colombia?{" "}
             <strong>
-              PRAVICE protege el valor de su cartera y la recupera de forma
-              efectiva.
+              PRAVICE protege el valor total de su cartera y la recupera sin
+              descuentos.
             </strong>
           </p>
         </footer>

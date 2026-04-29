@@ -13,16 +13,19 @@ export default function CobroEntesTerritoriales() {
             ← Volver al Blog
           </Link>
 
-          <span className={styles.badge}>Sector salud público</span>
+          <span className={styles.badge}>
+            Cobro de cartera sector público en salud
+          </span>
 
           <h1 className={styles.title}>
-            Cobro de cartera a entes territoriales en Colombia
+            Cobro de cartera a entes territoriales en Colombia: guía completa
+            para recuperar pagos de secretarías de salud
           </h1>
 
           <p className={styles.subtitle}>
             Estrategia integral para IPS, clínicas y proveedores de salud en
             Bogotá y Colombia que buscan recuperar cartera vencida frente a
-            secretarías de salud y entidades públicas.
+            entidades públicas.
           </p>
         </div>
       </section>
@@ -30,31 +33,39 @@ export default function CobroEntesTerritoriales() {
       {/* CONTENIDO */}
       <article className={styles.article}>
         <section className={styles.section}>
-          <h2>Cobro de cartera en el sector salud público en Colombia</h2>
+          <h2>
+            Cómo funciona el cobro de cartera a entes territoriales en Colombia
+          </h2>
 
           <p>
             El cobro de cartera a entes territoriales en Colombia es un proceso
-            complejo que afecta directamente la liquidez de IPS, clínicas y
-            prestadores de servicios de salud. En ciudades como Bogotá, donde el
-            volumen de atención es alto, la recuperación oportuna de estos
-            recursos es clave para la sostenibilidad financiera del sector.
+            administrativo y jurídico que impacta directamente la sostenibilidad
+            financiera de IPS, clínicas y prestadores de servicios de salud.
           </p>
 
           <p>
-            A diferencia del cobro a EPS, este tipo de cartera requiere una
-            estrategia especializada que combine gestión administrativa,
-            conocimiento normativo y una adecuada preparación para un eventual
-            cobro jurídico ante la jurisdicción contencioso-administrativa.
+            En ciudades como Bogotá y en todo el país, este tipo de cartera
+            suele depender de presupuestos públicos, lo que genera tiempos de
+            pago más largos y mayor complejidad en la gestión del recaudo.
+          </p>
+
+          <p>
+            Por esta razón, se requiere una estrategia especializada que combine
+            gestión administrativa, análisis normativo y preparación jurídica
+            desde etapas tempranas del proceso.
           </p>
         </section>
 
         <section className={styles.section}>
-          <h2>¿Qué tipo de cartera se puede cobrar a entes territoriales?</h2>
+          <h2>
+            Qué tipo de cartera se puede cobrar a entes territoriales en
+            Colombia
+          </h2>
 
           <p>
-            En Colombia, las obligaciones a cargo de entes territoriales y
-            secretarías de salud pueden originarse en diferentes conceptos
-            dentro del sistema de salud:
+            Las obligaciones que pueden ser objeto de cobro frente a entidades
+            territoriales incluyen múltiples escenarios dentro del sistema de
+            salud colombiano:
           </p>
 
           <ul className={styles.checklist}>
@@ -64,26 +75,43 @@ export default function CobroEntesTerritoriales() {
             <li>Eventos especiales o emergencias sanitarias</li>
             <li>Obligaciones contractuales o convenios interadministrativos</li>
           </ul>
+
+          <p>
+            Cada uno de estos conceptos requiere un análisis específico para
+            determinar su exigibilidad y viabilidad de cobro.
+          </p>
         </section>
 
         <section className={styles.section}>
-          <h2>Principales dificultades en el recaudo</h2>
+          <h2>
+            Errores más comunes que impiden el cobro de cartera pública en salud
+          </h2>
 
           <p>
-            Muchas IPS y clínicas en Bogotá y Colombia enfrentan barreras como
-            demoras administrativas, falta de trazabilidad documental o
-            inconsistencias en soportes.
+            Muchas IPS y clínicas en Colombia pierden recursos no por falta de
+            derecho al cobro, sino por errores en la gestión documental y
+            jurídica.
           </p>
 
           <p>
-            Sin una estrategia clara, el cobro de cartera en el sector salud
-            público puede prolongarse durante años o perderse por errores en la
-            estructuración del expediente.
+            Estos errores pueden generar demoras de años o incluso la pérdida
+            total del derecho al recaudo.
           </p>
+
+          <ul className={styles.checklist}>
+            <li>Expedientes incompletos o mal organizados</li>
+            <li>Falta de trazabilidad en soportes administrativos</li>
+            <li>Errores en radicación de cuentas</li>
+            <li>Ausencia de seguimiento institucional</li>
+            <li>Falta de estrategia jurídica temprana</li>
+          </ul>
         </section>
 
         <section className={styles.sectionAlt}>
-          <h2>Cómo estructurar una estrategia efectiva de cobro</h2>
+          <h2>
+            Estrategia paso a paso para recuperar cartera ante entes
+            territoriales
+          </h2>
 
           <ul className={styles.checklist}>
             <li>
@@ -99,13 +127,15 @@ export default function CobroEntesTerritoriales() {
           </ul>
 
           <p>
-            Este enfoque permite reducir riesgos, mejorar la trazabilidad y
-            aumentar la probabilidad de recaudo efectivo.
+            Esta estrategia permite estructurar un proceso sólido y aumentar la
+            probabilidad de recuperación efectiva de la cartera.
           </p>
         </section>
 
         <section className={styles.section}>
-          <h2>Un expediente sólido marca la diferencia</h2>
+          <h2>
+            Importancia de un expediente sólido en el cobro de cartera pública
+          </h2>
 
           <div className={styles.letterBox}>
             <p>
@@ -116,21 +146,31 @@ export default function CobroEntesTerritoriales() {
             </p>
 
             <p>
-              En el sector salud, improvisar en el cobro puede generar pérdidas
-              significativas.
+              En el sector salud, la falta de organización documental es una de
+              las principales causas de pérdida de recursos públicos.
+            </p>
+
+            <p>
+              Un expediente débil reduce significativamente las posibilidades de
+              conciliación o éxito en un eventual proceso judicial.
             </p>
           </div>
         </section>
 
         <section className={styles.section}>
           <h2>
-            Recuperación de cartera en Bogotá y Colombia con respaldo legal
+            Recuperación de cartera en Bogotá y Colombia con respaldo jurídico
           </h2>
 
           <p>
             La recuperación de cartera en el sector salud público exige
             experiencia, estrategia y conocimiento del marco normativo
-            colombiano.
+            colombiano, especialmente cuando intervienen entidades estatales.
+          </p>
+
+          <p>
+            Una gestión adecuada permite mejorar el flujo de caja y garantizar
+            la sostenibilidad operativa de IPS y clínicas en todo el país.
           </p>
         </section>
 

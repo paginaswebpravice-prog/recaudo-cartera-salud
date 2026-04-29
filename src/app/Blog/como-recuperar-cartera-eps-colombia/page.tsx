@@ -2,7 +2,7 @@ import ComoRecuperarCarteraEPS from "./ComoRecuperarCarteraEPS";
 
 export const metadata = {
   title:
-    "Cómo recuperar cartera de EPS en Colombia | Guía legal para IPS y clínicas en Bogotá",
+    "Cómo recuperar cartera de EPS en Colombia paso a paso | Guía legal para IPS y clínicas en Bogotá",
   description:
     "Aprenda cómo recuperar cartera de EPS en Colombia con estrategias legales efectivas. Guía para IPS y clínicas en Bogotá: cobro prejurídico, proceso ejecutivo y recuperación real de cartera en salud.",
   alternates: {
@@ -11,7 +11,7 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Cómo recuperar cartera de EPS en Colombia | Guía legal para IPS y clínicas",
+      "Cómo recuperar cartera de EPS en Colombia paso a paso | Guía legal para IPS y clínicas",
     description:
       "Estrategia jurídica aplicada para IPS, clínicas y proveedores de salud en Colombia desde cobro prejurídico hasta proceso ejecutivo.",
     type: "article",
@@ -24,7 +24,7 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Cómo recuperar cartera de EPS en Colombia | Guía legal para IPS y clínicas en Bogotá",
+      "Cómo recuperar cartera de EPS en Colombia paso a paso | Guía legal para IPS y clínicas en Bogotá",
     description:
       "Guía práctica sobre recuperación de cartera EPS en Colombia mediante estrategias legales y proceso ejecutivo.",
     inLanguage: "es-CO",
@@ -42,7 +42,6 @@ export default function Page() {
 
   return (
     <>
-      {/* SCHEMA SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -50,7 +49,6 @@ export default function Page() {
         }}
       />
 
-      {/* CONTENT */}
       <ComoRecuperarCarteraEPS />
     </>
   );

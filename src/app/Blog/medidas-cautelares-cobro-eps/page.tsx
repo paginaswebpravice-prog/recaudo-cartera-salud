@@ -2,17 +2,20 @@ import MedidasCautelaresCobroEps from "./MedidasCautelaresCobroEps";
 
 export const metadata = {
   title:
-    "Medidas cautelares para cobro de cartera a EPS en Colombia | Embargos y recaudo efectivo en Bogotá",
+    "Medidas cautelares contra EPS en Colombia | Embargos y recaudo efectivo de cartera en salud",
   description:
-    "Conozca las medidas cautelares para el cobro de cartera a EPS en Colombia: embargos, retenciones e investigación patrimonial para IPS y clínicas en Bogotá.",
+    "Descubra cómo aplicar medidas cautelares para el cobro de cartera a EPS en Colombia: embargos, retención de recursos e investigación patrimonial para IPS y clínicas en Bogotá.",
+
   alternates: {
     canonical:
       "https://tudominio.com/blog/medidas-cautelares-cobro-cartera-eps-colombia",
   },
+
   openGraph: {
-    title: "Medidas cautelares para cobro de cartera a EPS en Colombia",
+    title:
+      "Embargos y medidas cautelares contra EPS en Colombia | Recuperación de cartera",
     description:
-      "Embargos, retenciones e investigación patrimonial para recuperación efectiva de cartera EPS en Colombia.",
+      "Estrategias legales de embargos, retenciones e investigación patrimonial para el recaudo efectivo de cartera EPS en Colombia.",
     type: "article",
     url: "https://tudominio.com/blog/medidas-cautelares-cobro-cartera-eps-colombia",
   },
@@ -22,7 +25,8 @@ export default function Page() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Medidas cautelares para cobro de cartera a EPS en Colombia",
+    headline:
+      "Medidas cautelares contra EPS en Colombia | Embargos y recaudo efectivo de cartera",
     description:
       "Guía sobre embargos, retenciones e investigación patrimonial para el cobro de cartera EPS en Colombia.",
     inLanguage: "es-CO",
@@ -40,7 +44,6 @@ export default function Page() {
 
   return (
     <>
-      {/* SCHEMA SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -48,7 +51,6 @@ export default function Page() {
         }}
       />
 
-      {/* CONTENT */}
       <MedidasCautelaresCobroEps />
     </>
   );

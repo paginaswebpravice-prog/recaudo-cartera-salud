@@ -42,8 +42,8 @@ export default function ClinicasContent() {
           </span>
 
           <h1 className={styles.title}>
-            Clínicas en Colombia: cómo mejorar rentabilidad, facturación y flujo
-            de caja en el sistema EPS
+            Clínicas en Colombia 2026: cómo mejorar rentabilidad, flujo de caja
+            y recaudo EPS sin crisis de cartera
           </h1>
 
           <p className={styles.description}>
@@ -76,7 +76,8 @@ export default function ClinicasContent() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Principales desafíos financieros en clínicas privadas en Colombia
+            Principales desafíos financieros (cartera EPS, glosas y liquidez) en
+            clínicas privadas en Colombia
           </motion.h2>
 
           <motion.p
@@ -136,8 +137,8 @@ export default function ClinicasContent() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Impacto financiero de la cartera en la rentabilidad de clínicas en
-            Colombia
+            Impacto de la cartera EPS en la rentabilidad y liquidez de clínicas
+            en Colombia
           </motion.h2>
 
           <motion.p
@@ -199,7 +200,8 @@ export default function ClinicasContent() {
         {/* OPERACIÓN */}
         <section className={styles.section}>
           <motion.h2 className={styles.subtitle}>
-            Complejidad operativa y administrativa en clínicas en Colombia
+            Complejidad operativa y administrativa en clínicas (EPS, facturación
+            y recaudo)
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -226,7 +228,7 @@ export default function ClinicasContent() {
         <section id="contacto" className={styles.cta}>
           <motion.div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Mejora la rentabilidad de tu clínica en Colombia
+              Mejora la rentabilidad y el recaudo de tu clínica en Colombia
             </h2>
 
             <p className={styles.ctaText}>

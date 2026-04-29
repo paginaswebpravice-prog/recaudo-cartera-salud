@@ -3,7 +3,7 @@ import ProcesoEjecutivoEpsContent from "./ProcesoEjecutivoEpsContent";
 
 export const metadata: Metadata = {
   title:
-    "Proceso ejecutivo contra EPS en Colombia | Demanda, embargo y recuperación de cartera para IPS",
+    "Demanda ejecutiva contra EPS en Colombia | Cómo recuperar cartera vencida con embargos y cobro jurídico",
   description:
     "Inicie proceso ejecutivo contra EPS en Colombia y recupere cartera vencida. Representación jurídica para IPS y clínicas con embargos, medidas cautelares y cobro efectivo.",
 
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Demanda ejecutiva contra EPS en Colombia | Recuperación de cartera para IPS y clínicas",
+      "Cómo demandar EPS en Colombia y recuperar cartera vencida con proceso ejecutivo",
     description:
       "Recupere cartera vencida mediante proceso ejecutivo contra EPS en Colombia. Estrategias jurídicas con embargo y medidas cautelares.",
     url: "https://recaudocarteraipsyeps.com/Servicios/proceso-ejecutivo-eps",

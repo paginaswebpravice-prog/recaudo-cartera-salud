@@ -3,7 +3,7 @@ import MedidasCautelaresEpsContent from "./MedidasCautelaresEpsContent";
 
 export const metadata: Metadata = {
   title:
-    "Medidas cautelares contra EPS en Colombia | Embargos y aseguramiento de cartera para IPS y clínicas",
+    "Medidas cautelares contra EPS en Colombia 2026 | Embargos para asegurar pago de cartera IPS y clínicas",
   description:
     "Asegure el pago de cartera contra EPS en Colombia con medidas cautelares: embargo de cuentas, retención de recursos y estrategias jurídicas para IPS y clínicas.",
 
@@ -14,9 +14,9 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Embargos y medidas cautelares contra EPS en Colombia | Recuperación de cartera IPS",
+      "Embargos contra EPS en Colombia: cómo asegurar el pago de cartera IPS (medidas cautelares)",
     description:
-      "Proteja su recaudo con embargos, retención de recursos y estrategias jurídicas efectivas contra EPS en Colombia.",
+      "Estrategias jurídicas para IPS y clínicas en Colombia: embargos, retención de recursos y aseguramiento de cartera contra EPS.",
     url: "https://recaudocarteraipsyeps.com/Servicios/medidas-cautelares-eps",
     siteName: "Recaudo Cartera IPS y EPS",
     locale: "es_CO",
@@ -39,9 +39,9 @@ export default function Page() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            name: "Medidas cautelares contra EPS en Colombia",
+            name: "Medidas cautelares y embargos contra EPS en Colombia para IPS y clínicas",
             description:
-              "Servicio jurídico para asegurar el pago de cartera mediante medidas cautelares como embargo de cuentas y retención de recursos contra EPS en Colombia.",
+              "Servicio jurídico para asegurar el pago de cartera mediante embargos, retención de recursos y medidas cautelares contra EPS en Colombia.",
             areaServed: {
               "@type": "Country",
               name: "Colombia",

@@ -2,9 +2,9 @@ import PrescripcionCartera from "./PrescripcionCartera";
 
 export const metadata = {
   title:
-    "Prescripción de cartera en salud en Colombia: cómo evitar perder el cobro | Bogotá IPS y clínicas",
+    "Prescripción de cartera en salud en Colombia: evite perder millones por vencimiento de cobro | IPS y clínicas Bogotá",
   description:
-    "Evite la prescripción de cartera en el sector salud en Colombia. Estrategias legales para IPS y clínicas en Bogotá: control de términos, cobro prejurídico y proceso ejecutivo.",
+    "Evite la prescripción de cartera en el sector salud en Colombia. Estrategias legales para IPS y clínicas en Bogotá: control de términos, cobro prejurídico y proceso ejecutivo para no perder el derecho de cobro.",
   alternates: {
     canonical:
       "https://recaudocarteraipsyeps.com/Blog/prescripcion-cartera-salud",
@@ -13,7 +13,7 @@ export const metadata = {
     title:
       "Prescripción de cartera en salud en Colombia: cómo evitar perder el cobro",
     description:
-      "Estrategias legales para evitar la prescripción de cartera EPS en Colombia.",
+      "Estrategias legales para evitar la prescripción de cartera EPS en Colombia y proteger el recaudo en IPS y clínicas.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/prescripcion-cartera-salud",
   },
@@ -23,7 +23,8 @@ export default function Page() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Prescripción de cartera en el sector salud en Colombia",
+    headline:
+      "Prescripción de cartera en el sector salud en Colombia: cómo evitar perder el cobro",
     description:
       "Guía para evitar la prescripción de cartera EPS en Colombia mediante control de términos y estrategias jurídicas.",
     inLanguage: "es-CO",
@@ -41,7 +42,6 @@ export default function Page() {
 
   return (
     <>
-      {/* SCHEMA SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -49,7 +49,6 @@ export default function Page() {
         }}
       />
 
-      {/* CONTENT */}
       <PrescripcionCartera />
     </>
   );

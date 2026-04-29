@@ -17,8 +17,8 @@ export default function HospitalesContent() {
           <span className={styles.badge}>Sector hospitalario en Colombia</span>
 
           <h1 className={styles.title}>
-            Hospitales en Colombia: crisis financiera, sostenibilidad y flujo de
-            caja
+            Hospitales en Colombia 2026: crisis financiera, flujo de caja y
+            sostenibilidad del sistema de salud
           </h1>
 
           <p className={styles.description}>
@@ -52,8 +52,7 @@ export default function HospitalesContent() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Principales problemas financieros y operativos en hospitales en
-            Colombia
+            Crisis financiera y problemas operativos en hospitales de Colombia
           </motion.h2>
 
           <motion.p
@@ -112,7 +111,8 @@ export default function HospitalesContent() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Impacto de la crisis financiera en la sostenibilidad hospitalaria
+            Impacto de la crisis financiera en la sostenibilidad hospitalaria y
+            cartera EPS
           </motion.h2>
 
           <motion.p
@@ -197,6 +197,7 @@ export default function HospitalesContent() {
         <section className={styles.section}>
           <motion.h2 className={styles.subtitle}>
             Estrategias para mejorar la sostenibilidad financiera hospitalaria
+            en Colombia
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -216,7 +217,7 @@ export default function HospitalesContent() {
         <section id="contacto" className={styles.cta}>
           <motion.div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Mejora la sostenibilidad de tu hospital en Colombia
+              Mejora la sostenibilidad financiera de tu hospital en Colombia
             </h2>
 
             <p className={styles.ctaText}>

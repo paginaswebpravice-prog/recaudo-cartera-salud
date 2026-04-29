@@ -13,10 +13,13 @@ export default function ComoRecuperarCarteraEPS() {
             ← Volver al Blog
           </Link>
 
-          <span className={styles.badge}>Guía práctica sector salud</span>
+          <span className={styles.badge}>
+            Guía práctica para recuperación de cartera en salud
+          </span>
 
           <h1 className={styles.title}>
-            Cómo recuperar la cartera de las EPS en Colombia
+            Cómo recuperar la cartera de las EPS en Colombia paso a paso (guía
+            legal para IPS y clínicas)
           </h1>
 
           <p className={styles.subtitle}>
@@ -29,7 +32,10 @@ export default function ComoRecuperarCarteraEPS() {
 
       <article className={styles.article}>
         <section className={styles.section}>
-          <h2>Cobro de cartera a EPS en Colombia: el reto del sector salud</h2>
+          <h2>
+            Cobro de cartera a EPS en Colombia: por qué es un problema crítico
+            para el sector salud
+          </h2>
 
           <p>
             El cobro de cartera a EPS en Colombia es uno de los principales
@@ -46,7 +52,7 @@ export default function ComoRecuperarCarteraEPS() {
         </section>
 
         <section className={styles.sectionAlt}>
-          <h2>El problema real en el recaudo de cartera EPS</h2>
+          <h2>El problema real del recaudo de cartera EPS en Colombia</h2>
 
           <p>
             En Colombia, las EPS suelen retrasar pagos mediante glosas,
@@ -65,7 +71,9 @@ export default function ComoRecuperarCarteraEPS() {
         </section>
 
         <section className={styles.section}>
-          <h2>Etapas estratégicas para recuperar cartera EPS en Colombia</h2>
+          <h2>
+            Etapas clave para recuperar cartera de EPS en Colombia paso a paso
+          </h2>
 
           <div className={styles.stepsGrid}>
             <div className={styles.stepCard}>
@@ -79,7 +87,7 @@ export default function ComoRecuperarCarteraEPS() {
 
             <div className={styles.stepCard}>
               <span>2</span>
-              <h3>Cobro prejurídico estructurado</h3>
+              <h3>Cobro prejurídico estructurado con soporte legal</h3>
               <p>
                 Requerimientos formales, negociación y acuerdos con
                 trazabilidad.
@@ -88,7 +96,7 @@ export default function ComoRecuperarCarteraEPS() {
 
             <div className={styles.stepCard}>
               <span>3</span>
-              <h3>Proceso ejecutivo con medidas cautelares</h3>
+              <h3>Proceso ejecutivo con embargos y medidas cautelares</h3>
               <p>
                 Demanda ejecutiva, mandamiento de pago y embargos para recaudo.
               </p>
@@ -97,7 +105,7 @@ export default function ComoRecuperarCarteraEPS() {
         </section>
 
         <section className={styles.section}>
-          <h2>Modelo de carta de cobro prejurídico a EPS</h2>
+          <h2>Modelo de carta de cobro prejurídico a EPS en Colombia</h2>
 
           <div className={styles.letterBox}>
             <p>
@@ -128,7 +136,10 @@ export default function ComoRecuperarCarteraEPS() {
         </section>
 
         <section className={styles.sectionHighlight}>
-          <h2>El proceso ejecutivo: la vía más efectiva</h2>
+          <h2>
+            Proceso ejecutivo en Colombia: la herramienta más efectiva para
+            recuperar cartera EPS
+          </h2>
 
           <ul className={styles.highlightList}>
             <li>Mandamiento de pago</li>
@@ -144,7 +155,7 @@ export default function ComoRecuperarCarteraEPS() {
         </section>
 
         <section className={styles.section}>
-          <h2>Errores comunes en el cobro de cartera en salud</h2>
+          <h2>Errores más comunes en la recuperación de cartera en salud</h2>
 
           <ul className={styles.checklist}>
             <li>No separar cartera exigible</li>
@@ -155,7 +166,10 @@ export default function ComoRecuperarCarteraEPS() {
         </section>
 
         <section className={styles.section}>
-          <h2>Recuperación de cartera EPS en Bogotá y Colombia</h2>
+          <h2>
+            Recuperación de cartera EPS en Bogotá y Colombia con estrategia
+            legal
+          </h2>
 
           <p>
             La recuperación de cartera requiere gestión administrativa y
@@ -164,7 +178,7 @@ export default function ComoRecuperarCarteraEPS() {
         </section>
 
         <section className={styles.section}>
-          <h2>Preguntas frecuentes</h2>
+          <h2>Preguntas frecuentes sobre recuperación de cartera EPS</h2>
 
           <details className={styles.faq}>
             <summary>¿Cuándo iniciar proceso ejecutivo?</summary>

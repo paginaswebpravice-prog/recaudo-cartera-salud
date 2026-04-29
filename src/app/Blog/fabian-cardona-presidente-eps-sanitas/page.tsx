@@ -2,19 +2,20 @@ import FabianCardonaPresidenteEpsSanitas from "./FabianCardonaPresidenteEpsSanit
 
 export const metadata = {
   title:
-    "Fabián Cardona asume presidencia de EPS Sanitas: impacto en IPS y cartera en Colombia",
+    "Fabián Cardona nuevo presidente de EPS Sanitas en Colombia | Impacto en cartera y pagos a IPS",
   description:
     "Análisis del nombramiento de Fabián Cardona en EPS Sanitas y su impacto en el cobro de cartera a EPS en Colombia, especialmente para IPS y clínicas en Bogotá.",
   alternates: {
     canonical:
-      "https://tudominio.com/blog/fabian-cardona-eps-sanitas-impacto-cartera",
+      "https://recaudocarteraipsyeps.com/Blog/fabian-cardona-eps-sanitas-impacto-cartera",
   },
   openGraph: {
-    title: "Fabián Cardona asume presidencia de EPS Sanitas en Colombia",
+    title:
+      "Fabián Cardona nuevo presidente de EPS Sanitas | Impacto en cartera IPS Colombia",
     description:
-      "Impacto del nuevo liderazgo en EPS Sanitas sobre cartera y pagos a IPS en Colombia.",
+      "Impacto del nuevo liderazgo en EPS Sanitas sobre cartera, pagos y flujo financiero de IPS en Colombia.",
     type: "article",
-    url: "https://tudominio.com/blog/fabian-cardona-eps-sanitas-impacto-cartera",
+    url: "https://recaudocarteraipsyeps.com/Blog/fabian-cardona-eps-sanitas-impacto-cartera",
   },
 };
 
@@ -23,12 +24,12 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Fabián Cardona asume presidencia de EPS Sanitas: impacto en IPS y cartera en Colombia",
+      "Fabián Cardona nuevo presidente de EPS Sanitas en Colombia | Impacto en cartera IPS",
     description:
       "Análisis del nombramiento en EPS Sanitas y su impacto en la gestión de cartera en el sector salud colombiano.",
     inLanguage: "es-CO",
     mainEntityOfPage:
-      "https://tudominio.com/blog/fabian-cardona-eps-sanitas-impacto-cartera",
+      "https://recaudocarteraipsyeps.com/Blog/fabian-cardona-eps-sanitas-impacto-cartera",
     author: {
       "@type": "Organization",
       name: "PRAVICE",
@@ -41,7 +42,6 @@ export default function Page() {
 
   return (
     <>
-      {/* SCHEMA SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -49,7 +49,6 @@ export default function Page() {
         }}
       />
 
-      {/* CONTENT */}
       <FabianCardonaPresidenteEpsSanitas />
     </>
   );

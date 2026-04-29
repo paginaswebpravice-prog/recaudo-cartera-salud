@@ -6,62 +6,73 @@ import styles from "./Blog.module.css";
 
 const articles = [
   {
-    title: "Fabián Cardona asume la presidencia de EPS Sanitas",
+    title:
+      "EPS Sanitas cambia de presidente: impacto en pagos y cartera en Colombia",
     slug: "fabian-cardona-presidente-eps-sanitas",
     description:
       "El médico Fabián Cardona fue designado como nuevo presidente de EPS Sanitas tras una reorganización del grupo Keralty en Colombia.",
   },
   {
-    title: "Cómo recuperar la cartera de las EPS en Colombia",
+    title:
+      "Cómo recuperar cartera EPS en Colombia y evitar pérdidas millonarias",
     slug: "como-recuperar-cartera-eps-colombia",
     description:
       "Estrategias legales para IPS y clínicas frente a mora prolongada de EPS.",
   },
   {
-    title: "Carta para cobro de cartera a una EPS",
+    title:
+      "Carta de cobro a EPS en Colombia: modelo legal para recuperar cartera",
     slug: "carta-cobro-cartera-eps",
     description:
       "Modelo estratégico y checklist documental previo a proceso judicial.",
   },
   {
-    title: "Cobro de cartera EPS: etapas",
+    title:
+      "Cobro de cartera EPS paso a paso: del prejurídico al proceso ejecutivo",
     slug: "etapas-cobro-cartera-eps",
     description: "Desde el cobro prejurídico hasta el proceso ejecutivo.",
   },
   {
-    title: "Cómo responder a una EPS por compra de cartera",
+    title:
+      "Cómo responder a una EPS que quiere comprar su cartera (sin perder dinero)",
     slug: "respuesta-eps-compra-cartera",
     description:
       "Qué implica la compra de cartera y cómo proteger su flujo financiero.",
   },
   {
-    title: "Medidas cautelares en cobro EPS",
+    title:
+      "Medidas cautelares contra EPS en Colombia: embargos y recuperación real",
     slug: "medidas-cautelares-cobro-eps",
     description: "Embargos y estrategias para garantizar recaudo efectivo.",
   },
   {
-    title: "Cobro de cartera ante ADRES",
+    title:
+      "Cobro de cartera ante ADRES en Colombia: cómo reclamar y ganar el pago",
     slug: "cobro-cartera-adres",
     description: "Accidentes, NO PBS, negaciones y procedimientos especiales.",
   },
   {
-    title: "Cobro a entes territoriales y secretarías de salud",
+    title:
+      "Cobro a entes territoriales en salud: cómo recuperar cartera pública en Colombia",
     slug: "cobro-entes-territoriales-salud",
     description: "PNA y esfuerzo propio en el sector salud.",
   },
   {
-    title: "Prescripción en cartera salud",
+    title:
+      "Prescripción de cartera en salud: cómo evitar perder su dinero en Colombia",
     slug: "prescripcion-cartera-salud",
     description: "Cómo evitar perder la cartera por vencimiento de términos.",
   },
   {
-    title: "Por qué NO vender su cartera EPS",
+    title:
+      "¿Vender cartera EPS o recuperarla? Lo que nadie le dice en Colombia",
     slug: "no-vender-cartera-eps",
     description:
       "Alternativas jurídicas más rentables que la venta de cartera.",
   },
   {
-    title: "Requerimiento documental mínimo para demandar una EPS",
+    title:
+      "Documentos para demandar una EPS en Colombia: checklist completo para IPS",
     slug: "requerimiento-documental-demandar-eps",
     description: "Checklist jurídico para reducir riesgos procesales.",
   },
@@ -84,8 +95,8 @@ export default function BlogClient() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Cómo recuperar cartera EPS en Colombia: Blog jurídico para IPS y
-            clínicas
+            Cómo recuperar cartera EPS en Colombia y evitar pérdidas en el
+            sector salud
           </motion.h1>
 
           <motion.div
@@ -152,7 +163,7 @@ export default function BlogClient() {
           viewport={{ once: true }}
         >
           <motion.h2 className={styles.ctaTitle}>
-            ¿Tienes cartera EPS pendiente de recuperación en Colombia?
+            ¿Tiene cartera EPS pendiente de recuperación en Colombia?
           </motion.h2>
 
           <motion.p className={styles.ctaText}>
@@ -166,6 +177,8 @@ export default function BlogClient() {
             <Link
               href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
               className={styles.ctaPrimary}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Solicitar asesoría
             </Link>
@@ -173,6 +186,7 @@ export default function BlogClient() {
             <a
               href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
               target="_blank"
+              rel="noopener noreferrer"
               className={styles.ctaSecondary}
             >
               Hablar por WhatsApp
