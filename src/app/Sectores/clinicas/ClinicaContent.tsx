@@ -245,6 +245,7 @@ export default function ClinicasContent() {
                 href="https://api.whatsapp.com/send/?phone=573114659315"
                 target="_blank"
                 className={styles.secondary}
+                rel="noopener noreferrer"
               >
                 Hablar por WhatsApp
               </a>

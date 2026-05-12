@@ -76,6 +76,73 @@ const articles = [
     slug: "requerimiento-documental-demandar-eps",
     description: "Checklist jurídico para reducir riesgos procesales.",
   },
+
+  /* ================= NUEVOS ARTÍCULOS SEO ================= */
+
+  {
+    title: "Cómo demandar una EPS en Colombia paso a paso por cartera vencida",
+    slug: "como-demandar-eps-colombia",
+    description:
+      "Guía jurídica completa para IPS y clínicas que necesitan iniciar acciones legales contra EPS.",
+  },
+  {
+    title:
+      "Cuánto tarda una demanda contra una EPS por cartera vencida en Colombia",
+    slug: "cuanto-tarda-demanda-eps-cartera",
+    description:
+      "Tiempos reales de recuperación judicial de cartera EPS en Colombia.",
+  },
+  {
+    title:
+      "Qué hacer si una EPS no responde requerimientos de pago en Colombia",
+    slug: "eps-no-responde-requerimientos",
+    description:
+      "Alternativas legales cuando las EPS ignoran solicitudes de pago.",
+  },
+  {
+    title: "Cómo funcionan las medidas cautelares contra EPS en Colombia",
+    slug: "como-funcionan-medidas-cautelares-eps",
+    description:
+      "Embargos, cuentas y estrategias para garantizar recuperación efectiva.",
+  },
+  {
+    title: "Cuándo prescribe la cartera EPS en Colombia y cómo evitar perderla",
+    slug: "cuando-prescribe-cartera-eps",
+    description:
+      "Términos legales y estrategias para evitar la pérdida de cartera en salud.",
+  },
+  // Faltan de aqui para abajo
+  {
+    title:
+      "Cómo recuperar cartera NO PBS en Colombia y reclamar pagos correctamente",
+    slug: "recuperar-cartera-no-pbs",
+    description:
+      "Reclamaciones, ADRES y procesos de cobro para servicios NO PBS.",
+  },
+  {
+    title: "Cobro prejurídico vs cobro jurídico a EPS: diferencias y ventajas",
+    slug: "cobro-prejuridico-vs-juridico-eps",
+    description:
+      "Diferencias entre estrategias amistosas y procesos judiciales de cobro.",
+  },
+  {
+    title: "Cómo mejorar el flujo de caja de una IPS y reducir cartera vencida",
+    slug: "mejorar-flujo-caja-ips",
+    description:
+      "Estrategias financieras y jurídicas para estabilizar ingresos en IPS.",
+  },
+  {
+    title: "Estrategias de recaudo para clínicas y hospitales en Colombia",
+    slug: "estrategias-recaudo-clinicas-hospitales",
+    description:
+      "Métodos efectivos para reducir mora y mejorar el recaudo en salud.",
+  },
+  {
+    title: "Documentos que necesita una IPS para cobrar cartera judicialmente",
+    slug: "documentos-cobro-judicial-ips",
+    description:
+      "Checklist documental clave para demandar EPS y recuperar cartera.",
+  },
 ];
 
 export default function BlogClient() {
