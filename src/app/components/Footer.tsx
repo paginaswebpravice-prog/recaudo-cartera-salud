@@ -1,14 +1,19 @@
 "use client";
 
 import styles from "../styles/Footer.module.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
   faInstagram,
-  faWhatsapp,
   faLinkedin,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
+
 import { useEffect, useState } from "react";
+
+/* IMPORTAR EL CHAT */
+import WhatsAppChat from "./whatsapp-chat/WhatsAppChat";
 
 export default function Footer() {
   const [showCTA, setShowCTA] = useState(false);
@@ -17,11 +22,10 @@ export default function Footer() {
     const interval = setInterval(() => {
       setShowCTA(true);
 
-      // Se oculta después de 10 segundos
       setTimeout(() => {
         setShowCTA(false);
       }, 10000);
-    }, 15000); // aparece cada 15s
+    }, 15000);
 
     return () => clearInterval(interval);
   }, []);
@@ -33,6 +37,7 @@ export default function Footer() {
           {/* COLUMNA 1 */}
           <div className={styles.column}>
             <h3 className={styles.logo}>PRAVICE ABOGADOS</h3>
+
             <p className={styles.description}>
               Firma jurídica especializada en recuperación de cartera
               hospitalaria, cobro jurídico a EPS y procesos ejecutivos en el
@@ -43,25 +48,32 @@ export default function Footer() {
           {/* COLUMNA 2 */}
           <div className={styles.column}>
             <h4>Navegación</h4>
+
             <ul>
               <li>
                 <a href="/#inicio">Inicio</a>
               </li>
+
               <li>
                 <a href="/#problema">Problema</a>
               </li>
+
               <li>
                 <a href="/#solucion">Solucion</a>
               </li>
+
               <li>
                 <a href="/#metodologia">Metodología</a>
               </li>
+
               <li>
                 <a href="/#clientes">Clientes</a>
               </li>
+
               <li>
                 <a href="/#contacto">Contacto</a>
               </li>
+
               <li>
                 <a href="/Blog">Blog</a>
               </li>
@@ -71,6 +83,7 @@ export default function Footer() {
           {/* COLUMNA 3 */}
           <div className={styles.column}>
             <h4>Contacto</h4>
+
             <ul>
               <li>Bogotá D.C., Colombia</li>
               <li>info.pravice@abogadosespecialistas.com.co</li>
@@ -82,6 +95,7 @@ export default function Footer() {
           {/* REDES */}
           <div className={styles.column}>
             <h4>Síguenos</h4>
+
             <div className={styles.socials}>
               <a
                 href="https://www.instagram.com/pravice_abogados/"
@@ -89,23 +103,19 @@ export default function Footer() {
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
+
               <a
                 href="https://co.linkedin.com/company/praviceabogadosespecializados"
                 target="_blank"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
+
               <a
                 href="https://www.facebook.com/praviceabogadosespecializados"
                 target="_blank"
               >
                 <FontAwesomeIcon icon={faFacebook} />
-              </a>
-              <a
-                href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
-                target="_blank"
-              >
-                <FontAwesomeIcon icon={faWhatsapp} />
               </a>
             </div>
           </div>
@@ -119,20 +129,14 @@ export default function Footer() {
       {/* CTA FLOTANTE */}
       {showCTA && (
         <div className={styles.whatsappCTA}>
-          💬 ¿Necesitas asesoría legal? <br />
-          <span>Habla con un abogado ahora</span>
+          💬 ¿Tienes cartera hospitalaria pendiente?
+          <br />
+          <span>Habla ahora con nuestro equipo jurídico</span>
         </div>
       )}
 
-      {/* BOTÓN WHATSAPP */}
-      <a
-        href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
-        className={styles.whatsappFloat}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faWhatsapp} />
-      </a>
+      {/* CHAT FLOTANTE */}
+      <WhatsAppChat />
     </>
   );
 }
