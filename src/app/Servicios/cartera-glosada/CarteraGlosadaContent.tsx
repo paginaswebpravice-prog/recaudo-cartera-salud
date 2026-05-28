@@ -15,28 +15,34 @@ export default function CarteraGlosadaContent() {
           transition={{ duration: 0.6 }}
         >
           <span className={styles.badge}>
-            Recuperación de cartera glosada en Colombia
+            Gestión estratégica de glosas EPS en Colombia
           </span>
 
-          {/* H1 OPTIMIZADO CTR */}
           <h1 className={styles.title}>
-            Cómo recuperar cartera glosada en Colombia: dinero retenido por EPS
-            en IPS y clínicas
+            Cartera glosada en IPS y clínicas en Colombia: causas, impacto
+            financiero y cómo reducir pérdidas
           </h1>
 
           <p className={styles.description}>
-            Defiende y recupera valores glosados por EPS en Colombia mediante
-            estrategias técnicas y jurídicas. Apoyamos a IPS, clínicas y
-            prestadores de salud en la gestión, respuesta y levantamiento de
-            glosas para maximizar el recaudo efectivo.
+            Las glosas EPS representan uno de los principales factores de
+            afectación financiera para IPS, clínicas y prestadores de salud en
+            Colombia. Una gestión ineficiente puede aumentar la cartera vencida,
+            afectar el flujo de caja y disminuir la capacidad operativa de las
+            instituciones.
           </p>
 
           <div className={styles.actions}>
             <a href="#contacto" className={styles.primary}>
-              Solicitar asesoría
+              Recibir orientación
             </a>
-            <a href="/Blog" className={styles.secondary}>
-              Ver guías y artículos
+
+            <a
+              href="https://recaudodecartera.com/cobro-glosas-eps-colombia.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.secondary}
+            >
+              Conocer estrategia especializada
             </a>
           </div>
         </motion.div>
@@ -44,27 +50,46 @@ export default function CarteraGlosadaContent() {
 
       {/* CONTENIDO */}
       <main className={styles.container}>
-        {/* PROBLEMA */}
+        {/* PROBLEMÁTICA */}
         <section className={styles.section}>
-          <motion.h2 className={styles.subtitle}>
-            Errores más comunes en la gestión de cartera glosada por EPS en
-            Colombia
+          <motion.h2
+            className={styles.subtitle}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            Principales problemas asociados a la cartera glosada en Colombia
           </motion.h2>
+
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            Muchas instituciones del sector salud enfrentan dificultades para
+            responder glosas dentro de los tiempos establecidos, organizar
+            soportes clínicos y hacer seguimiento efectivo a las objeciones
+            realizadas por EPS.
+          </motion.p>
 
           <div className={styles.grid}>
             {[
-              "Glosas injustificadas por parte de EPS",
-              "Respuestas mal estructuradas que generan rechazo",
-              "Pérdida de términos para controvertir glosas",
-              "Falta de soportes clínicos y administrativos",
-              "Alto volumen de cuentas sin gestión efectiva",
+              "Incremento de cartera retenida por glosas",
+              "Respuestas extemporáneas ante EPS",
+              "Procesos internos desorganizados",
+              "Falta de trazabilidad documental",
+              "Alto volumen de devoluciones y objeciones",
+              "Impacto financiero sobre liquidez y operación",
             ].map((item, i) => (
               <motion.div
                 key={i}
                 className={styles.card}
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.08 }}
+                viewport={{ once: true }}
               >
                 <p>{item}</p>
               </motion.div>
@@ -72,87 +97,99 @@ export default function CarteraGlosadaContent() {
           </div>
 
           <div className={styles.warningBox}>
-            ⚠ Las glosas mal gestionadas pueden convertirse en pérdida directa
-            de ingresos para las IPS en Colombia.
+            ⚠ Las glosas no resueltas oportunamente pueden convertirse en
+            pérdidas financieras importantes para IPS y clínicas en Colombia.
           </div>
         </section>
 
-        {/* QUE ES GLOSA */}
+        {/* CONTEXTO */}
         <section className={styles.section}>
-          <h2 className={styles.subtitle}>
-            Qué es una glosa EPS y cómo afecta la cartera de IPS y clínicas en
-            Colombia
-          </h2>
+          <motion.h2
+            className={styles.subtitle}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            Cómo impactan las glosas EPS el flujo de caja de IPS y clínicas
+          </motion.h2>
 
-          <p className={styles.text}>
-            Una glosa es una objeción realizada por una EPS sobre una factura
-            presentada por una IPS. Estas pueden ser de carácter administrativo,
-            técnico o médico, y si no se gestionan correctamente, impactan
-            directamente el flujo de caja de la institución.
-          </p>
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            Cuando una factura entra en proceso de glosa, el recaudo esperado se
+            retrasa y afecta directamente la liquidez institucional. Esto genera
+            dificultades para cubrir costos operativos, nómina, proveedores y
+            crecimiento organizacional.
+          </motion.p>
 
           <div className={styles.infoGrid}>
             <div>
-              <h4>✔ Glosas administrativas</h4>
+              <h4>✔ Disminución de liquidez</h4>
               <p>
-                Errores en facturación, datos incompletos o inconsistencias
-                formales.
+                El dinero pendiente de pago limita la capacidad operativa de las
+                instituciones de salud.
               </p>
             </div>
 
             <div>
-              <h4>✔ Glosas médicas</h4>
+              <h4>✔ Incremento de cartera vencida</h4>
               <p>
-                Objeciones relacionadas con pertinencia, diagnósticos o
-                tratamientos.
+                Las glosas acumuladas pueden convertirse en cuentas de difícil
+                recaudo.
               </p>
             </div>
 
             <div>
-              <h4>✔ Glosas técnicas</h4>
+              <h4>✔ Sobrecarga administrativa</h4>
               <p>
-                Diferencias en tarifas, cobros o interpretación de servicios.
+                El personal debe invertir tiempo adicional en conciliaciones y
+                seguimiento.
               </p>
             </div>
 
             <div>
-              <h4>✔ Glosas parciales o totales</h4>
-              <p>Pueden afectar parte o la totalidad del valor facturado.</p>
+              <h4>✔ Riesgo financiero institucional</h4>
+              <p>
+                El retraso constante en pagos afecta sostenibilidad y
+                rentabilidad.
+              </p>
             </div>
           </div>
 
           <div className={styles.highlightBox}>
-            📌 Una glosa no gestionada correctamente puede terminar en
-            incobrable.
+            📌 Una adecuada gestión de glosas permite mejorar el recaudo y
+            fortalecer el flujo de caja institucional.
           </div>
         </section>
 
-        {/* SOLUCIÓN */}
+        {/* TIPOS */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Servicio especializado para recuperar cartera glosada en Colombia
-            (EPS, IPS y clínicas)
+            Tipos de glosas más frecuentes en EPS en Colombia
           </h2>
 
           <p className={styles.text}>
-            Implementamos un modelo especializado para la gestión, respuesta y
-            levantamiento de glosas, combinando análisis técnico, conocimiento
-            normativo y estrategia jurídica.
+            Las objeciones realizadas por EPS pueden originarse por múltiples
+            factores administrativos, médicos o técnicos que afectan la
+            aprobación y pago de facturas.
           </p>
 
           <div className={styles.grid}>
             {[
-              "Análisis técnico de cada glosa",
-              "Revisión de soportes clínicos y administrativos",
-              "Estructuración de respuestas sólidas",
-              "Seguimiento a tiempos y términos legales",
-              "Escalamiento jurídico en caso de rechazo",
-              "Optimización del proceso interno de cartera",
+              "Glosas administrativas",
+              "Glosas médicas",
+              "Glosas por pertinencia",
+              "Glosas por soportes incompletos",
+              "Glosas tarifarias",
+              "Glosas por inconsistencias en facturación",
             ].map((item, i) => (
               <motion.div
                 key={i}
                 className={styles.card}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.03 }}
               >
                 <p>{item}</p>
               </motion.div>
@@ -160,43 +197,53 @@ export default function CarteraGlosadaContent() {
           </div>
         </section>
 
-        {/* PROCESO */}
+        {/* RECURSOS */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Cómo recuperar cartera glosada paso a paso en Colombia (metodología
-            probada)
+            Recursos y estrategias relacionadas con glosas y recaudo en salud
           </h2>
 
-          <div className={styles.grid}>
-            {[
-              "Recepción y clasificación de glosas",
-              "Auditoría técnica y documental",
-              "Definición de estrategia de respuesta",
-              "Radicación y seguimiento",
-              "Negociación o escalamiento",
-              "Recuperación del valor glosado",
-            ].map((step, i) => (
-              <motion.div key={i} className={styles.card}>
-                <h3>Paso {i + 1}</h3>
-                <p>{step}</p>
-              </motion.div>
-            ))}
+          <p className={styles.text}>
+            Comprender el comportamiento de la cartera glosada y fortalecer los
+            procesos internos puede ayudar a reducir riesgos financieros en el
+            sector salud colombiano.
+          </p>
+
+          <div className={styles.resourcesBox}>
+            <a
+              href="https://recaudodecartera.com/cobro-glosas-eps-colombia.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.resourceLink}
+            >
+              Estrategias especializadas para cobro de glosas EPS en Colombia
+            </a>
+
+            <a
+              href="https://recaudodecartera.com/recuperacion-cartera-ips-clinicas.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.resourceLink}
+            >
+              Gestión de recuperación de cartera para IPS y clínicas
+            </a>
           </div>
         </section>
 
         {/* BENEFICIOS */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Beneficios de recuperar cartera glosada en EPS para IPS y clínicas
+            Beneficios de optimizar la gestión de glosas en instituciones de
+            salud
           </h2>
 
           <div className={styles.benefits}>
-            <span>✔ Recuperación de valores glosados</span>
-            <span>✔ Reducción de cartera castigada</span>
-            <span>✔ Mejora en procesos internos</span>
-            <span>✔ Respuestas técnicas más efectivas</span>
-            <span>✔ Disminución de reprocesos</span>
-            <span>✔ Acompañamiento jurídico estratégico</span>
+            <span>✔ Mayor control financiero</span>
+            <span>✔ Disminución de cartera retenida</span>
+            <span>✔ Mejor trazabilidad documental</span>
+            <span>✔ Reducción de reprocesos administrativos</span>
+            <span>✔ Optimización del flujo de caja</span>
+            <span>✔ Mayor sostenibilidad institucional</span>
           </div>
         </section>
 
@@ -204,13 +251,13 @@ export default function CarteraGlosadaContent() {
         <section id="contacto" className={styles.cta}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Recupera cartera glosada en Colombia antes de que se pierda
+              Fortalece la gestión de cartera glosada en tu institución
             </h2>
 
             <p className={styles.ctaText}>
-              Te ayudamos a gestionar y levantar glosas en Colombia con enfoque
-              técnico y jurídico, aumentando la probabilidad de recuperación y
-              reduciendo pérdidas para tu institución.
+              Optimizar los procesos relacionados con glosas EPS puede ayudar a
+              mejorar el recaudo, reducir riesgos financieros y fortalecer la
+              sostenibilidad de IPS y clínicas en Colombia.
             </p>
 
             <div className={styles.actions}>

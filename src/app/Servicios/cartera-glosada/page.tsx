@@ -3,9 +3,19 @@ import CarteraGlosadaContent from "./CarteraGlosadaContent";
 
 export const metadata: Metadata = {
   title:
-    "Cartera glosada en Colombia 2026: cómo recuperar dinero retenido por EPS en IPS y clínicas",
+    "Cartera glosada en Colombia: impacto financiero de las glosas EPS en IPS y clínicas",
   description:
-    "Recupere cartera glosada en Colombia con estrategias técnicas y jurídicas. Gestión de glosas EPS para IPS y clínicas enfocada en maximizar el recaudo y evitar pérdidas financieras.",
+    "Conozca cómo las glosas EPS afectan la cartera, el flujo de caja y la sostenibilidad financiera de IPS y clínicas en Colombia.",
+
+  keywords: [
+    "cartera glosada Colombia",
+    "glosas EPS Colombia",
+    "cartera IPS",
+    "flujo de caja IPS",
+    "glosas clínicas Colombia",
+    "problemas de cartera EPS",
+    "sector salud Colombia",
+  ],
 
   alternates: {
     canonical: "https://recaudocarteraipsyeps.com/Servicios/cartera-glosada",
@@ -13,11 +23,11 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Cómo recuperar cartera glosada en EPS en Colombia (guía para IPS y clínicas)",
+      "Cartera glosada en IPS y clínicas: impacto de las glosas EPS en Colombia",
     description:
-      "Estrategia especializada para recuperar glosas en Colombia. Aumente el recaudo de su IPS o clínica y recupere dinero retenido por EPS.",
+      "Aprenda cómo las glosas EPS afectan la liquidez y sostenibilidad financiera de IPS y clínicas en Colombia.",
     url: "https://recaudocarteraipsyeps.com/Servicios/cartera-glosada",
-    siteName: "Recaudo Cartera IPS y EPS",
+    siteName: "PRAVICE",
     locale: "es_CO",
     type: "website",
   },
@@ -37,23 +47,44 @@ export default function Page() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Service",
-            name: "Recuperación de cartera glosada en Colombia para IPS y clínicas",
+            "@type": "Article",
+
+            headline:
+              "Cartera glosada en Colombia y su impacto financiero en IPS y clínicas",
+
             description:
-              "Servicio de gestión, respuesta y levantamiento de glosas para IPS y clínicas en Colombia.",
+              "Contenido informativo sobre glosas EPS, cartera glosada y sostenibilidad financiera en IPS y clínicas en Colombia.",
 
-            url: "https://recaudocarteraipsyeps.com/Servicios/cartera-glosada",
+            mainEntityOfPage:
+              "https://recaudocarteraipsyeps.com/Servicios/cartera-glosada",
 
-            areaServed: {
-              "@type": "Country",
-              name: "Colombia",
-            },
-
-            provider: {
+            author: {
               "@type": "Organization",
-              name: "PRAVICE ABOGADOS S.A.S.",
-              url: "https://recaudocarteraipsyeps.com",
+              name: "PRAVICE",
             },
+
+            publisher: {
+              "@type": "Organization",
+              name: "PRAVICE",
+            },
+
+            about: [
+              "Glosas EPS",
+              "Cartera glosada",
+              "IPS en Colombia",
+              "Clínicas en Colombia",
+              "Flujo de caja en salud",
+            ],
+
+            mentions: [
+              {
+                "@type": "WebPage",
+                name: "Cobro de glosas EPS en Colombia",
+                url: "https://recaudodecartera.com/cobro-glosas-eps-colombia.html",
+              },
+            ],
+
+            inLanguage: "es-CO",
           }),
         }}
       />

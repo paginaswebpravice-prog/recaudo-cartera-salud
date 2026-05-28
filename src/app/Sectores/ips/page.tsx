@@ -1,33 +1,39 @@
+// page.tsx
+
 import type { Metadata } from "next";
 import IPSContent from "./IPSContent";
 
 export const metadata: Metadata = {
   title:
-    "IPS en Colombia 2026: crisis financiera, cartera EPS y flujo de caja (guía completa)",
+    "IPS en Colombia: cartera EPS, flujo de caja y sostenibilidad financiera | PRAVICE",
+
   description:
-    "Análisis profundo de las IPS en Colombia: crisis de cartera EPS, problemas de flujo de caja y estrategias para mejorar sostenibilidad financiera y recaudo.",
+    "Análisis especializado sobre IPS en Colombia: cartera EPS, glosas, flujo de caja y sostenibilidad financiera en el sector salud.",
+
   keywords: [
     "IPS en Colombia",
-    "cartera IPS Colombia",
+    "cartera EPS IPS",
     "flujo de caja IPS",
-    "crisis financiera IPS",
-    "problemas EPS IPS",
+    "sostenibilidad financiera IPS",
+    "glosas EPS",
     "sector salud Colombia",
-    "recaudo IPS Colombia",
+    "gestión de cartera IPS",
   ],
+
   alternates: {
     canonical: "https://recaudocarteraipsyeps.com/Sectores/ips",
   },
+
   openGraph: {
-    title:
-      "IPS en Colombia 2026: crisis financiera, cartera EPS y sostenibilidad",
+    title: "IPS en Colombia: cartera EPS, sostenibilidad y flujo de caja",
     description:
-      "Descubre los principales problemas financieros de las IPS en Colombia y cómo mejorar su sostenibilidad y flujo de caja.",
+      "Contenido especializado sobre cartera EPS, liquidez y sostenibilidad financiera para IPS en Colombia.",
     url: "https://recaudocarteraipsyeps.com/Sectores/ips",
-    siteName: "Recaudo Cartera IPS y EPS",
+    siteName: "PRAVICE",
     locale: "es_CO",
-    type: "website",
+    type: "article",
   },
+
   robots: {
     index: true,
     follow: true,
@@ -43,17 +49,25 @@ export default function Page() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "WebPage",
-            name: "IPS en Colombia 2026: crisis financiera, cartera EPS y sostenibilidad",
+            "@type": "Article",
+            headline:
+              "IPS en Colombia: cartera EPS y sostenibilidad financiera",
             description:
-              "Análisis del impacto financiero, cartera EPS y sostenibilidad de las IPS en Colombia.",
-            url: "https://recaudocarteraipsyeps.com/Sectores/ips",
-            inLanguage: "es",
+              "Análisis especializado sobre cartera EPS, liquidez y sostenibilidad financiera para IPS en Colombia.",
+            author: {
+              "@type": "Organization",
+              name: "PRAVICE",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "PRAVICE",
+            },
+            mainEntityOfPage: "https://recaudocarteraipsyeps.com/Sectores/ips",
             about: [
               "IPS en Colombia",
-              "Cartera IPS",
+              "Cartera EPS",
               "Flujo de caja en salud",
-              "Sostenibilidad financiera IPS",
+              "Sostenibilidad financiera",
             ],
           }),
         }}

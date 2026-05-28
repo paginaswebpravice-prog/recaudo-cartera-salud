@@ -3,9 +3,21 @@ import RecuperacionCarteraEpsContent from "./RecuperacionCarteraEpsContent";
 
 export const metadata: Metadata = {
   title:
-    "Recuperación de cartera EPS en Colombia | Cómo recuperar pagos de IPS y clínicas rápido y sin pérdida de dinero",
+    "Cartera EPS en Colombia: impacto financiero, glosas y sostenibilidad para IPS y clínicas",
+
   description:
-    "Aprenda cómo recuperar cartera EPS en Colombia con estrategias jurídicas, prejurídicas y judiciales. Servicio especializado para IPS, clínicas y prestadores de salud.",
+    "Conozca cómo la cartera EPS, las glosas y la mora en pagos afectan el flujo de caja y la sostenibilidad financiera de IPS y clínicas en Colombia.",
+
+  keywords: [
+    "cartera EPS Colombia",
+    "cartera salud Colombia",
+    "glosas EPS",
+    "IPS y clínicas Colombia",
+    "flujo de caja IPS",
+    "sostenibilidad financiera salud",
+    "cartera vencida EPS",
+    "problemas financieros IPS",
+  ],
 
   alternates: {
     canonical:
@@ -14,10 +26,13 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Cómo recuperar cartera EPS en Colombia rápido | Estrategias legales para IPS y clínicas",
+      "Cartera EPS en Colombia: impacto financiero y glosas en IPS y clínicas",
+
     description:
-      "Mejore su flujo de caja aprendiendo cómo recuperar cartera EPS en Colombia con estrategias legales y financieras especializadas.",
+      "Información sobre cartera EPS, glosas y flujo de caja en instituciones de salud en Colombia.",
+
     url: "https://recaudocarteraipsyeps.com/Servicios/recuperacion-cartera-eps",
+
     siteName: "Recaudo Cartera IPS y EPS",
     locale: "es_CO",
     type: "website",
@@ -39,46 +54,64 @@ export default function Page() {
           __html: JSON.stringify([
             {
               "@context": "https://schema.org",
-              "@type": "Service",
-              name: "Recuperación de cartera EPS en Colombia para IPS, clínicas y prestadores de salud",
+              "@type": "WebPage",
+
+              name: "Cartera EPS en Colombia: flujo de caja y sostenibilidad para IPS y clínicas",
+
               description:
-                "Servicio especializado en recuperación de cartera EPS para IPS, clínicas y prestadores de salud en Colombia.",
-              areaServed: {
-                "@type": "Country",
-                name: "Colombia",
-              },
-              provider: {
-                "@type": "Organization",
-                name: "PRAVICE ABOGADOS S.A.S.",
-                url: "https://recaudocarteraipsyeps.com",
-              },
+                "Información sobre cartera EPS, glosas y sostenibilidad financiera para instituciones de salud en Colombia.",
+
+              url: "https://recaudocarteraipsyeps.com/Servicios/recuperacion-cartera-eps",
+
+              inLanguage: "es",
+
+              about: [
+                "Cartera EPS",
+                "Glosas en salud",
+                "IPS en Colombia",
+                "Flujo de caja en salud",
+                "Sostenibilidad financiera",
+              ],
             },
             {
               "@context": "https://schema.org",
               "@type": "FAQPage",
+
               mainEntity: [
                 {
                   "@type": "Question",
-                  name: "¿Cómo recuperar cartera EPS en Colombia rápidamente?",
+                  name: "¿Qué es la cartera EPS en Colombia?",
+
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Con una estrategia jurídica estructurada que incluya gestión prejurídica, negociación y procesos judiciales si es necesario.",
+                    text: "La cartera EPS corresponde a las cuentas pendientes de pago que las entidades promotoras de salud mantienen con IPS y clínicas.",
                   },
                 },
                 {
                   "@type": "Question",
-                  name: "¿Es posible recuperar cartera EPS antigua en Colombia?",
+                  name: "¿Cómo afectan las glosas a las IPS?",
+
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Sí, siempre que la obligación no haya prescrito y exista soporte documental suficiente.",
+                    text: "Las glosas pueden retrasar pagos y afectar el flujo de caja de las instituciones prestadoras de salud.",
                   },
                 },
                 {
                   "@type": "Question",
-                  name: "¿Qué hacer si la EPS no paga la cartera en Colombia?",
+                  name: "¿Por qué es importante la gestión de cartera en salud?",
+
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Se pueden iniciar acciones jurídicas, procesos ejecutivos y medidas cautelares para asegurar el pago.",
+                    text: "Porque permite mejorar la sostenibilidad financiera y reducir riesgos operativos en IPS y clínicas.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "¿Qué problemas genera la mora de EPS?",
+
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "La mora puede limitar la liquidez, afectar pagos operativos y generar acumulación de cartera vencida.",
                   },
                 },
               ],

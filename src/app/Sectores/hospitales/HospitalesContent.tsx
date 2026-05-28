@@ -14,28 +14,35 @@ export default function HospitalesContent() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className={styles.badge}>Sector hospitalario en Colombia</span>
+          <span className={styles.badge}>
+            Sector hospitalario y sostenibilidad financiera en Colombia
+          </span>
 
           <h1 className={styles.title}>
-            Hospitales en Colombia 2026: crisis financiera, flujo de caja y
-            sostenibilidad del sistema de salud
+            Hospitales en Colombia 2026: sostenibilidad financiera, flujo de
+            caja y desafíos administrativos del sector salud
           </h1>
 
           <p className={styles.description}>
-            Los hospitales en Colombia enfrentan una alta presión operativa y
-            financiera debido a la demanda de servicios, la limitada
-            disponibilidad de recursos y la acumulación de cartera. La
-            sostenibilidad institucional depende de una gestión eficiente que
-            permita garantizar la continuidad en la atención y el equilibrio
-            financiero.
+            Los hospitales en Colombia enfrentan retos relacionados con
+            liquidez, presión operativa, cartera acumulada y sostenibilidad
+            institucional. La eficiencia administrativa y financiera se ha
+            convertido en un factor clave para garantizar continuidad en la
+            prestación de servicios médicos.
           </p>
 
           <div className={styles.actions}>
-            <a href="#contacto" className={styles.primary}>
-              Recibir orientación
+            <a href="#recursos" className={styles.primary}>
+              Ver recursos del sector
             </a>
-            <a href="/#solucion" className={styles.secondary}>
-              Ver soluciones
+
+            <a
+              href="https://recaudodecartera.com/recuperacion-cartera-hospitales.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.secondary}
+            >
+              Ver solución especializada
             </a>
           </div>
         </motion.div>
@@ -43,7 +50,7 @@ export default function HospitalesContent() {
 
       {/* CONTENIDO */}
       <main className={styles.container}>
-        {/* PROBLEMÁTICA */}
+        {/* CONTEXTO */}
         <section className={styles.section}>
           <motion.h2
             className={styles.subtitle}
@@ -52,7 +59,7 @@ export default function HospitalesContent() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Crisis financiera y problemas operativos en hospitales de Colombia
+            Situación financiera y operativa de los hospitales en Colombia
           </motion.h2>
 
           <motion.p
@@ -62,28 +69,29 @@ export default function HospitalesContent() {
             transition={{ delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Los hospitales operan en un entorno complejo donde deben atender
-            grandes volúmenes de pacientes mientras enfrentan limitaciones
-            presupuestales y retrasos en los flujos de ingreso.
+            El sistema hospitalario colombiano opera bajo altos niveles de
+            exigencia asistencial, presión presupuestal y dependencia de flujos
+            de pago provenientes de EPS y entidades responsables del sistema de
+            salud.
           </motion.p>
 
           <div className={styles.grid}>
             {[
-              "Alta demanda de servicios de salud",
-              "Limitaciones presupuestales",
-              "Acumulación de cartera con EPS y entidades",
-              "Retrasos en giros y pagos",
-              "Sobrecarga operativa del personal",
-              "Infraestructura y recursos limitados",
+              "Incremento de cartera hospitalaria acumulada",
+              "Demoras en pagos por parte de EPS",
+              "Altos costos operativos y administrativos",
+              "Sobrecarga asistencial en servicios médicos",
+              "Dificultades de liquidez y flujo de caja",
+              "Presión sobre infraestructura y talento humano",
             ].map((item, i) => (
               <motion.div
                 key={i}
                 className={styles.card}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.08 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.04 }}
+                whileHover={{ scale: 1.03 }}
               >
                 <p>{item}</p>
               </motion.div>
@@ -92,13 +100,13 @@ export default function HospitalesContent() {
 
           <motion.div
             className={styles.warningBox}
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.96 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4 }}
             viewport={{ once: true }}
           >
-            ⚠ La falta de recursos y el crecimiento de la cartera pueden afectar
-            directamente la capacidad de atención de un hospital.
+            ⚠ La acumulación de cartera y los retrasos en recaudo pueden afectar
+            directamente la capacidad operativa y financiera de los hospitales.
           </motion.div>
         </section>
 
@@ -111,8 +119,7 @@ export default function HospitalesContent() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Impacto de la crisis financiera en la sostenibilidad hospitalaria y
-            cartera EPS
+            Impacto de la cartera EPS en la sostenibilidad hospitalaria
           </motion.h2>
 
           <motion.p
@@ -122,29 +129,28 @@ export default function HospitalesContent() {
             transition={{ delay: 0.2 }}
             viewport={{ once: true }}
           >
-            La acumulación de cartera y la falta de liquidez afectan la
-            estabilidad institucional de los hospitales, generando dificultades
-            para operar eficientemente y garantizar la prestación continua de
-            servicios.
+            La estabilidad financiera hospitalaria depende de la capacidad de
+            transformar la facturación en flujo de caja efectivo que permita
+            mantener operación, talento humano e infraestructura médica.
           </motion.p>
 
           <div className={styles.infoGrid}>
             {[
               {
-                title: "✔ Déficit financiero en hospitales",
-                text: "Desbalance entre ingresos proyectados y recursos disponibles.",
+                title: "✔ Presión sobre el flujo de caja",
+                text: "Los retrasos en recaudo afectan operación y liquidez institucional.",
               },
               {
-                title: "✔ Limitación en la atención de pacientes",
-                text: "Restricciones para ampliar cobertura o mejorar servicios.",
+                title: "✔ Riesgo de sostenibilidad financiera",
+                text: "El crecimiento de cartera incrementa el riesgo operativo.",
               },
               {
-                title: "✔ Afectación del talento humano en salud",
-                text: "Dificultades en contratación y pago de personal médico.",
+                title: "✔ Impacto en expansión hospitalaria",
+                text: "Se limita la inversión en tecnología e infraestructura.",
               },
               {
-                title: "✔ Riesgo institucional en hospitales",
-                text: "Impacto en la continuidad y calidad del servicio de salud.",
+                title: "✔ Afectación del servicio médico",
+                text: "La presión financiera impacta procesos asistenciales y administrativos.",
               },
             ].map((item, i) => (
               <motion.div
@@ -160,83 +166,113 @@ export default function HospitalesContent() {
             ))}
           </div>
 
-          <motion.div className={styles.highlightBox}>
-            ✔ La sostenibilidad hospitalaria depende del flujo de caja y la
-            eficiencia en la gestión de cartera.
+          <motion.div
+            className={styles.highlightBox}
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
+            ✔ La sostenibilidad hospitalaria depende directamente de una gestión
+            eficiente del recaudo y del flujo financiero institucional.
           </motion.div>
         </section>
 
         {/* OPERACIÓN */}
         <section className={styles.section}>
           <motion.h2 className={styles.subtitle}>
-            Complejidad operativa en hospitales de alta demanda en Colombia
+            Complejidad administrativa y operativa en hospitales colombianos
           </motion.h2>
 
           <motion.p className={styles.text}>
-            Los hospitales deben gestionar múltiples procesos simultáneamente,
-            desde la atención de pacientes hasta la administración financiera,
-            lo que incrementa la complejidad de su operación diaria.
+            Los hospitales deben coordinar procesos médicos, administrativos y
+            financieros de manera simultánea, lo que aumenta la complejidad de
+            gestión dentro del sistema de salud.
           </motion.p>
 
           <div className={styles.grid}>
             {[
-              "Atención continua 24/7",
-              "Gestión de urgencias y alta complejidad",
-              "Coordinación de múltiples áreas médicas",
-              "Procesos administrativos extensos",
-              "Dependencia de recursos públicos o mixtos",
+              "Operación hospitalaria continua 24/7",
+              "Gestión de múltiples EPS y entidades",
+              "Procesos extensos de auditoría y glosas",
+              "Altos volúmenes de facturación hospitalaria",
+              "Coordinación de servicios de alta complejidad",
+              "Dependencia de recursos públicos y privados",
             ].map((item, i) => (
-              <motion.div key={i} className={styles.card}>
+              <motion.div
+                key={i}
+                className={styles.card}
+                whileHover={{ scale: 1.03 }}
+              >
                 <p>{item}</p>
               </motion.div>
             ))}
           </div>
         </section>
 
-        {/* NECESIDAD */}
-        <section className={styles.section}>
+        {/* RECURSOS */}
+        <section id="recursos" className={styles.section}>
           <motion.h2 className={styles.subtitle}>
-            Estrategias para mejorar la sostenibilidad financiera hospitalaria
-            en Colombia
+            Recursos y estrategias sobre recuperación de cartera hospitalaria
           </motion.h2>
 
           <motion.p className={styles.text}>
-            Para garantizar su sostenibilidad, los hospitales requieren
-            implementar estrategias que les permitan optimizar sus recursos,
-            mejorar la gestión financiera y fortalecer su capacidad operativa.
+            Si desea profundizar sobre estrategias legales y financieras
+            relacionadas con recuperación de cartera hospitalaria y recaudo EPS,
+            puede consultar los siguientes recursos especializados.
           </motion.p>
 
-          <motion.div className={styles.highlightBox}>
-            Cada vez más hospitales en Colombia buscan fortalecer sus procesos
-            internos para mejorar la eficiencia y garantizar la continuidad del
-            servicio.
-          </motion.div>
+          <div className={styles.resourcesBox}>
+            <a
+              href="https://recaudodecartera.com/recuperacion-cartera-hospitales.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.resourceLink}
+            >
+              Recuperación de cartera para hospitales en Colombia →
+            </a>
+
+            <a
+              href="https://recaudodecartera.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.resourceLink}
+            >
+              Soluciones de recuperación de cartera en el sector salud →
+            </a>
+          </div>
         </section>
 
         {/* CTA */}
         <section id="contacto" className={styles.cta}>
           <motion.div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Mejora la sostenibilidad financiera de tu hospital en Colombia
+              Consulte recursos especializados sobre cartera hospitalaria
             </h2>
 
             <p className={styles.ctaText}>
-              Una gestión eficiente es clave para garantizar la continuidad en
-              la prestación de servicios y la estabilidad financiera de los
-              hospitales en Colombia.
+              Acceda a información especializada relacionada con sostenibilidad
+              financiera, recuperación de cartera y flujo de caja en hospitales
+              de Colombia.
             </p>
 
             <div className={styles.actions}>
-              <a href="/" className={styles.primary}>
-                Contactar ahora
+              <a
+                href="https://recaudodecartera.com/recuperacion-cartera-hospitales.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.primary}
+              >
+                Ver estrategia especializada
               </a>
 
               <a
-                href="https://api.whatsapp.com/send/?phone=573114659315"
+                href="https://recaudodecartera.com/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className={styles.secondary}
               >
-                Hablar por WhatsApp
+                Ir al sitio principal
               </a>
             </div>
           </motion.div>

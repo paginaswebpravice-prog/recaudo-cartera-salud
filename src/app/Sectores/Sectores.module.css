@@ -9,11 +9,11 @@ BASE
 }
 
 /* =========================
-HERO (PROFESIONAL + IMPACTO)
+HERO
 ========================= */
 
 .hero {
-  padding: 160px 20px 100px;
+  padding: 150px 20px 100px;
   background: linear-gradient(135deg, #004a80, #002f4d);
   color: #ffffff;
   text-align: center;
@@ -34,46 +34,39 @@ HERO (PROFESIONAL + IMPACTO)
 }
 
 .heroContent {
-  max-width: 850px;
+  max-width: 900px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
 }
-
-/* BADGE */
 
 .badge {
   display: inline-block;
   font-size: 13px;
   font-weight: 600;
   background: rgba(255, 255, 255, 0.15);
-  padding: 6px 14px;
-  border-radius: 20px;
-  margin-bottom: 20px;
+  padding: 7px 15px;
+  border-radius: 30px;
+  margin-bottom: 22px;
+  letter-spacing: 0.3px;
 }
 
-/* TITULO */
-
 .title {
-  font-size: 46px;
+  font-size: 44px;
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.5px;
 }
 
-/* TEXTO HERO (GRANDE) */
-
 .description {
-  margin-top: 20px;
-  font-size: 20px;
-  line-height: 1.8;
-  color: #e4eef6;
+  margin-top: 22px;
+  font-size: 19px;
+  line-height: 1.85;
+  color: #e3edf5;
 }
 
-/* BOTONES */
-
 .actions {
-  margin-top: 35px;
+  margin-top: 38px;
   display: flex;
   justify-content: center;
   gap: 14px;
@@ -84,7 +77,7 @@ HERO (PROFESIONAL + IMPACTO)
   background: #f7c600;
   color: #000;
   padding: 14px 26px;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s ease;
@@ -96,10 +89,10 @@ HERO (PROFESIONAL + IMPACTO)
 }
 
 .secondary {
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.8);
   color: #ffffff;
   padding: 14px 26px;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   transition: 0.3s ease;
 }
@@ -110,37 +103,34 @@ HERO (PROFESIONAL + IMPACTO)
 }
 
 /* =========================
-CONTENIDO GENERAL
+CONTENIDO
 ========================= */
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 100px 20px;
+  padding: 90px 20px;
 }
 
 .section {
   margin-bottom: 100px;
 }
 
-/* TITULOS */
-
 .subtitle {
   font-size: 30px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   text-align: center;
   color: #004a80;
+  line-height: 1.3;
 }
-
-/* TEXTOS (AUMENTADOS) */
 
 .text {
   text-align: center;
   color: #555;
-  max-width: 750px;
-  margin: 0 auto 30px;
-  line-height: 1.85;
+  max-width: 800px;
+  margin: 0 auto 35px;
+  line-height: 1.9;
   font-size: 17px;
 }
 
@@ -151,23 +141,19 @@ GRID
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  gap: 22px;
 }
 
-/* CARDS */
-
 .card {
-  border: 1px solid #e5e5e5;
-  padding: 24px;
-  border-radius: 12px;
+  border: 1px solid #e6e6e6;
+  padding: 26px;
+  border-radius: 14px;
   text-align: center;
   background: #ffffff;
-  transition: all 0.25s ease;
+  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
 }
-
-/* línea amarilla superior */
 
 .card::before {
   content: "";
@@ -179,102 +165,100 @@ GRID
   background: #f7c600;
 }
 
-/* hover elegante */
-
 .card:hover {
-  border-color: #004a80;
+  border-color: rgba(0, 74, 128, 0.25);
   transform: translateY(-6px);
-  box-shadow: 0 15px 35px rgba(0, 74, 128, 0.12);
+  box-shadow: 0 18px 40px rgba(0, 74, 128, 0.08);
 }
 
 .card p {
-  font-size: 16px;
+  font-size: 15px;
   color: #444;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 /* =========================
-INFO GRID (LISTA PRO)
+INFO GRID
 ========================= */
 
 .infoGrid {
   display: grid;
-  gap: 18px;
-  margin-top: 30px;
+  gap: 20px;
+  margin-top: 35px;
 }
 
 .infoGrid div {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
   border-left: 3px solid #f7c600;
-  padding-left: 14px;
+  padding-left: 16px;
 }
 
 .infoGrid h4 {
   font-size: 17px;
   color: #004a80;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .infoGrid p {
-  font-size: 16px;
+  font-size: 15px;
   color: #555;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 /* =========================
-BOXES DESTACADOS
+BOXES
 ========================= */
 
 .highlightBox {
   border-left: 4px solid #f7c600;
   background: #fff9db;
   padding: 18px;
-  margin-top: 25px;
-  font-size: 16px;
-  line-height: 1.7;
-  border-radius: 6px;
+  margin-top: 28px;
+  font-size: 15px;
+  line-height: 1.8;
+  border-radius: 8px;
 }
 
 .warningBox {
   border-left: 4px solid #ff4d4f;
   background: #fff1f0;
   padding: 18px;
-  margin-top: 25px;
-  font-size: 16px;
-  line-height: 1.7;
-  border-radius: 6px;
+  margin-top: 28px;
+  font-size: 15px;
+  line-height: 1.8;
+  border-radius: 8px;
 }
 
 /* =========================
-BENEFICIOS (TAGS)
+RECURSOS
 ========================= */
 
-.benefits {
+.resourcesBox {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 40px;
 }
 
-.benefits span {
-  border: 1px solid #ddd;
-  padding: 10px 16px;
-  border-radius: 8px;
-  font-size: 14px;
-  background: #fafafa;
-  transition: 0.25s;
-}
-
-.benefits span:hover {
-  border-color: #004a80;
+.resourceLink {
+  display: block;
+  padding: 22px;
+  border: 1px solid #dfe7ee;
+  border-radius: 12px;
+  text-decoration: none;
   color: #004a80;
-  background: #f0f7fc;
+  font-weight: 600;
+  transition: 0.3s ease;
+  background: #fafcff;
+}
+
+.resourceLink:hover {
+  border-color: #004a80;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 74, 128, 0.08);
 }
 
 /* =========================
-CTA FINAL (FUERTE)
+CTA
 ========================= */
 
 .cta {
@@ -282,7 +266,7 @@ CTA FINAL (FUERTE)
   padding: 90px 20px;
   text-align: center;
   color: #ffffff;
-  border-radius: 12px;
+  border-radius: 18px;
 }
 
 .ctaContent {
@@ -292,14 +276,14 @@ CTA FINAL (FUERTE)
 
 .ctaTitle {
   font-size: 32px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .ctaText {
   font-size: 18px;
   color: #dbe9f4;
   margin-bottom: 30px;
-  line-height: 1.8;
+  line-height: 1.85;
 }
 
 /* =========================
@@ -325,5 +309,13 @@ RESPONSIVE
 
   .hero {
     padding: 130px 20px 80px;
+  }
+
+  .ctaTitle {
+    font-size: 26px;
+  }
+
+  .ctaText {
+    font-size: 16px;
   }
 }

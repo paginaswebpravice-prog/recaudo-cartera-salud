@@ -2,23 +2,22 @@ import ClinicaContent from "./ClinicaContent";
 
 export const metadata = {
   title:
-    "Clínicas en Colombia 2026: cómo mejorar rentabilidad, flujo de caja y recaudo EPS | Guía PRAVICE",
+    "Gestión de cartera y sostenibilidad financiera para clínicas en Colombia | PRAVICE",
   description:
-    "Guía estratégica para clínicas en Colombia: mejora de facturación, cartera EPS, flujo de caja y rentabilidad. Estrategias reales para optimizar recaudo y sostenibilidad financiera.",
+    "Contenido especializado sobre flujo de caja, cartera EPS y sostenibilidad financiera para clínicas en Colombia. Conozca estrategias jurídicas y administrativas aplicadas al sector salud.",
 
   alternates: {
     canonical: "https://recaudocarteraipsyeps.com/Sectores/clinicas",
   },
 
   openGraph: {
-    title:
-      "Clínicas en Colombia 2026: rentabilidad, flujo de caja y cartera EPS optimizada",
+    title: "Gestión de cartera EPS y flujo de caja para clínicas en Colombia",
     description:
-      "Estrategias avanzadas para clínicas en Colombia: mejora de recaudo EPS, control de cartera vencida y optimización del flujo de caja.",
+      "Información especializada para clínicas sobre recaudo, cartera hospitalaria y sostenibilidad financiera en el sistema de salud colombiano.",
     url: "https://recaudocarteraipsyeps.com/Sectores/clinicas",
     siteName: "PRAVICE",
     locale: "es_CO",
-    type: "website",
+    type: "article",
   },
 
   robots: {

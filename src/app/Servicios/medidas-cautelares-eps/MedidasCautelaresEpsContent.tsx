@@ -15,28 +15,33 @@ export default function MedidasCautelaresEpsContent() {
           transition={{ duration: 0.6 }}
         >
           <span className={styles.badge}>
-            Embargos a EPS y medidas cautelares en Colombia
+            Medidas cautelares y protección de cartera en salud
           </span>
 
           <h1 className={styles.title}>
-            Cómo embargar EPS en Colombia y asegurar el pago de cartera para IPS
-            y clínicas
+            Medidas cautelares contra EPS en Colombia: cómo funcionan los
+            embargos y la protección de cartera en el sector salud
           </h1>
 
           <p className={styles.description}>
-            Protege el recaudo de tu cartera en Colombia mediante medidas
-            cautelares como embargo de cuentas, retención de recursos y
-            aseguramiento de activos. Apoyamos a IPS y clínicas en procesos
-            judiciales para garantizar el pago efectivo de obligaciones por
-            parte de las EPS.
+            Conozca cómo funcionan las medidas cautelares contra EPS en
+            Colombia, cuándo pueden solicitarse y qué papel cumplen los embargos
+            y retenciones dentro de los procesos de recuperación de cartera para
+            IPS, clínicas y prestadores de salud.
           </p>
 
           <div className={styles.actions}>
             <a href="#contacto" className={styles.primary}>
-              Solicitar medidas cautelares
+              Recibir orientación
             </a>
-            <a href="/Blog" className={styles.secondary}>
-              Ver contenido legal
+
+            <a
+              href="https://recaudodecartera.com/cartera-sector-salud.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.secondary}
+            >
+              Ver recurso especializado
             </a>
           </div>
         </motion.div>
@@ -44,7 +49,7 @@ export default function MedidasCautelaresEpsContent() {
 
       {/* CONTENIDO */}
       <main className={styles.container}>
-        {/* PROBLEMA */}
+        {/* CONTEXTO */}
         <section className={styles.section}>
           <motion.h2
             className={styles.subtitle}
@@ -52,23 +57,45 @@ export default function MedidasCautelaresEpsContent() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Riesgos de no embargar a una EPS en Colombia y perder tu cartera
+            Qué son las medidas cautelares contra EPS en Colombia
           </motion.h2>
+
+          <p className={styles.text}>
+            Las medidas cautelares son herramientas jurídicas utilizadas para
+            proteger el cumplimiento de una obligación mientras se desarrolla un
+            proceso judicial. En el sector salud colombiano, suelen utilizarse
+            para reducir el riesgo de pérdida de cartera y proteger el flujo de
+            caja de IPS y clínicas.
+          </p>
+
+          <div className={styles.highlightBox}>
+            Estas medidas pueden aplicarse dentro de procesos ejecutivos o
+            estrategias de recuperación de cartera cuando existe riesgo de no
+            pago, insolvencia o deterioro financiero del deudor.
+          </div>
+        </section>
+
+        {/* RIESGOS */}
+        <section className={styles.section}>
+          <h2 className={styles.subtitle}>
+            Riesgos financieros asociados a cartera EPS sin protección jurídica
+          </h2>
 
           <div className={styles.grid}>
             {[
-              "EPS sin liquidez al momento del pago",
-              "Ocultamiento o traslado de recursos",
-              "Procesos judiciales sin garantía de recaudo",
-              "Demoras que afectan el flujo de caja",
+              "Incremento de cartera vencida",
+              "Dificultades de liquidez para IPS",
               "Riesgo de insolvencia del deudor",
+              "Demoras prolongadas en recuperación",
+              "Pérdida de capacidad operativa",
+              "Afectación del flujo financiero institucional",
             ].map((item, i) => (
               <motion.div
                 key={i}
                 className={styles.card}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.08 }}
               >
                 <p>{item}</p>
               </motion.div>
@@ -76,143 +103,121 @@ export default function MedidasCautelaresEpsContent() {
           </div>
 
           <div className={styles.warningBox}>
-            ⚠ Demandar sin solicitar medidas cautelares puede dejarte con una
-            sentencia sin pago efectivo.
+            ⚠ En algunos casos, iniciar acciones judiciales sin mecanismos de
+            protección puede dificultar la recuperación efectiva de la cartera.
           </div>
         </section>
 
-        {/* QUE SON */}
+        {/* TIPOS */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Qué son las medidas cautelares contra EPS en Colombia y cómo
-            aseguran el recaudo
+            Tipos de medidas cautelares utilizadas en procesos de cartera del
+            sector salud
           </h2>
-
-          <p className={styles.text}>
-            Las medidas cautelares son herramientas legales que permiten
-            asegurar el cumplimiento de una obligación durante un proceso
-            judicial. En el sector salud en Colombia, son clave para garantizar
-            que una EPS cuente con los recursos necesarios para pagar la deuda
-            reclamada.
-          </p>
 
           <div className={styles.infoGrid}>
             <div>
-              <h4>✔ Embargo de cuentas bancarias</h4>
+              <h4>✔ Embargo de cuentas</h4>
+
               <p>
-                Permite retener dinero directamente desde cuentas de la EPS.
+                Retención preventiva de recursos financieros asociados al
+                deudor.
               </p>
             </div>
 
             <div>
-              <h4>✔ Retención de recursos</h4>
-              <p>Bloqueo de flujos financieros para garantizar el pago.</p>
+              <h4>✔ Retención de pagos</h4>
+
+              <p>
+                Medidas orientadas a asegurar recursos derivados de operaciones
+                futuras.
+              </p>
             </div>
 
             <div>
-              <h4>✔ Embargo de bienes</h4>
-              <p>Afectación de activos para respaldar la obligación.</p>
+              <h4>✔ Medidas sobre activos</h4>
+
+              <p>
+                Protección jurídica sobre bienes relacionados con la obligación.
+              </p>
             </div>
 
             <div>
-              <h4>✔ Medidas sobre ingresos futuros</h4>
-              <p>Aseguramiento de recursos que la EPS reciba posteriormente.</p>
+              <h4>✔ Integración con procesos ejecutivos</h4>
+
+              <p>
+                Las medidas cautelares suelen complementarse con acciones de
+                cobro judicial.
+              </p>
             </div>
           </div>
 
           <div className={styles.highlightBox}>
-            📌 Las medidas cautelares aumentan significativamente la
-            probabilidad de recuperar la cartera.
+            📌 La estrategia cautelar depende del tipo de cartera, la
+            documentación disponible y las condiciones del proceso.
           </div>
         </section>
 
-        {/* SOLUCIÓN */}
+        {/* ETAPAS */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Servicio jurídico para embargar EPS en Colombia y recuperar cartera
-          </h2>
-
-          <p className={styles.text}>
-            Diseñamos estrategias jurídicas para solicitar e implementar medidas
-            cautelares efectivas en procesos contra EPS en Colombia, priorizando
-            la protección del recaudo y la viabilidad del cobro.
-          </p>
-
-          <div className={styles.grid}>
-            {[
-              "Análisis de viabilidad de medidas cautelares",
-              "Identificación de activos y recursos de la EPS",
-              "Solicitud de embargo y retención",
-              "Gestión ante entidades financieras",
-              "Seguimiento y control de medidas",
-              "Integración con proceso ejecutivo",
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                className={styles.card}
-                whileHover={{ scale: 1.05 }}
-              >
-                <p>{item}</p>
-              </motion.div>
-            ))}
-          </div>
-        </section>
-
-        {/* PROCESO */}
-        <section className={styles.section}>
-          <h2 className={styles.subtitle}>
-            Cómo embargar una EPS paso a paso en Colombia y asegurar el pago
+            Etapas generales para solicitar medidas cautelares en Colombia
           </h2>
 
           <div className={styles.grid}>
             {[
-              "Evaluación de la cartera y riesgo",
+              "Análisis de la cartera y documentación",
+              "Evaluación de riesgos financieros",
               "Definición de estrategia jurídica",
-              "Solicitud ante el juez competente",
-              "Ejecución de embargos y retenciones",
-              "Seguimiento a entidades involucradas",
-              "Aseguramiento del pago",
+              "Solicitud ante autoridad competente",
+              "Seguimiento de medidas decretadas",
+              "Integración con acciones de cobro",
             ].map((step, i) => (
               <motion.div key={i} className={styles.card}>
-                <h3>Paso {i + 1}</h3>
+                <h3>Etapa {i + 1}</h3>
                 <p>{step}</p>
               </motion.div>
             ))}
           </div>
         </section>
 
-        {/* BENEFICIOS */}
+        {/* APOYO SEO */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Beneficios de embargar EPS en Colombia para asegurar el recaudo de
-            cartera
-          </h2>
-
-          <div className={styles.benefits}>
-            <span>✔ Mayor probabilidad de recaudo</span>
-            <span>✔ Protección del flujo de caja</span>
-            <span>✔ Reducción del riesgo de no pago</span>
-            <span>✔ Presión efectiva sobre la EPS</span>
-            <span>✔ Seguridad jurídica</span>
-            <span>✔ Estrategia integral de cobro</span>
-          </div>
-        </section>
-
-        {/* DIFERENCIAL */}
-        <section className={styles.section}>
-          <h2 className={styles.subtitle}>
-            Por qué embargar EPS es clave para recuperar cartera en Colombia
+            Información adicional sobre cartera en el sector salud colombiano
           </h2>
 
           <p className={styles.text}>
-            En muchos casos, ganar un proceso no garantiza el pago. Las medidas
-            cautelares permiten asegurar desde el inicio que existan recursos
-            disponibles para cumplir la obligación, evitando que el proceso
-            termine sin resultados financieros.
+            Si desea profundizar sobre recuperación de cartera, gestión de
+            cuentas por cobrar y estrategias financieras para IPS y clínicas en
+            Colombia, puede consultar el siguiente recurso especializado.
           </p>
 
           <div className={styles.highlightBox}>
-            🚀 No basta con demandar: hay que asegurar el pago desde el inicio.
+            👉{" "}
+            <a
+              href="https://recaudodecartera.com/cartera-sector-salud.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver guía especializada sobre cartera en el sector salud
+            </a>
+          </div>
+        </section>
+
+        {/* BENEFICIOS */}
+        <section className={styles.section}>
+          <h2 className={styles.subtitle}>
+            Importancia de las medidas cautelares en la recuperación de cartera
+          </h2>
+
+          <div className={styles.benefits}>
+            <span>✔ Protección preventiva del recaudo</span>
+            <span>✔ Reducción del riesgo financiero</span>
+            <span>✔ Fortalecimiento de estrategias jurídicas</span>
+            <span>✔ Apoyo al flujo de caja institucional</span>
+            <span>✔ Mayor control sobre procesos judiciales</span>
+            <span>✔ Complemento de recuperación de cartera</span>
           </div>
         </section>
 
@@ -220,18 +225,18 @@ export default function MedidasCautelaresEpsContent() {
         <section id="contacto" className={styles.cta}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Embarga EPS en Colombia y asegura el pago real de tu cartera
+              Evalúe estrategias para proteger cartera EPS en Colombia
             </h2>
 
             <p className={styles.ctaText}>
-              Te ayudamos a implementar medidas cautelares contra EPS en
-              Colombia para proteger tu cartera y garantizar resultados reales
-              en el proceso de cobro.
+              Analice mecanismos jurídicos y financieros orientados a proteger
+              la sostenibilidad y el recaudo de cartera en IPS, clínicas y
+              prestadores del sector salud.
             </p>
 
             <div className={styles.actions}>
               <a href="/" className={styles.primary}>
-                Solicitar medidas ahora
+                Solicitar información
               </a>
 
               <a
@@ -240,7 +245,7 @@ export default function MedidasCautelaresEpsContent() {
                 rel="noopener noreferrer"
                 className={styles.secondary}
               >
-                Hablar con un abogado
+                Hablar por WhatsApp
               </a>
             </div>
           </div>
