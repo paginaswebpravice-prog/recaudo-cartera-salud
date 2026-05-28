@@ -13,17 +13,28 @@ export default function ProblemSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        {/* TITULO OPTIMIZADO */}
-        <motion.h2
-          className={styles.title}
-          initial={{ opacity: 0, y: 30 }}
+        {/* TITULO */}
+        <motion.div
+          initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          Problemas de Cartera en IPS y Hospitales: La Crisis del Recaudo en el
-          Sector Salud Colombiano
-        </motion.h2>
+          <span className={styles.badge}>
+            Problemáticas financieras del sector salud
+          </span>
+
+          <motion.h2
+            className={styles.title}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            Cartera hospitalaria, glosas y retrasos de pago: desafíos que
+            afectan a IPS, clínicas y hospitales en Colombia
+          </motion.h2>
+        </motion.div>
 
         <div className={styles.grid}>
           {/* COLUMNA IZQUIERDA */}
@@ -41,7 +52,7 @@ export default function ProblemSection() {
               transition={{ delay: 0.3 }}
               viewport={{ once: true }}
             >
-              El problema no es que exista cartera vencida en su IPS
+              El problema no es únicamente la existencia de cartera vencida
             </motion.p>
 
             <motion.p
@@ -51,8 +62,26 @@ export default function ProblemSection() {
               transition={{ delay: 0.5, duration: 0.6 }}
               viewport={{ once: true }}
             >
-              El problema es la falta de recaudo efectivo frente a EPS y ADRES
+              El verdadero riesgo está en la falta de gestión especializada
+              sobre glosas, conciliaciones y procesos de cobro frente a EPS y
+              entidades del sistema de salud
             </motion.p>
+
+            {/* APOYO SEO */}
+            <div className={styles.supportCard}>
+              <p>
+                Para procesos generales de recuperación de cartera empresarial
+                en otros sectores:
+              </p>
+
+              <a
+                href="https://recaudodecartera.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visitar firma especializada →
+              </a>
+            </div>
           </motion.div>
 
           {/* COLUMNA DERECHA */}
@@ -78,29 +107,30 @@ export default function ProblemSection() {
               }}
               transition={{ duration: 0.6 }}
             >
-              Las IPS, clínicas y hospitales en Colombia enfrentan una crisis
-              estructural de recuperación de cartera. La acumulación de deuda
-              por parte de EPS y entidades públicas impacta directamente el
-              flujo de caja, la capacidad operativa y la sostenibilidad
-              financiera del sector salud.
+              Las IPS, clínicas, hospitales y proveedores médicos enfrentan
+              retrasos constantes en pagos, devoluciones, auditorías y
+              objeciones administrativas que afectan el flujo financiero del
+              sector salud. La acumulación de cartera hospitalaria genera
+              presión operativa, riesgo jurídico y dificultades de
+              sostenibilidad institucional.
             </motion.p>
 
             {[
               {
-                title: "Glosas médicas que no se resuelven",
-                text: "Objeciones técnicas y administrativas que inmovilizan cartera hospitalaria durante meses o años sin solución definitiva.",
+                title: "Glosas médicas y devoluciones prolongadas",
+                text: "Objeciones administrativas y técnicas que ralentizan el reconocimiento y pago de facturación médica en las instituciones prestadoras de salud.",
               },
               {
-                title: "Cartera con ADRES sin pago oportuno",
-                text: "Procesos administrativos extensos que retrasan el recaudo efectivo y afectan la liquidez de las instituciones.",
+                title: "Retrasos en conciliaciones y procesos con EPS",
+                text: "Procesos extensos de validación y auditoría que impactan directamente la liquidez y el flujo de caja hospitalario.",
               },
               {
-                title: "EPS que dilatan el pago sistemáticamente",
-                text: "Estrategias de postergación que envejecen la cartera vencida y debilitan la posición jurídica de la IPS.",
+                title: "Cartera envejecida en el sector salud",
+                text: "Facturación pendiente durante largos periodos que incrementa el riesgo financiero y limita la capacidad operativa de las IPS.",
               },
               {
-                title: "Riesgo de prescripción de cartera en salud",
-                text: "Pérdida del derecho de cobro por vencimiento de términos legales si no existe gestión jurídica oportuna.",
+                title: "Riesgo jurídico y prescripción de cuentas médicas",
+                text: "La ausencia de seguimiento especializado puede generar pérdida de capacidad de cobro y afectaciones económicas relevantes.",
               },
             ].map((item, index) => (
               <motion.div
@@ -119,12 +149,13 @@ export default function ProblemSection() {
           </motion.div>
         </div>
 
-        {/* TEXTO SEO ESTRUCTURAL */}
+        {/* SEO TEXT */}
         <p className={styles.seoText}>
-          La recuperación de cartera en el sector salud colombiano requiere
-          estrategia jurídica especializada en cobro a EPS, gestión de glosas,
-          procesos ante ADRES y prevención de prescripción de cartera
-          hospitalaria.
+          Sitio especializado en cartera hospitalaria, conciliaciones con EPS,
+          gestión de glosas, auditoría de facturación médica y problemáticas
+          financieras del sector salud colombiano. Complementa servicios
+          generales de recuperación de cartera empresarial mediante enfoque
+          especializado en IPS y hospitales.
         </p>
       </motion.div>
     </section>

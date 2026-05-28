@@ -13,7 +13,18 @@ export default function HonorariosSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        {/* TÍTULO SEO */}
+        {/* BADGE */}
+        <motion.span
+          className={styles.badge}
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          Modelo financiero orientado a recuperación efectiva
+        </motion.span>
+
+        {/* TÍTULO */}
         <motion.h2
           className={styles.title}
           initial={{ opacity: 0, y: 30 }}
@@ -21,9 +32,23 @@ export default function HonorariosSection() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          Honorarios en Recuperación de Cartera para IPS: Comisión por
-          Resultados
+          Esquema de Honorarios para Gestión de Cartera Hospitalaria y Cuentas
+          Médicas
         </motion.h2>
+
+        {/* INTRO */}
+        <motion.p
+          className={styles.intro}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.15, duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          Diseñamos modelos de acompañamiento orientados a IPS, clínicas,
+          hospitales y proveedores médicos que buscan fortalecer procesos de
+          recaudo, conciliación y organización de cartera frente a EPS y
+          entidades del sector salud colombiano.
+        </motion.p>
 
         <div className={styles.content}>
           {/* LEFT SIDE */}
@@ -48,18 +73,32 @@ export default function HonorariosSection() {
                   transition={{ delay: 0.4 }}
                   viewport={{ once: true }}
                 >
-                  10%
+                  IPS
                 </motion.span>
               </motion.div>
             </div>
 
             <p className={styles.comision}>
-              Comisión sobre recaudo efectivo de cartera hospitalaria
+              Estrategias adaptadas al flujo financiero hospitalario
             </p>
 
             <p className={styles.bold}>
-              PRAVICE ABOGADOS solo gana cuando su IPS recupera el dinero.
+              Modelos estructurados para acompañar procesos de conciliación,
+              recaudo y fortalecimiento documental.
             </p>
+
+            {/* BOX ENLACE MADRE */}
+            <div className={styles.supportBox}>
+              <p>Para recuperación de cartera empresarial en otros sectores:</p>
+
+              <a
+                href="https://recaudodecartera.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Conocer soluciones generales de recaudo →
+              </a>
+            </div>
           </motion.div>
 
           {/* RIGHT SIDE */}
@@ -84,7 +123,7 @@ export default function HonorariosSection() {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              Modelo de Comisión por Éxito en Cobro Jurídico a EPS
+              Acompañamiento Estratégico para Cartera del Sector Salud
             </motion.h3>
 
             <motion.p
@@ -94,25 +133,25 @@ export default function HonorariosSection() {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              Nuestro esquema de honorarios elimina anticipos, cuotas fijas o
-              costos ocultos. La institución de salud solo paga un porcentaje
-              sobre el dinero efectivamente recuperado en procesos ejecutivos o
-              declarativos contra EPS y entidades públicas.
+              Cada institución de salud posee necesidades diferentes en materia
+              de conciliación, validación documental, cuentas médicas y gestión
+              de cartera. Por ello, estructuramos esquemas ajustados al tamaño,
+              complejidad y comportamiento financiero de cada operación.
             </motion.p>
 
             <div className={styles.cards}>
               {[
                 {
-                  title: "Sin anticipo ni cuotas mensuales",
-                  text: "No requiere inversión inicial para iniciar la recuperación de cartera.",
+                  title: "Modelos ajustados al sector salud",
+                  text: "Las estrategias se adaptan a la realidad operativa y financiera de IPS y hospitales.",
                 },
                 {
-                  title: "Sin riesgo financiero para la IPS",
-                  text: "Solo se generan honorarios cuando existe recaudo efectivo.",
+                  title: "Seguimiento técnico y documental",
+                  text: "La gestión incorpora trazabilidad, control documental y validación de soportes.",
                 },
                 {
-                  title: "Incentivo directo al recaudo rápido",
-                  text: "Nuestro modelo nos obliga a maximizar resultados en el menor tiempo posible.",
+                  title: "Enfoque orientado a sostenibilidad",
+                  text: "Las acciones buscan fortalecer liquidez y optimizar procesos de recaudo institucional.",
                 },
               ].map((card, index) => (
                 <motion.div
@@ -137,12 +176,14 @@ export default function HonorariosSection() {
                 hidden: { opacity: 0, y: 30 },
                 visible: { opacity: 1, y: 0 },
               }}
-              whileHover={{ scale: 1.02 }}
+              whileHover={{ scale: 1.01 }}
             >
-              <h4>Reportes claros y trazabilidad financiera</h4>
+              <h4>Transparencia y control operativo</h4>
+
               <p>
-                Cada pago recuperado incluye detalle por factura, cálculo de
-                comisión y soporte documental verificable.
+                Implementamos seguimiento detallado de conciliaciones,
+                validaciones documentales y avances estratégicos relacionados
+                con cartera hospitalaria y cuentas médicas.
               </p>
             </motion.div>
 
@@ -153,18 +194,21 @@ export default function HonorariosSection() {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              Este modelo de honorarios por resultados ha demostrado ser el más
-              eficiente para IPS, clínicas y hospitales que buscan recuperación
-              de cartera sin comprometer su flujo de caja.
+              La especialización en cartera del sector salud permite construir
+              procesos más eficientes para IPS, clínicas y hospitales que
+              requieren fortalecer su capacidad de recuperación financiera y
+              organización documental.
             </motion.p>
           </motion.div>
         </div>
 
-        {/* TEXTO SEO OCULTO */}
+        {/* SEO TEXT */}
         <p className={styles.seoText}>
-          Honorarios en cobro jurídico a EPS bajo modelo de comisión por éxito,
-          recuperación de cartera hospitalaria sin anticipo y esquema financiero
-          alineado a resultados para IPS en Colombia.
+          Sitio especializado en gestión de cartera hospitalaria, conciliación
+          con EPS, cuentas médicas, validación documental y estrategias de
+          recuperación financiera para IPS y hospitales en Colombia. Complementa
+          soluciones generales de recaudo empresarial mediante enfoque exclusivo
+          para el sector salud.
         </p>
       </motion.div>
     </section>

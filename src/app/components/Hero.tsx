@@ -10,7 +10,7 @@ export default function Hero() {
       <motion.div
         className={styles.overlay}
         initial={{ opacity: 0 }}
-        animate={{ opacity: 0.85 }}
+        animate={{ opacity: 0.88 }}
         transition={{ duration: 1 }}
       />
 
@@ -21,11 +21,22 @@ export default function Hero() {
         variants={{
           hidden: {},
           visible: {
-            transition: { staggerChildren: 0.2 },
+            transition: { staggerChildren: 0.18 },
           },
         }}
       >
-        {/* H1 SEO PRINCIPAL */}
+        {/* BADGE */}
+        <motion.span
+          className={styles.badge}
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          Especialistas en cartera del sector salud en Colombia
+        </motion.span>
+
+        {/* TITULO PRINCIPAL */}
         <motion.h1
           variants={{
             hidden: { opacity: 0, y: 40 },
@@ -33,8 +44,8 @@ export default function Hero() {
           }}
           transition={{ duration: 0.8 }}
         >
-          Recuperación de Cartera para IPS y EPS en Colombia con Estrategia
-          Jurídica Especializada
+          Gestión y recuperación de cartera para IPS, clínicas y hospitales
+          frente a EPS y entidades del sistema de salud
         </motion.h1>
 
         {/* DESCRIPCIÓN */}
@@ -45,12 +56,11 @@ export default function Hero() {
           }}
           transition={{ duration: 0.8 }}
         >
-          Somos especialistas en recaudo y cobro jurídico de cartera en el
-          sector salud. Representamos IPS, clínicas, hospitales y proveedores
-          médicos frente a EPS, ADRES y entidades públicas. Reducimos riesgo de
-          prescripción, gestionamos glosas y ejecutamos estrategias judiciales y
-          extrajudiciales orientadas a flujo de caja real y recuperación
-          efectiva.
+          Acompañamos instituciones prestadoras de salud en procesos de
+          conciliación, gestión de glosas, recuperación de cartera hospitalaria
+          y estrategias jurídicas orientadas al flujo financiero del sector
+          salud. Nuestro enfoque está especializado exclusivamente en IPS, EPS,
+          hospitales, clínicas y proveedores médicos en Colombia.
         </motion.p>
 
         {/* BOTONES */}
@@ -69,7 +79,7 @@ export default function Hero() {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
           >
-            Diagnóstico gratuito de cartera IPS
+            Solicitar diagnóstico de cartera
           </motion.a>
 
           {/* CTA SECUNDARIO */}
@@ -79,13 +89,14 @@ export default function Hero() {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
           >
-            Conocer metodología de recaudo
+            Ver metodología especializada
           </motion.a>
 
-          {/* NUEVO CTA WHATSAPP (ALTA CONVERSIÓN) */}
+          {/* WHATSAPP */}
           <motion.a
             href="https://wa.me/573114659315"
             target="_blank"
+            rel="noopener noreferrer"
             className={styles.whatsappBtn}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -93,15 +104,31 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            Hablar con un abogado ahora
+            Hablar con un especialista
           </motion.a>
         </motion.div>
 
-        {/* SEO TEXT */}
+        {/* BLOQUE SEO DE APOYO */}
+        <div className={styles.supportBox}>
+          <p>
+            ¿Buscas soluciones generales de recuperación y recaudo de cartera
+            empresarial?
+          </p>
+
+          <a
+            href="https://recaudodecartera.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Conocer firma especializada en recuperación de cartera →
+          </a>
+        </div>
+
+        {/* TEXTO SEO */}
         <p className={styles.seoText}>
-          Servicio especializado en recuperación de cartera hospitalaria, cobro
-          jurídico a EPS y gestión estratégica de cartera vencida en Colombia
-          bajo el marco regulatorio de la Superintendencia Nacional de Salud.
+          Portal especializado en recuperación de cartera hospitalaria,
+          conciliaciones con EPS, gestión de glosas, cobro de facturación médica
+          y estrategias jurídicas aplicadas al sector salud en Colombia.
         </p>
       </motion.div>
     </section>

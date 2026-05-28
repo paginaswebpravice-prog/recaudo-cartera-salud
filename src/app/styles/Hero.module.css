@@ -17,18 +17,19 @@
   overflow: hidden;
 }
 
-/* Overlay más estratégico */
+/* Overlay */
 .overlay {
   position: absolute;
   inset: 0;
+
   background: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.92),
+    rgba(255, 255, 255, 0.94),
     rgba(255, 255, 255, 0.88)
   );
 }
 
-/* Contenedor */
+/* CONTENEDOR */
 .container {
   position: relative;
   z-index: 2;
@@ -39,6 +40,28 @@
 }
 
 /* ============================
+   BADGE
+============================ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 14px;
+  margin-bottom: 22px;
+
+  background: rgba(0, 74, 128, 0.08);
+  border: 1px solid rgba(0, 74, 128, 0.12);
+
+  border-radius: 999px;
+
+  color: #004a80;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* ============================
    TITULO
 ============================ */
 
@@ -46,8 +69,10 @@
   font-size: 44px;
   line-height: 1.2;
   font-weight: 600;
-  color: #004a80; /* Azul institucional */
-  max-width: 900px;
+
+  color: #004a80;
+
+  max-width: 920px;
   margin-bottom: 24px;
 }
 
@@ -58,8 +83,10 @@
 .container p {
   font-size: 17px;
   line-height: 1.7;
-  color: #000; /* Gris profesional */
-  max-width: 750px;
+
+  color: #111;
+
+  max-width: 760px;
   margin-bottom: 32px;
 }
 
@@ -74,13 +101,18 @@
 }
 
 /* BOTÓN PRINCIPAL */
+
 .primaryBtn {
   padding: 14px 26px;
+
   background-color: #004a80;
   color: #ffffff;
+
   text-decoration: none;
   font-weight: 500;
+
   border: 1px solid #004a80;
+
   transition: all 0.3s ease;
 }
 
@@ -91,13 +123,18 @@
 }
 
 /* BOTÓN SECUNDARIO */
+
 .secondaryBtn {
   padding: 14px 26px;
+
   background-color: transparent;
   color: #004a80;
+
   text-decoration: none;
   font-weight: 500;
+
   border: 1px solid #004a80;
+
   transition: all 0.3s ease;
 }
 
@@ -106,43 +143,99 @@
   color: #ffffff;
 }
 
-/* OPCIONAL: efecto premium sutil en hover global */
+/* EFECTO */
+
 .primaryBtn:hover,
 .secondaryBtn:hover {
   box-shadow: 0 6px 18px rgba(0, 74, 128, 0.15);
 }
 
-/* BOTÓN WHATSAPP HERO */
+/* BOTÓN WHATSAPP */
+
 .whatsappBtn {
   padding: 14px 26px;
+
   background-color: #25d366;
   color: #ffffff;
+
   text-decoration: none;
   font-weight: 600;
+
   border: 1px solid #25d366;
+
   transition: all 0.3s ease;
 }
 
 .whatsappBtn:hover {
   background-color: #1ebe5d;
   border-color: #1ebe5d;
+
   color: #ffffff;
+
   box-shadow: 0 6px 18px rgba(37, 211, 102, 0.25);
 }
 
 /* ============================
-   SEO TEXT (Visible solo para buscadores)
+   BLOQUE SEO APOYO
+============================ */
+
+.supportBox {
+  margin-top: 42px;
+  padding: 22px 24px;
+
+  max-width: 760px;
+
+  background: rgba(255, 255, 255, 0.74);
+
+  border: 1px solid rgba(0, 74, 128, 0.08);
+  border-left: 4px solid #004a80;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+
+  backdrop-filter: blur(8px);
+}
+
+.supportBox p {
+  margin-bottom: 10px;
+
+  font-size: 15px;
+  line-height: 1.5;
+
+  color: #1a1a1a;
+}
+
+.supportBox a {
+  color: #004a80;
+
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.supportBox a:hover {
+  color: #f7c600;
+}
+
+/* ============================
+   SEO TEXT
 ============================ */
 
 .seoText {
   position: absolute;
+
   width: 1px;
   height: 1px;
+
   padding: 0;
   margin: -1px;
+
   overflow: hidden;
+
   clip: rect(0, 0, 0, 0);
+
   white-space: nowrap;
+
   border: 0;
 }
 
@@ -173,5 +266,9 @@
   .buttons {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .supportBox {
+    padding: 18px;
   }
 }

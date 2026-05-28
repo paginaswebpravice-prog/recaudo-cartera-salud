@@ -6,11 +6,35 @@
   background: #004a80;
   padding: 100px 6%;
   color: #ffffff;
+  position: relative;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+}
+
+/* ================================
+   BADGE
+================================ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 14px;
+  margin-bottom: 20px;
+
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+
+  border-radius: 999px;
+
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 /* ================================
@@ -20,23 +44,73 @@
 .title {
   font-size: 38px;
   font-weight: 600;
+
   margin-bottom: 20px;
+
   color: #ffffff;
-  text-align: center;
+
+  max-width: 900px;
 }
 
 .title span {
-  display: block; /* lo manda abajo */
+  display: block;
   margin-top: 10px;
+
   color: #f7c600;
+
+  font-size: 30px;
 }
 
 .intro {
-  max-width: 900px;
+  max-width: 920px;
+
   font-size: 16px;
-  line-height: 1.7;
-  margin-bottom: 60px;
+  line-height: 1.8;
+
+  margin-bottom: 35px;
+
   color: #d9e6f2;
+}
+
+/* ================================
+   SUPPORT BOX
+================================ */
+
+.supportBox {
+  margin-bottom: 55px;
+
+  padding: 22px 24px;
+
+  max-width: 760px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-left: 4px solid #f7c600;
+
+  backdrop-filter: blur(8px);
+}
+
+.supportBox p {
+  margin-bottom: 10px;
+
+  font-size: 15px;
+  line-height: 1.6;
+
+  color: #ffffff;
+}
+
+.supportBox a {
+  color: #f7c600;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.supportBox a:hover {
+  color: #ffffff;
 }
 
 /* ================================
@@ -46,6 +120,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
   gap: 30px;
 }
 
@@ -55,11 +130,17 @@
 
 .phase {
   background: #ffffff;
+
   color: #002b4d;
+
   padding: 30px 25px;
-  border-radius: 12px;
+
+  border-radius: 14px;
+
   position: relative;
+
   transition: 0.3s ease;
+
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -67,22 +148,28 @@
   transform: translateY(-6px);
 }
 
-/* Número */
+/* NUMBER */
 
 .number {
   position: absolute;
+
   top: -15px;
   left: 20px;
+
   background: linear-gradient(135deg, #f7c600, #c4911a);
+
   color: #ffffff;
+
   font-weight: 700;
   font-size: 18px;
+
   padding: 8px 14px;
+
   border-radius: 6px;
 }
 
 /* ================================
-   ICON STYLE
+   ICON
 ================================ */
 
 .iconWrapper {
@@ -92,57 +179,79 @@
 
 .icon {
   font-size: 26px;
-  color: #004a80; /* Azul institucional */
-  opacity: 0.85;
+
+  color: #004a80;
+
+  opacity: 0.9;
+
   transition: 0.3s ease;
 }
 
 .phase:hover .icon {
-  color: #f7c600; /* Dorado estratégico al hover */
-  transform: scale(1.1);
+  color: #f7c600;
+  transform: scale(1.08);
 }
 
-/* Título */
+/* TITLE */
 
 .phase h3 {
   margin-top: 25px;
+
   font-size: 18px;
   font-weight: 600;
+
   margin-bottom: 18px;
+
+  line-height: 1.5;
 }
 
-/* Lista */
+/* LIST */
 
 .phase ul {
   list-style: none;
+
   padding: 0;
   margin: 0 0 25px 0;
 }
 
 .phase li {
   font-size: 14px;
-  margin-bottom: 10px;
+
+  margin-bottom: 12px;
+
   position: relative;
+
   padding-left: 18px;
+
+  line-height: 1.6;
 }
 
 .phase li::before {
   content: "✔";
+
   position: absolute;
+
   left: 0;
+
   color: #5eb3e4;
+
   font-size: 12px;
 }
 
-/* Highlight inferior */
+/* HIGHLIGHT */
 
 .highlight {
   background: linear-gradient(135deg, #004a80, #5eb3e4);
+
   color: #ffffff;
+
   padding: 10px 15px;
+
   border-radius: 20px;
+
   font-size: 13px;
   text-align: center;
+
   font-weight: 500;
 }
 
@@ -152,30 +261,64 @@
 
 .sequence {
   margin-top: 80px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   background: linear-gradient(90deg, #f7c600, #5eb3e4);
+
   padding: 6px;
+
   border-radius: 50px;
 }
 
 .sequenceItem {
   flex: 1;
+
   text-align: center;
+
   padding: 14px 10px;
+
   background: #ffffff;
+
   color: #004a80;
+
   font-size: 13px;
   font-weight: 600;
+
   border-radius: 40px;
+
   margin: 0 4px;
+
   transition: 0.3s ease;
 }
 
 .sequenceItem:hover {
   background: #004a80;
   color: #ffffff;
+}
+
+/* ============================
+   SEO TEXT
+============================ */
+
+.seoText {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  padding: 0;
+  margin: -1px;
+
+  overflow: hidden;
+
+  clip: rect(0, 0, 0, 0);
+
+  white-space: nowrap;
+
+  border: 0;
 }
 
 /* ================================
@@ -207,5 +350,13 @@
 
   .title {
     font-size: 28px;
+  }
+
+  .title span {
+    font-size: 22px;
+  }
+
+  .intro {
+    font-size: 15px;
   }
 }

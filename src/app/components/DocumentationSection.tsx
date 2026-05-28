@@ -12,139 +12,184 @@ type Step = {
 const steps: Step[] = [
   {
     number: 1,
-    title: "Base de Datos de Cartera",
+    title: "Base Consolidada de Cartera",
     description:
-      "Relación detallada de facturas pendientes con identificación de EPS o entidad deudora, valor, fecha de radicación y estado actual.",
+      "Relación organizada de facturas pendientes con identificación de EPS, entidad responsable de pago, fechas de radicación y antigüedad de cartera.",
   },
   {
     number: 2,
-    title: "Facturas y Soportes",
+    title: "Facturación y Soportes Clínicos",
     description:
-      "Copias digitales de facturas electrónicas, RIPS, órdenes médicas y anexos técnicos que respalden cada atención prestada.",
+      "Facturas electrónicas, RIPS, órdenes médicas, historias clínicas y anexos técnicos que respalden jurídicamente la prestación del servicio.",
   },
   {
     number: 3,
-    title: "Glosas y Contra-Glosas",
+    title: "Glosas, Respuestas y Auditorías",
     description:
-      "Historial completo del proceso de glosa, respuestas emitidas y comunicaciones intercambiadas con la entidad aseguradora.",
+      "Documentación relacionada con objeciones de EPS, respuestas técnicas, conciliaciones y trazabilidad completa del proceso de glosa.",
   },
   {
     number: 4,
-    title: "Radicados y Constancias",
+    title: "Radicaciones y Evidencia de Entrega",
     description:
-      "Soportes de radicación ante EPS, ADRES o entidades públicas que acrediten la gestión administrativa previa.",
+      "Constancias de radicación, correos, plataformas y soportes que acrediten la presentación formal de cuentas ante EPS o ADRES.",
   },
   {
     number: 5,
-    title: "Estados Financieros",
+    title: "Soporte Financiero y Contable",
     description:
-      "Mayor y balances que respalden la existencia contable de la cartera y su impacto en el flujo de caja institucional.",
+      "Estados financieros, auxiliares contables y reportes internos que permitan validar la existencia y el impacto operativo de la cartera.",
   },
   {
     number: 6,
-    title: "Poder Legal",
+    title: "Representación Jurídica",
     description:
-      "Documento de representación legal para actuar judicial y extrajudicialmente en nombre de la institución.",
+      "Documentación legal y poderes necesarios para iniciar gestión prejurídica, conciliaciones o procesos judiciales de recuperación.",
   },
 ];
 
 export default function DocumentationSection() {
   return (
     <section className={styles.section} id="documentacion">
-      {/* TÍTULO SEO */}
-      <motion.h2
-        className={styles.title}
-        initial={{ y: 40, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.7 }}
-        viewport={{ once: true }}
-      >
-        Documentación Necesaria para Iniciar la Recuperación de Cartera
-      </motion.h2>
+      <div className={styles.container}>
+        {/* TITULO */}
+        <motion.h2
+          className={styles.title}
+          initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          Información Necesaria para Evaluar Cartera Hospitalaria y Cobro a EPS
+        </motion.h2>
 
-      {/* SUBTÍTULO OPTIMIZADO */}
-      <motion.p
-        className={styles.subtitle}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.2, duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        Para realizar el diagnóstico estratégico de su cartera hospitalaria y
-        estructurar el cobro jurídico frente a EPS o ADRES, requerimos
-        información básica que toda institución del sector salud maneja en su
-        operación diaria.
-      </motion.p>
+        {/* SUBTITLE */}
+        <motion.p
+          className={styles.subtitle}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          La documentación requerida permite realizar diagnóstico jurídico,
+          análisis técnico de glosas y estructuración estratégica del proceso de
+          recuperación de cartera para IPS, clínicas y hospitales en Colombia.
+        </motion.p>
 
-      {/* TIMELINE */}
-      <motion.div
-        className={styles.timeline}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={{
-          hidden: {},
-          visible: {
-            transition: {
-              staggerChildren: 0.15,
-            },
-          },
-        }}
-      >
-        <div className={styles.row}>
-          {steps.map((step, index) => (
-            <motion.div
-              key={index}
-              className={styles.step}
-              variants={{
-                hidden: { y: 40, opacity: 0 },
-                visible: { y: 0, opacity: 1 },
-              }}
-              transition={{ duration: 0.6 }}
+        {/* BACKLINK CONTROLADO */}
+        <motion.div
+          className={styles.parentLink}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <p>
+            Si busca información sobre recuperación de cartera empresarial,
+            procesos de cobro comercial y estrategias generales de recaudo en
+            Colombia, puede visitar{" "}
+            <a
+              href="https://recaudodecartera.com/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
+              Recaudo de Cartera
+            </a>
+            .
+          </p>
+        </motion.div>
+
+        {/* GRID */}
+        <motion.div
+          className={styles.timeline}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            hidden: {},
+            visible: {
+              transition: {
+                staggerChildren: 0.15,
+              },
+            },
+          }}
+        >
+          <div className={styles.row}>
+            {steps.map((step, index) => (
               <motion.div
-                className={styles.circle}
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                transition={{ type: "spring", stiffness: 180 }}
-                viewport={{ once: true }}
+                key={index}
+                className={styles.step}
+                variants={{
+                  hidden: { y: 40, opacity: 0 },
+                  visible: { y: 0, opacity: 1 },
+                }}
+                transition={{ duration: 0.6 }}
               >
-                {step.number}
+                <motion.div
+                  className={styles.circle}
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ type: "spring", stiffness: 180 }}
+                  viewport={{ once: true }}
+                >
+                  {step.number}
+                </motion.div>
+
+                <motion.div
+                  className={styles.card}
+                  whileHover={{ y: -5 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <span className={styles.label}>Requisito {step.number}</span>
+
+                  <h3>{step.title}</h3>
+
+                  <p>{step.description}</p>
+                </motion.div>
               </motion.div>
+            ))}
+          </div>
+        </motion.div>
 
-              <motion.div
-                className={styles.card}
-                whileHover={{ y: -5 }}
-                transition={{ duration: 0.3 }}
-              >
-                <h3>{step.title}</h3>
-                <p>{step.description}</p>
-              </motion.div>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+        {/* BLOQUE SEO */}
+        <motion.div
+          className={styles.infoBox}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <h3>Organización documental enfocada en cartera del sector salud</h3>
 
-      {/* FOOTER ESTRATÉGICO */}
-      <motion.p
-        className={styles.footer}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        No se preocupe si la documentación no está completamente organizada.
-        Parte de nuestro servicio incluye la revisión técnica, estructuración
-        probatoria y consolidación documental necesaria para iniciar el proceso
-        judicial de manera sólida y estratégica.
-      </motion.p>
+          <p>
+            Esta plataforma está enfocada exclusivamente en recuperación de
+            cartera para IPS, hospitales, clínicas y proveedores médicos,
+            fortaleciendo la especialización temática y evitando competir con
+            contenidos generales de cobro empresarial.
+          </p>
+        </motion.div>
 
-      {/* SEO OCULTO */}
-      <p className={styles.seoText}>
-        Documentos necesarios para cobro jurídico a EPS en Colombia,
-        recuperación de cartera hospitalaria, demandas ejecutivas y procesos
-        declarativos para IPS y clínicas.
-      </p>
+        {/* FOOTER */}
+        <motion.p
+          className={styles.footer}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          No es necesario tener toda la documentación perfectamente organizada.
+          Parte del acompañamiento incluye revisión técnica, consolidación
+          probatoria y estructuración documental para fortalecer el proceso de
+          cobro jurídico frente a EPS y entidades responsables de pago.
+        </motion.p>
+
+        {/* SEO */}
+        <p className={styles.seoText}>
+          Documentación requerida para recuperación de cartera hospitalaria,
+          cobro jurídico a EPS, gestión de glosas médicas y procesos judiciales
+          para IPS y clínicas en Colombia.
+        </p>
+      </div>
     </section>
   );
 }

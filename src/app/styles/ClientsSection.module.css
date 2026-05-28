@@ -3,13 +3,36 @@
 ================================ */
 
 .section {
-  background: #faf9f7; /* Fondo neutro elegante */
+  background: #faf9f7;
   padding: 100px 6%;
+  position: relative;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+}
+
+/* ===============================
+   BADGE
+================================ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 14px;
+  margin-bottom: 20px;
+
+  background: rgba(0, 74, 128, 0.08);
+  border: 1px solid rgba(0, 74, 128, 0.12);
+
+  border-radius: 999px;
+
+  color: #004a80;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* ===============================
@@ -17,18 +40,69 @@
 ================================ */
 
 .title {
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 600;
-  color: #004a80; /* Azul institucional */
+
+  color: #004a80;
+
   margin-bottom: 20px;
+
+  max-width: 950px;
+
+  line-height: 1.25;
 }
 
 .intro {
   font-size: 15px;
-  line-height: 1.7;
-  max-width: 900px;
-  margin-bottom: 50px;
+  line-height: 1.8;
+
+  max-width: 920px;
+
+  margin-bottom: 35px;
+
+  color: #222;
+}
+
+/* ===============================
+   SUPPORT BOX
+================================ */
+
+.supportBox {
+  margin-bottom: 60px;
+
+  padding: 22px 24px;
+
+  max-width: 760px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(0, 74, 128, 0.08);
+  border-left: 4px solid #004a80;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.supportBox p {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.6;
+
   color: #333;
+}
+
+.supportBox a {
+  color: #004a80;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.supportBox a:hover {
+  color: #f7c600;
 }
 
 /* ===============================
@@ -38,37 +112,65 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  margin-bottom: 50px;
+
+  gap: 32px;
+
+  margin-bottom: 60px;
 }
 
 .card {
-  text-align: left;
+  background: #ffffff;
+
+  border: 1px solid #ececec;
+
+  padding-bottom: 20px;
+
   transition: 0.3s ease;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
 }
 
-.card:hover h3 {
-  color: #004a80;
+.card:hover {
+  border-color: #f7c600;
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 18px 40px rgba(0, 74, 128, 0.08);
 }
 
 .card img {
   width: 100%;
-  height: 150px;
+  height: 180px;
+
   object-fit: cover;
-  margin-bottom: 15px;
-  border-radius: 6px;
+
+  margin-bottom: 18px;
+
+  transition: 0.4s ease;
 }
 
 .card h3 {
   font-size: 18px;
-  margin-bottom: 10px;
-  color: #000;
+
+  margin-bottom: 12px;
+
+  color: #004a80;
+
+  padding: 0 20px;
+
+  line-height: 1.4;
 }
 
 .card p {
   font-size: 14px;
-  line-height: 1.6;
-  color: #555;
+
+  line-height: 1.7;
+
+  color: #444;
+
+  padding: 0 20px;
 }
 
 /* ===============================
@@ -76,23 +178,33 @@
 ================================ */
 
 .highlight {
-  background: #004a80; /* Azul institucional */
-  padding: 25px 30px;
+  background: #004a80;
+
+  padding: 30px;
+
   display: flex;
   gap: 15px;
+
   align-items: flex-start;
-  border-left: 6px solid #f7c600; /* Acento dorado */
+
+  border-left: 6px solid #f7c600;
+
+  box-shadow: 0 15px 35px rgba(0, 74, 128, 0.12);
 }
 
 .icon {
   font-size: 18px;
-  color: #f7c600; /* Dorado estratégico */
+
+  color: #f7c600;
+
   margin-top: 3px;
 }
 
 .highlight p {
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 15px;
+
+  line-height: 1.8;
+
   color: #ffffff;
 }
 
@@ -102,13 +214,19 @@
 
 .seoText {
   position: absolute;
+
   width: 1px;
   height: 1px;
+
   padding: 0;
   margin: -1px;
+
   overflow: hidden;
+
   clip: rect(0, 0, 0, 0);
+
   white-space: nowrap;
+
   border: 0;
 }
 
@@ -127,7 +245,20 @@
     grid-template-columns: 1fr;
   }
 
+  .title {
+    font-size: 28px;
+  }
+
+  .intro {
+    font-size: 15px;
+  }
+
   .highlight {
     flex-direction: column;
+    padding: 25px;
+  }
+
+  .supportBox {
+    padding: 20px;
   }
 }

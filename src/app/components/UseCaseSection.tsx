@@ -13,7 +13,7 @@ export default function UseCaseSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        {/* TÍTULO SEO */}
+        {/* TÍTULO SEO MÁS ESPECÍFICO */}
         <motion.h2
           className={styles.title}
           initial={{ y: 40, opacity: 0 }}
@@ -21,10 +21,11 @@ export default function UseCaseSection() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          Casos de Uso Reales en Recuperación de Cartera del Sector Salud
+          Escenarios de Recuperación de Cartera para IPS, Hospitales y
+          Proveedores del Sector Salud
         </motion.h2>
 
-        {/* SUBTÍTULO OPTIMIZADO */}
+        {/* SUBTÍTULO */}
         <motion.p
           className={styles.subtitle}
           initial={{ opacity: 0 }}
@@ -32,11 +33,34 @@ export default function UseCaseSection() {
           transition={{ delay: 0.2, duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Estos escenarios representan situaciones frecuentes que enfrentan IPS,
-          clínicas, hospitales y proveedores del sistema de salud en Colombia
-          frente a EPS, ADRES y entidades públicas. Cada caso requiere una
-          estrategia procesal específica y técnicamente estructurada.
+          Estos escenarios reflejan problemáticas frecuentes en instituciones
+          prestadoras de servicios de salud frente a EPS, ADRES y entidades
+          públicas en Colombia. Cada situación requiere una estrategia jurídica,
+          documental y procesal diferente según el estado de la cartera y el
+          riesgo financiero de la entidad.
         </motion.p>
+
+        {/* ENLACE CONTEXTUAL HACIA WEB MADRE */}
+        <motion.div
+          className={styles.parentLink}
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <p>
+            Para procesos generales de recuperación de cartera empresarial y
+            estrategias complementarias de cobro jurídico en Colombia, visite{" "}
+            <a
+              href="https://recaudodecartera.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Recaudo de Cartera
+            </a>
+            .
+          </p>
+        </motion.div>
 
         {/* GRID */}
         <motion.div
@@ -63,21 +87,25 @@ export default function UseCaseSection() {
             transition={{ duration: 0.7 }}
             whileHover={{ y: -6 }}
           >
-            <h3>IPS con Cartera Glosada Acumulada</h3>
+            <span className={styles.label}>Cartera Glosada en IPS</span>
+
+            <h3>IPS con Facturación Glosada y Bloqueo de Flujo de Caja</h3>
+
             <p>
-              Institución de mediana complejidad con más de $4.000 millones en
-              facturación glosada por EPS durante los últimos tres años,
-              afectando flujo de caja y sostenibilidad operativa.
+              Institución prestadora de salud con acumulación de facturas
+              objetadas por EPS durante varios periodos fiscales, afectando
+              liquidez operativa, pago a proveedores y sostenibilidad
+              financiera.
             </p>
+
             <p>
-              <strong>Estrategia PRAVICE:</strong> Proceso declarativo con
-              reconstrucción probatoria integral, análisis técnico de glosas,
-              consolidación documental y estructuración jurídica para
-              recuperación judicial efectiva.
+              <strong>Enfoque estratégico:</strong> análisis técnico de glosas,
+              consolidación documental, reconstrucción probatoria y preparación
+              de proceso declarativo para recuperar cartera hospitalaria.
             </p>
           </motion.div>
 
-          {/* CARD DERECHA SUPERIOR */}
+          {/* CARD DERECHA */}
           <motion.div
             className={`${styles.card} ${styles.medium}`}
             variants={{
@@ -87,16 +115,20 @@ export default function UseCaseSection() {
             transition={{ duration: 0.7 }}
             whileHover={{ y: -5 }}
           >
-            <h3>Proveedor de Tecnología con Facturas Aceptadas sin Pago</h3>
+            <span className={styles.label}>Cobro Ejecutivo</span>
+
+            <h3>Proveedor Médico con Facturas Aceptadas Pendientes de Pago</h3>
+
             <p>
-              Empresa proveedora de dispositivos médicos con más de $1.200
-              millones en cuentas aceptadas pero sin desembolso por parte de la
-              entidad aseguradora.
+              Empresa del sector salud con cuentas aceptadas por la entidad
+              aseguradora, pero sin desembolso efectivo dentro de los términos
+              legales establecidos.
             </p>
+
             <p>
-              <strong>Estrategia PRAVICE:</strong> Inicio inmediato de proceso
-              ejecutivo con solicitud de embargo preventivo y medidas cautelares
-              para asegurar el recaudo.
+              <strong>Enfoque estratégico:</strong> inicio de proceso ejecutivo,
+              medidas cautelares y aseguramiento patrimonial para acelerar el
+              recaudo.
             </p>
           </motion.div>
 
@@ -110,24 +142,48 @@ export default function UseCaseSection() {
             transition={{ duration: 0.7 }}
             whileHover={{ y: -5 }}
           >
-            <h3>Clínica con Riesgo de Prescripción Inminente</h3>
+            <span className={styles.label}>Riesgo de Prescripción</span>
+
+            <h3>Clínica con Cartera Próxima a Vencimiento de Términos</h3>
+
             <p>
-              Clínica especializada con $800 millones en cartera pendiente ante
-              ADRES próxima a cumplir término de prescripción.
+              Institución médica con cuentas pendientes ante EPS y ADRES con
+              riesgo jurídico de pérdida del derecho de cobro por prescripción.
             </p>
+
             <p>
-              <strong>Estrategia PRAVICE:</strong> Radicación urgente de
-              demandas ejecutivas, interrupción de prescripción y estructuración
-              de plan procesal escalonado para maximizar recuperación.
+              <strong>Enfoque estratégico:</strong> interrupción oportuna de
+              términos, estructuración procesal y radicación de acciones
+              judiciales para proteger el derecho de pago.
             </p>
           </motion.div>
         </motion.div>
 
-        {/* TEXTO SEO OCULTO */}
+        {/* BLOQUE SEO ESTRATÉGICO */}
+        <motion.div
+          className={styles.bottomBox}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <h3>Especialización exclusiva en cartera del sector salud</h3>
+
+          <p>
+            Esta plataforma se enfoca únicamente en recuperación de cartera para
+            IPS, hospitales, clínicas, laboratorios y proveedores médicos en
+            Colombia, evitando competir con estrategias generales de cobro
+            empresarial y fortaleciendo la autoridad temática del ecosistema
+            digital.
+          </p>
+        </motion.div>
+
+        {/* TEXTO SEO CONTROLADO */}
         <p className={styles.seoText}>
-          Casos reales de cobro jurídico a EPS en Colombia, recuperación de
-          cartera hospitalaria, procesos ejecutivos y declarativos para IPS,
-          clínicas y proveedores del sector salud.
+          Recuperación de cartera hospitalaria para IPS, clínicas y hospitales
+          en Colombia. Cobro jurídico especializado a EPS, ADRES y entidades
+          públicas mediante procesos ejecutivos y declarativos enfocados en el
+          sector salud.
         </p>
       </motion.div>
     </section>
