@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ComoDemandarEPSColombiaContent from "./ComoDemandarEPSColombiaContent";
 
 const canonicalUrl =
-  "https://recaudocarteraipsyeps.com/blog/como-demandar-eps-colombia";
+  "https://recaudocarteraipsyeps.com/Blog/como-demandar-eps-colombia";
 
 export const metadata: Metadata = {
   title:

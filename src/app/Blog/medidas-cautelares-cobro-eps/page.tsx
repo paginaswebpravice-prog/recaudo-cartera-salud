@@ -8,7 +8,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://tudominio.com/blog/medidas-cautelares-cobro-cartera-eps-colombia",
+      "https://recaudocarteraipsyeps.com/Blog/medidas-cautelares-cobro-cartera-eps-colombia",
   },
 
   openGraph: {
@@ -17,7 +17,7 @@ export const metadata = {
     description:
       "Estrategias legales de embargos, retenciones e investigación patrimonial para el recaudo efectivo de cartera EPS en Colombia.",
     type: "article",
-    url: "https://tudominio.com/blog/medidas-cautelares-cobro-cartera-eps-colombia",
+    url: "https://recaudocarteraipsyeps.com/Blog/medidas-cautelares-cobro-cartera-eps-colombia",
   },
 };
 
@@ -31,7 +31,7 @@ export default function Page() {
       "Guía sobre embargos, retenciones e investigación patrimonial para el cobro de cartera EPS en Colombia.",
     inLanguage: "es-CO",
     mainEntityOfPage:
-      "https://tudominio.com/blog/medidas-cautelares-cobro-cartera-eps-colombia",
+      "https://recaudocarteraipsyeps.com/Blog/medidas-cautelares-cobro-cartera-eps-colombia",
     author: {
       "@type": "Organization",
       name: "PRAVICE",

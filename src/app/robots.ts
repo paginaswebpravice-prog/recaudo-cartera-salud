@@ -19,6 +19,6 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
 
-    sitemap: "https://www.recaudocarteraipsyeps.com/sitemap.xml",
+    sitemap: "https://recaudocarteraipsyeps.com/sitemap.xml",
   };
 }
