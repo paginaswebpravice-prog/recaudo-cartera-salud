@@ -142,6 +142,69 @@ const articles = [
     description:
       "Checklist documental clave para demandar EPS y recuperar cartera.",
   },
+  {
+    title:
+      "Cómo responder glosas médicas en Colombia y recuperar pagos rechazados",
+    slug: "como-responder-glosas-medicas",
+    description:
+      "Guía completa para IPS y clínicas sobre cómo responder glosas médicas, evitar pérdidas financieras y recuperar cartera rechazada por EPS.",
+  },
+  {
+    title: "Tipos de glosas médicas más comunes en Colombia y cómo evitarlas",
+    slug: "tipos-glosas-medicas",
+    description:
+      "Errores frecuentes de facturación y estrategias para reducir glosas y devoluciones en IPS y clínicas.",
+  },
+  {
+    title: "Qué hacer si una EPS lleva más de 180 días sin pagar en Colombia",
+    slug: "eps-mas-180-dias-sin-pagar",
+    description:
+      "Alternativas jurídicas y financieras para IPS y clínicas frente a mora prolongada de EPS.",
+  },
+  {
+    title:
+      "Cómo cobrar cartera de EPS intervenidas o en liquidación en Colombia",
+    slug: "cobro-cartera-eps-intervenidas",
+    description:
+      "Estrategias legales para recuperar cartera frente a EPS intervenidas, liquidadas o bajo vigilancia estatal.",
+  },
+  {
+    title: "Diferencia entre glosa y devolución en cuentas médicas en Colombia",
+    slug: "diferencia-glosa-devolucion-cuentas-medicas",
+    description:
+      "Aspectos clave para IPS y prestadores de salud sobre glosas, devoluciones y recuperación de cartera.",
+  },
+  {
+    title: "Cómo mejorar la liquidez financiera de una IPS en Colombia",
+    slug: "mejorar-liquidez-financiera-ips",
+    description:
+      "Estrategias para reducir cartera vencida, optimizar flujo de caja y fortalecer la sostenibilidad financiera de IPS.",
+  },
+  {
+    title:
+      "Errores frecuentes que hacen perder dinero a las IPS en el cobro a EPS",
+    slug: "errores-cobro-cartera-eps-ips",
+    description:
+      "Principales errores jurídicos, administrativos y documentales que afectan el recaudo en el sector salud.",
+  },
+  {
+    title: "Cómo funciona el giro directo ADRES y cómo afecta a las IPS",
+    slug: "giro-directo-adres-ips",
+    description:
+      "Impacto financiero del giro directo ADRES en clínicas, hospitales e IPS en Colombia.",
+  },
+  {
+    title: "Conciliación de cartera entre IPS y EPS en Colombia: cómo funciona",
+    slug: "conciliacion-cartera-ips-eps",
+    description:
+      "Proceso de conciliación financiera, acuerdos de pago y recuperación efectiva de cartera en salud.",
+  },
+  {
+    title: "Cómo evitar devoluciones de facturación médica en Colombia",
+    slug: "evitar-devoluciones-facturacion-medica",
+    description:
+      "Recomendaciones para IPS y clínicas que buscan reducir rechazos y mejorar el recaudo de cartera.",
+  },
 ];
 
 export default function BlogClient() {

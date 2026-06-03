@@ -129,5 +129,65 @@ export default function SiteMap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.8,
     },
+    {
+      url: "https://recaudocarteraipsyeps.com/Blog/como-responder-glosas-medicas",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: "https://recaudocarteraipsyeps.com/Blog/tipos-glosas-medicas",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: "https://recaudocarteraipsyeps.com/Blog/eps-mas-180-dias-sin-pagar",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: "https://recaudocarteraipsyeps.com/Blog/cobro-cartera-eps-intervenidas",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: "https://recaudocarteraipsyeps.com/Blog/diferencia-glosa-devolucion-cuentas-medicas",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: "https://recaudocarteraipsyeps.com/Blog/mejorar-liquidez-financiera-ips",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: "https://recaudocarteraipsyeps.com/Blog/errores-cobro-cartera-eps-ips",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: "https://recaudocarteraipsyeps.com/Blog/giro-directo-adres-ips",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: "https://recaudocarteraipsyeps.com/Blog/conciliacion-cartera-ips-eps",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: "https://recaudocarteraipsyeps.com/Blog/evitar-devoluciones-facturacion-medica",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
   ];
 }

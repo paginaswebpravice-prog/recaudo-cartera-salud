@@ -1,0 +1,194 @@
+/* ================= WRAPPER ================= */
+
+.wrapper {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  padding: 120px 20px 100px 20px;
+  background: linear-gradient(135deg, #004a80 0%, #003a66 60%, #002844 100%);
+  color: #ffffff;
+  text-align: center;
+}
+
+.heroContainer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ================= BACK LINK ================= */
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.backLink:hover {
+  background: #f7c600;
+  color: #000;
+  transform: translateX(-4px);
+}
+
+/* ================= BADGE ================= */
+
+.badge {
+  display: inline-block;
+  background: #f7c600;
+  color: #000;
+  padding: 7px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= TITLE ================= */
+
+.title {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #d6e6f2;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ================= ARTICLE ================= */
+
+.article {
+  max-width: 900px;
+  margin: -70px auto 100px auto;
+  background: #ffffff;
+  padding: 70px;
+  border-radius: 18px;
+  box-shadow: 0px 30px 70px rgba(0, 74, 128, 0.15);
+}
+
+/* ================= SECTIONS ================= */
+
+.section {
+  margin-bottom: 70px;
+}
+
+.sectionAlt {
+  margin-bottom: 70px;
+  padding: 40px;
+  background: #f4f8fb;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 74, 128, 0.08);
+}
+
+.section h2,
+.sectionAlt h2 {
+  color: #004a80;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.section h3,
+.sectionAlt h3 {
+  color: #003a66;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.section p,
+.sectionAlt p {
+  color: #000;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* ================= CHECKLIST ================= */
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 14px;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #f7c600;
+  font-weight: bold;
+}
+
+/* ================= BOX ================= */
+
+.box {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 14px;
+  border-left: 5px solid #004a80;
+  line-height: 1.9;
+  color: #000;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid #e6e6e6;
+  text-align: center;
+  font-size: 15px;
+  color: #333;
+}
+
+.footer strong {
+  color: #004a80;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .article {
+    padding: 40px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .sectionAlt {
+    padding: 25px;
+  }
+
+  .box {
+    padding: 25px;
+  }
+}
