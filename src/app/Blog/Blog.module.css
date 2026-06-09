@@ -88,11 +88,13 @@
 }
 
 .grid {
-  max-width: 1150px;
+  max-width: 1700px;
   margin: 0 auto;
+
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 35px;
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 28px;
 }
 
 /* ========================= */
@@ -111,6 +113,7 @@
   justify-content: space-between;
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 
 /* Línea superior con gradiente institucional */
@@ -284,6 +287,24 @@
 /* RESPONSIVE */
 /* ========================= */
 
+@media (max-width: 1500px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .heroTitle {
     font-size: 32px;
@@ -295,5 +316,15 @@
 
   .card {
     padding: 25px;
+  }
+
+  .grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
