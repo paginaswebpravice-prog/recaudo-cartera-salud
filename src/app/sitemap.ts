@@ -1,193 +1,95 @@
 import { MetadataRoute } from "next";
+import { articles } from "./Blog/Articles";
 
-export default function SiteMap(): MetadataRoute.Sitemap {
-  return [
+export default function sitemap(): MetadataRoute.Sitemap {
+  const now = new Date();
+
+  const staticPages: MetadataRoute.Sitemap = [
     {
       url: "https://recaudocarteraipsyeps.com",
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly",
       priority: 1,
     },
+
+    // Servicios
     {
       url: "https://recaudocarteraipsyeps.com/Servicios/recuperacion-cartera-eps",
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.95,
     },
     {
       url: "https://recaudocarteraipsyeps.com/Servicios/cobro-adres",
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.95,
     },
     {
       url: "https://recaudocarteraipsyeps.com/Servicios/cartera-glosada",
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.95,
     },
     {
       url: "https://recaudocarteraipsyeps.com/Servicios/proceso-ejecutivo-eps",
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.95,
     },
     {
       url: "https://recaudocarteraipsyeps.com/Servicios/medidas-cautelares-eps",
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.95,
     },
+
+    // Sectores
     {
       url: "https://recaudocarteraipsyeps.com/Sectores/ips",
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: "https://recaudocarteraipsyeps.com/Sectores/clinicas",
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: "https://recaudocarteraipsyeps.com/Sectores/hospitales",
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
     },
+
+    // Blog principal
     {
       url: "https://recaudocarteraipsyeps.com/Blog",
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    // 🔥 ARTÍCULOS DEL BLOG
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/fabian-cardona-presidente-eps-sanitas",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/como-recuperar-cartera-eps-colombia",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/carta-cobro-cartera-eps",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/etapas-cobro-cartera-eps",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/respuesta-eps-compra-cartera",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/medidas-cautelares-cobro-eps",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/cobro-cartera-adres",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/cobro-entes-territoriales-salud",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/prescripcion-cartera-salud",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/no-vender-cartera-eps",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/requerimiento-documental-demandar-eps",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/como-responder-glosas-medicas",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/tipos-glosas-medicas",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/eps-mas-180-dias-sin-pagar",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/cobro-cartera-eps-intervenidas",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/diferencia-glosa-devolucion-cuentas-medicas",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/mejorar-liquidez-financiera-ips",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/errores-cobro-cartera-eps-ips",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/giro-directo-adres-ips",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/conciliacion-cartera-ips-eps",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://recaudocarteraipsyeps.com/Blog/evitar-devoluciones-facturacion-medica",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.9,
     },
   ];
+
+  const pillarArticles = [
+    "como-recuperar-cartera-eps-colombia",
+    "como-demandar-eps-colombia",
+    "cobro-cartera-adres",
+    "como-responder-glosas-medicas",
+    "mejorar-liquidez-financiera-ips",
+    "cobro-cartera-eps-intervenidas",
+    "prescripcion-cartera-salud",
+    "medidas-cautelares-cobro-eps",
+  ];
+
+  const blogPages: MetadataRoute.Sitemap = articles.map((article) => ({
+    url: `https://recaudocarteraipsyeps.com/Blog/${article.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: pillarArticles.includes(article.slug) ? 0.9 : 0.8,
+  }));
+
+  return [...staticPages, ...blogPages];
 }
