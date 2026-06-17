@@ -84,66 +84,100 @@
 }
 
 /* ========================= */
+/* MENÚ DE CATEGORÍAS */
+/* ========================= */
+
+.categoryMenu {
+  max-width: 1700px;
+  margin: -35px auto 60px auto;
+  padding: 0 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+
+  position: relative;
+  z-index: 20;
+}
+
+.categoryChip {
+  background: #ffffff;
+  color: #004a80;
+  text-decoration: none;
+
+  padding: 12px 20px;
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  border: 1px solid #dbe5ec;
+
+  position: relative;
+  overflow: hidden;
+
+  box-shadow: 0 8px 25px rgba(0, 74, 128, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.categoryChip::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 4px;
+  height: 100%;
+
+  background: #f4c300;
+
+  transition: all 0.3s ease;
+}
+
+.categoryChip:hover::before {
+  width: 100%;
+  opacity: 0.15;
+}
+
+.categoryChip:hover {
+  transform: translateY(-3px);
+  border-color: #f4c300;
+  box-shadow: 0 10px 25px rgba(244, 195, 0, 0.2);
+}
+
+/* ========================= */
 /* BLOG */
 /* ========================= */
 
 .blogSection {
-  padding: 80px 20px 120px;
+  padding: 20px 20px 120px;
 }
-
-/* ========================= */
-/* CATEGORÍAS */
-/* ========================= */
 
 .categorySection {
   max-width: 1700px;
   margin: 0 auto 100px;
 }
 
-.categoryHeader {
-  background: #ffffff;
-  border-radius: 24px;
-  padding: 35px;
-  margin-bottom: 35px;
-  border: 1px solid #e6edf3;
-  box-shadow: 0 10px 35px rgba(0, 74, 128, 0.06);
-  position: relative;
-  overflow: hidden;
-}
-
-.categoryHeader::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 8px;
-  background: linear-gradient(to bottom, #004a80, #5eb3e4, #f4c300);
-}
-
-.categoryBadge {
-  display: inline-block;
-  background: rgba(94, 179, 228, 0.12);
-  color: #004a80;
-  font-size: 13px;
-  font-weight: 700;
-  padding: 8px 14px;
-  border-radius: 999px;
-  margin-bottom: 16px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
 .categoryTitle {
   font-size: 38px;
   font-weight: 800;
   color: #004a80;
-  margin-bottom: 12px;
+  margin-bottom: 35px;
+  position: relative;
+  padding-left: 20px;
 }
 
-.categoryDescription {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #5f6f81;
-  max-width: 900px;
+.categoryTitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 38px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #004a80, #5eb3e4, #f4c300);
 }
 
 .grid {
@@ -173,32 +207,39 @@
 .card::before {
   content: "";
   position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: opacity 0.35s ease;
-  background: linear-gradient(
-    135deg,
-    rgba(94, 179, 228, 0.06),
-    rgba(244, 195, 0, 0.05)
-  );
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 5px;
+
+  background: linear-gradient(90deg, #004a80, #5eb3e4, #f4c300);
 }
 
-.card:hover::before {
-  opacity: 1;
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  right: -80px;
+
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  background: rgba(94, 179, 228, 0.08);
+
+  transition: all 0.4s ease;
+}
+
+.card:hover::after {
+  transform: scale(1.3);
 }
 
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 45px rgba(0, 74, 128, 0.12);
   border-color: rgba(94, 179, 228, 0.3);
-}
-
-.cardTopBar {
-  width: 60px;
-  height: 6px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, #004a80, #5eb3e4, #f4c300);
-  margin-bottom: 20px;
 }
 
 .cardTitle {
@@ -342,12 +383,6 @@
 /* RESPONSIVE */
 /* ========================= */
 
-@media (max-width: 1500px) {
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 @media (max-width: 1200px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
@@ -365,10 +400,6 @@
 
   .heroTitle {
     font-size: 38px;
-  }
-
-  .categoryHeader {
-    padding: 28px;
   }
 }
 
@@ -399,6 +430,23 @@
 
   .ctaTitle {
     font-size: 28px;
+  }
+
+  .categoryMenu {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+  }
+
+  .categoryMenu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .categoryChip {
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 }
 
