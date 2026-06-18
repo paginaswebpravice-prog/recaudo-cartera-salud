@@ -575,7 +575,7 @@ export const articles: BlogArticle[] = [
       "Diversificación de ingresos para IPS: cómo reducir riesgos financieros",
     slug: "diversificacion-ingresos-ips",
     description: "Estrategias para depender menos de las EPS.",
-    category: "Gestión Financiera para IPS y Clínicas",
+    category: "Riesgos, Intervenciones y Crisis de EPS",
   },
 
   {
