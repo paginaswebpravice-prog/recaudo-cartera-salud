@@ -28,8 +28,8 @@ export default function AppSection() {
           }}
           transition={{ duration: 0.7 }}
         >
-          App Legal PRAVICE: Control Total de su Cartera y Procesos Jurídicos
-          24/7
+          App Legal PRAVICE: plataforma para el seguimiento de la recuperación
+          de cartera hospitalaria y procesos jurídicos
         </motion.h2>
 
         {/* INTRO */}
@@ -41,10 +41,13 @@ export default function AppSection() {
           }}
           transition={{ duration: 0.6 }}
         >
-          La App Legal PRAVICE es nuestra plataforma tecnológica exclusiva
-          diseñada para que IPS, hospitales y empresas del sector salud
-          supervisen en tiempo real el estado de sus procesos de recuperación de
-          cartera frente a EPS, ADRES y entidades públicas.
+          La App Legal PRAVICE es una plataforma desarrollada para que IPS,
+          clínicas, hospitales y demás prestadores de servicios de salud puedan
+          consultar en un solo lugar el estado de sus procesos de recuperación
+          de cartera, conciliaciones, actuaciones jurídicas y documentación
+          relacionada. Nuestro propósito es que cada cliente tenga acceso
+          permanente a la información de sus casos, con mayor transparencia,
+          trazabilidad y control durante todo el proceso.
         </motion.p>
 
         <motion.p
@@ -55,30 +58,33 @@ export default function AppSection() {
           }}
           transition={{ duration: 0.6 }}
         >
-          Más que un portal de consulta, es una herramienta estratégica de
-          transparencia y trazabilidad jurídica que permite acceso permanente a
-          reportes, documentos y comunicación directa con nuestro equipo
-          especializado en cobro judicial del sector salud.
+          Más que una plataforma de consulta, la App Legal PRAVICE funciona como
+          un espacio de trabajo donde nuestros clientes pueden revisar
+          documentos, consultar avances, realizar solicitudes, hacer seguimiento
+          a cada actuación y mantener una comunicación directa con el equipo
+          encargado de la recuperación de cartera. Esto permite una gestión
+          mucho más organizada, disminuye tiempos de respuesta y facilita la
+          toma de decisiones basada en información actualizada.
         </motion.p>
 
         {/* GRID */}
         <motion.div className={styles.grid}>
           {[
             {
-              title: "Seguimiento 24/7 a procesos judiciales",
-              text: "Acceda en cualquier momento al estado actualizado de demandas ejecutivas y actuaciones procesales.",
+              title: "Seguimiento en tiempo real de la recuperación de cartera",
+              text: "Consulte el estado actualizado de conciliaciones, procesos jurídicos, actuaciones y demás gestiones relacionadas con la recuperación de cartera hospitalaria desde cualquier lugar.",
             },
             {
-              title: "Solicitud de asesorías online",
-              text: "Realice consultas jurídicas directamente desde la plataforma con respuesta oportuna.",
+              title: "Solicitudes y asesoría jurídica en línea",
+              text: "Realice consultas directamente desde la plataforma, envíe requerimientos y haga seguimiento a las respuestas del equipo encargado de su caso.",
             },
             {
-              title: "Chat jurídico directo y seguro",
-              text: "Comunicación interna con el equipo legal encargado de su cartera.",
+              title: "Comunicación segura con nuestro equipo",
+              text: "Mantenga contacto permanente con los profesionales responsables de la gestión de su cartera mediante un canal privado, seguro y organizado.",
             },
             {
-              title: "Gestión digital de documentos",
-              text: "Cargue facturas electrónicas, contratos, pagarés y soportes para iniciar procesos de cobro.",
+              title: "Centralización y gestión documental",
+              text: "Almacene y consulte facturas, contratos, soportes, pagarés y demás documentos necesarios para la gestión de conciliaciones y procesos de recuperación de cartera.",
             },
           ].map((item, index) => (
             <motion.div
@@ -105,10 +111,12 @@ export default function AppSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Para conocer el funcionamiento completo de la plataforma, visualice
-          nuestra demostración oficial haciendo clic en
-          <strong> “Ver Video de la App Legal PRAVICE”</strong>. El contenido se
-          abrirá en una nueva ventana.
+          Descubra cómo funciona la App Legal PRAVICE y conozca las herramientas
+          que permiten realizar seguimiento a la recuperación de cartera,
+          consultar documentación, revisar actuaciones y mantener comunicación
+          directa con nuestro equipo. Haga clic en{" "}
+          <strong>"Ver Video de la App Legal PRAVICE"</strong> para visualizar
+          una demostración de la plataforma.
         </motion.p>
 
         {/* BUTTONS */}
@@ -147,9 +155,15 @@ export default function AppSection() {
 
         {/* SEO TEXT */}
         <p className={styles.seoText}>
-          App jurídica para seguimiento de procesos de cobro a EPS en Colombia.
-          Plataforma digital para recuperación de cartera hospitalaria y control
-          de demandas del sector salud.
+          La App Legal PRAVICE es una plataforma desarrollada para facilitar el
+          seguimiento de la recuperación de cartera hospitalaria, conciliaciones
+          con EPS, procesos jurídicos, cuentas médicas y documentación
+          relacionada. IPS, hospitales, clínicas, laboratorios y demás
+          prestadores de servicios de salud pueden consultar el estado de sus
+          casos, acceder a reportes, revisar soportes y mantener una
+          comunicación permanente con nuestro equipo, fortaleciendo la
+          transparencia, el control de la información y la gestión integral de
+          la cartera.
         </p>
       </motion.div>
     </section>

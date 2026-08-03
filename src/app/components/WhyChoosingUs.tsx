@@ -14,23 +14,23 @@ export default function WhyChoosingUs() {
   const items = [
     {
       icon: faUserGroup,
-      title: "Enfoque Exclusivo en Cartera del Sector Salud",
-      text: "Trabajamos sobre problemáticas propias de IPS, clínicas, hospitales y proveedores médicos. Analizamos glosas, conciliaciones, facturación médica y procesos administrativos relacionados con EPS y entidades del sistema de salud colombiano.",
+      title: "Experiencia enfocada exclusivamente en el sector salud",
+      text: "Trabajamos con IPS, hospitales, clínicas, laboratorios y demás prestadores de servicios de salud, comprendiendo los retos que generan las glosas, las conciliaciones con EPS, la facturación médica y la recuperación de cuentas por cobrar dentro del sistema de salud colombiano.",
     },
     {
       icon: faShieldHalved,
-      title: "Metodologías Alineadas con el Entorno Regulatorio",
-      text: "Nuestra gestión se desarrolla bajo lineamientos aplicables al sector salud, priorizando trazabilidad documental, soporte técnico y procesos estructurados orientados a la recuperación estratégica de cartera hospitalaria.",
+      title: "Estrategias adaptadas a la normativa del sector salud",
+      text: "Cada proceso se desarrolla teniendo en cuenta el marco normativo, la documentación disponible y el estado de la cartera, buscando que cada actuación se encuentre debidamente soportada y orientada a incrementar las posibilidades de recuperación.",
     },
     {
       icon: faScaleBalanced,
-      title: "Gestión Jurídica y Documental Especializada",
-      text: "Estructuramos estrategias para cuentas médicas exigibles, conciliaciones y cartera glosada mediante validación documental, fortalecimiento probatorio y acompañamiento jurídico especializado.",
+      title: "Análisis jurídico y documental para cada cuenta médica",
+      text: "Antes de definir una estrategia revisamos la documentación clínica y administrativa, evaluamos las glosas existentes y determinamos el camino más adecuado para lograr el reconocimiento y pago de las obligaciones.",
     },
     {
       icon: faChartLine,
-      title: "Optimización del Flujo Financiero Institucional",
-      text: "Diseñamos procesos orientados a mejorar indicadores de recaudo, reducir envejecimiento de cartera y fortalecer la sostenibilidad financiera de instituciones prestadoras de salud.",
+      title: "Procesos orientados a mejorar el flujo de caja",
+      text: "Nuestro objetivo no es únicamente recuperar recursos pendientes. También buscamos contribuir a una gestión más organizada de la cartera, disminuir la antigüedad de las cuentas por cobrar y fortalecer la sostenibilidad financiera de la institución.",
     },
   ];
 
@@ -51,7 +51,8 @@ export default function WhyChoosingUs() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Especialización jurídica y financiera para IPS y hospitales
+          Especialistas en recuperación de cartera para IPS, clínicas y
+          hospitales
         </motion.span>
 
         {/* TITLE */}
@@ -62,8 +63,8 @@ export default function WhyChoosingUs() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          ¿Por qué trabajar una estrategia especializada para cartera
-          hospitalaria y cuentas médicas?
+          ¿Por qué elegir una empresa especializada en recuperación de cartera
+          para IPS, clínicas y hospitales?
         </motion.h2>
 
         {/* INTRO */}
@@ -74,11 +75,15 @@ export default function WhyChoosingUs() {
           transition={{ delay: 0.15, duration: 0.7 }}
           viewport={{ once: true }}
         >
-          La recuperación de cartera en salud requiere análisis técnico,
-          validación documental y conocimiento del funcionamiento operativo de
-          EPS, IPS y procesos asociados a facturación médica. Un enfoque
-          especializado permite optimizar conciliaciones, reducir riesgos y
-          fortalecer estrategias de recaudo institucional.
+          La recuperación de cartera en el sector salud implica enfrentar
+          glosas, auditorías, conciliaciones con EPS, diferencias en la
+          validación de cuentas médicas y procesos administrativos que requieren
+          experiencia técnica y jurídica. Contar con un equipo especializado
+          permite identificar oportunidades de recuperación, fortalecer los
+          soportes documentales, reducir riesgos y desarrollar estrategias
+          orientadas a mejorar el flujo de caja y la estabilidad financiera de
+          IPS, clínicas, hospitales y demás prestadores de servicios de salud en
+          Colombia.
         </motion.p>
 
         {/* SUPPORT BOX */}
@@ -90,8 +95,8 @@ export default function WhyChoosingUs() {
           viewport={{ once: true }}
         >
           <p>
-            Para servicios generales de recuperación de cartera empresarial en
-            otros sectores:
+            ¿Necesitas recuperar cartera empresarial en un sector diferente al
+            de salud?
           </p>
 
           <a
@@ -99,7 +104,8 @@ export default function WhyChoosingUs() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Visitar firma especializada en recaudo de cartera →
+            Conoce nuestra firma especializada en recuperación y recaudo de
+            cartera →
           </a>
         </motion.div>
 
@@ -161,22 +167,28 @@ export default function WhyChoosingUs() {
 
           <p>
             <strong>
-              Menos desgaste operativo, más organización financiera.
+              Recuperar cartera no consiste únicamente en cobrar; consiste en
+              proteger la estabilidad financiera de la institución.
             </strong>{" "}
-            Una estrategia especializada en cartera hospitalaria permite mejorar
-            conciliaciones, fortalecer soportes documentales y optimizar la
-            gestión financiera de IPS, clínicas y hospitales frente a entidades
-            del sistema de salud.
+            Una gestión especializada permite priorizar las cuentas con mayor
+            potencial de recuperación, fortalecer los soportes documentales,
+            agilizar conciliaciones con EPS y desarrollar estrategias que
+            contribuyan a mejorar el recaudo y el flujo de caja de IPS,
+            clínicas, hospitales y demás prestadores de servicios de salud.
           </p>
         </motion.div>
 
         {/* SEO TEXT */}
         <p className={styles.seoText}>
-          Sitio especializado en cartera hospitalaria, conciliaciones con EPS,
-          glosas médicas, validación documental de facturación y gestión
-          estratégica de cuentas médicas para IPS y hospitales en Colombia.
-          Complementa soluciones generales de recaudo empresarial mediante un
-          enfoque exclusivo para el sector salud.
+          Somos un equipo especializado en recuperación de cartera hospitalaria,
+          conciliaciones con EPS, gestión de glosas médicas, validación
+          documental de facturación, seguimiento de cuentas por cobrar y
+          estrategias jurídicas para IPS, hospitales, clínicas, laboratorios y
+          demás prestadores de servicios de salud en Colombia. Nuestro enfoque
+          combina análisis técnico, experiencia jurídica y acompañamiento
+          permanente para fortalecer el recaudo, mejorar el flujo de caja y
+          contribuir a la sostenibilidad financiera de las instituciones del
+          sector salud.
         </p>
       </motion.div>
     </section>

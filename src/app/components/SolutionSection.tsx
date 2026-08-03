@@ -21,7 +21,8 @@ export default function SolutionSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Estrategias jurídicas especializadas para el sector salud
+          Soluciones especializadas para recuperar cartera de IPS, clínicas y
+          hospitales
         </motion.span>
 
         {/* TITULO */}
@@ -32,8 +33,9 @@ export default function SolutionSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Gestión jurídica y recuperación estratégica de cartera hospitalaria
-          para IPS, clínicas y hospitales en Colombia
+          Recuperación de cartera hospitalaria para IPS, clínicas y hospitales
+          mediante conciliación con EPS, gestión de glosas y estrategias
+          jurídicas
         </motion.h2>
 
         {/* INTRO */}
@@ -44,11 +46,15 @@ export default function SolutionSection() {
           transition={{ delay: 0.2, duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Aplicamos metodologías especializadas para cartera hospitalaria,
-          conciliaciones con EPS, gestión de glosas y procesos jurídicos en el
-          sector salud. Cada obligación requiere análisis técnico, validación
-          documental y una estrategia procesal adecuada según el estado de la
-          facturación médica y las objeciones existentes.
+          Cada proceso de recuperación de cartera requiere un análisis
+          diferente. No todas las cuentas médicas pueden gestionarse de la misma
+          manera, ya que intervienen factores como el estado de la facturación,
+          la existencia de glosas, las auditorías realizadas por la EPS, los
+          soportes documentales y los términos legales aplicables. Por eso
+          desarrollamos estrategias técnicas, financieras y jurídicas adaptadas
+          a cada caso, con el objetivo de acelerar el recaudo, proteger el
+          derecho al cobro y fortalecer el flujo de caja de IPS, clínicas,
+          hospitales y demás prestadores de servicios de salud en Colombia.
         </motion.p>
 
         {/* APOYO SEO */}
@@ -60,8 +66,10 @@ export default function SolutionSection() {
           viewport={{ once: true }}
         >
           <p>
-            ¿Buscas soluciones generales de recuperación de cartera empresarial
-            en otros sectores económicos?
+            <p>
+              ¿Tu empresa pertenece a otro sector económico y necesita recuperar
+              cartera comercial o empresarial?
+            </p>
           </p>
 
           <a
@@ -69,7 +77,8 @@ export default function SolutionSection() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Conocer firma especializada en recaudo de cartera →
+            Conoce nuestra firma especializada en recuperación y recaudo de
+            cartera empresarial →
           </a>
         </motion.div>
 
@@ -96,7 +105,7 @@ export default function SolutionSection() {
             }}
             transition={{ duration: 0.6 }}
           >
-            Gestión Ejecutiva para Facturación Exigible
+            Cobro ejecutivo de cuentas médicas exigibles
           </motion.div>
 
           <motion.div
@@ -107,7 +116,7 @@ export default function SolutionSection() {
             }}
             transition={{ duration: 0.6 }}
           >
-            Estrategia Declarativa para Glosas y Objeciones Médicas
+            Gestión integral de glosas, objeciones y controversias con EPS
           </motion.div>
         </motion.div>
 
@@ -120,13 +129,15 @@ export default function SolutionSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3>Gestión Ejecutiva frente a EPS</h3>
+            <h3>Recuperación judicial de cartera con facturación exigible</h3>
 
             <p>
-              Aplicable a obligaciones con soporte documental validado y cuentas
-              médicas exigibles. Permite avanzar en mecanismos judiciales y
-              medidas cautelares orientadas a proteger el recaudo y agilizar el
-              flujo financiero institucional.
+              Cuando las cuentas médicas cumplen los requisitos legales para su
+              cobro, implementamos estrategias orientadas a recuperar los
+              recursos mediante actuaciones jurídicas, conciliaciones y, cuando
+              resulta procedente, procesos ejecutivos. Nuestro objetivo es
+              acelerar el recaudo sin perder de vista la protección financiera
+              de la institución prestadora de salud.
             </p>
           </motion.div>
 
@@ -137,13 +148,15 @@ export default function SolutionSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3>Gestión Técnica de Cartera Glosada</h3>
+            <h3>Gestión especializada de glosas y cuentas médicas objetadas</h3>
 
             <p>
-              Diseñada para facturación objetada o cuentas médicas con glosas
-              administrativas y técnicas. Incluye revisión documental,
-              reconstrucción probatoria y acompañamiento jurídico especializado
-              para sustentar el derecho de reconocimiento y pago.
+              Las glosas administrativas y técnicas no siempre significan que la
+              cuenta médica sea improcedente. Analizamos la documentación
+              clínica y administrativa, fortalecemos los soportes necesarios y
+              diseñamos la mejor estrategia para sustentar el reconocimiento y
+              pago de la facturación ante las EPS y demás entidades
+              responsables.
             </p>
           </motion.div>
         </div>
@@ -165,20 +178,23 @@ export default function SolutionSection() {
         >
           {[
             {
-              title: "Conciliaciones con EPS",
-              text: "Acompañamiento técnico y jurídico en procesos de conciliación y validación de cuentas médicas.",
+              title: "Conciliación efectiva con EPS",
+              text: "Representamos a las instituciones durante procesos de conciliación, buscando acuerdos que permitan recuperar recursos de manera más ágil y reducir tiempos de espera.",
             },
             {
-              title: "Gestión especializada de glosas",
-              text: "Análisis jurídico y documental para responder objeciones administrativas y técnicas.",
+              title: "Respuesta técnica a glosas médicas",
+
+              text: "Analizamos cada observación administrativa o técnica para construir respuestas sólidas que incrementen las posibilidades de reconocimiento y pago.",
             },
             {
-              title: "Prevención de prescripción",
-              text: "Seguimiento estratégico de términos y actuaciones relacionadas con cartera hospitalaria.",
+              title: "Seguimiento estratégico de la cartera",
+
+              text: "Controlamos términos, vencimientos y estado de cada cuenta para disminuir riesgos de prescripción y mejorar la recuperación financiera.",
             },
             {
-              title: "Validación documental de facturación",
-              text: "Organización y fortalecimiento probatorio de soportes médicos y administrativos.",
+              title: "Fortalecimiento documental",
+
+              text: "Organizamos la información clínica y administrativa necesaria para respaldar el cobro de las cuentas médicas y facilitar los procesos de conciliación o reclamación.",
             },
           ].map((card, index) => (
             <motion.div
@@ -199,11 +215,16 @@ export default function SolutionSection() {
 
         {/* SEO TEXT */}
         <p className={styles.seoText}>
-          Sitio especializado en cartera hospitalaria, conciliaciones con EPS,
-          gestión jurídica de facturación médica, glosas y recuperación
-          estratégica de cartera en el sector salud colombiano. Complementa
-          soluciones generales de recaudo empresarial mediante enfoque exclusivo
-          en IPS, clínicas y hospitales.
+          Nuestro equipo acompaña a IPS, hospitales, clínicas, laboratorios,
+          centros médicos y demás prestadores de servicios de salud en procesos
+          de recuperación de cartera hospitalaria, conciliaciones con EPS,
+          gestión de glosas, seguimiento de cuentas por cobrar, validación de
+          facturación médica y estrategias jurídicas para el recaudo de
+          recursos. Trabajamos con un enfoque integral que combina análisis
+          documental, conocimiento normativo y experiencia en el sector salud
+          para reducir la antigüedad de la cartera, fortalecer el flujo de caja
+          y mejorar los indicadores de recuperación financiera de cada
+          institución.
         </p>
       </motion.div>
     </section>

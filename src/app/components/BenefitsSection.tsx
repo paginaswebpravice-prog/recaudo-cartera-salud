@@ -55,7 +55,8 @@ export default function BeneficioSection() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          Beneficio Estratégico de la App Legal PRAVICE para su Empresa
+          ¿Cómo ayuda la App Legal PRAVICE a mejorar el control y la
+          recuperación de cartera hospitalaria?
         </motion.h2>
 
         {/* SUBTITLE OPTIMIZADO */}
@@ -66,10 +67,13 @@ export default function BeneficioSection() {
           transition={{ delay: 0.2, duration: 0.8 }}
           viewport={{ once: true }}
         >
-          La App Legal PRAVICE transforma la recuperación de cartera
-          hospitalaria en un sistema medible, transparente y controlable.
-          Funciona como un departamento jurídico externalizado con enfoque
-          financiero y acceso permanente.
+          La App Legal PRAVICE fue diseñada para brindar mayor visibilidad sobre
+          cada proceso relacionado con la recuperación de cartera hospitalaria.
+          A través de una plataforma centralizada, las IPS, clínicas, hospitales
+          y demás prestadores de servicios de salud pueden consultar información
+          actualizada, acceder a documentos, realizar seguimiento a las
+          actuaciones jurídicas y contar con herramientas que facilitan la toma
+          de decisiones financieras basadas en información confiable.
         </motion.p>
 
         <div className={styles.grid}>

@@ -29,7 +29,8 @@ export default function ClientsSection() {
           }}
           transition={{ duration: 0.6 }}
         >
-          Experiencia enfocada en instituciones y proveedores del sector salud
+          Especialistas en recuperación de cartera para instituciones del sector
+          salud
         </motion.span>
 
         {/* TITLE */}
@@ -41,8 +42,7 @@ export default function ClientsSection() {
           }}
           transition={{ duration: 0.7 }}
         >
-          Instituciones y Organizaciones del Sector Salud que Requieren Gestión
-          Estratégica de Cartera
+          ¿A qué instituciones del sector salud ayudamos a recuperar su cartera?
         </motion.h2>
 
         {/* INTRO */}
@@ -54,10 +54,14 @@ export default function ClientsSection() {
           }}
           transition={{ duration: 0.7 }}
         >
-          Trabajamos con organizaciones del sector salud que necesitan
-          fortalecer procesos de conciliación, validación documental y gestión
-          financiera frente a EPS, aseguradoras y entidades relacionadas con el
-          sistema de salud colombiano.
+          Trabajamos con instituciones del sector salud que enfrentan desafíos
+          en la recuperación de cartera, conciliaciones con EPS, gestión de
+          glosas, cuentas médicas pendientes y organización documental. Nuestro
+          acompañamiento se adapta a las características de cada organización,
+          permitiendo desarrollar estrategias orientadas a fortalecer el
+          recaudo, mejorar el flujo de caja y optimizar la gestión financiera de
+          IPS, hospitales, clínicas, laboratorios y demás prestadores de
+          servicios de salud en Colombia.
         </motion.p>
 
         {/* SUPPORT BOX */}
@@ -70,8 +74,9 @@ export default function ClientsSection() {
           transition={{ duration: 0.6 }}
         >
           <p>
-            Para procesos generales de recuperación de cartera empresarial en
-            otros sectores económicos:
+            ¿Tu empresa pertenece a otro sector económico? Para procesos
+            generales de recuperación de cartera empresarial en otros sectores
+            económicos:
           </p>
 
           <a
@@ -79,7 +84,8 @@ export default function ClientsSection() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Visitar sitio especializado en recaudo empresarial →
+            Conoce nuestra firma especializada en recuperación y recaudo de
+            cartera empresarial →
           </a>
         </motion.div>
 
@@ -90,25 +96,25 @@ export default function ClientsSection() {
               img: "/IpsClinicas.jpg",
               alt: "IPS y clínicas en Colombia",
               title: "IPS y Clínicas",
-              text: "Instituciones prestadoras de servicios de salud que requieren fortalecer conciliaciones, organización documental y procesos de cartera frente a EPS y aseguradoras.",
+              text: "Acompañamos instituciones prestadoras de servicios de salud que necesitan fortalecer la recuperación de cartera, agilizar conciliaciones con EPS, gestionar glosas médicas y mejorar la organización de sus cuentas por cobrar mediante procesos técnicos y jurídicos.",
             },
             {
               img: "/Hospitales.jpg",
               alt: "Hospitales públicos y privados",
               title: "Hospitales Públicos y Privados",
-              text: "Centros hospitalarios con procesos administrativos, glosas médicas y cuentas por gestionar dentro del ecosistema financiero del sector salud.",
+              text: "Apoyamos hospitales que requieren optimizar la gestión de cartera hospitalaria, resolver diferencias derivadas de auditorías, fortalecer la documentación de sus cuentas médicas y desarrollar estrategias que permitan mejorar el recaudo y proteger su estabilidad financiera.",
             },
             {
               img: "/Tecnologia.jpg",
               alt: "Empresas proveedoras de tecnología médica",
-              title: "Proveedores de Tecnologías en Salud",
-              text: "Empresas relacionadas con dispositivos médicos, tecnología hospitalaria y servicios especializados vinculados a facturación y cuentas médicas.",
+              title: "Empresas proveedoras del sector salud",
+              text: "Trabajamos con empresas que suministran dispositivos médicos, tecnología, equipos, insumos y otros servicios especializados, apoyando la organización de la cartera y el seguimiento de cuentas pendientes relacionadas con el sector salud.",
             },
             {
               img: "/Laboratorio.jpg",
               alt: "Laboratorios clínicos y centros de diagnóstico",
-              title: "Prestadores de Servicios Especializados",
-              text: "Laboratorios, centros diagnósticos y prestadores especializados que requieren mejorar trazabilidad y gestión de cartera institucional.",
+              title: "Laboratorios y centros de diagnóstico",
+              text: "Laboratorios clínicos, centros de imágenes diagnósticas y demás prestadores especializados pueden fortalecer sus procesos de conciliación, organización documental y recuperación de cuentas médicas mediante estrategias adaptadas a su operación.",
             },
           ].map((client, index) => (
             <motion.div
@@ -147,21 +153,28 @@ export default function ClientsSection() {
           <span className={styles.icon}>▣</span>
 
           <p>
-            <strong>Especialización enfocada en el sector salud:</strong>{" "}
-            Entendemos dinámicas relacionadas con glosas médicas,
-            conciliaciones, cuentas hospitalarias, auditoría documental y
-            procesos administrativos asociados a IPS, EPS y entidades del
-            sistema de salud colombiano.
+            <strong>
+              Conocemos las particularidades de la recuperación de cartera en el
+              sector salud.
+            </strong>{" "}
+            Cada tipo de institución enfrenta retos diferentes relacionados con
+            glosas, conciliaciones con EPS, auditorías, validación documental y
+            cuentas médicas. Nuestro enfoque busca adaptarse a esas necesidades
+            para desarrollar procesos más eficientes y mejorar las
+            probabilidades de recuperación.
           </p>
         </motion.div>
 
         {/* SEO TEXT */}
         <p className={styles.seoText}>
-          Sitio especializado en gestión de cartera hospitalaria, conciliaciones
-          con EPS, cuentas médicas y validación documental para IPS, hospitales,
-          laboratorios y proveedores del sector salud en Colombia. Complementa
-          servicios generales de recuperación de cartera empresarial mediante un
-          enfoque exclusivo para el sector salud.
+          Nuestro acompañamiento está dirigido a IPS, hospitales, clínicas,
+          laboratorios, centros de diagnóstico, proveedores de tecnología médica
+          y demás prestadores de servicios de salud que requieren fortalecer la
+          recuperación de cartera hospitalaria. Desarrollamos estrategias
+          orientadas a la conciliación con EPS, gestión de glosas, organización
+          documental, seguimiento de cuentas por cobrar y recuperación de
+          recursos, contribuyendo a mejorar el flujo de caja y la sostenibilidad
+          financiera de las instituciones del sector salud en Colombia.
         </p>
       </motion.div>
     </section>

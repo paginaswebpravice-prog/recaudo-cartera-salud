@@ -14,46 +14,46 @@ export default function MethodologySection() {
   const phases = [
     {
       number: "01",
-      title: "Diagnóstico y Segmentación de Cartera",
+      title: "Diagnóstico integral de la cartera hospitalaria",
       highlight: "Priorizamos obligaciones críticas",
       icon: faMagnifyingGlass,
       bullets: [
-        "Clasificación estratégica de cartera hospitalaria",
-        "Identificación de glosas, devoluciones y riesgos",
-        "Análisis documental y validación de soportes",
+        "Clasificación de cartera según antigüedad, riesgo y probabilidad de recaudo.",
+        "Identificación de glosas, devoluciones, auditorías y cuentas críticas.",
+        "Revisión documental para determinar la mejor estrategia de recuperación.",
       ],
     },
     {
       number: "02",
-      title: "Gestión Prejurídica Especializada",
-      highlight: "Conciliamos antes de judicializar",
+      title: "Conciliación y gestión prejurídica con EPS",
+      highlight: "Buscamos acuerdos antes de acudir a instancias judiciales",
       icon: faHandshake,
       bullets: [
-        "Requerimientos formales y conciliaciones con EPS",
-        "Negociación técnica de cuentas médicas",
-        "Seguimiento preventivo frente a prescripción",
+        "Requerimientos formales y acercamientos con las entidades responsables del pago.",
+        "Negociación técnica de cuentas médicas y seguimiento de compromisos.",
+        "Control de términos para reducir riesgos de prescripción.",
       ],
     },
     {
       number: "03",
-      title: "Gestión Jurídica Estratégica",
-      highlight: "Protegemos el derecho de cobro",
+      title: "Estrategia jurídica para la recuperación de cartera",
+      highlight: "Protegemos el derecho al cobro de la institución",
       icon: faScaleBalanced,
       bullets: [
-        "Procesos ejecutivos y declarativos",
-        "Fortalecimiento probatorio de facturación médica",
-        "Estrategias cautelares y defensa jurídica",
+        "Definición de la estrategia jurídica más adecuada para cada caso.",
+        "Fortalecimiento documental y probatorio de la facturación médica.",
+        "Acompañamiento durante procesos ejecutivos, declarativos y demás actuaciones que resulten necesarias.",
       ],
     },
     {
       number: "04",
-      title: "Monitoreo y Optimización",
-      highlight: "Mejora continua del recaudo",
+      title: "Seguimiento, medición y mejora continua",
+      highlight: "Analizamos resultados para optimizar el recaudo",
       icon: faChartLine,
       bullets: [
-        "Indicadores y trazabilidad de cartera",
-        "Reportes de gestión y seguimiento",
-        "Optimización de procesos financieros",
+        "Seguimiento permanente al estado de cada cuenta.",
+        "Indicadores de recuperación y trazabilidad del proceso.",
+        "Recomendaciones para fortalecer la gestión futura de la cartera.",
       ],
     },
   ];
@@ -75,29 +75,40 @@ export default function MethodologySection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Metodología especializada para IPS y hospitales
+          Metodología especializada para recuperar cartera de IPS, clínicas y
+          hospitales
         </motion.span>
 
         {/* TITLE */}
         <h2 className={styles.title}>
-          Metodología estratégica para gestión de cartera hospitalaria
-          <span>4 fases enfocadas en el sector salud</span>
+          ¿Cómo recuperamos la cartera hospitalaria de IPS, clínicas y
+          hospitales?
+          <span>
+            Una metodología de 4 fases que combina análisis técnico,
+            conciliación con EPS, gestión jurídica y seguimiento permanente del
+            recaudo
+          </span>
         </h2>
 
         {/* INTRO */}
         <p className={styles.intro}>
-          Aplicamos un modelo especializado orientado a IPS, clínicas,
-          hospitales y proveedores médicos. Nuestra metodología combina análisis
-          documental, conciliación con EPS, gestión jurídica y seguimiento
-          estratégico de cuentas médicas para optimizar procesos de recaudo en
-          el sector salud colombiano.
+          La recuperación de cartera en el sector salud exige mucho más que
+          realizar requerimientos de pago. Cada cuenta médica debe analizarse de
+          acuerdo con su estado, los soportes disponibles, las glosas
+          existentes, las auditorías realizadas y los términos legales
+          aplicables. Por esta razón desarrollamos una metodología propia que
+          integra análisis documental, conciliaciones con EPS, gestión técnica
+          de glosas, acompañamiento jurídico y seguimiento continuo de los
+          resultados, permitiendo aumentar las probabilidades de recuperación y
+          fortalecer el flujo de caja de IPS, clínicas, hospitales y demás
+          prestadores de servicios de salud en Colombia.
         </p>
 
         {/* APOYO SEO */}
         <div className={styles.supportBox}>
           <p>
-            ¿Necesitas soluciones generales de recuperación de cartera para
-            otros sectores empresariales?
+            ¿Tu empresa pertenece a otro sector económico y necesita recuperar
+            cartera comercial o empresarial?
           </p>
 
           <a
@@ -105,7 +116,8 @@ export default function MethodologySection() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Visitar firma especializada en recaudo de cartera →
+            Conoce nuestra firma especializada en recuperación y recaudo de
+            cartera →
           </a>
         </div>
 
@@ -151,11 +163,15 @@ export default function MethodologySection() {
 
         {/* SEO TEXT */}
         <p className={styles.seoText}>
-          Metodología especializada en cartera hospitalaria, conciliaciones con
-          EPS, gestión de glosas, validación documental de facturación médica y
-          recuperación estratégica de cartera en el sector salud colombiano.
-          Sitio complementario enfocado exclusivamente en IPS, clínicas y
-          hospitales.
+          Nuestra metodología ha sido diseñada específicamente para
+          instituciones del sector salud que necesitan recuperar cartera
+          hospitalaria de manera técnica, organizada y jurídicamente sustentada.
+          Acompañamos procesos de conciliación con EPS, gestión de glosas,
+          revisión de facturación médica, seguimiento de cuentas por cobrar y
+          estrategias legales para fortalecer el recaudo. Este enfoque integral
+          permite mejorar el flujo de caja, reducir la antigüedad de la cartera
+          y optimizar la gestión financiera de IPS, hospitales, clínicas,
+          laboratorios y demás prestadores de servicios de salud en Colombia.
         </p>
       </motion.div>
     </section>

@@ -33,7 +33,8 @@ export default function Hero() {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          Especialistas en cartera del sector salud en Colombia
+          Especialistas en recuperación de cartera para IPS, clínicas y
+          hospitales en Colombia
         </motion.span>
 
         {/* TITULO PRINCIPAL */}
@@ -44,8 +45,8 @@ export default function Hero() {
           }}
           transition={{ duration: 0.8 }}
         >
-          Gestión y recuperación de cartera para IPS, clínicas y hospitales
-          frente a EPS y entidades del sistema de salud
+          Recuperación de cartera para IPS, clínicas y hospitales: conciliación
+          con EPS, gestión de glosas y estrategias jurídicas especializadas
         </motion.h1>
 
         {/* DESCRIPCIÓN */}
@@ -56,11 +57,15 @@ export default function Hero() {
           }}
           transition={{ duration: 0.8 }}
         >
-          Acompañamos instituciones prestadoras de salud en procesos de
-          conciliación, gestión de glosas, recuperación de cartera hospitalaria
-          y estrategias jurídicas orientadas al flujo financiero del sector
-          salud. Nuestro enfoque está especializado exclusivamente en IPS, EPS,
-          hospitales, clínicas y proveedores médicos en Colombia.
+          Ayudamos a IPS, hospitales, clínicas, laboratorios, centros médicos y
+          demás prestadores de servicios de salud a recuperar cartera vencida,
+          fortalecer el recaudo de cuentas por cobrar y optimizar el flujo de
+          caja mediante procesos de conciliación con EPS, gestión integral de
+          glosas, seguimiento permanente de cartera y acompañamiento jurídico
+          especializado. Nuestro equipo trabaja exclusivamente con el sector
+          salud, desarrollando estrategias adaptadas a la realidad financiera y
+          normativa del sistema colombiano para incrementar la recuperación de
+          recursos y reducir los tiempos de recaudo.
         </motion.p>
 
         {/* BOTONES */}
@@ -79,7 +84,7 @@ export default function Hero() {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
           >
-            Solicitar diagnóstico de cartera
+            Solicitar diagnóstico gratuito de cartera
           </motion.a>
 
           {/* CTA SECUNDARIO */}
@@ -89,7 +94,7 @@ export default function Hero() {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
           >
-            Ver metodología especializada
+            Conocer nuestra metodología
           </motion.a>
 
           {/* WHATSAPP */}
@@ -108,11 +113,11 @@ export default function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* BLOQUE SEO DE APOYO */}
+        {/* BLOQUE SEO */}
         <div className={styles.supportBox}>
           <p>
-            ¿Buscas soluciones generales de recuperación y recaudo de cartera
-            empresarial?
+            ¿Tu empresa necesita soluciones de recuperación de cartera fuera del
+            sector salud?
           </p>
 
           <a
@@ -120,15 +125,22 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Conocer firma especializada en recuperación de cartera →
+            Conoce nuestra firma especializada en recuperación y recaudo de
+            cartera empresarial →
           </a>
         </div>
 
         {/* TEXTO SEO */}
         <p className={styles.seoText}>
-          Portal especializado en recuperación de cartera hospitalaria,
-          conciliaciones con EPS, gestión de glosas, cobro de facturación médica
-          y estrategias jurídicas aplicadas al sector salud en Colombia.
+          Somos especialistas en recuperación de cartera hospitalaria,
+          conciliaciones con EPS, gestión de glosas, cobro de facturación
+          médica, seguimiento de cuentas por cobrar, auditoría de cartera,
+          negociación de acuerdos de pago y estrategias jurídicas para IPS,
+          hospitales, clínicas, laboratorios, centros de diagnóstico y demás
+          prestadores de servicios de salud en Colombia. Nuestro objetivo es
+          mejorar el flujo de caja, acelerar el recaudo y fortalecer la
+          sostenibilidad financiera de las instituciones del sector salud
+          mediante procesos eficientes, medibles y orientados a resultados.
         </p>
       </motion.div>
     </section>

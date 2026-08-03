@@ -21,7 +21,8 @@ export default function ProblemSection() {
           viewport={{ once: true }}
         >
           <span className={styles.badge}>
-            Problemáticas financieras del sector salud
+            Los principales retos de la recuperación de cartera en el sector
+            salud
           </span>
 
           <motion.h2
@@ -31,8 +32,8 @@ export default function ProblemSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            Cartera hospitalaria, glosas y retrasos de pago: desafíos que
-            afectan a IPS, clínicas y hospitales en Colombia
+            ¿Por qué las IPS, clínicas y hospitales tienen dificultades para
+            recuperar su cartera frente a las EPS?
           </motion.h2>
         </motion.div>
 
@@ -52,7 +53,9 @@ export default function ProblemSection() {
               transition={{ delay: 0.3 }}
               viewport={{ once: true }}
             >
-              El problema no es únicamente la existencia de cartera vencida
+              La cartera vencida no siempre es el principal problema; el
+              verdadero desafío es lograr que las cuentas médicas sean
+              reconocidas, conciliadas y pagadas oportunamente.
             </motion.p>
 
             <motion.p
@@ -107,30 +110,40 @@ export default function ProblemSection() {
               }}
               transition={{ duration: 0.6 }}
             >
-              Las IPS, clínicas, hospitales y proveedores médicos enfrentan
-              retrasos constantes en pagos, devoluciones, auditorías y
-              objeciones administrativas que afectan el flujo financiero del
-              sector salud. La acumulación de cartera hospitalaria genera
-              presión operativa, riesgo jurídico y dificultades de
-              sostenibilidad institucional.
+              Las instituciones prestadoras de servicios de salud enfrentan
+              diariamente retrasos en el reconocimiento y pago de la facturación
+              médica por parte de EPS y demás entidades responsables del pago. A
+              esto se suman glosas, devoluciones, auditorías, diferencias en la
+              validación de cuentas y largos procesos de conciliación que
+              afectan el flujo de caja y limitan la capacidad financiera para
+              operar, invertir y garantizar la continuidad de los servicios de
+              salud. Cuando estas situaciones no se gestionan de forma
+              especializada, la cartera envejece, aumenta el riesgo jurídico y
+              se reducen las probabilidades reales de recuperación.
             </motion.p>
 
             {[
               {
-                title: "Glosas médicas y devoluciones prolongadas",
-                text: "Objeciones administrativas y técnicas que ralentizan el reconocimiento y pago de facturación médica en las instituciones prestadoras de salud.",
+                title: "Glosas médicas que retrasan el pago de la facturación",
+
+                text: "Las glosas administrativas y técnicas pueden extender durante meses el reconocimiento de cuentas médicas. Una gestión especializada permite responder oportunamente las observaciones y aumentar las probabilidades de recuperación.",
               },
               {
-                title: "Retrasos en conciliaciones y procesos con EPS",
-                text: "Procesos extensos de validación y auditoría que impactan directamente la liquidez y el flujo de caja hospitalario.",
+                title: "Conciliaciones con EPS que avanzan lentamente",
+
+                text: "Muchos procesos de conciliación permanecen estancados por diferencias en auditoría, soportes o validaciones. Un seguimiento técnico y jurídico permite acelerar acuerdos y recuperar recursos pendientes.",
               },
               {
-                title: "Cartera envejecida en el sector salud",
-                text: "Facturación pendiente durante largos periodos que incrementa el riesgo financiero y limita la capacidad operativa de las IPS.",
+                title:
+                  "Cartera hospitalaria envejecida y cuentas por cobrar acumuladas",
+
+                text: "Cuando las cuentas permanecen sin gestión durante largos periodos, aumentan los riesgos financieros, disminuye la liquidez y se afecta la capacidad operativa de clínicas, hospitales e IPS.",
               },
               {
-                title: "Riesgo jurídico y prescripción de cuentas médicas",
-                text: "La ausencia de seguimiento especializado puede generar pérdida de capacidad de cobro y afectaciones económicas relevantes.",
+                title:
+                  "Prescripción, pérdida del derecho de cobro y riesgos legales",
+
+                text: "No realizar seguimiento oportuno puede generar la pérdida de oportunidades de recuperación. Una estrategia preventiva ayuda a reducir riesgos jurídicos y proteger los ingresos de la institución.",
               },
             ].map((item, index) => (
               <motion.div
@@ -149,13 +162,18 @@ export default function ProblemSection() {
           </motion.div>
         </div>
 
-        {/* SEO TEXT */}
+        {/* APOYO SEO */}
         <p className={styles.seoText}>
-          Sitio especializado en cartera hospitalaria, conciliaciones con EPS,
-          gestión de glosas, auditoría de facturación médica y problemáticas
-          financieras del sector salud colombiano. Complementa servicios
-          generales de recuperación de cartera empresarial mediante enfoque
-          especializado en IPS y hospitales.
+          La recuperación de cartera hospitalaria requiere mucho más que
+          insistir en el cobro. Es indispensable realizar conciliaciones con
+          EPS, gestionar glosas, revisar auditorías de facturación médica,
+          efectuar seguimiento a las cuentas por cobrar y definir estrategias
+          jurídicas cuando el pago continúa retrasándose. Nuestro enfoque está
+          orientado exclusivamente al sector salud, acompañando a IPS,
+          hospitales, clínicas, laboratorios y demás prestadores de servicios de
+          salud en Colombia para fortalecer su flujo de caja, disminuir la
+          antigüedad de la cartera y mejorar los indicadores de recaudo mediante
+          procesos técnicos, jurídicos y financieros.
         </p>
       </motion.div>
     </section>
