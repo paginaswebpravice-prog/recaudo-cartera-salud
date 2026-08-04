@@ -66,10 +66,8 @@ export default function SolutionSection() {
           viewport={{ once: true }}
         >
           <p>
-            <p>
-              ¿Tu empresa pertenece a otro sector económico y necesita recuperar
-              cartera comercial o empresarial?
-            </p>
+            ¿Tu empresa pertenece a otro sector económico y necesita recuperar
+            cartera comercial o empresarial?
           </p>
 
           <a

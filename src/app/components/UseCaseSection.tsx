@@ -13,7 +13,7 @@ export default function UseCaseSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        {/* TÍTULO SEO MÁS ESPECÍFICO */}
+        {/* TÍTULO */}
         <motion.h2
           className={styles.title}
           initial={{ y: 40, opacity: 0 }}
@@ -21,11 +21,12 @@ export default function UseCaseSection() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          Escenarios de Recuperación de Cartera para IPS, Hospitales y
-          Proveedores del Sector Salud
+          Casos frecuentes donde una estrategia especializada de recuperación de
+          cartera hospitalaria marca la diferencia para IPS, clínicas y
+          hospitales en Colombia
         </motion.h2>
 
-        {/* SUBTÍTULO */}
+        {/* INTRO */}
         <motion.p
           className={styles.subtitle}
           initial={{ opacity: 0 }}
@@ -33,14 +34,15 @@ export default function UseCaseSection() {
           transition={{ delay: 0.2, duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Estos escenarios reflejan problemáticas frecuentes en instituciones
-          prestadoras de servicios de salud frente a EPS, ADRES y entidades
-          públicas en Colombia. Cada situación requiere una estrategia jurídica,
-          documental y procesal diferente según el estado de la cartera y el
-          riesgo financiero de la entidad.
+          No todas las cuentas médicas requieren el mismo procedimiento. Algunas
+          pueden resolverse mediante conciliación con la EPS, mientras que otras
+          necesitan una estrategia documental o incluso un proceso judicial.
+          Estos son algunos escenarios que encontramos con frecuencia en
+          instituciones prestadoras de servicios de salud, hospitales,
+          laboratorios y proveedores médicos de todo el país.
         </motion.p>
 
-        {/* ENLACE CONTEXTUAL HACIA WEB MADRE */}
+        {/* APOYO SEO */}
         <motion.div
           className={styles.parentLink}
           initial={{ opacity: 0, y: 15 }}
@@ -49,13 +51,14 @@ export default function UseCaseSection() {
           viewport={{ once: true }}
         >
           <p>
-            Para procesos generales de recuperación de cartera empresarial y
-            estrategias complementarias de cobro jurídico en Colombia, visite{" "}
+            Si su empresa pertenece a otro sector económico y necesita servicios
+            generales de recuperación de cartera empresarial, puede visitar
             <a
               href="https://recaudodecartera.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
+              {" "}
               Recaudo de Cartera
             </a>
             .
@@ -77,7 +80,7 @@ export default function UseCaseSection() {
             },
           }}
         >
-          {/* CARD GRANDE */}
+          {/* CARD 1 */}
           <motion.div
             className={`${styles.card} ${styles.large}`}
             variants={{
@@ -87,25 +90,32 @@ export default function UseCaseSection() {
             transition={{ duration: 0.7 }}
             whileHover={{ y: -6 }}
           >
-            <span className={styles.label}>Cartera Glosada en IPS</span>
+            <span className={styles.label}>
+              Recuperación de cartera glosada
+            </span>
 
-            <h3>IPS con Facturación Glosada y Bloqueo de Flujo de Caja</h3>
+            <h3>
+              IPS con glosas médicas acumuladas y retrasos en el pago de cuentas
+              por parte de las EPS
+            </h3>
 
             <p>
-              Institución prestadora de salud con acumulación de facturas
-              objetadas por EPS durante varios periodos fiscales, afectando
-              liquidez operativa, pago a proveedores y sostenibilidad
-              financiera.
+              Muchas instituciones prestadoras de salud enfrentan un crecimiento
+              constante de glosas administrativas y técnicas que retrasan el
+              reconocimiento de la facturación médica y afectan directamente la
+              liquidez necesaria para operar.
             </p>
 
             <p>
-              <strong>Enfoque estratégico:</strong> análisis técnico de glosas,
-              consolidación documental, reconstrucción probatoria y preparación
-              de proceso declarativo para recuperar cartera hospitalaria.
+              <strong>¿Cómo intervenimos?</strong> Analizamos cada glosa,
+              revisamos soportes clínicos y administrativos, fortalecemos la
+              evidencia documental y estructuramos la estrategia jurídica más
+              adecuada para lograr el reconocimiento y posterior recuperación de
+              la cartera.
             </p>
           </motion.div>
 
-          {/* CARD DERECHA */}
+          {/* CARD 2 */}
           <motion.div
             className={`${styles.card} ${styles.medium}`}
             variants={{
@@ -115,24 +125,27 @@ export default function UseCaseSection() {
             transition={{ duration: 0.7 }}
             whileHover={{ y: -5 }}
           >
-            <span className={styles.label}>Cobro Ejecutivo</span>
+            <span className={styles.label}>
+              Cobro ejecutivo de cuentas médicas
+            </span>
 
-            <h3>Proveedor Médico con Facturas Aceptadas Pendientes de Pago</h3>
+            <h3>Facturas aceptadas por la EPS que siguen sin ser pagadas</h3>
 
             <p>
-              Empresa del sector salud con cuentas aceptadas por la entidad
-              aseguradora, pero sin desembolso efectivo dentro de los términos
-              legales establecidos.
+              Cuando la obligación ya fue reconocida y existen los soportes
+              necesarios para exigir el pago, la demora injustificada puede
+              generar graves impactos financieros para la institución.
             </p>
 
             <p>
-              <strong>Enfoque estratégico:</strong> inicio de proceso ejecutivo,
-              medidas cautelares y aseguramiento patrimonial para acelerar el
-              recaudo.
+              <strong>¿Qué hacemos?</strong> Evaluamos la viabilidad del cobro
+              ejecutivo, preparamos la documentación requerida y desarrollamos
+              una estrategia procesal orientada a acelerar la recuperación del
+              dinero y proteger el patrimonio de la entidad.
             </p>
           </motion.div>
 
-          {/* CARD INFERIOR */}
+          {/* CARD 3 */}
           <motion.div
             className={`${styles.card} ${styles.small}`}
             variants={{
@@ -142,24 +155,28 @@ export default function UseCaseSection() {
             transition={{ duration: 0.7 }}
             whileHover={{ y: -5 }}
           >
-            <span className={styles.label}>Riesgo de Prescripción</span>
+            <span className={styles.label}>Prevención de prescripción</span>
 
-            <h3>Clínica con Cartera Próxima a Vencimiento de Términos</h3>
+            <h3>
+              Cartera hospitalaria con riesgo de perder el derecho de cobro
+            </h3>
 
             <p>
-              Institución médica con cuentas pendientes ante EPS y ADRES con
-              riesgo jurídico de pérdida del derecho de cobro por prescripción.
+              Una parte importante de la cartera hospitalaria permanece durante
+              años sin una gestión especializada, aumentando el riesgo de perder
+              la posibilidad jurídica de recuperar esos recursos.
             </p>
 
             <p>
-              <strong>Enfoque estratégico:</strong> interrupción oportuna de
-              términos, estructuración procesal y radicación de acciones
-              judiciales para proteger el derecho de pago.
+              <strong>¿Cómo ayudamos?</strong> Priorizamos las cuentas con mayor
+              riesgo, verificamos términos legales, proponemos acciones
+              preventivas y definimos la estrategia necesaria para proteger el
+              derecho de cobro antes de que sea demasiado tarde.
             </p>
           </motion.div>
         </motion.div>
 
-        {/* BLOQUE SEO ESTRATÉGICO */}
+        {/* DESTACADO */}
         <motion.div
           className={styles.bottomBox}
           initial={{ opacity: 0, y: 30 }}
@@ -167,23 +184,37 @@ export default function UseCaseSection() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <h3>Especialización exclusiva en cartera del sector salud</h3>
+          <h3>
+            Un enfoque exclusivo para la recuperación de cartera del sector
+            salud
+          </h3>
 
           <p>
-            Esta plataforma se enfoca únicamente en recuperación de cartera para
-            IPS, hospitales, clínicas, laboratorios y proveedores médicos en
-            Colombia, evitando competir con estrategias generales de cobro
-            empresarial y fortaleciendo la autoridad temática del ecosistema
-            digital.
+            Nos enfocamos únicamente en IPS, clínicas, hospitales, laboratorios
+            y proveedores médicos porque entendemos que la recuperación de
+            cartera hospitalaria exige conocimientos distintos a los utilizados
+            en otros sectores económicos. Cada caso requiere analizar glosas,
+            auditorías, conciliaciones, soportes documentales, cuentas médicas,
+            comportamiento de las EPS y riesgos jurídicos antes de definir la
+            estrategia más conveniente.
+          </p>
+
+          <p>
+            Esta especialización nos permite desarrollar metodologías adaptadas
+            al funcionamiento real del sistema de salud colombiano y ofrecer un
+            acompañamiento mucho más preciso durante todo el proceso de
+            recuperación de cartera.
           </p>
         </motion.div>
 
-        {/* TEXTO SEO CONTROLADO */}
+        {/* SEO */}
         <p className={styles.seoText}>
-          Recuperación de cartera hospitalaria para IPS, clínicas y hospitales
-          en Colombia. Cobro jurídico especializado a EPS, ADRES y entidades
-          públicas mediante procesos ejecutivos y declarativos enfocados en el
-          sector salud.
+          Especialistas en recuperación de cartera hospitalaria para IPS,
+          clínicas, hospitales, laboratorios y proveedores del sector salud en
+          Colombia. Gestión de glosas médicas, conciliaciones con EPS, cobro
+          ejecutivo de cuentas médicas, recuperación de facturación, prevención
+          de prescripción y estrategias jurídicas orientadas a mejorar el flujo
+          financiero de las instituciones prestadoras de servicios de salud.
         </p>
       </motion.div>
     </section>

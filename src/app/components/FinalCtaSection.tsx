@@ -1,11 +1,12 @@
 "use client";
+
 import { motion } from "framer-motion";
 import styles from "../styles/FinalCtaSection.module.css";
 
 export default function FinalCtaSection() {
   return (
     <section className={styles.section} id="contacto">
-      {/* TITULO SUPERIOR */}
+      {/* TÍTULO */}
       <motion.h2
         className={styles.mainTitle}
         initial={{ y: 50, opacity: 0 }}
@@ -13,11 +14,12 @@ export default function FinalCtaSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        Recuperar Cartera no es Litigar. Es Proteger la Sostenibilidad de su
-        Institución.
+        ¿Su IPS, clínica u hospital tiene cartera pendiente con EPS? Conozca
+        cómo una estrategia especializada puede ayudar a recuperar cuentas
+        médicas y fortalecer su flujo financiero.
       </motion.h2>
 
-      {/* INTRO */}
+      {/* INTRODUCCIÓN */}
       <motion.p
         className={styles.intro}
         initial={{ opacity: 0 }}
@@ -25,15 +27,29 @@ export default function FinalCtaSection() {
         transition={{ delay: 0.2, duration: 0.9 }}
         viewport={{ once: true }}
       >
-        Cada peso de cartera sin recaudar es un servicio de salud que su
-        institución ya prestó y no le pagaron. Es inversión en equipos,
-        personal, insumos y estructura que comprometió su flujo de caja. En
-        PRAVICE ABOGADOS entendemos que la recuperación de cartera hospitalaria
-        no es solo un proceso jurídico: es una estrategia para proteger la
-        viabilidad financiera de su operación.
+        Detrás de cada factura pendiente existe un servicio de salud que ya fue
+        prestado, recursos invertidos por la institución y una operación que
+        necesita mantener su estabilidad financiera. La recuperación de cartera
+        hospitalaria va mucho más allá de iniciar un proceso jurídico; requiere
+        analizar la documentación, evaluar glosas, identificar riesgos,
+        priorizar las cuentas con mayor probabilidad de recuperación y definir
+        la estrategia más adecuada para cada caso.
       </motion.p>
 
-      {/* GRID DOS COLUMNAS */}
+      <motion.p
+        className={styles.intro}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.35, duration: 0.9 }}
+        viewport={{ once: true }}
+      >
+        En PRAVICE ABOGADOS acompañamos a IPS, clínicas, hospitales,
+        laboratorios y demás prestadores de servicios de salud mediante una
+        metodología especializada para la gestión y recuperación de cartera
+        frente a EPS, ADRES y demás entidades responsables del pago.
+      </motion.p>
+
+      {/* GRID */}
       <motion.div
         className={styles.grid}
         initial="hidden"
@@ -48,7 +64,7 @@ export default function FinalCtaSection() {
           },
         }}
       >
-        {/* COLUMNA IZQUIERDA */}
+        {/* IZQUIERDA */}
         <motion.div
           className={styles.leftBox}
           variants={{
@@ -57,20 +73,33 @@ export default function FinalCtaSection() {
           }}
           transition={{ duration: 0.8 }}
         >
-          <h3>No permita que la cartera envejecida ahogue su institución</h3>
+          <h3>
+            No espere a que la cartera continúe envejeciendo y aumente el riesgo
+            de perder oportunidades de recuperación
+          </h3>
 
           <p>
-            El tiempo corre en su contra. Cada día que pasa sin gestión jurídica
-            estratégica es un día más cerca de la prescripción. Cada mes sin
-            recaudo es un mes adicional de deterioro en su flujo de caja.
+            Muchas instituciones dejan pasar meses o incluso años antes de
+            iniciar una revisión especializada de su cartera. Mientras tanto,
+            aumentan las dificultades probatorias, se prolongan las
+            conciliaciones, aparecen nuevos obstáculos administrativos y se
+            incrementa el riesgo de prescripción de algunas obligaciones.
+          </p>
+
+          <p>
+            Una evaluación temprana permite identificar cuáles cuentas pueden
+            recuperarse mediante negociación, cuáles requieren fortalecimiento
+            documental y cuáles podrían avanzar hacia mecanismos judiciales
+            cuando resulte procedente.
           </p>
 
           <p className={styles.bold}>
-            Actúe ahora. Agende su diagnóstico estratégico sin costo.
+            Solicite un diagnóstico inicial y conozca las alternativas
+            disponibles para su institución.
           </p>
         </motion.div>
 
-        {/* COLUMNA DERECHA */}
+        {/* DERECHA */}
         <motion.div
           className={styles.rightBox}
           variants={{
@@ -80,8 +109,10 @@ export default function FinalCtaSection() {
           transition={{ duration: 0.8 }}
         >
           <h3 className={styles.company}>PRAVICE ABOGADOS S.A.S.</h3>
+
           <p className={styles.area}>
-            Área de Recuperación de Cartera en Salud
+            Área especializada en recuperación de cartera hospitalaria y cuentas
+            médicas
           </p>
 
           <motion.ul
@@ -92,16 +123,19 @@ export default function FinalCtaSection() {
             variants={{
               hidden: {},
               visible: {
-                transition: { staggerChildren: 0.15 },
+                transition: {
+                  staggerChildren: 0.15,
+                },
               },
             }}
           >
             {[
-              "Certificados ante Superintendencia Nacional de Salud",
-              "Cobertura nacional en Colombia",
-              "Equipo especializado en sector salud",
-              "Modelo de comisión por resultados",
-              "Estrategia doble carril ejecutivo y declarativo",
+              "Diagnóstico inicial de cartera hospitalaria.",
+              "Análisis técnico de glosas y devoluciones.",
+              "Acompañamiento en conciliaciones con EPS.",
+              "Revisión documental y fortalecimiento probatorio.",
+              "Estrategias prejurídicas y jurídicas adaptadas a cada caso.",
+              "Cobertura para instituciones del sector salud en Colombia.",
             ].map((item, index) => (
               <motion.li
                 key={index}
@@ -121,7 +155,7 @@ export default function FinalCtaSection() {
               window.open(
                 "https://api.whatsapp.com/message/RE7FEN4IGOISD1?autoload=1&app_absent=0",
                 "_blank",
-                "noopener noreferrer",
+                "noopener,noreferrer",
               )
             }
             className={styles.button}
@@ -129,12 +163,12 @@ export default function FinalCtaSection() {
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            Agendar diagnóstico estratégico sin costo
+            Solicitar diagnóstico de cartera hospitalaria
           </motion.button>
         </motion.div>
       </motion.div>
 
-      {/* FRASE FINAL */}
+      {/* CIERRE */}
       <motion.p
         className={styles.quote}
         initial={{ opacity: 0, y: 30 }}
@@ -142,18 +176,21 @@ export default function FinalCtaSection() {
         transition={{ delay: 0.3, duration: 0.9 }}
         viewport={{ once: true }}
       >
-        “La cartera vencida no es un problema contable. Es un problema de
-        supervivencia institucional. Y la supervivencia requiere acción
-        estratégica inmediata.”
+        "Cada cuenta médica recuperada representa recursos que vuelven a la
+        operación de la institución. Una gestión oportuna puede contribuir a
+        fortalecer la liquidez, mejorar la planeación financiera y respaldar la
+        continuidad en la prestación de los servicios de salud."
       </motion.p>
 
-      {/* SEO OCULTO */}
+      {/* SEO */}
       <p className={styles.seoText}>
-        Abogados especializados en recuperación de cartera en salud en Colombia.
-        Cobro jurídico a EPS, demandas contra EPS, procesos ejecutivos y
-        declarativos para IPS, clínicas y hospitales. Firma jurídica experta en
-        reclamaciones ante ADRES y estrategias legales para recuperación de
-        cartera hospitalaria con cobertura nacional.
+        Recuperación de cartera hospitalaria en Colombia para IPS, clínicas,
+        hospitales, laboratorios y proveedores del sector salud. Abogados
+        especializados en cobro jurídico a EPS, conciliaciones, gestión de
+        glosas médicas, recuperación de cuentas médicas, facturación pendiente,
+        procesos ejecutivos, procesos declarativos, ADRES, revisión documental y
+        estrategias jurídicas para fortalecer el recaudo y el flujo financiero
+        institucional.
       </p>
     </section>
   );

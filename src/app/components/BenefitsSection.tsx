@@ -6,35 +6,35 @@ import styles from "../styles/BeneficioSection.module.css";
 export default function BeneficioSection() {
   const sideItems = [
     {
-      title: "Visibilidad Jurídica 24/7",
-      text: "Control en tiempo real del estado de sus procesos de cobro frente a EPS y entidades públicas.",
+      title: "Seguimiento permanente de la recuperación de cartera",
+      text: "Consulte en tiempo real el estado de conciliaciones, actuaciones jurídicas, procesos administrativos y avances relacionados con la recuperación de cartera frente a EPS y demás entidades del sistema de salud.",
     },
     {
-      title: "Trazabilidad Documental",
-      text: "Historial completo de actuaciones, reportes y soportes jurídicos.",
+      title: "Documentación organizada y disponible",
+      text: "Acceda fácilmente a contratos, facturación, soportes, comunicaciones, reportes y demás documentos necesarios para cada proceso de recuperación.",
     },
     {
-      title: "Eficiencia Financiera",
-      text: "Decisiones estratégicas basadas en datos procesales y proyección de recaudo.",
+      title: "Mayor control para la gestión financiera",
+      text: "La disponibilidad permanente de información actualizada facilita el seguimiento de las cuentas médicas y fortalece la planeación financiera de la institución.",
     },
   ];
 
   const infoItems = [
     {
-      title: "Proyección de recaudo",
-      text: "Anticipe flujos de caja según etapa procesal y probabilidades de recuperación.",
+      title: "Visualización del estado de la cartera",
+      text: "Obtenga una perspectiva clara sobre el comportamiento de las cuentas médicas, conciliaciones y procesos en curso para facilitar la toma de decisiones.",
     },
     {
-      title: "Medición del desempeño jurídico",
-      text: "Indicadores de gestión, tiempos procesales y efectividad en recuperación de cartera.",
+      title: "Indicadores de gestión y seguimiento",
+      text: "Consulte información relacionada con tiempos de respuesta, actuaciones realizadas y evolución de cada proceso para medir su avance.",
     },
     {
-      title: "Identificación de cuellos de botella",
-      text: "Detecte retrasos en procesos judiciales o administrativos y actúe oportunamente.",
+      title: "Detección de procesos que requieren atención",
+      text: "Identifique oportunamente cuentas, conciliaciones o actuaciones pendientes para mantener una gestión organizada y reducir retrasos.",
     },
     {
-      title: "Decisiones financieras informadas",
-      text: "Información consolidada para fortalecer su estrategia empresarial.",
+      title: "Información que respalda las decisiones institucionales",
+      text: "La plataforma centraliza la información necesaria para apoyar la planeación financiera y el seguimiento de las estrategias implementadas.",
     },
   ];
 
@@ -55,8 +55,8 @@ export default function BeneficioSection() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          ¿Cómo ayuda la App Legal PRAVICE a mejorar el control y la
-          recuperación de cartera hospitalaria?
+          ¿Por qué la App Legal PRAVICE facilita el seguimiento de la
+          recuperación de cartera hospitalaria en IPS, clínicas y hospitales?
         </motion.h2>
 
         {/* SUBTITLE OPTIMIZADO */}
@@ -67,13 +67,15 @@ export default function BeneficioSection() {
           transition={{ delay: 0.2, duration: 0.8 }}
           viewport={{ once: true }}
         >
-          La App Legal PRAVICE fue diseñada para brindar mayor visibilidad sobre
-          cada proceso relacionado con la recuperación de cartera hospitalaria.
-          A través de una plataforma centralizada, las IPS, clínicas, hospitales
-          y demás prestadores de servicios de salud pueden consultar información
-          actualizada, acceder a documentos, realizar seguimiento a las
-          actuaciones jurídicas y contar con herramientas que facilitan la toma
-          de decisiones financieras basadas en información confiable.
+          La App Legal PRAVICE fue desarrollada para ofrecer a IPS, hospitales,
+          clínicas, laboratorios y demás prestadores de servicios de salud una
+          visión clara del estado de sus procesos de recuperación de cartera.
+          Desde una sola plataforma es posible consultar avances, acceder a
+          documentación, comunicarse con el equipo encargado de cada gestión y
+          realizar seguimiento a conciliaciones, actuaciones jurídicas y demás
+          procesos relacionados con la recuperación de cuentas médicas. Esto
+          permite una administración mucho más organizada de la información y
+          facilita la toma de decisiones basada en datos actualizados.
         </motion.p>
 
         <div className={styles.grid}>
@@ -134,7 +136,7 @@ export default function BeneficioSection() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              Enfoque Empresarial y Financiero
+              Información estratégica para fortalecer la gestión financiera
             </motion.h3>
 
             {infoItems.map((item, index) => (
@@ -157,9 +159,15 @@ export default function BeneficioSection() {
 
         {/* SEO SEMÁNTICO OCULTO */}
         <p className={styles.seoText}>
-          Beneficios de la App Legal PRAVICE para IPS y hospitales en Colombia.
-          Sistema de control de procesos judiciales, recuperación de cartera a
-          EPS y proyección financiera basada en gestión jurídica.
+          La App Legal PRAVICE es una plataforma especializada para el
+          seguimiento de la recuperación de cartera hospitalaria en Colombia.
+          Permite a IPS, hospitales, clínicas, laboratorios y demás prestadores
+          de servicios de salud consultar el estado de conciliaciones con EPS,
+          revisar documentos, acceder a reportes, realizar seguimiento a
+          procesos jurídicos y fortalecer la gestión financiera mediante
+          información organizada y actualizada. La plataforma complementa las
+          estrategias de recuperación de cartera, gestión de cuentas médicas y
+          control documental dentro del sector salud colombiano.
         </p>
       </motion.div>
     </section>
