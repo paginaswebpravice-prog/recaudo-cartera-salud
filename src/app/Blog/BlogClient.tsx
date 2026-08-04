@@ -21,28 +21,51 @@ const groupedArticles = articles.reduce(
 export default function BlogClient() {
   return (
     <main className={styles.pageWrapper}>
-      {/* HERO */}
+      {/* ================= HERO ================= */}
+
       <section className={styles.hero}>
         <motion.div
           className={styles.heroContainer}
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          initial={{
+            opacity: 0,
+            y: 40,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 0.7,
+          }}
         >
           <motion.h1
             className={styles.heroTitle}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
+            initial={{
+              opacity: 0,
+              y: 20,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              delay: 0.2,
+            }}
           >
-            Cómo recuperar cartera EPS en Colombia y evitar pérdidas en el
-            sector salud
+            Recuperación de cartera EPS en Colombia: estrategias, guías
+            jurídicas y soluciones para IPS y clínicas
           </motion.h1>
 
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              delay: 0.3,
+            }}
           >
             <Link href="/" className={styles.backLink}>
               ← Volver al inicio
@@ -51,19 +74,28 @@ export default function BlogClient() {
 
           <motion.p
             className={styles.heroSubtitle}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
+            initial={{
+              opacity: 0,
+              y: 20,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              delay: 0.4,
+            }}
           >
-            Blog jurídico especializado en recuperación de cartera EPS, procesos
-            judiciales, glosas médicas, ADRES, flujo de caja para IPS,
-            conciliaciones y estrategias de recaudo para clínicas y hospitales
-            en Colombia.
+            Encuentre información especializada sobre recuperación de cartera
+            EPS, cartera vencida en salud, glosas médicas, ADRES, procesos
+            ejecutivos y estrategias de cobro para IPS, clínicas, hospitales y
+            prestadores de servicios de salud en Colombia.
           </motion.p>
         </motion.div>
       </section>
 
-      {/* MENÚ DE CATEGORÍAS */}
+      {/* ================= CATEGORÍAS ================= */}
+
       <section className={styles.categoryMenu}>
         {Object.keys(groupedArticles).map((category) => (
           <a
@@ -76,7 +108,8 @@ export default function BlogClient() {
         ))}
       </section>
 
-      {/* BLOG */}
+      {/* ================= BLOG ================= */}
+
       <section className={styles.blogSection}>
         {Object.entries(groupedArticles).map(([category, categoryArticles]) => (
           <section
@@ -86,29 +119,46 @@ export default function BlogClient() {
           >
             <motion.h2
               className={styles.categoryTitle}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              initial={{
+                opacity: 0,
+                y: 20,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              viewport={{
+                once: true,
+              }}
             >
-              {category}{" "}
+              {category}
             </motion.h2>
 
             <div className={styles.grid}>
               {categoryArticles.map((article, i) => (
                 <motion.div
                   key={article.slug}
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{
+                    opacity: 0,
+                    y: 40,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                  }}
                   transition={{
                     duration: 0.5,
                     delay: i * 0.05,
                   }}
-                  viewport={{ once: true }}
+                  viewport={{
+                    once: true,
+                  }}
                 >
                   <Link href={`/Blog/${article.slug}`} className={styles.card}>
                     <motion.div
                       whileHover={{
                         scale: 1.03,
+
                         y: -5,
                       }}
                       whileTap={{
@@ -121,7 +171,9 @@ export default function BlogClient() {
                         {article.description}
                       </p>
 
-                      <span className={styles.readMore}>Leer artículo →</span>
+                      <span className={styles.readMore}>
+                        Leer guía completa →
+                      </span>
                     </motion.div>
                   </Link>
                 </motion.div>
@@ -131,24 +183,40 @@ export default function BlogClient() {
         ))}
       </section>
 
-      {/* CTA */}
+      {/* ================= CTA ================= */}
+
       <section className={styles.cta}>
         <motion.div
           className={styles.ctaContainer}
-          initial={{ opacity: 0, y: 60 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
+          initial={{
+            opacity: 0,
+
+            y: 60,
+          }}
+          whileInView={{
+            opacity: 1,
+
+            y: 0,
+          }}
+          transition={{
+            duration: 0.7,
+          }}
+          viewport={{
+            once: true,
+          }}
         >
           <motion.h2 className={styles.ctaTitle}>
-            ¿Tiene cartera EPS pendiente de recuperación en Colombia?
+            ¿Su IPS tiene cartera EPS pendiente de recuperación?
           </motion.h2>
 
           <motion.p className={styles.ctaText}>
-            Nuestro equipo jurídico especializado asesora a IPS, clínicas,
-            hospitales y prestadores de servicios de salud en procesos de cobro
-            prejurídico, judicial, medidas cautelares, conciliaciones,
-            reclamaciones ante ADRES y recuperación efectiva de cartera.
+            Después de analizar las diferentes alternativas de recuperación de
+            cartera en salud, es importante evaluar cada caso según el tipo de
+            obligación, estado de las facturas, glosas existentes, soportes
+            documentales y posibilidades jurídicas de recuperación. Nuestro
+            equipo acompaña a IPS, clínicas y prestadores de servicios de salud
+            en estrategias administrativas, prejurídicas y judiciales
+            relacionadas con cartera EPS en Colombia.
           </motion.p>
 
           <div className={styles.ctaActions}>
@@ -158,7 +226,7 @@ export default function BlogClient() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Solicitar asesoría
+              Solicitar orientación
             </Link>
 
             <a
@@ -167,7 +235,7 @@ export default function BlogClient() {
               rel="noopener noreferrer"
               className={styles.ctaSecondary}
             >
-              Hablar por WhatsApp
+              Hablar con un especialista
             </a>
           </div>
         </motion.div>

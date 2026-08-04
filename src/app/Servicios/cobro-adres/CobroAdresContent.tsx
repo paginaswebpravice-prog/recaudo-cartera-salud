@@ -194,42 +194,241 @@ export default function CobroAdresContent() {
           </div>
         </section>
 
-        {/* PROCESO */}
+        {/* RECURSOS */}
         <section className={styles.section}>
-          <h2 className={styles.subtitle}>
-            Cómo hacer un proceso de cobro ante ADRES paso a paso
-          </h2>
+          <motion.h2
+            className={styles.subtitle}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            Recursos especializados sobre cobro ADRES, reclamaciones en salud y
+            recuperación de cartera
+          </motion.h2>
 
-          <div className={styles.grid}>
-            {[
-              "Diagnóstico inicial de cartera",
-              "Revisión normativa y documental",
-              "Auditoría técnica de soportes",
-              "Estructuración y radicación",
-              "Seguimiento de reclamaciones",
-              "Recuperación efectiva de recursos",
-            ].map((step, i) => (
-              <motion.div key={i} className={styles.card}>
-                <h3>Paso {i + 1}</h3>
-                <p>{step}</p>
-              </motion.div>
-            ))}
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.15 }}
+            viewport={{ once: true }}
+          >
+            Mantenerse actualizado sobre los procedimientos de ADRES, las
+            modificaciones regulatorias y las mejores prácticas para estructurar
+            reclamaciones permite reducir devoluciones, agilizar la recuperación
+            de recursos y fortalecer la sostenibilidad financiera de las IPS.
+            Una adecuada gestión documental también disminuye reprocesos y
+            facilita el seguimiento de cada expediente hasta su reconocimiento
+            económico.
+          </motion.p>
+
+          <div className={styles.resourcesBox}>
+            <a
+              href="https://recaudodecartera.com/cobro-adres.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.resourceLink}
+            >
+              Guía especializada sobre cobro ADRES para IPS, hospitales y
+              clínicas
+            </a>
+
+            <a
+              href="https://recaudodecartera.com/cobro-glosas-eps-colombia.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.resourceLink}
+            >
+              Estrategias para disminuir glosas y fortalecer el recaudo
+              institucional
+            </a>
+
+            <a
+              href="https://recaudodecartera.com/recuperacion-cartera-ips-clinicas.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.resourceLink}
+            >
+              Recuperación integral de cartera para IPS, hospitales y clínicas
+            </a>
+          </div>
+        </section>
+
+        {/* ¿CUÁNDO FORTALECER EL PROCESO? */}
+        <section className={styles.section}>
+          <motion.h2
+            className={styles.subtitle}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            ¿Cuándo es recomendable fortalecer el proceso de cobro ante ADRES?
+          </motion.h2>
+
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            No todas las dificultades aparecen al momento de radicar una
+            reclamación. En muchos casos los problemas se originan desde la
+            facturación, la gestión documental, la organización de los soportes
+            o el seguimiento posterior al trámite. Identificar estas situaciones
+            a tiempo permite implementar mejoras que reducen devoluciones y
+            fortalecen el recaudo institucional.
+          </motion.p>
+
+          <div className={styles.infoGrid}>
+            <div>
+              <h4>✔ Incremento constante de devoluciones</h4>
+
+              <p>
+                Si cada mes aumenta el número de reclamaciones devueltas por
+                errores administrativos o inconsistencias documentales, es
+                recomendable revisar integralmente los procesos internos antes
+                de continuar radicando nuevos expedientes.
+              </p>
+            </div>
+
+            <div>
+              <h4>✔ Disminución del flujo de caja</h4>
+
+              <p>
+                Cuando los recursos esperados tardan más de lo previsto en
+                recuperarse, la liquidez institucional comienza a verse afectada
+                y pueden aparecer dificultades para atender obligaciones
+                operativas.
+              </p>
+            </div>
+
+            <div>
+              <h4>✔ Acumulación de reclamaciones pendientes</h4>
+
+              <p>
+                El crecimiento permanente de expedientes sin respuesta o sin
+                seguimiento puede generar retrasos administrativos y afectar la
+                recuperación de los recursos reconocibles.
+              </p>
+            </div>
+
+            <div>
+              <h4>✔ Alta carga para los equipos administrativos</h4>
+
+              <p>
+                Cuando el personal dedica gran parte de su tiempo a corregir
+                errores, responder requerimientos o reconstruir expedientes,
+                disminuye la productividad de toda la institución.
+              </p>
+            </div>
+
+            <div>
+              <h4>✔ Cambios normativos frecuentes</h4>
+
+              <p>
+                La actualización permanente de requisitos técnicos hace
+                necesario revisar periódicamente los procedimientos internos
+                para evitar inconsistencias en futuras reclamaciones.
+              </p>
+            </div>
+
+            <div>
+              <h4>✔ Necesidad de mejorar indicadores financieros</h4>
+
+              <p>
+                Optimizar los procesos de cobro contribuye a reducir tiempos de
+                recuperación, mejorar el recaudo y fortalecer la sostenibilidad
+                financiera de IPS, hospitales y clínicas.
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.highlightBox}>
+            Las instituciones que realizan revisiones periódicas de sus procesos
+            de radicación, auditoría documental y seguimiento de reclamaciones
+            suelen disminuir reprocesos, fortalecer el control administrativo y
+            mejorar la recuperación de recursos provenientes de ADRES.
           </div>
         </section>
 
         {/* BENEFICIOS */}
         <section className={styles.section}>
-          <h2 className={styles.subtitle}>
-            Beneficios de optimizar el cobro ADRES para IPS y clínicas
-          </h2>
+          <motion.h2
+            className={styles.subtitle}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            Beneficios de fortalecer la gestión de cobro ante ADRES para IPS,
+            clínicas y hospitales
+          </motion.h2>
 
-          <div className={styles.benefits}>
-            <span>✔ Menos devoluciones</span>
-            <span>✔ Mayor tasa de aprobación</span>
-            <span>✔ Recuperación de recursos retenidos</span>
-            <span>✔ Mejor flujo financiero</span>
-            <span>✔ Cumplimiento técnico y normativo</span>
-            <span>✔ Soporte jurídico especializado</span>
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.15 }}
+            viewport={{ once: true }}
+          >
+            Una adecuada administración de las reclamaciones no solo busca
+            disminuir devoluciones. También permite mejorar la eficiencia
+            administrativa, fortalecer el recaudo institucional y optimizar el
+            flujo de caja necesario para garantizar la continuidad en la
+            prestación de los servicios de salud. Cuando cada etapa del proceso
+            se controla correctamente, la institución dispone de mayor
+            información para tomar decisiones financieras y reducir riesgos
+            operativos.
+          </motion.p>
+
+          <div className={styles.grid}>
+            {[
+              {
+                title: "Mayor recuperación de recursos",
+                text: "Una gestión organizada incrementa las posibilidades de obtener el reconocimiento económico de las reclamaciones presentadas ante ADRES.",
+              },
+              {
+                title: "Disminución de devoluciones",
+                text: "La revisión previa de soportes y documentos ayuda a reducir inconsistencias que pueden retrasar el proceso.",
+              },
+              {
+                title: "Mejor flujo de caja",
+                text: "La recuperación oportuna de recursos fortalece la liquidez y facilita la operación diaria de IPS, hospitales y clínicas.",
+              },
+              {
+                title: "Reducción de reprocesos",
+                text: "Procesos documentales estandarizados disminuyen tiempos administrativos y optimizan el trabajo de los equipos de cartera y facturación.",
+              },
+              {
+                title: "Mayor control de la información",
+                text: "La trazabilidad documental permite conocer el estado de cada reclamación y responder oportunamente a los requerimientos.",
+              },
+              {
+                title: "Sostenibilidad financiera",
+                text: "La optimización del recaudo contribuye a fortalecer la estabilidad financiera y la capacidad de inversión de las instituciones de salud.",
+              },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                className={styles.card}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.08 }}
+                viewport={{ once: true }}
+              >
+                <h3>{item.title}</h3>
+
+                <p>{item.text}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className={styles.highlightBox}>
+            Implementar procesos de mejora continua, auditoría documental y
+            seguimiento permanente permite que las instituciones reduzcan
+            tiempos de gestión, fortalezcan su liquidez y cuenten con mayor
+            capacidad para responder a los desafíos financieros propios del
+            sistema de salud colombiano.
           </div>
         </section>
 
@@ -249,6 +448,185 @@ export default function CobroAdresContent() {
           <div className={styles.highlightBox}>
             🚀 El objetivo no es solo radicar cuentas, sino maximizar la
             probabilidad real de pago.
+          </div>
+        </section>
+
+        {/* ERRORES FRECUENTES */}
+        <section className={styles.section}>
+          <motion.h2
+            className={styles.subtitle}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            Errores más frecuentes que ocasionan devoluciones en las
+            reclamaciones ante ADRES
+          </motion.h2>
+
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            Una parte importante de las reclamaciones presentadas ante ADRES
+            requiere correcciones o genera devoluciones debido a inconsistencias
+            documentales, errores administrativos o incumplimiento de requisitos
+            técnicos. Detectar estos inconvenientes antes de la radicación ayuda
+            a disminuir reprocesos, mejorar los tiempos de respuesta y aumentar
+            la probabilidad de obtener el reconocimiento de los recursos.
+          </motion.p>
+
+          <div className={styles.grid}>
+            {[
+              {
+                title: "Soportes documentales incompletos",
+                text: "La ausencia de anexos, historias clínicas, autorizaciones u otros documentos puede impedir la validación adecuada de la reclamación.",
+              },
+              {
+                title: "Inconsistencias en la información reportada",
+                text: "Errores en datos del paciente, fechas, valores, códigos o identificación generan observaciones durante el proceso de auditoría.",
+              },
+              {
+                title: "Radicación fuera de los plazos",
+                text: "No presentar oportunamente la reclamación puede afectar el trámite y limitar las posibilidades de reconocimiento económico.",
+              },
+              {
+                title: "Fallas en la organización del expediente",
+                text: "La documentación desordenada dificulta la revisión técnica y aumenta el riesgo de requerimientos adicionales.",
+              },
+              {
+                title: "Errores en la facturación",
+                text: "Las inconsistencias entre la factura y los soportes clínicos suelen generar observaciones que retrasan el proceso.",
+              },
+              {
+                title: "Seguimiento insuficiente",
+                text: "No realizar control permanente sobre cada reclamación dificulta responder oportunamente a observaciones o solicitudes de ADRES.",
+              },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                className={styles.card}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.08 }}
+                viewport={{ once: true }}
+              >
+                <h3>{item.title}</h3>
+
+                <p>{item.text}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className={styles.warningBox}>
+            <strong>Importante:</strong> una revisión documental previa y una
+            adecuada organización de la información permiten disminuir
+            significativamente las devoluciones, reducir reprocesos
+            administrativos y mejorar la eficiencia durante todo el proceso de
+            reclamación ante ADRES.
+          </div>
+        </section>
+
+        {/* BUENAS PRÁCTICAS */}
+        <section className={styles.section}>
+          <motion.h2
+            className={styles.subtitle}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            Buenas prácticas para optimizar el proceso de cobro ante ADRES y
+            reducir devoluciones
+          </motion.h2>
+
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.15 }}
+            viewport={{ once: true }}
+          >
+            Más allá de presentar correctamente una reclamación, las IPS,
+            hospitales y clínicas necesitan implementar procesos internos que
+            permitan disminuir los tiempos de radicación, fortalecer el control
+            documental y realizar un seguimiento permanente de cada expediente.
+            Una gestión organizada contribuye a reducir observaciones, evitar
+            reprocesos y mejorar la recuperación de los recursos provenientes de
+            ADRES.
+          </motion.p>
+
+          <div className={styles.infoGrid}>
+            <div>
+              <h4>✔ Estandarizar los procesos internos</h4>
+
+              <p>
+                Contar con procedimientos claramente definidos facilita la
+                preparación, revisión y radicación de las reclamaciones,
+                reduciendo errores administrativos y aumentando la eficiencia
+                operativa.
+              </p>
+            </div>
+
+            <div>
+              <h4>✔ Verificar la documentación antes de radicar</h4>
+
+              <p>
+                Una validación previa de soportes clínicos, facturación y anexos
+                permite identificar inconsistencias antes de presentar la
+                reclamación ante ADRES.
+              </p>
+            </div>
+
+            <div>
+              <h4>✔ Mantener trazabilidad de cada expediente</h4>
+
+              <p>
+                Registrar cada etapa del proceso facilita responder
+                requerimientos, conocer el estado de las reclamaciones y
+                controlar los tiempos de gestión.
+              </p>
+            </div>
+
+            <div>
+              <h4>✔ Capacitar permanentemente al personal</h4>
+
+              <p>
+                Los cambios normativos y operativos hacen necesario actualizar
+                de forma constante al equipo encargado de facturación, auditoría
+                y cartera para disminuir errores repetitivos.
+              </p>
+            </div>
+
+            <div>
+              <h4>✔ Realizar seguimiento continuo</h4>
+
+              <p>
+                Supervisar periódicamente las reclamaciones radicadas permite
+                responder oportunamente a observaciones, requerimientos o
+                devoluciones emitidas durante el proceso.
+              </p>
+            </div>
+
+            <div>
+              <h4>✔ Analizar indicadores de gestión</h4>
+
+              <p>
+                Medir tiempos de respuesta, porcentaje de devoluciones,
+                reclamaciones aprobadas y recursos recuperados ayuda a
+                identificar oportunidades de mejora y fortalecer la
+                sostenibilidad financiera de la institución.
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.highlightBox}>
+            Una estrategia integral de gestión documental, auditoría preventiva,
+            seguimiento permanente y mejora continua puede incrementar la
+            eficiencia de las reclamaciones presentadas ante ADRES y fortalecer
+            el flujo de caja de las instituciones prestadoras de servicios de
+            salud.
           </div>
         </section>
 
@@ -295,20 +673,32 @@ export default function CobroAdresContent() {
 
         {/* CTA */}
         <section id="contacto" className={styles.cta}>
-          <div className={styles.ctaContent}>
+          <motion.div
+            className={styles.ctaContent}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             <h2 className={styles.ctaTitle}>
-              Optimiza tus cobros ante ADRES y reduce devoluciones
+              Optimice el proceso de cobro ante ADRES y fortalezca el flujo de
+              caja de su institución
             </h2>
 
             <p className={styles.ctaText}>
-              Ayudamos a IPS y clínicas en Colombia a mejorar procesos de
-              radicación, auditoría y recuperación de recursos ante ADRES con
-              enfoque técnico y jurídico especializado.
+              Si su IPS, clínica u hospital presenta reclamaciones pendientes,
+              devoluciones frecuentes, inconsistencias documentales o
+              dificultades para recuperar recursos ante ADRES, contar con una
+              estrategia integral puede marcar una diferencia significativa en
+              la eficiencia administrativa y la sostenibilidad financiera. Un
+              proceso bien estructurado ayuda a reducir reprocesos, mejorar la
+              trazabilidad documental y aumentar las probabilidades de
+              recuperación de los recursos reconocibles.
             </p>
 
             <div className={styles.actions}>
-              <a href="/" className={styles.primary}>
-                Solicitar asesoría
+              <a href="/contacto" className={styles.primary}>
+                Solicitar orientación especializada
               </a>
 
               <a
@@ -317,10 +707,10 @@ export default function CobroAdresContent() {
                 rel="noopener noreferrer"
                 className={styles.secondary}
               >
-                Hablar por WhatsApp
+                Hablar con un especialista
               </a>
             </div>
-          </div>
+          </motion.div>
         </section>
       </main>
     </>
