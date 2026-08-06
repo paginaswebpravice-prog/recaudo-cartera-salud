@@ -2,19 +2,25 @@ import CausasRechazoFacturasMedicas from "./CausasRechazoFacturasMedicas";
 
 export const metadata = {
   title:
-    "Las 10 principales causas de rechazo de facturas médicas en Colombia | Guía para IPS y clínicas",
+    "10 causas de rechazo de facturas médicas en Colombia (y cómo evitarlas) | Guía para IPS, clínicas y hospitales",
+
   description:
-    "Conozca las principales causas de rechazo de facturas médicas en Colombia y cómo prevenir devoluciones, glosas y retrasos en el recaudo de cartera de IPS y clínicas.",
+    "Descubra las 10 principales causas de rechazo de facturas médicas por parte de las EPS, cómo prevenir glosas, devoluciones y retrasos en los pagos. Guía completa para IPS, clínicas y hospitales en Colombia.",
+
   alternates: {
     canonical:
       "https://recaudocarteraipsyeps.com/Blog/causas-rechazo-facturas-medicas",
   },
+
   openGraph: {
     title:
-      "Las 10 principales causas de rechazo de facturas médicas en Colombia",
+      "10 causas de rechazo de facturas médicas en Colombia (Guía completa para IPS)",
+
     description:
-      "Errores frecuentes que generan devoluciones, glosas y retrasos en los pagos de EPS a IPS y clínicas.",
+      "Aprenda cuáles son los errores que más rechazan las EPS y cómo reducir devoluciones, glosas y cartera vencida mediante una correcta facturación médica.",
+
     type: "article",
+
     url: "https://recaudocarteraipsyeps.com/Blog/causas-rechazo-facturas-medicas",
   },
 };
@@ -24,23 +30,52 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Las 10 principales causas de rechazo de facturas médicas en Colombia",
+      "10 causas de rechazo de facturas médicas en Colombia: cómo evitarlas y reducir glosas en IPS, clínicas y hospitales",
     description:
-      "Guía para IPS, clínicas y hospitales sobre las causas más frecuentes de rechazo de cuentas médicas y estrategias para prevenirlas.",
+      "Guía completa para IPS, clínicas y hospitales sobre las principales causas de rechazo de facturas médicas, devoluciones, glosas y estrategias para mejorar el recaudo de cartera.",
     inLanguage: "es-CO",
     mainEntityOfPage:
       "https://recaudocarteraipsyeps.com/Blog/causas-rechazo-facturas-medicas",
     keywords: [
       "rechazo de facturas médicas",
+
+      "facturas médicas rechazadas",
+
       "glosas médicas",
+
+      "causas de glosas",
+
+      "devoluciones de facturas",
+
       "facturación médica Colombia",
-      "IPS Colombia",
-      "devoluciones de cuentas médicas",
-      "auditoría médica",
+
+      "errores de facturación",
+
       "cartera EPS",
-      "recaudo en salud",
-      "errores de facturación médica",
-      "clínicas y hospitales Colombia",
+
+      "recaudo IPS",
+
+      "cómo evitar glosas",
+
+      "cómo evitar rechazo de facturas",
+
+      "auditoría médica",
+
+      "auditoría de cuentas",
+
+      "IPS Colombia",
+
+      "hospitales Colombia",
+
+      "clínicas Colombia",
+
+      "recuperación de cartera",
+
+      "cartera sector salud",
+
+      "facturación hospitalaria",
+
+      "errores administrativos IPS",
     ],
     author: {
       "@type": "Organization",
