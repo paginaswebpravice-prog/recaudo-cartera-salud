@@ -1,52 +1,85 @@
+import type { Metadata } from "next";
 import DisminuirGlosasIPS from "./DisminuirGlosasIPS";
 
-export const metadata = {
-  title:
-    "Cómo disminuir el porcentaje de glosas en una IPS en Colombia | Estrategias para mejorar el recaudo",
+const canonicalUrl =
+  "https://recaudocarteraipsyeps.com/Blog/disminuir-glosas-ips";
+
+export const metadata: Metadata = {
+  title: "Cómo reducir las glosas en una IPS en Colombia: 10 estrategias",
   description:
-    "Aprenda cómo disminuir el porcentaje de glosas médicas en IPS, clínicas y hospitales en Colombia. Indicadores, auditoría preventiva y estrategias para mejorar la facturación.",
+    "¿Cómo reducir las glosas en una IPS? Conozca 10 estrategias para mejorar la facturación, prevenir errores, responder glosas y acelerar el recaudo de cartera frente a las EPS.",
   alternates: {
-    canonical: "https://recaudocarteraipsyeps.com/Blog/disminuir-glosas-ips",
+    canonical: canonicalUrl,
   },
   openGraph: {
-    title: "Cómo disminuir el porcentaje de glosas en una IPS en Colombia",
+    title: "Cómo reducir las glosas en una IPS en Colombia: 10 estrategias",
     description:
-      "Estrategias para reducir glosas médicas, mejorar la facturación y fortalecer el flujo de caja de las IPS.",
+      "Guía práctica para reducir glosas médicas, mejorar la facturación y fortalecer el recaudo de cartera de IPS, clínicas y hospitales.",
     type: "article",
-    url: "https://recaudocarteraipsyeps.com/Blog/disminuir-glosas-ips",
+    url: canonicalUrl,
+    siteName: "Recaudo Cartera IPS y EPS",
+    locale: "es_CO",
+    images: [
+      {
+        url: "https://recaudocarteraipsyeps.com/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Cómo reducir las glosas en una IPS en Colombia",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cómo reducir las glosas en una IPS en Colombia: 10 estrategias",
+    description:
+      "Estrategias para prevenir glosas, mejorar la facturación y recuperar cartera de las EPS.",
+    images: ["https://recaudocarteraipsyeps.com/logo_pravice.png"],
   },
 };
 
-export default function Page() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: "Cómo disminuir el porcentaje de glosas en una IPS en Colombia",
-    description:
-      "Guía práctica para IPS, clínicas y hospitales sobre reducción de glosas, auditoría preventiva e indicadores de calidad en facturación médica.",
-    inLanguage: "es-CO",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/disminuir-glosas-ips",
-    keywords: [
-      "glosas médicas",
-      "disminuir glosas IPS",
-      "facturación médica Colombia",
-      "glosas EPS",
-      "auditoría de cuentas médicas",
-      "cartera EPS",
-      "IPS Colombia",
-      "gestión de glosas",
-    ],
-    author: {
-      "@type": "Organization",
-      name: "PRAVICE",
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": canonicalUrl,
+  },
+  headline: "Cómo reducir las glosas en una IPS en Colombia: 10 estrategias",
+  description:
+    "Guía práctica para IPS, clínicas y hospitales sobre prevención de glosas, auditoría de cuentas médicas, facturación y recuperación de cartera.",
+  image: "https://recaudocarteraipsyeps.com/logo_pravice.png",
+  author: {
+    "@type": "Organization",
+    name: "PRAVICE",
+    url: "https://pravice.co",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "PRAVICE",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://recaudocarteraipsyeps.com/logo_pravice.png",
     },
-    publisher: {
-      "@type": "Organization",
-      name: "PRAVICE",
-    },
-  };
+  },
+  datePublished: "2026-05-12",
+  dateModified: "2026-05-12",
+  inLanguage: "es-CO",
+  articleSection: "Gestión de glosas y cartera en salud",
+  keywords: [
+    "cómo reducir glosas en una IPS",
+    "disminuir glosas IPS",
+    "porcentaje de glosas",
+    "glosas médicas",
+    "glosas EPS",
+    "gestión de glosas",
+    "auditoría de cuentas médicas",
+    "facturación médica Colombia",
+    "recuperación de cartera IPS",
+    "cartera EPS",
+  ],
+};
 
+export default function Page() {
   return (
     <>
       <script

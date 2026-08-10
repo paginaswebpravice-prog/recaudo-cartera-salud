@@ -6,18 +6,20 @@ const canonicalUrl =
 
 export const metadata: Metadata = {
   title:
-    "Cobro prejurídico vs cobro jurídico a EPS: diferencias y ventajas | Guía 2026",
+    "Cobro prejurídico vs jurídico a EPS: ¿cuál conviene para recuperar cartera?",
+
   description:
-    "Conozca las diferencias entre el cobro prejurídico y el cobro jurídico a EPS en Colombia, sus ventajas y cuándo aplicar cada estrategia.",
+    "Cobro prejurídico vs jurídico a EPS en Colombia: conozca sus diferencias, ventajas, costos, riesgos y cuándo conviene escalar la recuperación de cartera de una IPS.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Cobro prejurídico vs cobro jurídico a EPS: diferencias y ventajas",
+    title:
+      "Cobro prejurídico vs jurídico a EPS: ¿cuál conviene para recuperar cartera?",
     description:
-      "Aprenda cuándo usar cobro prejurídico o jurídico para recuperar cartera EPS en Colombia.",
+      "Conozca las diferencias entre cobro prejurídico y jurídico a EPS, cuándo utilizar cada estrategia y cómo proteger la cartera vencida de su IPS o clínica.",
     url: canonicalUrl,
     siteName: "Recaudo Cartera IPS y EPS",
     locale: "es_CO",
@@ -34,9 +36,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Cobro prejurídico vs cobro jurídico a EPS: diferencias y ventajas",
+    title:
+      "Cobro prejurídico vs jurídico a EPS: ¿cuál conviene para recuperar cartera?",
     description:
-      "Diferencias entre cobro prejurídico y jurídico para recuperar cartera EPS.",
+      "Diferencias, ventajas y momento adecuado para pasar del cobro prejurídico al jurídico en la recuperación de cartera de IPS y clínicas.",
     images: ["https://recaudocarteraipsyeps.com/logo.png"],
   },
 };
@@ -44,19 +47,26 @@ export const metadata: Metadata = {
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
+
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": canonicalUrl,
   },
-  headline: "Cobro prejurídico vs cobro jurídico a EPS: diferencias y ventajas",
+
+  headline:
+    "Cobro prejurídico vs jurídico a EPS: ¿cuál conviene para recuperar cartera?",
+
   description:
-    "Guía completa sobre las diferencias entre cobro prejurídico y cobro jurídico a EPS en Colombia.",
+    "Guía práctica sobre las diferencias entre cobro prejurídico y jurídico a EPS en Colombia, sus ventajas, riesgos y el momento adecuado para escalar la recuperación de cartera.",
+
   image: "https://recaudocarteraipsyeps.com/logo.png",
+
   author: {
     "@type": "Organization",
     name: "Recaudo Cartera IPS y EPS",
     url: "https://recaudocarteraipsyeps.com",
   },
+
   publisher: {
     "@type": "Organization",
     name: "Recaudo Cartera IPS y EPS",
@@ -65,18 +75,25 @@ const schemaData = {
       url: "https://recaudocarteraipsyeps.com/logo.png",
     },
   },
+
   datePublished: "2026-05-12",
-  dateModified: "2026-05-12",
+  dateModified: "2026-08-10",
+
   inLanguage: "es-CO",
+
   articleSection: "Cobro de cartera EPS",
+
   keywords: [
     "cobro prejurídico EPS",
     "cobro jurídico EPS",
-    "cartera EPS Colombia",
+    "cobro de cartera EPS",
+    "cartera vencida EPS",
+    "recuperación de cartera IPS",
+    "cobranza EPS Colombia",
     "demanda contra EPS",
-    "recuperación cartera salud",
-    "IPS cartera vencida",
-    "cobranza EPS",
+    "cobro judicial EPS",
+    "conciliación de cartera EPS",
+    "cartera de clínicas",
   ],
 };
 

@@ -2,17 +2,17 @@ import CartaCobroEPS from "./CartaCobroEPS";
 
 export const metadata = {
   title:
-    "Carta de cobro de cartera a EPS en Colombia | Modelo profesional editable para IPS y clínicas (guía legal)",
+    "Carta de cobro a EPS: modelo para recuperar cartera de IPS | Colombia",
   description:
-    "Descarga modelo de carta para cobro de cartera a EPS en Colombia. Guía profesional para IPS, clínicas y proveedores de salud en Bogotá y todo el país. Mejora tu recaudo prejurídico y reduce la mora.",
+    "Modelo de carta de cobro a EPS para IPS y clínicas en Colombia. Aprende qué incluir, qué anexar y cómo hacer seguimiento a la cartera vencida.",
   alternates: {
     canonical: "https://recaudocarteraipsyeps.com/Blog/carta-cobro-cartera-eps",
   },
   openGraph: {
     title:
-      "Carta de cobro de cartera a EPS en Colombia | Modelo editable para IPS y clínicas",
+      "Carta de cobro a EPS: modelo para recuperar cartera de IPS en Colombia",
     description:
-      "Modelo profesional de carta para cobro de cartera a EPS en Colombia para IPS y clínicas.",
+      "Guía y modelo de carta de cobro para IPS, clínicas y proveedores de salud que necesitan gestionar cartera vencida frente a EPS.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/carta-cobro-cartera-eps",
   },
@@ -23,12 +23,24 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Carta de cobro de cartera a EPS en Colombia | Modelo profesional editable para IPS y clínicas",
+      "Carta de cobro a EPS en Colombia: modelo para recuperar cartera de IPS",
     description:
-      "Guía práctica y modelo editable de carta para cobro de cartera a EPS en Colombia para IPS, clínicas y proveedores de salud.",
+      "Guía práctica para elaborar una carta de cobro a una EPS, organizar los soportes de cartera vencida y fortalecer el cobro prejurídico de IPS, clínicas y proveedores de salud en Colombia.",
     inLanguage: "es-CO",
     mainEntityOfPage:
       "https://recaudocarteraipsyeps.com/Blog/carta-cobro-cartera-eps",
+    keywords: [
+      "carta de cobro a EPS",
+      "modelo carta cobro EPS",
+      "cobro de cartera a EPS",
+      "cartera vencida IPS",
+      "cobro prejurídico EPS",
+      "cobro cartera IPS",
+      "modelo requerimiento de pago EPS",
+      "recuperación de cartera IPS",
+      "cobro a EPS Colombia",
+      "carta cobro cartera IPS",
+    ],
     author: {
       "@type": "Organization",
       name: "PRAVICE",
@@ -41,7 +53,6 @@ export default function Page() {
 
   return (
     <>
-      {/* SCHEMA SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -49,7 +60,6 @@ export default function Page() {
         }}
       />
 
-      {/* CONTENT */}
       <CartaCobroEPS />
     </>
   );

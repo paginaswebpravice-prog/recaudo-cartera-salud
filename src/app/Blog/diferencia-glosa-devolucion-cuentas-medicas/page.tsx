@@ -1,47 +1,70 @@
+import type { Metadata } from "next";
 import DiferenciaGlosaDevolucionCuentasMedicas from "./DiferenciaGlosaDevolucionCuentasMedicas";
 
-export const metadata = {
+const canonicalUrl =
+  "https://recaudocarteraipsyeps.com/Blog/diferencia-glosa-devolucion-cuentas-medicas";
+
+export const metadata: Metadata = {
   title:
-    "Diferencia entre glosa y devolución en cuentas médicas en Colombia | Guía para IPS y clínicas",
+    "Glosa vs. devolución en cuentas médicas: diferencias y qué hacer | Colombia",
   description:
-    "Aprenda la diferencia entre glosas y devoluciones en cuentas médicas en Colombia y cómo reducir riesgos financieros y cartera vencida en IPS y clínicas.",
+    "¿Glosa o devolución? Conozca las diferencias en cuentas médicas en Colombia, sus causas, efectos y cómo responder para proteger la cartera de IPS y clínicas.",
   alternates: {
-    canonical:
-      "https://recaudocarteraipsyeps.com/Blog/diferencia-glosa-devolucion-cuentas-medicas",
+    canonical: canonicalUrl,
   },
   openGraph: {
-    title: "Diferencia entre glosa y devolución en cuentas médicas en Colombia",
+    title: "Glosa vs. devolución en cuentas médicas: diferencias y qué hacer",
     description:
-      "Guía práctica para IPS y clínicas sobre glosas, devoluciones y recuperación de cartera en Colombia.",
+      "Guía práctica para IPS y clínicas sobre glosas, devoluciones, respuestas y recuperación de cartera en Colombia.",
     type: "article",
-    url: "https://recaudocarteraipsyeps.com/Blog/diferencia-glosa-devolucion-cuentas-medicas",
+    url: canonicalUrl,
+    siteName: "Recaudo Cartera IPS y EPS",
+    locale: "es_CO",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Glosa vs. devolución en cuentas médicas: diferencias y qué hacer",
+    description:
+      "Conozca cuándo existe una glosa, cuándo procede una devolución y cómo actuar para proteger la cartera de una IPS.",
   },
 };
 
-export default function Page() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline:
-      "Diferencia entre glosa y devolución en cuentas médicas en Colombia",
-    description:
-      "Guía práctica sobre glosas, devoluciones y recuperación de cartera para IPS y prestadores de salud en Colombia.",
-    inLanguage: "es-CO",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/diferencia-glosa-devolucion-cuentas-medicas",
-    author: {
-      "@type": "Organization",
-      name: "PRAVICE",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "PRAVICE",
-    },
-  };
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Glosa vs. devolución en cuentas médicas: diferencias y qué hacer",
+  description:
+    "Guía práctica para IPS, clínicas y prestadores de salud sobre las diferencias entre glosas y devoluciones de cuentas médicas en Colombia.",
+  inLanguage: "es-CO",
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": canonicalUrl,
+  },
+  author: {
+    "@type": "Organization",
+    name: "PRAVICE",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "PRAVICE",
+  },
+  articleSection: "Gestión de cartera en salud",
+  keywords: [
+    "diferencia entre glosa y devolución",
+    "glosa y devolución cuentas médicas",
+    "qué es una glosa médica",
+    "qué es una devolución de factura médica",
+    "glosas médicas Colombia",
+    "devoluciones cuentas médicas",
+    "respuesta a glosas",
+    "cartera IPS EPS",
+    "recuperación de cartera en salud",
+  ],
+};
 
+export default function Page() {
   return (
     <>
-      {/* SCHEMA SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -49,7 +72,6 @@ export default function Page() {
         }}
       />
 
-      {/* CONTENT */}
       <DiferenciaGlosaDevolucionCuentasMedicas />
     </>
   );

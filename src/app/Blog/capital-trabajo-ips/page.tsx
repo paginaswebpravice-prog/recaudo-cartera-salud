@@ -1,20 +1,21 @@
 import CapitalTrabajoIPS from "./CapitalTrabajoIPS";
 
+const canonicalUrl =
+  "https://recaudocarteraipsyeps.com/Blog/capital-trabajo-ips";
+
 export const metadata = {
-  title:
-    "Capital de trabajo para IPS: qué es y cómo administrarlo correctamente | Guía financiera para IPS en Colombia",
+  title: "Capital de trabajo en IPS: cómo calcularlo y mejorar la liquidez",
   description:
-    "Aprenda qué es el capital de trabajo en una IPS, cómo calcularlo y qué estrategias implementar para mejorar la liquidez y estabilidad financiera en Colombia.",
+    "Conozca qué es el capital de trabajo en una IPS, cómo calcularlo y qué hacer para mejorar la liquidez, controlar la cartera y fortalecer el flujo de caja.",
   alternates: {
-    canonical: "https://recaudocarteraipsyeps.com/Blog/capital-trabajo-ips",
+    canonical: canonicalUrl,
   },
   openGraph: {
-    title:
-      "Capital de trabajo para IPS: qué es y cómo administrarlo correctamente",
+    title: "Capital de trabajo en IPS: cómo calcularlo y mejorar la liquidez",
     description:
-      "Guía práctica para fortalecer la liquidez, controlar la cartera y mejorar la estabilidad financiera de IPS y clínicas en Colombia.",
+      "Guía práctica para IPS, clínicas y hospitales sobre capital de trabajo, liquidez, cartera vencida y flujo de caja en Colombia.",
     type: "article",
-    url: "https://recaudocarteraipsyeps.com/Blog/capital-trabajo-ips",
+    url: canonicalUrl,
   },
 };
 
@@ -23,12 +24,14 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Capital de trabajo para IPS: qué es y cómo administrarlo correctamente",
+      "Capital de trabajo en IPS: cómo calcularlo y mejorar la liquidez",
     description:
-      "Buenas prácticas para administrar el capital de trabajo, mejorar la liquidez y fortalecer la sostenibilidad financiera de IPS y clínicas en Colombia.",
+      "Guía práctica para entender, calcular y administrar el capital de trabajo de una IPS, con estrategias para mejorar la liquidez, controlar la cartera y fortalecer el flujo de caja.",
     inLanguage: "es-CO",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/capital-trabajo-ips",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
     author: {
       "@type": "Organization",
       name: "PRAVICE",
@@ -39,13 +42,15 @@ export default function Page() {
     },
     keywords: [
       "capital de trabajo IPS",
-      "liquidez IPS Colombia",
-      "gestión financiera IPS",
-      "flujo de caja IPS",
-      "cartera vencida salud",
-      "administración financiera clínicas",
+      "capital de trabajo en clínicas",
       "capital de trabajo hospitales",
-      "recuperación cartera EPS",
+      "cómo calcular capital de trabajo",
+      "liquidez IPS Colombia",
+      "flujo de caja IPS",
+      "gestión financiera IPS",
+      "cartera vencida EPS",
+      "recuperación de cartera IPS",
+      "administración financiera clínicas",
     ],
   };
 

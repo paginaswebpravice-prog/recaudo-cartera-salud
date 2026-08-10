@@ -6,9 +6,10 @@ const canonicalUrl =
 
 export const metadata: Metadata = {
   title:
-    "Cuánto tarda una demanda contra una EPS por cartera vencida en Colombia | Guía 2026",
+    "¿Cuánto tarda una demanda contra una EPS? Tiempos y etapas | Colombia 2026",
+
   description:
-    "Conozca cuánto puede tardar una demanda contra una EPS en Colombia por cartera vencida, qué factores afectan el proceso y cómo acelerar la recuperación de cartera en salud.",
+    "¿Cuánto tarda una demanda contra una EPS por cartera vencida? Conozca las etapas del proceso, qué puede retrasarlo y cómo preparar el cobro para recuperar cartera en salud.",
 
   alternates: {
     canonical: canonicalUrl,
@@ -16,16 +17,19 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Cuánto tarda una demanda contra una EPS por cartera vencida en Colombia",
+      "¿Cuánto tarda una demanda contra una EPS? Tiempos y etapas | Colombia 2026",
+
     description:
-      "Guía jurídica sobre tiempos, etapas y factores que afectan las demandas contra EPS por cartera vencida en Colombia.",
+      "Conozca cuánto puede tardar una demanda contra una EPS por cartera vencida, cuáles son sus etapas y qué factores pueden acelerar o retrasar el recaudo.",
+
     url: canonicalUrl,
     siteName: "Recaudo Cartera IPS y EPS",
     locale: "es_CO",
     type: "article",
+
     images: [
       {
-        url: "https://recaudocarteraipsyeps.com/logo.png",
+        url: "https://recaudocarteraipsyeps.com/logo_pravice.png",
         width: 1200,
         height: 630,
         alt: "Demanda contra EPS por cartera vencida en Colombia",
@@ -35,52 +39,66 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Cuánto tarda una demanda contra una EPS por cartera vencida en Colombia",
+
+    title: "¿Cuánto tarda una demanda contra una EPS? | Colombia 2026",
+
     description:
-      "Conozca cuánto puede durar una demanda contra EPS y cómo acelerar el recaudo.",
-    images: ["https://recaudocarteraipsyeps.com/logo.png"],
+      "Etapas, tiempos, posibles retrasos y recomendaciones para recuperar cartera vencida de EPS mediante acciones de cobro.",
+
+    images: ["https://recaudocarteraipsyeps.com/logo_pravice.png"],
   },
 };
 
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
+
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": canonicalUrl,
   },
+
   headline:
-    "Cuánto tarda una demanda contra una EPS por cartera vencida en Colombia",
+    "¿Cuánto tarda una demanda contra una EPS por cartera vencida en Colombia?",
+
   description:
-    "Conozca cuánto puede tardar una demanda contra una EPS en Colombia por cartera vencida, qué factores afectan el proceso y cómo acelerar la recuperación de cartera en salud.",
-  image: "https://recaudocarteraipsyeps.com/logo.png",
+    "Guía práctica sobre cuánto puede tardar una demanda contra una EPS por cartera vencida en Colombia, sus principales etapas, factores que afectan el proceso y estrategias para preparar adecuadamente la recuperación de cartera.",
+
+  image: "https://recaudocarteraipsyeps.com/logo_pravice.png",
+
   author: {
     "@type": "Organization",
     name: "Recaudo Cartera IPS y EPS",
     url: "https://recaudocarteraipsyeps.com",
   },
+
   publisher: {
     "@type": "Organization",
     name: "Recaudo Cartera IPS y EPS",
+    url: "https://recaudocarteraipsyeps.com",
     logo: {
       "@type": "ImageObject",
-      url: "https://recaudocarteraipsyeps.com/logo.png",
+      url: "https://recaudocarteraipsyeps.com/logo_pravice.png",
     },
   },
+
   datePublished: "2026-05-12",
-  dateModified: "2026-05-12",
+  dateModified: "2026-08-10",
+
   inLanguage: "es-CO",
-  articleSection: "Recuperación de Cartera en Salud",
+
+  articleSection: "Recuperación de cartera en salud",
+
   keywords: [
-    "cuánto tarda demanda contra EPS",
-    "demanda EPS cartera vencida",
-    "proceso ejecutivo EPS Colombia",
-    "demanda IPS EPS",
-    "cartera EPS Colombia",
-    "recuperación cartera salud",
-    "demanda ejecutiva EPS",
-    "cobro cartera EPS",
+    "cuánto tarda una demanda contra una EPS",
+    "demanda contra EPS por cartera vencida",
+    "proceso ejecutivo contra EPS",
+    "demanda IPS contra EPS",
+    "cartera vencida EPS",
+    "cobro de cartera EPS",
+    "recuperación de cartera en salud",
+    "demanda ejecutiva EPS Colombia",
+    "cómo cobrar cartera a una EPS",
   ],
 };
 

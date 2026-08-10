@@ -1,57 +1,95 @@
+import type { Metadata } from "next";
 import DiferenciasCobroEpsAdresEntes from "./DiferenciasCobroEpsAdresEntes";
 
-export const metadata = {
-  title:
-    "Diferencias entre cobro a EPS, ADRES y entidades territoriales en Colombia | Guía para IPS",
+const canonicalUrl =
+  "https://recaudocarteraipsyeps.com/Blog/diferencias-cobro-eps-adres-entes";
+
+export const metadata: Metadata = {
+  title: "¿A quién cobrar: EPS, ADRES o entidad territorial? | Guía 2026",
   description:
-    "Aprenda cuándo corresponde reclamar pagos a EPS, ADRES o entidades territoriales. Guía práctica para IPS, clínicas y hospitales en Colombia.",
+    "Conozca quién debe reconocer y pagar una cuenta de salud: EPS, ADRES o entidad territorial. Guía práctica para IPS sobre cartera, reclamaciones y cobro en Colombia.",
+  keywords: [
+    "cobro a EPS",
+    "cobro a ADRES",
+    "cobro entidades territoriales",
+    "quién paga una cuenta médica",
+    "cartera EPS Colombia",
+    "recuperación de cartera IPS",
+    "reclamaciones ADRES",
+    "cartera sector salud",
+    "cobro IPS Colombia",
+    "entidades territoriales salud",
+    "cuentas médicas Colombia",
+    "recuperación cartera salud",
+  ],
   alternates: {
-    canonical:
-      "https://recaudocarteraipsyeps.com/Blog/diferencias-cobro-eps-adres-entes",
+    canonical: canonicalUrl,
   },
   openGraph: {
-    title:
-      "Diferencias entre cobro a EPS, ADRES y entidades territoriales en Colombia",
+    title: "¿A quién cobrar: EPS, ADRES o entidad territorial? Guía para IPS",
     description:
-      "Conozca quién debe pagar los servicios de salud y cómo recuperar cartera ante EPS, ADRES y entidades territoriales.",
+      "Aprenda a identificar quién debe responder por una cuenta de salud y cómo orientar correctamente el cobro ante EPS, ADRES o entidades territoriales.",
     type: "article",
-    url: "https://recaudocarteraipsyeps.com/Blog/diferencias-cobro-eps-adres-entes",
+    url: canonicalUrl,
+    siteName: "Recaudo Cartera IPS y EPS",
+    locale: "es_CO",
+    images: [
+      {
+        url: "https://recaudocarteraipsyeps.com/logo_pravice.png",
+        width: 1200,
+        height: 630,
+        alt: "Cobro a EPS, ADRES o entidades territoriales en Colombia",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "¿A quién cobrar: EPS, ADRES o entidad territorial?",
+    description:
+      "Guía para IPS sobre diferencias entre cobrar a una EPS, reclamar ante ADRES o gestionar obligaciones de entidades territoriales.",
+    images: ["https://recaudocarteraipsyeps.com/logo_pravice.png"],
   },
 };
 
-export default function Page() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline:
-      "Diferencias entre cobro a EPS, ADRES y entidades territoriales en Colombia",
-    description:
-      "Guía para IPS, clínicas y hospitales sobre las diferencias entre reclamaciones dirigidas a EPS, ADRES y entidades territoriales.",
-    inLanguage: "es-CO",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/diferencias-cobro-eps-adres-entes",
-    author: {
-      "@type": "Organization",
-      name: "PRAVICE",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "PRAVICE",
-    },
-    keywords: [
-      "cobro a EPS",
-      "ADRES Colombia",
-      "entidades territoriales salud",
-      "recuperación de cartera IPS",
-      "cartera sector salud",
-      "cobro entidades territoriales",
-      "reclamaciones ADRES",
-      "IPS Colombia",
-      "hospitales Colombia",
-      "cartera EPS",
-    ],
-  };
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline:
+    "¿A quién cobrar: EPS, ADRES o entidad territorial? Guía para IPS en Colombia",
+  description:
+    "Guía práctica para IPS, clínicas y hospitales sobre cómo identificar si una cuenta de servicios de salud debe gestionarse ante una EPS, ADRES o una entidad territorial.",
+  inLanguage: "es-CO",
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": canonicalUrl,
+  },
+  image: {
+    "@type": "ImageObject",
+    url: "https://recaudocarteraipsyeps.com/logo_pravice.png",
+    width: 1200,
+    height: 630,
+  },
+  author: {
+    "@type": "Organization",
+    name: "PRAVICE",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "PRAVICE",
+  },
+  articleSection: "Recuperación de cartera en salud",
+  keywords: [
+    "cobro a EPS",
+    "cobro a ADRES",
+    "entidades territoriales",
+    "recuperación de cartera IPS",
+    "cartera EPS",
+    "reclamaciones ADRES",
+    "cuentas médicas",
+  ],
+};
 
+export default function Page() {
   return (
     <>
       <script

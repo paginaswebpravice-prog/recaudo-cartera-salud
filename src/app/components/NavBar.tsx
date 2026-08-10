@@ -48,6 +48,7 @@ export default function NavBar() {
                 href="https://co.linkedin.com/company/praviceabogadosespecializados"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Ir a Linkedin"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
@@ -55,6 +56,7 @@ export default function NavBar() {
                 href="https://www.facebook.com/praviceabogadosespecializados"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Ir a Facebook"
               >
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
@@ -62,6 +64,7 @@ export default function NavBar() {
                 href="https://www.instagram.com/pravice_abogados/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Ir a Instagram"
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
@@ -87,6 +90,10 @@ export default function NavBar() {
             <button
               className={styles.hamburger}
               onClick={() => setMenuOpen(!menuOpen)}
+              aria-controls="menu"
+              aria-expanded={menuOpen}
+              aria-label="Abrir menú"
+              type="button"
             >
               <span className={styles.bar}></span>
               <span className={styles.bar}></span>
@@ -95,6 +102,7 @@ export default function NavBar() {
 
             {/* MENU */}
             <nav
+              id="menu"
               className={`${styles.menu} ${menuOpen ? styles.menuOpen : ""}`}
             >
               <a href="/" onClick={() => setMenuOpen(false)}>
