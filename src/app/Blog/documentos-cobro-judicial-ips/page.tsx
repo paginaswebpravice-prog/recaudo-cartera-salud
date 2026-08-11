@@ -6,76 +6,94 @@ const canonicalUrl =
 
 export const metadata: Metadata = {
   title:
-    "Documentos que necesita una IPS para cobrar cartera judicialmente | Guía 2026",
+    "Documentos para cobrar cartera a una EPS por vía judicial | Guía IPS 2026",
+
   description:
-    "Conozca qué documentos necesita una IPS para iniciar cobro judicial de cartera en Colombia. Requisitos clave para demandar EPS y recuperar pagos.",
+    "¿Qué documentos necesita una IPS para cobrar una cartera vencida a una EPS? Conozca los soportes, facturas, radicaciones, glosas y documentos jurídicos que conviene revisar antes de iniciar un cobro judicial en Colombia.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Documentos que necesita una IPS para cobrar cartera judicialmente",
+    title:
+      "Documentos para cobrar cartera a una EPS por vía judicial | Guía IPS 2026",
     description:
-      "Guía completa sobre los documentos y soportes necesarios para recuperar cartera EPS mediante procesos judiciales en Colombia.",
+      "Guía práctica para IPS, clínicas y hospitales sobre los documentos y soportes que deben organizar antes de iniciar un cobro judicial de cartera contra una EPS.",
     url: canonicalUrl,
     siteName: "Recaudo Cartera IPS y EPS",
     locale: "es_CO",
     type: "article",
     images: [
       {
-        url: "https://recaudocarteraipsyeps.com/logo.png",
+        url: "https://recaudocarteraipsyeps.com/logo_pravice.png",
         width: 1200,
         height: 630,
-        alt: "Documentos para cobro judicial IPS",
+        alt: "Documentos para cobro judicial de cartera de IPS a EPS",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Documentos que necesita una IPS para cobrar cartera judicialmente",
+    title: "Documentos para cobrar cartera a una EPS por vía judicial",
     description:
-      "Requisitos y soportes necesarios para iniciar cobro judicial contra EPS en Colombia.",
-    images: ["https://recaudocarteraipsyeps.com/logo.png"],
+      "Conozca qué documentos y soportes conviene revisar antes de iniciar el cobro judicial de cartera de una IPS contra una EPS en Colombia.",
+    images: ["https://recaudocarteraipsyeps.com/logo_pravice.png"],
   },
 };
 
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
+
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": canonicalUrl,
   },
-  headline: "Documentos que necesita una IPS para cobrar cartera judicialmente",
+
+  headline:
+    "Documentos para cobrar cartera a una EPS por vía judicial | Guía IPS 2026",
+
   description:
-    "Conozca qué documentos necesita una IPS para iniciar cobro judicial de cartera en Colombia.",
-  image: "https://recaudocarteraipsyeps.com/logo.png",
+    "Guía práctica para IPS, clínicas y hospitales sobre la documentación que conviene organizar antes de iniciar un cobro judicial de cartera contra una EPS en Colombia.",
+
+  image: "https://recaudocarteraipsyeps.com/logo_pravice.png",
+
   author: {
     "@type": "Organization",
     name: "Recaudo Cartera IPS y EPS",
   },
+
   publisher: {
     "@type": "Organization",
     name: "Recaudo Cartera IPS y EPS",
     logo: {
       "@type": "ImageObject",
-      url: "https://recaudocarteraipsyeps.com/logo.png",
+      url: "https://recaudocarteraipsyeps.com/logo_pravice.png",
     },
   },
+
   datePublished: "2026-05-13",
-  dateModified: "2026-05-13",
+  dateModified: "2026-08-11",
+
   inLanguage: "es-CO",
-  articleSection: "Cobro Judicial IPS",
+
+  articleSection: "Cobro Judicial de Cartera IPS",
+
   keywords: [
     "documentos cobro judicial IPS",
-    "demanda EPS documentos",
-    "requisitos cobrar EPS",
-    "cartera judicial IPS",
-    "soportes cartera EPS",
+    "documentos para demandar una EPS",
+    "cobro judicial cartera EPS",
+    "cartera vencida IPS",
+    "cobro de cartera a EPS",
     "proceso ejecutivo EPS",
-    "documentación IPS Colombia",
+    "facturas IPS EPS",
+    "soportes cartera EPS",
+    "radicación facturas EPS",
+    "glosas EPS",
+    "cobro jurídico IPS",
+    "recuperación de cartera IPS",
   ],
 };
 

@@ -2,18 +2,17 @@ import ErroresRadicacionADRES from "./ErroresRadicacionADRES";
 
 export const metadata = {
   title:
-    "Radicación de cuentas ante ADRES: errores frecuentes que generan rechazo | Guía para IPS",
+    "Radicación ante ADRES: 10 errores que pueden causar rechazos | Guía para IPS",
   description:
-    "Conozca los errores más frecuentes en la radicación de cuentas ante ADRES en Colombia y cómo evitar devoluciones, rechazos y retrasos en la recuperación de recursos.",
+    "¿Tu cuenta ante ADRES fue devuelta o rechazada? Conoce 10 errores frecuentes en la radicación de cuentas y cómo prevenir inconsistencias que retrasan la recuperación de recursos.",
   alternates: {
     canonical:
       "https://recaudocarteraipsyeps.com/Blog/errores-radicacion-adres",
   },
   openGraph: {
-    title:
-      "Radicación de cuentas ante ADRES: errores frecuentes que generan rechazo",
+    title: "Radicación ante ADRES: 10 errores que pueden causar rechazos",
     description:
-      "Guía práctica para IPS, hospitales y clínicas sobre devoluciones, rechazos y errores documentales ante ADRES.",
+      "Guía práctica para IPS, clínicas y hospitales sobre errores documentales, administrativos y de facturación que pueden generar devoluciones o rechazos ante ADRES.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/errores-radicacion-adres",
   },
@@ -23,13 +22,14 @@ export default function Page() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline:
-      "Radicación de cuentas ante ADRES: errores frecuentes que generan rechazo",
+    headline: "Radicación ante ADRES: 10 errores que pueden causar rechazos",
     description:
-      "Principales causas de devolución o rechazo de cuentas radicadas ante ADRES en Colombia y recomendaciones para evitarlas.",
+      "Guía práctica para IPS, clínicas y hospitales sobre los errores más frecuentes en la radicación de cuentas ante ADRES y las medidas que pueden ayudar a prevenir devoluciones, rechazos y retrasos en la recuperación de recursos.",
     inLanguage: "es-CO",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/errores-radicacion-adres",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://recaudocarteraipsyeps.com/Blog/errores-radicacion-adres",
+    },
     author: {
       "@type": "Organization",
       name: "PRAVICE",
@@ -40,15 +40,17 @@ export default function Page() {
     },
     keywords: [
       "ADRES",
-      "radicación ADRES",
+      "radicación ante ADRES",
+      "radicación de cuentas ADRES",
       "errores radicación ADRES",
       "rechazo de cuentas ADRES",
       "devoluciones ADRES",
+      "reclamaciones ante ADRES",
       "IPS Colombia",
       "auditoría de cuentas médicas",
-      "cartera salud",
       "facturación médica",
-      "recuperación de recursos salud",
+      "cartera IPS",
+      "recuperación de recursos en salud",
     ],
   };
 

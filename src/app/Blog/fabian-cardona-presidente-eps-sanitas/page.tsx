@@ -1,51 +1,89 @@
+import type { Metadata } from "next";
 import FabianCardonaPresidenteEpsSanitas from "./FabianCardonaPresidenteEpsSanitas";
 
-export const metadata = {
-  title:
-    "Fabián Cardona nuevo presidente de EPS Sanitas en Colombia | Impacto en cartera y pagos a IPS",
+const canonicalUrl =
+  "https://recaudocarteraipsyeps.com/Blog/fabian-cardona-presidente-eps-sanitas";
+
+export const metadata: Metadata = {
+  title: "Fabián Cardona asume en EPS Sanitas: ¿qué cambia para las IPS?",
   description:
-    "Análisis del nombramiento de Fabián Cardona en EPS Sanitas y su impacto en el cobro de cartera a EPS en Colombia, especialmente para IPS y clínicas en Bogotá.",
+    "Fabián Cardona asumió la presidencia de EPS Sanitas en medio de la reorganización de Keralty. Conozca qué significa para IPS, cartera, pagos y gestión financiera.",
   alternates: {
-    canonical:
-      "https://recaudocarteraipsyeps.com/Blog/fabian-cardona-eps-sanitas-impacto-cartera",
+    canonical: canonicalUrl,
   },
   openGraph: {
-    title:
-      "Fabián Cardona nuevo presidente de EPS Sanitas | Impacto en cartera IPS Colombia",
+    title: "Fabián Cardona asume en EPS Sanitas: ¿qué cambia para las IPS?",
     description:
-      "Impacto del nuevo liderazgo en EPS Sanitas sobre cartera, pagos y flujo financiero de IPS en Colombia.",
+      "Conozca quién es Fabián Cardona, por qué llega a la presidencia de EPS Sanitas y qué aspectos deben vigilar las IPS frente a cartera y pagos.",
+    url: canonicalUrl,
+    siteName: "Recaudo Cartera IPS y EPS",
+    locale: "es_CO",
     type: "article",
-    url: "https://recaudocarteraipsyeps.com/Blog/fabian-cardona-eps-sanitas-impacto-cartera",
+    images: [
+      {
+        url: "https://recaudocarteraipsyeps.com/logo_pravice.png",
+        width: 1200,
+        height: 630,
+        alt: "Fabián Cardona asume la presidencia de EPS Sanitas",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fabián Cardona asume en EPS Sanitas: ¿qué cambia para las IPS?",
+    description:
+      "Análisis del nuevo liderazgo de EPS Sanitas y sus posibles implicaciones para IPS, cartera y pagos en Colombia.",
+    images: ["https://recaudocarteraipsyeps.com/logo_pravice.png"],
   },
 };
 
-export default function Page() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline:
-      "Fabián Cardona nuevo presidente de EPS Sanitas en Colombia | Impacto en cartera IPS",
-    description:
-      "Análisis del nombramiento en EPS Sanitas y su impacto en la gestión de cartera en el sector salud colombiano.",
-    inLanguage: "es-CO",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/fabian-cardona-eps-sanitas-impacto-cartera",
-    author: {
-      "@type": "Organization",
-      name: "PRAVICE",
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": canonicalUrl,
+  },
+  headline: "Fabián Cardona asume en EPS Sanitas: ¿qué cambia para las IPS?",
+  description:
+    "Análisis del nombramiento de Fabián Cardona como presidente de EPS Sanitas y de los aspectos que las IPS deben considerar frente a cartera, pagos y gestión financiera.",
+  image: "https://recaudocarteraipsyeps.com/logo_pravice.png",
+  author: {
+    "@type": "Organization",
+    name: "PRAVICE",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "PRAVICE",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://recaudocarteraipsyeps.com/logo_pravice.png",
     },
-    publisher: {
-      "@type": "Organization",
-      name: "PRAVICE",
-    },
-  };
+  },
+  datePublished: "2026-03-16",
+  dateModified: "2026-08-11",
+  inLanguage: "es-CO",
+  articleSection: "Riesgos, Intervenciones y Crisis de EPS",
+  keywords: [
+    "Fabián Cardona EPS Sanitas",
+    "nuevo presidente EPS Sanitas",
+    "EPS Sanitas",
+    "EPS Sanitas cartera",
+    "pagos a IPS",
+    "cartera EPS Colombia",
+    "Keralty Colombia",
+    "cartera IPS",
+    "recaudo sector salud",
+  ],
+};
 
+export default function Page() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(schema),
+          __html: JSON.stringify(schemaData),
         }}
       />
 

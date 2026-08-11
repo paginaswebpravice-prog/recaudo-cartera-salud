@@ -2,16 +2,19 @@ import FactoringCarteraSalud from "./FactoringCarteraSalud";
 
 export const metadata = {
   title:
-    "Factoring de cartera en salud: ventajas, riesgos y alternativas para IPS en Colombia",
+    "Factoring de cartera en salud: ¿conviene para una IPS? | Guía Colombia 2026",
+
   description:
-    "Conozca qué es el factoring de cartera en salud, sus ventajas, riesgos financieros y alternativas para IPS, clínicas y hospitales en Colombia.",
+    "¿Una IPS debería vender su cartera mediante factoring? Conozca cómo funciona, sus ventajas, costos, riesgos y alternativas para recuperar cartera de EPS en Colombia.",
+
   alternates: {
     canonical: "https://recaudocarteraipsyeps.com/Blog/factoring-cartera-salud",
   },
+
   openGraph: {
-    title: "Factoring de cartera en salud: ventajas, riesgos y alternativas",
+    title: "Factoring de cartera en salud: ¿conviene para una IPS?",
     description:
-      "Guía para IPS, clínicas y hospitales sobre factoring de cartera, liquidez y recuperación financiera en Colombia.",
+      "Guía para IPS, clínicas y hospitales sobre factoring de cartera, liquidez, riesgos financieros y alternativas para recuperar cuentas pendientes de EPS.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/factoring-cartera-salud",
   },
@@ -21,31 +24,43 @@ export default function Page() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Factoring de cartera en salud: ventajas, riesgos y alternativas",
+
+    headline:
+      "Factoring de cartera en salud: ¿conviene para una IPS? | Guía Colombia 2026",
+
     description:
-      "Análisis del factoring de cartera para IPS, clínicas y hospitales en Colombia, incluyendo riesgos, beneficios y alternativas de recuperación.",
+      "Guía sobre factoring de cartera en el sector salud, su funcionamiento, ventajas, riesgos financieros y alternativas para recuperar cartera de EPS en Colombia.",
+
     inLanguage: "es-CO",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/factoring-cartera-salud",
+
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://recaudocarteraipsyeps.com/Blog/factoring-cartera-salud",
+    },
+
     author: {
       "@type": "Organization",
       name: "PRAVICE",
     },
+
     publisher: {
       "@type": "Organization",
       name: "PRAVICE",
     },
+
+    articleSection: "Gestión financiera para IPS",
+
     keywords: [
-      "factoring cartera salud",
-      "factoring IPS",
-      "venta de cartera EPS",
-      "liquidez IPS",
-      "recuperación de cartera salud",
+      "factoring de cartera en salud",
+      "factoring para IPS",
+      "factoring de cartera EPS",
       "factoring Colombia",
-      "cartera EPS",
-      "flujo de caja IPS",
+      "venta de cartera EPS",
+      "liquidez para IPS",
+      "recuperación de cartera de salud",
+      "cartera vencida EPS",
       "alternativas al factoring",
-      "gestión financiera IPS",
+      "flujo de caja IPS",
     ],
   };
 

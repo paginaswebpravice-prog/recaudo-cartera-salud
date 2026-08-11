@@ -2,18 +2,17 @@ import ErroresFacturacionElectronicaSalud from "./ErroresFacturacionElectronicaS
 
 export const metadata = {
   title:
-    "Facturación electrónica en salud: errores que generan glosas en Colombia",
+    "10 errores de facturación electrónica en salud que generan glosas | IPS",
   description:
-    "Conozca los errores más frecuentes en la facturación electrónica en salud que generan glosas, devoluciones y retrasos en pagos de EPS. Guía práctica para IPS, clínicas y hospitales.",
+    "Conozca 10 errores de facturación electrónica en salud que pueden generar glosas, devoluciones y retrasos en pagos de EPS. Guía práctica para IPS, clínicas y hospitales en Colombia.",
   alternates: {
     canonical:
       "https://recaudocarteraipsyeps.com/Blog/errores-facturacion-electronica-salud",
   },
   openGraph: {
-    title:
-      "Facturación electrónica en salud: errores que generan glosas en Colombia",
+    title: "10 errores de facturación electrónica en salud que generan glosas",
     description:
-      "Guía práctica para reducir glosas y devoluciones derivadas de errores en la facturación electrónica del sector salud.",
+      "Identifique los errores más frecuentes en facturación electrónica, RIPS y soportes que pueden terminar en glosas, devoluciones o retrasos en el recaudo de las IPS.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/errores-facturacion-electronica-salud",
   },
@@ -24,9 +23,9 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Facturación electrónica en salud: errores que generan glosas en Colombia",
+      "10 errores de facturación electrónica en salud que pueden generar glosas y retrasar pagos",
     description:
-      "Guía especializada para IPS, clínicas y hospitales sobre errores frecuentes en facturación electrónica y estrategias para reducir glosas y devoluciones.",
+      "Guía práctica para IPS, clínicas y hospitales sobre los errores más frecuentes en facturación electrónica en salud, RIPS, soportes y procesos de radicación que pueden generar glosas, devoluciones y retrasos en los pagos.",
     inLanguage: "es-CO",
     mainEntityOfPage:
       "https://recaudocarteraipsyeps.com/Blog/errores-facturacion-electronica-salud",
@@ -40,15 +39,18 @@ export default function Page() {
     },
     keywords: [
       "facturación electrónica en salud",
+      "errores de facturación electrónica",
       "glosas médicas",
+      "glosas en IPS",
+      "RIPS",
+      "facturación EPS",
       "devoluciones de facturas",
       "IPS Colombia",
-      "facturación EPS",
-      "errores de facturación",
-      "recaudo de cartera",
       "cartera EPS",
-      "hospitales Colombia",
+      "recuperación de cartera",
+      "facturación médica",
       "clínicas Colombia",
+      "hospitales Colombia",
     ],
   };
 

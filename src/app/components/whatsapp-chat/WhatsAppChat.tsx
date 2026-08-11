@@ -201,7 +201,12 @@ ${currentPage}
 
   return (
     <>
-      <button className={styles.floatingButton} onClick={() => setOpen(!open)}>
+      <button
+        className={styles.floatingButton}
+        onClick={() => setOpen(!open)}
+        aria-label={open ? "Cerrar chat de WhatsApp" : "Abrir chat de WhatsApp"}
+        aria-expanded={open}
+      >
         <FontAwesomeIcon icon={open ? faXmark : faWhatsapp} size="lg" />
       </button>
 

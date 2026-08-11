@@ -1,52 +1,98 @@
+import type { Metadata } from "next";
 import EPSSuspendePagos from "./EPSSuspendePagos";
 
-export const metadata = {
-  title:
-    "Qué hacer si una EPS suspende pagos de manera inesperada | Guía para IPS y hospitales",
+const canonicalUrl =
+  "https://recaudocarteraipsyeps.com/Blog/eps-suspende-pagos";
+
+export const metadata: Metadata = {
+  title: "EPS suspende pagos: ¿qué puede hacer una IPS? | Guía 2026",
+
   description:
-    "Conozca las acciones jurídicas y financieras que deben implementar las IPS, clínicas y hospitales cuando una EPS suspende pagos de forma inesperada en Colombia.",
+    "¿Una EPS dejó de pagar a su IPS? Conozca qué hacer, cómo proteger la cartera vencida y cuándo pasar del cobro administrativo al cobro jurídico en Colombia.",
+
   alternates: {
-    canonical: "https://recaudocarteraipsyeps.com/Blog/eps-suspende-pagos",
+    canonical: canonicalUrl,
   },
+
   openGraph: {
-    title: "Qué hacer si una EPS suspende pagos de manera inesperada",
+    title: "EPS suspende pagos: qué puede hacer una IPS para recuperar cartera",
     description:
-      "Guía para proteger el flujo de caja y la recuperación de cartera cuando una EPS deja de pagar.",
+      "Guía práctica para IPS, clínicas y hospitales: qué revisar cuando una EPS deja de pagar, cómo documentar la deuda y cuándo evaluar acciones jurídicas.",
     type: "article",
-    url: "https://recaudocarteraipsyeps.com/Blog/eps-suspende-pagos",
+    url: canonicalUrl,
+    siteName: "Recaudo Cartera IPS y EPS",
+    locale: "es_CO",
+    images: [
+      {
+        url: "https://recaudocarteraipsyeps.com/logo_pravice.png",
+        width: 1200,
+        height: 630,
+        alt: "Qué hacer cuando una EPS suspende pagos a una IPS",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "EPS suspende pagos: ¿qué puede hacer una IPS?",
+    description:
+      "Qué hacer cuando una EPS deja de pagar cartera a una IPS y cómo preparar una estrategia de recuperación administrativa, prejurídica y judicial.",
+    images: ["https://recaudocarteraipsyeps.com/logo.png"],
   },
 };
 
-export default function Page() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: "Qué hacer si una EPS suspende pagos de manera inesperada",
-    description:
-      "Guía práctica para IPS, clínicas y hospitales sobre medidas financieras y jurídicas frente a la suspensión de pagos por parte de una EPS en Colombia.",
-    inLanguage: "es-CO",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/eps-suspende-pagos",
-    author: {
-      "@type": "Organization",
-      name: "PRAVICE",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "PRAVICE",
-    },
-    keywords: [
-      "EPS suspende pagos",
-      "cartera EPS",
-      "IPS Colombia",
-      "hospitales Colombia",
-      "flujo de caja IPS",
-      "recuperación de cartera",
-      "riesgo financiero EPS",
-      "sector salud Colombia",
-    ],
-  };
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
 
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": canonicalUrl,
+  },
+
+  headline:
+    "EPS suspende pagos: qué puede hacer una IPS para recuperar cartera",
+
+  description:
+    "Guía práctica para IPS, clínicas y hospitales sobre qué hacer cuando una EPS suspende o retrasa sus pagos, cómo proteger la cartera vencida y cuándo evaluar acciones jurídicas en Colombia.",
+
+  image: "https://recaudocarteraipsyeps.com/logo.png",
+
+  author: {
+    "@type": "Organization",
+    name: "PRAVICE",
+  },
+
+  publisher: {
+    "@type": "Organization",
+    name: "PRAVICE",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://recaudocarteraipsyeps.com/logo.png",
+    },
+  },
+
+  inLanguage: "es-CO",
+
+  articleSection: "Recuperación de Cartera EPS",
+
+  keywords: [
+    "EPS suspende pagos",
+    "qué hacer si una EPS no paga",
+    "cartera EPS",
+    "cartera vencida IPS",
+    "cobro de cartera EPS",
+    "cobro prejurídico EPS",
+    "cobro judicial EPS",
+    "proceso ejecutivo EPS",
+    "recuperación de cartera IPS",
+    "IPS Colombia",
+    "clínicas Colombia",
+    "hospitales Colombia",
+  ],
+};
+
+export default function Page() {
   return (
     <>
       <script

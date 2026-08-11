@@ -100,6 +100,8 @@ export default function Footer() {
               <a
                 href="https://www.instagram.com/pravice_abogados/"
                 target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram de Pravice Abogados"
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
@@ -107,6 +109,8 @@ export default function Footer() {
               <a
                 href="https://co.linkedin.com/company/praviceabogadosespecializados"
                 target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn de Pravice Abogados"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
@@ -114,6 +118,8 @@ export default function Footer() {
               <a
                 href="https://www.facebook.com/praviceabogadosespecializados"
                 target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook de Pravice Abogados"
               >
                 <FontAwesomeIcon icon={faFacebook} />
               </a>

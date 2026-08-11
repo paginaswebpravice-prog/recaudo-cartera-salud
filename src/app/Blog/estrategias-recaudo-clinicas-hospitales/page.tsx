@@ -6,38 +6,37 @@ const canonicalUrl =
 
 export const metadata: Metadata = {
   title:
-    "Estrategias de recaudo para clínicas y hospitales en Colombia | Guía 2026",
+    "Estrategias de recaudo para IPS: cómo reducir cartera vencida y mejorar el flujo de caja",
   description:
-    "Conozca estrategias efectivas de recaudo para clínicas y hospitales en Colombia. Mejore el flujo de caja, reduzca cartera vencida y optimice pagos de EPS.",
-
+    "Conozca estrategias de recaudo para clínicas, hospitales e IPS en Colombia: seguimiento de cartera, gestión de glosas, conciliación, cobro prejurídico y acciones para mejorar el flujo de caja.",
   alternates: {
     canonical: canonicalUrl,
   },
-
   openGraph: {
-    title: "Estrategias de recaudo para clínicas y hospitales en Colombia",
+    title:
+      "Estrategias de recaudo para IPS: reduzca cartera vencida y mejore su flujo de caja",
     description:
-      "Guía especializada para IPS, clínicas y hospitales sobre recuperación de cartera y recaudo eficiente en Colombia.",
+      "Guía práctica para clínicas, hospitales e IPS que buscan mejorar el recaudo, controlar cartera vencida y acelerar la recuperación de recursos frente a EPS.",
     url: canonicalUrl,
     siteName: "Recaudo Cartera IPS y EPS",
     locale: "es_CO",
     type: "article",
     images: [
       {
-        url: "https://recaudocarteraipsyeps.com/logo.png",
+        url: "https://recaudocarteraipsyeps.com/logo_pravice.png",
         width: 1200,
         height: 630,
-        alt: "Estrategias de recaudo para clínicas y hospitales",
+        alt: "Estrategias de recaudo para IPS, clínicas y hospitales",
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "Estrategias de recaudo para clínicas y hospitales en Colombia",
+    title:
+      "Estrategias de recaudo para IPS: reduzca cartera vencida y mejore su flujo de caja",
     description:
-      "Cómo mejorar el recaudo y reducir cartera vencida en el sector salud.",
-    images: ["https://recaudocarteraipsyeps.com/logo.png"],
+      "Guía práctica sobre recaudo, cartera vencida, glosas, conciliaciones y cobro de cartera frente a EPS.",
+    images: ["https://recaudocarteraipsyeps.com/logo_pravice.png"],
   },
 };
 
@@ -48,10 +47,11 @@ const schemaData = {
     "@type": "WebPage",
     "@id": canonicalUrl,
   },
-  headline: "Estrategias de recaudo para clínicas y hospitales en Colombia",
+  headline:
+    "Estrategias de recaudo para IPS: cómo reducir cartera vencida y mejorar el flujo de caja",
   description:
-    "Conozca estrategias efectivas de recaudo para clínicas y hospitales en Colombia. Mejore el flujo de caja, reduzca cartera vencida y optimice pagos de EPS.",
-  image: "https://recaudocarteraipsyeps.com/logo.png",
+    "Guía práctica sobre estrategias de recaudo para clínicas, hospitales e IPS en Colombia, con recomendaciones para controlar cartera vencida, gestionar glosas, conciliar cuentas y mejorar el flujo de caja.",
+  image: "https://recaudocarteraipsyeps.com/logo_pravice.png",
   author: {
     "@type": "Organization",
     name: "Recaudo Cartera IPS y EPS",
@@ -61,21 +61,24 @@ const schemaData = {
     name: "Recaudo Cartera IPS y EPS",
     logo: {
       "@type": "ImageObject",
-      url: "https://recaudocarteraipsyeps.com/logo.png",
+      url: "https://recaudocarteraipsyeps.com/logo_pravice.png",
     },
   },
   datePublished: "2026-05-13",
-  dateModified: "2026-05-13",
+  dateModified: "2026-08-11",
   inLanguage: "es-CO",
   articleSection: "Recaudo en Salud",
   keywords: [
     "estrategias de recaudo IPS",
-    "recaudo clínicas Colombia",
-    "cartera hospitales Colombia",
-    "cobro EPS clínicas",
+    "recaudo para clínicas",
+    "recaudo para hospitales",
+    "recuperación de cartera EPS",
+    "cartera vencida IPS",
+    "cobro de cartera EPS",
     "flujo de caja IPS",
-    "cartera vencida hospitales",
-    "recaudo sector salud",
+    "gestión de cartera en salud",
+    "cobro prejurídico EPS",
+    "recuperación de cartera en salud",
   ],
 };
 

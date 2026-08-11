@@ -1,47 +1,85 @@
+import type { Metadata } from "next";
 import EPSMas180DiasSinPagar from "./EPSMas180DiasSinPagar";
 
-export const metadata = {
+const canonicalUrl =
+  "https://recaudocarteraipsyeps.com/Blog/eps-mas-180-dias-sin-pagar";
+
+export const metadata: Metadata = {
   title:
-    "Qué hacer si una EPS lleva más de 180 días sin pagar en Colombia | Guía para IPS y clínicas",
+    "EPS lleva más de 180 días sin pagar: ¿qué puede hacer una IPS? | Guía 2026",
+
   description:
-    "Alternativas jurídicas y financieras para IPS y clínicas frente a mora prolongada de EPS en Colombia y recuperación de cartera vencida.",
+    "¿Una EPS lleva más de 180 días sin pagar? Conozca cómo revisar la cartera, gestionar el cobro prejurídico, negociar, conciliar y evaluar acciones judiciales para recuperar recursos de una IPS.",
+
   alternates: {
-    canonical:
-      "https://recaudocarteraipsyeps.com/Blog/eps-mas-180-dias-sin-pagar",
+    canonical: canonicalUrl,
   },
+
   openGraph: {
-    title: "Qué hacer si una EPS lleva más de 180 días sin pagar en Colombia",
+    title: "EPS lleva más de 180 días sin pagar: ¿qué puede hacer una IPS?",
     description:
-      "Guía práctica para IPS y clínicas sobre recuperación de cartera y acciones frente a EPS morosas.",
+      "Guía práctica para IPS, clínicas y prestadores de salud con cartera vencida frente a EPS. Conozca qué revisar antes de pasar del cobro administrativo al jurídico.",
     type: "article",
-    url: "https://recaudocarteraipsyeps.com/Blog/eps-mas-180-dias-sin-pagar",
+    url: canonicalUrl,
+    siteName: "Recaudo Cartera IPS y EPS",
+    locale: "es_CO",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "EPS lleva más de 180 días sin pagar: ¿qué puede hacer una IPS?",
+    description:
+      "Pasos para gestionar cartera EPS con mora prolongada, fortalecer el cobro y evaluar alternativas jurídicas para recuperar los recursos.",
   },
 };
 
-export default function Page() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline:
-      "Qué hacer si una EPS lleva más de 180 días sin pagar en Colombia",
-    description:
-      "Guía jurídica y financiera para IPS y clínicas frente a mora prolongada de EPS y recuperación de cartera en Colombia.",
-    inLanguage: "es-CO",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/eps-mas-180-dias-sin-pagar",
-    author: {
-      "@type": "Organization",
-      name: "PRAVICE",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "PRAVICE",
-    },
-  };
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
 
+  headline: "EPS lleva más de 180 días sin pagar: ¿qué puede hacer una IPS?",
+
+  description:
+    "Guía práctica para IPS, clínicas y prestadores de salud sobre qué hacer cuando una EPS mantiene cartera vencida durante más de 180 días.",
+
+  inLanguage: "es-CO",
+
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": canonicalUrl,
+  },
+
+  author: {
+    "@type": "Organization",
+    name: "PRAVICE",
+  },
+
+  publisher: {
+    "@type": "Organization",
+    name: "PRAVICE",
+  },
+
+  articleSection: "Recuperación de cartera EPS",
+
+  keywords: [
+    "EPS lleva más de 180 días sin pagar",
+    "EPS no paga cartera a IPS",
+    "cartera vencida EPS",
+    "recuperación de cartera EPS",
+    "cobro de cartera a EPS",
+    "cobro prejurídico EPS",
+    "cobro judicial EPS",
+    "IPS cartera vencida",
+    "EPS morosa Colombia",
+    "proceso ejecutivo contra EPS",
+    "cartera EPS más de 180 días",
+    "medidas cautelares EPS",
+  ],
+};
+
+export default function Page() {
   return (
     <>
-      {/* SCHEMA SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -49,7 +87,6 @@ export default function Page() {
         }}
       />
 
-      {/* CONTENT */}
       <EPSMas180DiasSinPagar />
     </>
   );

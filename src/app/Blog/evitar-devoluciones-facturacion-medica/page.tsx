@@ -1,45 +1,94 @@
+import type { Metadata } from "next";
 import EvitarDevolucionesFacturacionMedica from "./EvitarDevolucionesFacturacionMedica";
 
-export const metadata = {
+const canonicalUrl =
+  "https://recaudocarteraipsyeps.com/Blog/evitar-devoluciones-facturacion-medica";
+
+export const metadata: Metadata = {
   title:
-    "Cómo evitar devoluciones de facturación médica en Colombia | Guía para IPS y clínicas",
+    "Cómo evitar devoluciones de facturación médica | Guía para IPS y clínicas",
+
   description:
-    "Conozca cómo reducir devoluciones de facturación médica en Colombia y mejorar el recaudo de cartera en IPS, clínicas y hospitales.",
+    "Aprenda cómo prevenir devoluciones de facturación médica en Colombia, detectar errores antes de radicar cuentas y mejorar el recaudo de IPS, clínicas y hospitales.",
+
   alternates: {
-    canonical:
-      "https://recaudocarteraipsyeps.com/Blog/evitar-devoluciones-facturacion-medica",
+    canonical: canonicalUrl,
   },
+
   openGraph: {
-    title: "Cómo evitar devoluciones de facturación médica en Colombia",
+    title: "Cómo evitar devoluciones de facturación médica | Guía para IPS",
+
     description:
-      "Guía práctica para IPS y clínicas sobre devoluciones de facturación médica y recuperación de cartera.",
+      "Guía práctica para identificar las causas de devolución de cuentas médicas, mejorar la radicación y reducir retrasos en el recaudo de IPS y clínicas.",
+
     type: "article",
-    url: "https://recaudocarteraipsyeps.com/Blog/evitar-devoluciones-facturacion-medica",
+
+    url: canonicalUrl,
+
+    siteName: "Recaudo Cartera IPS y EPS",
+
+    locale: "es_CO",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Cómo evitar devoluciones de facturación médica | Guía para IPS",
+
+    description:
+      "Conozca los errores que pueden generar devoluciones de cuentas médicas y cómo fortalecer la facturación y el recaudo de su IPS.",
   },
 };
 
 export default function Page() {
   const schema = {
     "@context": "https://schema.org",
+
     "@type": "Article",
-    headline: "Cómo evitar devoluciones de facturación médica en Colombia",
+
+    headline:
+      "Cómo evitar devoluciones de facturación médica en Colombia: guía práctica para IPS y clínicas",
+
     description:
-      "Guía sobre devoluciones de facturación médica, auditoría preventiva y recuperación de cartera para IPS y clínicas en Colombia.",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/evitar-devoluciones-facturacion-medica",
+      "Guía práctica para IPS, clínicas y hospitales sobre las causas de las devoluciones de facturación médica, controles preventivos, revisión documental y acciones para mejorar el recaudo de cartera.",
+
+    inLanguage: "es-CO",
+
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
+
     author: {
       "@type": "Organization",
       name: "PRAVICE",
     },
+
     publisher: {
       "@type": "Organization",
       name: "PRAVICE",
     },
+
+    articleSection: "Facturación médica y recaudo de cartera",
+
+    keywords: [
+      "devoluciones de facturación médica",
+      "cómo evitar devoluciones de facturas médicas",
+      "devolución de cuentas médicas",
+      "facturación médica Colombia",
+      "cuentas médicas IPS",
+      "auditoría de cuentas médicas",
+      "errores de facturación médica",
+      "glosas y devoluciones",
+      "recaudo de cartera IPS",
+      "cartera EPS",
+      "facturación IPS",
+      "recuperación de cartera salud",
+    ],
   };
 
   return (
     <>
-      {/* SCHEMA SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -47,7 +96,6 @@ export default function Page() {
         }}
       />
 
-      {/* CONTENT */}
       <EvitarDevolucionesFacturacionMedica />
     </>
   );

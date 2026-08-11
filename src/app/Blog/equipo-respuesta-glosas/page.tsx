@@ -1,58 +1,109 @@
+import type { Metadata } from "next";
 import EquipoRespuestaGlosas from "./EquipoRespuestaGlosas";
 
-export const metadata = {
+const canonicalUrl =
+  "https://recaudocarteraipsyeps.com/Blog/equipo-respuesta-glosas";
+
+export const metadata: Metadata = {
   title:
-    "Cómo construir un equipo efectivo de respuesta a glosas médicas | IPS y clínicas en Colombia",
+    "Respuesta a glosas médicas: cómo crear un equipo efectivo en una IPS | Guía 2026",
+
   description:
-    "Aprenda cómo estructurar un equipo de respuesta a glosas médicas en Colombia. Roles, indicadores, procesos y herramientas para mejorar la recuperación de cartera en IPS.",
+    "Aprenda cómo organizar un equipo de respuesta a glosas médicas en una IPS: roles, proceso, indicadores y estrategias para recuperar cartera y reducir pérdidas frente a las EPS.",
+
   alternates: {
-    canonical: "https://recaudocarteraipsyeps.com/Blog/equipo-respuesta-glosas",
+    canonical: canonicalUrl,
   },
+
   openGraph: {
-    title: "Cómo construir un equipo efectivo de respuesta a glosas médicas",
+    title: "Respuesta a glosas médicas: cómo organizar un equipo efectivo",
     description:
-      "Roles, procesos y herramientas para fortalecer la recuperación de cartera mediante una gestión eficiente de glosas médicas.",
+      "Guía práctica para IPS, clínicas y hospitales sobre roles, procesos, indicadores y estrategias para responder glosas y recuperar cartera.",
+    url: canonicalUrl,
+    siteName: "Recaudo Cartera IPS y EPS",
+    locale: "es_CO",
     type: "article",
-    url: "https://recaudocarteraipsyeps.com/Blog/equipo-respuesta-glosas",
+    images: [
+      {
+        url: "https://recaudocarteraipsyeps.com/logo_pravice.png",
+        width: 1200,
+        height: 630,
+        alt: "Respuesta a glosas médicas en IPS",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Respuesta a glosas médicas: cómo organizar un equipo efectivo",
+    description:
+      "Roles, procesos e indicadores para mejorar la respuesta a glosas y recuperar cartera de IPS frente a las EPS.",
+    images: ["https://recaudocarteraipsyeps.com/logo-pravice.png"],
   },
 };
 
-export default function Page() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: "Cómo construir un equipo efectivo de respuesta a glosas médicas",
-    description:
-      "Guía para IPS, clínicas y hospitales sobre cómo conformar equipos especializados en respuesta a glosas médicas y recuperación de cartera.",
-    inLanguage: "es-CO",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/equipo-respuesta-glosas",
-    author: {
-      "@type": "Organization",
-      name: "PRAVICE",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "PRAVICE",
-    },
-    keywords: [
-      "glosas médicas",
-      "respuesta a glosas",
-      "IPS Colombia",
-      "recuperación de cartera",
-      "auditoría médica",
-      "facturación médica",
-      "cartera EPS",
-      "gestión financiera IPS",
-    ],
-  };
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
 
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": canonicalUrl,
+  },
+
+  headline:
+    "Respuesta a glosas médicas: cómo organizar un equipo efectivo en una IPS",
+
+  description:
+    "Guía práctica para IPS, clínicas y hospitales sobre cómo organizar equipos de respuesta a glosas médicas, mejorar la gestión de las objeciones y proteger la recuperación de cartera.",
+
+  image: "https://recaudocarteraipsyeps.com/logo_pravice.png",
+
+  author: {
+    "@type": "Organization",
+    name: "PRAVICE",
+    url: "https://recaudocarteraipsyeps.com",
+  },
+
+  publisher: {
+    "@type": "Organization",
+    name: "PRAVICE",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://recaudocarteraipsyeps.com/logo_pravice.png",
+    },
+  },
+
+  datePublished: "2026-05-12",
+  dateModified: "2026-08-11",
+
+  inLanguage: "es-CO",
+
+  articleSection: "Gestión de glosas y recuperación de cartera",
+
+  keywords: [
+    "respuesta a glosas médicas",
+    "cómo responder glosas",
+    "gestión de glosas médicas",
+    "equipo de glosas",
+    "glosas EPS",
+    "glosas médicas Colombia",
+    "recuperación de cartera IPS",
+    "auditoría de glosas",
+    "cartera IPS",
+    "facturación médica",
+    "respuesta a glosas EPS",
+    "gestión de cartera en salud",
+  ],
+};
+
+export default function Page() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(schema),
+          __html: JSON.stringify(schemaData),
         }}
       />
 
