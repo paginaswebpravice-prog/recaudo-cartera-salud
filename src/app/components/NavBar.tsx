@@ -36,7 +36,7 @@ export default function NavBar() {
                 info.pravice@abogadosespecialistas.com.co
               </span>
               <span>
-                <FontAwesomeIcon icon={faPhone} /> (601) 3099331
+                <FontAwesomeIcon icon={faPhone} /> +57 311 4659315
               </span>
               <span>
                 <FontAwesomeIcon icon={faLocationDot} /> Bogotá, Colombia
