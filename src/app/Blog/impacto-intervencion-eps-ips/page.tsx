@@ -2,17 +2,17 @@ import ImpactoIntervencionEPSIPS from "./ImpactoIntervencionEPSIPS";
 
 export const metadata = {
   title:
-    "Impacto de las intervenciones de EPS en hospitales y clínicas | Riesgos y estrategias para IPS",
+    "Intervención de una EPS: ¿qué pasa con la cartera de las IPS? | Guía 2026",
   description:
-    "Conozca cómo afectan las intervenciones de EPS a hospitales, clínicas e IPS en Colombia. Riesgos financieros, cartera pendiente y medidas para proteger la sostenibilidad institucional.",
+    "¿Qué pasa con las IPS cuando una EPS es intervenida? Conozca los riesgos sobre la cartera, los pagos y el flujo de caja, y cómo proteger las cuentas por cobrar.",
   alternates: {
     canonical:
       "https://recaudocarteraipsyeps.com/Blog/impacto-intervencion-eps-ips",
   },
   openGraph: {
-    title: "Impacto de las intervenciones de EPS en hospitales y clínicas",
+    title: "Intervención de una EPS: ¿qué pasa con la cartera de las IPS?",
     description:
-      "Análisis de los efectos financieros y operativos de las intervenciones de EPS sobre las IPS en Colombia.",
+      "Guía para IPS, clínicas y hospitales sobre cartera pendiente, retrasos de pago, flujo de caja y gestión financiera frente a la intervención de una EPS.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/impacto-intervencion-eps-ips",
   },
@@ -22,12 +22,15 @@ export default function Page() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Impacto de las intervenciones de EPS en hospitales y clínicas",
+    headline: "Intervención de una EPS: ¿qué pasa con la cartera de las IPS?",
     description:
-      "Guía para IPS, hospitales y clínicas sobre los efectos de las intervenciones de EPS y las estrategias para proteger la cartera y la estabilidad financiera.",
+      "Guía para IPS, clínicas y hospitales sobre los efectos financieros de la intervención de una EPS, el manejo de cartera pendiente y las medidas para reducir riesgos.",
     inLanguage: "es-CO",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/impacto-intervencion-eps-ips",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id":
+        "https://recaudocarteraipsyeps.com/Blog/impacto-intervencion-eps-ips",
+    },
     author: {
       "@type": "Organization",
       name: "PRAVICE",
@@ -36,17 +39,20 @@ export default function Page() {
       "@type": "Organization",
       name: "PRAVICE",
     },
+    dateModified: "2026-08-12",
     keywords: [
       "intervención EPS",
+      "EPS intervenida",
+      "cartera de IPS",
+      "cartera EPS",
+      "intervención de EPS Colombia",
+      "riesgo financiero IPS",
+      "pagos EPS",
+      "cartera vencida EPS",
+      "recuperación de cartera",
       "IPS Colombia",
       "hospitales Colombia",
       "clínicas Colombia",
-      "cartera EPS",
-      "riesgo financiero IPS",
-      "crisis EPS",
-      "recuperación de cartera",
-      "sector salud Colombia",
-      "vigilancia especial EPS",
     ],
   };
 

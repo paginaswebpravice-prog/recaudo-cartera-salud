@@ -2,17 +2,18 @@ import IndicadoresFinancierosIPS from "./IndicadoresFinancierosIPS";
 
 export const metadata = {
   title:
-    "Indicadores financieros que toda IPS debe monitorear en Colombia | KPIs de liquidez y rentabilidad",
+    "Indicadores financieros para IPS en Colombia: 10 KPIs que debes controlar",
   description:
-    "Conozca los indicadores financieros más importantes para IPS en Colombia. KPIs de liquidez, rentabilidad, cartera, glosas y sostenibilidad financiera.",
+    "Conoce los principales indicadores financieros para IPS en Colombia: liquidez, cartera, recaudo, glosas, flujo de caja, rentabilidad y concentración por EPS.",
   alternates: {
     canonical:
       "https://recaudocarteraipsyeps.com/Blog/indicadores-financieros-ips",
   },
   openGraph: {
-    title: "Indicadores financieros que toda IPS debe monitorear en Colombia",
+    title:
+      "Indicadores financieros para IPS: 10 KPIs clave para controlar la salud financiera",
     description:
-      "KPIs financieros para medir liquidez, rentabilidad, recuperación de cartera y sostenibilidad financiera en IPS.",
+      "Guía práctica para IPS, clínicas y hospitales sobre liquidez, cartera, recaudo, glosas, flujo de caja y rentabilidad.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/indicadores-financieros-ips",
   },
@@ -23,9 +24,9 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Indicadores financieros que toda IPS debe monitorear en Colombia",
+      "Indicadores financieros para IPS en Colombia: 10 KPIs que debes controlar",
     description:
-      "Guía sobre indicadores financieros para IPS, clínicas y hospitales en Colombia. KPIs para medir liquidez, cartera, rentabilidad y sostenibilidad financiera.",
+      "Guía práctica sobre los principales indicadores financieros que pueden utilizar IPS, clínicas y hospitales en Colombia para controlar liquidez, cartera, recaudo, glosas, flujo de caja y rentabilidad.",
     inLanguage: "es-CO",
     mainEntityOfPage:
       "https://recaudocarteraipsyeps.com/Blog/indicadores-financieros-ips",
@@ -39,15 +40,19 @@ export default function Page() {
     },
     keywords: [
       "indicadores financieros IPS",
+      "indicadores financieros para IPS",
       "KPIs IPS Colombia",
+      "indicadores financieros clínicas",
+      "indicadores financieros hospitales",
       "liquidez IPS",
       "rentabilidad IPS",
       "cartera EPS",
-      "gestión financiera IPS",
+      "gestión de cartera IPS",
       "flujo de caja IPS",
-      "sostenibilidad financiera salud",
       "indicadores de recaudo",
       "glosas médicas",
+      "cartera vencida IPS",
+      "sostenibilidad financiera IPS",
     ],
   };
 

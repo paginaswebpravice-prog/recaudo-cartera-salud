@@ -1,21 +1,24 @@
 import GlosasPertinenciaClinica from "./GlosasPertinenciaClinica";
 
+const canonical =
+  "https://recaudocarteraipsyeps.com/Blog/glosas-pertinencia-clinica";
+
 export const metadata = {
   title:
-    "Glosas médicas por pertinencia clínica: cómo responderlas en Colombia",
+    "Glosas por pertinencia clínica: cómo responderlas y recuperar cartera | Colombia",
   description:
-    "Guía práctica para IPS, clínicas y hospitales sobre cómo responder glosas por pertinencia clínica utilizando argumentos médicos, técnicos y jurídicos que faciliten la recuperación de cartera.",
+    "¿Te glosaron una cuenta por pertinencia clínica? Conoce cómo analizar la objeción, qué soportes presentar y cómo responder glosas médicas para proteger el recaudo de tu IPS.",
   alternates: {
-    canonical:
-      "https://recaudocarteraipsyeps.com/Blog/glosas-pertinencia-clinica",
+    canonical,
   },
   openGraph: {
     title:
-      "Glosas médicas por pertinencia clínica: cómo responderlas en Colombia",
+      "Glosas por pertinencia clínica: cómo responderlas y recuperar cartera",
     description:
-      "Aprenda a responder glosas clínicas con soporte médico, científico y jurídico para proteger los ingresos de su IPS.",
+      "Guía práctica para IPS, clínicas y hospitales sobre análisis, respuesta y seguimiento de glosas por pertinencia clínica en Colombia.",
     type: "article",
-    url: "https://recaudocarteraipsyeps.com/Blog/glosas-pertinencia-clinica",
+    url: canonical,
+    locale: "es_CO",
   },
 };
 
@@ -24,12 +27,14 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Glosas médicas por pertinencia clínica: cómo responderlas en Colombia",
+      "Glosas por pertinencia clínica: cómo responderlas y recuperar cartera",
     description:
-      "Guía especializada para responder glosas por pertinencia clínica y fortalecer la recuperación de cartera en IPS, clínicas y hospitales.",
+      "Guía práctica para IPS, clínicas y hospitales sobre cómo analizar, sustentar y responder glosas por pertinencia clínica en Colombia.",
     inLanguage: "es-CO",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/glosas-pertinencia-clinica",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonical,
+    },
     author: {
       "@type": "Organization",
       name: "PRAVICE",
@@ -40,15 +45,17 @@ export default function Page() {
     },
     keywords: [
       "glosas por pertinencia clínica",
+      "cómo responder glosas",
       "glosas médicas",
-      "respuesta a glosas",
-      "IPS Colombia",
-      "auditoría médica",
-      "recuperación de cartera",
-      "facturación en salud",
       "glosas EPS",
+      "respuesta a glosas",
+      "pertinencia clínica",
+      "auditoría médica",
+      "glosas en salud",
+      "facturación en salud",
+      "recuperación de cartera",
       "cartera EPS",
-      "hospitales Colombia",
+      "IPS Colombia",
     ],
   };
 

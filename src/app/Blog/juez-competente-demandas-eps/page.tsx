@@ -1,19 +1,24 @@
 import JuezCompetenteDemandasEPS from "./JuezCompetenteDemandasEPS";
 
 export const metadata = {
-  title:
-    "Qué juez conoce las demandas por cartera contra EPS en Colombia | Competencia judicial para IPS",
+  title: "¿Qué juez conoce una demanda contra una EPS por cartera? Guía 2026",
+
   description:
-    "Conozca qué juez es competente para tramitar demandas por cartera contra EPS en Colombia. Guía para IPS, clínicas y hospitales sobre competencia judicial, cuantía y jurisdicción.",
+    "¿Una IPS puede demandar a una EPS por cartera vencida? Conozca qué juez puede ser competente, cómo influyen la cuantía y el domicilio, y qué revisar antes de iniciar un proceso ejecutivo en Colombia.",
+
   alternates: {
     canonical:
       "https://recaudocarteraipsyeps.com/Blog/juez-competente-demandas-eps",
   },
+
   openGraph: {
-    title: "Qué juez conoce las demandas por cartera contra EPS en Colombia",
+    title: "¿Qué juez conoce una demanda contra una EPS por cartera? Guía 2026",
+
     description:
-      "Competencia judicial, cuantía y jurisdicción en procesos de recuperación de cartera contra EPS.",
+      "Guía práctica para IPS, clínicas y hospitales sobre juez competente, cuantía, competencia territorial y proceso ejecutivo para recuperar cartera frente a EPS.",
+
     type: "article",
+
     url: "https://recaudocarteraipsyeps.com/Blog/juez-competente-demandas-eps",
   },
 };
@@ -21,32 +26,43 @@ export const metadata = {
 export default function Page() {
   const schema = {
     "@context": "https://schema.org",
+
     "@type": "Article",
-    headline: "Qué juez conoce las demandas por cartera contra EPS en Colombia",
+
+    headline:
+      "¿Qué juez conoce una demanda contra una EPS por cartera en Colombia?",
+
     description:
-      "Guía jurídica para IPS, clínicas y hospitales sobre competencia judicial en demandas por recuperación de cartera contra EPS.",
+      "Guía práctica para IPS, clínicas y hospitales sobre competencia judicial, cuantía, competencia territorial y procesos ejecutivos relacionados con recuperación de cartera contra EPS en Colombia.",
+
     inLanguage: "es-CO",
+
     mainEntityOfPage:
       "https://recaudocarteraipsyeps.com/Blog/juez-competente-demandas-eps",
+
     author: {
       "@type": "Organization",
       name: "PRAVICE",
     },
+
     publisher: {
       "@type": "Organization",
       name: "PRAVICE",
     },
+
     keywords: [
-      "juez competente EPS",
-      "demanda contra EPS",
+      "qué juez conoce demanda contra EPS",
+      "juez competente demanda EPS",
+      "demanda contra EPS por cartera",
       "cartera EPS Colombia",
-      "proceso ejecutivo EPS",
+      "proceso ejecutivo contra EPS",
       "competencia judicial EPS",
       "IPS Colombia",
       "cobro jurídico EPS",
       "recuperación de cartera salud",
-      "Bogotá",
-      "Colombia",
+      "juez civil EPS",
+      "demanda de IPS contra EPS",
+      "cobro de cartera EPS",
     ],
   };
 

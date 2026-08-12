@@ -2,17 +2,16 @@ import GestionTesoreriaIPS from "./GestionTesoreriaIPS";
 
 export const metadata = {
   title:
-    "Gestión de tesorería en IPS: claves para evitar problemas de liquidez en Colombia",
+    "Gestión de tesorería en IPS: cómo mejorar liquidez y flujo de caja en Colombia",
   description:
-    "Aprenda cómo optimizar la gestión de tesorería en IPS, clínicas y hospitales en Colombia. Estrategias para mejorar flujo de caja, recaudo y sostenibilidad financiera.",
+    "Guía práctica sobre gestión de tesorería en IPS, flujo de caja, liquidez, cartera de EPS y recaudo. Conozca cómo anticipar faltantes de efectivo y fortalecer las finanzas de clínicas y hospitales en Colombia.",
   alternates: {
     canonical: "https://recaudocarteraipsyeps.com/Blog/gestion-tesoreria-ips",
   },
   openGraph: {
-    title:
-      "Gestión de tesorería en IPS: claves para evitar problemas de liquidez",
+    title: "Gestión de tesorería en IPS: cómo mejorar liquidez y flujo de caja",
     description:
-      "Guía práctica sobre flujo de caja, recaudo, liquidez y gestión financiera para IPS en Colombia.",
+      "Conozca cómo mejorar la tesorería de una IPS mediante una mejor planeación del flujo de caja, control de cartera y estrategias de recaudo.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/gestion-tesoreria-ips",
   },
@@ -23,12 +22,14 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Gestión de tesorería en IPS: claves para evitar problemas de liquidez",
+      "Gestión de tesorería en IPS: cómo mejorar liquidez y flujo de caja en Colombia",
     description:
-      "Guía para IPS, clínicas y hospitales sobre administración de tesorería, flujo de caja y sostenibilidad financiera en Colombia.",
+      "Guía práctica sobre gestión de tesorería en IPS, flujo de caja, liquidez, cartera de EPS, recaudo y sostenibilidad financiera de clínicas y hospitales en Colombia.",
     inLanguage: "es-CO",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/gestion-tesoreria-ips",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://recaudocarteraipsyeps.com/Blog/gestion-tesoreria-ips",
+    },
     author: {
       "@type": "Organization",
       name: "PRAVICE",
@@ -39,12 +40,17 @@ export default function Page() {
     },
     keywords: [
       "gestión de tesorería IPS",
-      "liquidez IPS Colombia",
+      "tesorería IPS Colombia",
       "flujo de caja IPS",
-      "cartera EPS",
+      "liquidez IPS",
       "gestión financiera IPS",
+      "cartera EPS",
       "recaudo sector salud",
-      "tesorería clínicas Colombia",
+      "cuentas por cobrar IPS",
+      "cartera vencida EPS",
+      "tesorería clínicas",
+      "flujo de efectivo IPS",
+      "recuperación de cartera salud",
     ],
   };
 

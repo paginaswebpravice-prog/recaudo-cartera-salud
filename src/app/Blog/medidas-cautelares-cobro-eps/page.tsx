@@ -2,20 +2,17 @@ import MedidasCautelaresCobroEps from "./MedidasCautelaresCobroEps";
 
 export const metadata = {
   title:
-    "Medidas cautelares contra EPS en Colombia | Embargos y recaudo efectivo de cartera en salud",
+    "Medidas cautelares contra EPS: embargos para recuperar cartera | Colombia",
   description:
-    "Descubra cómo aplicar medidas cautelares para el cobro de cartera a EPS en Colombia: embargos, retención de recursos e investigación patrimonial para IPS y clínicas en Bogotá.",
-
+    "¿Una EPS no paga la cartera de una IPS? Conozca cómo funcionan las medidas cautelares, embargos y otras herramientas judiciales para proteger y recuperar cartera en Colombia.",
   alternates: {
     canonical:
       "https://recaudocarteraipsyeps.com/Blog/medidas-cautelares-cobro-cartera-eps-colombia",
   },
-
   openGraph: {
-    title:
-      "Embargos y medidas cautelares contra EPS en Colombia | Recuperación de cartera",
+    title: "Medidas cautelares contra EPS: embargos para recuperar cartera",
     description:
-      "Estrategias legales de embargos, retenciones e investigación patrimonial para el recaudo efectivo de cartera EPS en Colombia.",
+      "Conozca cuándo pueden solicitarse medidas cautelares en el cobro judicial de cartera a EPS, qué bienes pueden ser objeto de embargo y qué debe revisar una IPS antes de solicitarlas.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/medidas-cautelares-cobro-cartera-eps-colombia",
   },
@@ -26,12 +23,25 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Medidas cautelares contra EPS en Colombia | Embargos y recaudo efectivo de cartera",
+      "Medidas cautelares contra EPS: embargos para recuperar cartera en Colombia",
     description:
-      "Guía sobre embargos, retenciones e investigación patrimonial para el cobro de cartera EPS en Colombia.",
+      "Guía práctica para IPS, clínicas y hospitales sobre medidas cautelares, embargos y estrategias judiciales para la recuperación de cartera frente a EPS en Colombia.",
     inLanguage: "es-CO",
     mainEntityOfPage:
       "https://recaudocarteraipsyeps.com/Blog/medidas-cautelares-cobro-cartera-eps-colombia",
+    keywords: [
+      "medidas cautelares contra EPS",
+      "embargo contra EPS",
+      "embargo de EPS",
+      "cartera EPS",
+      "cobro de cartera EPS",
+      "recuperación de cartera EPS",
+      "proceso ejecutivo contra EPS",
+      "medidas cautelares cartera",
+      "IPS Colombia",
+      "clínicas Colombia",
+      "hospitales Colombia",
+    ],
     author: {
       "@type": "Organization",
       name: "PRAVICE",
