@@ -2,18 +2,18 @@ import PreparacionLiquidacionEPS from "./PreparacionLiquidacionEPS";
 
 export const metadata = {
   title:
-    "Cómo prepararse ante una posible liquidación de una EPS | Guía para IPS y hospitales en Colombia",
+    "¿Qué hacer si una EPS puede ser liquidada? Guía para IPS y clínicas | PRAVICE",
   description:
-    "Aprenda cómo proteger la cartera, reducir riesgos financieros y prepararse ante una posible liquidación de una EPS en Colombia. Guía práctica para IPS, clínicas y hospitales.",
+    "¿Una EPS presenta problemas financieros o está en intervención? Conozca qué debe hacer una IPS para proteger su cartera, documentar acreencias y prepararse ante una posible liquidación en Colombia.",
   alternates: {
     canonical:
       "https://recaudocarteraipsyeps.com/Blog/preparacion-liquidacion-eps",
   },
   openGraph: {
     title:
-      "Cómo prepararse ante una posible liquidación de una EPS en Colombia",
+      "¿Qué hacer si una EPS puede ser liquidada? Proteja la cartera de su IPS",
     description:
-      "Estrategias preventivas para IPS, clínicas y hospitales frente al riesgo de liquidación de EPS.",
+      "Guía práctica para IPS, clínicas y hospitales sobre cartera, acreencias, liquidez y recuperación de recursos frente a una posible liquidación de EPS.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/preparacion-liquidacion-eps",
   },
@@ -23,9 +23,10 @@ export default function Page() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Cómo prepararse ante una posible liquidación de una EPS",
+    headline:
+      "¿Qué hacer si una EPS puede ser liquidada? Guía para IPS sobre cartera y pagos",
     description:
-      "Guía para IPS, clínicas y hospitales sobre gestión de riesgos financieros y protección de cartera frente a una posible liquidación de EPS.",
+      "Guía práctica para IPS, clínicas y hospitales sobre cómo proteger y gestionar su cartera frente a una posible intervención o liquidación de una EPS en Colombia.",
     inLanguage: "es-CO",
     mainEntityOfPage:
       "https://recaudocarteraipsyeps.com/Blog/preparacion-liquidacion-eps",
@@ -39,13 +40,17 @@ export default function Page() {
     },
     keywords: [
       "liquidación EPS",
+      "qué hacer si liquidan una EPS",
       "cartera EPS",
-      "IPS Colombia",
-      "hospitales Colombia",
+      "cartera IPS",
       "intervención EPS",
-      "riesgo financiero IPS",
+      "acreencias EPS",
       "recuperación de cartera EPS",
-      "sector salud Colombia",
+      "IPS y EPS Colombia",
+      "riesgo financiero IPS",
+      "cobro de cartera EPS",
+      "pagos de EPS a IPS",
+      "liquidación de EPS Colombia",
     ],
   };
 
