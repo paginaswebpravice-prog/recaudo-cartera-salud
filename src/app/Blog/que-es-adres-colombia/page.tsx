@@ -2,17 +2,17 @@ import QueEsADRESColombia from "./QueEsADRESColombia";
 
 export const metadata = {
   title:
-    "Qué es ADRES y cuál es su función en el sistema de salud colombiano | Guía completa",
+    "¿Qué es ADRES y qué hace en Colombia? Funciones, pagos y giro directo | Guía 2026",
   description:
-    "Conozca qué es ADRES, cuáles son sus funciones, cómo administra los recursos de salud en Colombia y cuál es su impacto para IPS, clínicas y hospitales.",
+    "¿Qué es ADRES y para qué sirve? Conozca sus funciones, qué recursos administra, cómo funciona el giro directo y qué relación tiene con EPS, IPS, clínicas y hospitales en Colombia.",
   alternates: {
     canonical: "https://recaudocarteraipsyeps.com/Blog/que-es-adres-colombia",
   },
   openGraph: {
     title:
-      "Qué es ADRES y cuál es su función en el sistema de salud colombiano",
+      "¿Qué es ADRES y qué hace en Colombia? Funciones, pagos y giro directo",
     description:
-      "Guía práctica sobre ADRES, administración de recursos de salud, giro directo y funcionamiento financiero del sistema colombiano.",
+      "Guía práctica para entender qué es ADRES, qué funciones cumple, cómo administra los recursos de salud y cuál es su relación con EPS e IPS.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/que-es-adres-colombia",
   },
@@ -23,12 +23,14 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Qué es ADRES y cuál es su función en el sistema de salud colombiano",
+      "¿Qué es ADRES y qué hace en Colombia? Funciones, pagos y giro directo",
     description:
-      "Guía completa sobre ADRES, sus funciones, competencias y papel dentro del sistema de salud colombiano.",
+      "Guía completa para entender qué es ADRES, cuáles son sus funciones, qué recursos administra, cómo funciona el giro directo y cuál es su relación con EPS, IPS, clínicas y hospitales en Colombia.",
     inLanguage: "es-CO",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/que-es-adres-colombia",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://recaudocarteraipsyeps.com/Blog/que-es-adres-colombia",
+    },
     author: {
       "@type": "Organization",
       name: "PRAVICE",
@@ -38,15 +40,19 @@ export default function Page() {
       name: "PRAVICE",
     },
     keywords: [
-      "ADRES",
       "qué es ADRES",
-      "funciones de ADRES",
       "ADRES Colombia",
+      "qué hace ADRES",
+      "funciones de ADRES",
+      "para qué sirve ADRES",
+      "ADRES y EPS",
+      "ADRES e IPS",
       "giro directo ADRES",
-      "IPS Colombia",
+      "recursos ADRES",
+      "pagos ADRES",
       "sistema de salud colombiano",
-      "recursos públicos salud",
-      "cartera salud",
+      "IPS Colombia",
+      "cartera IPS",
     ],
   };
 

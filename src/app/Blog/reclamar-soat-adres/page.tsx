@@ -2,17 +2,17 @@ import ReclamarSOATADRES from "./ReclamarSOATADRES";
 
 export const metadata = {
   title:
-    "Cómo reclamar servicios de accidentes de tránsito ante ADRES en Colombia | Guía para IPS y clínicas",
+    "Reclamación ADRES por accidente de tránsito sin SOAT: guía para IPS | Colombia 2026",
   description:
-    "Aprenda cómo reclamar servicios derivados de accidentes de tránsito ante ADRES en Colombia. Requisitos, documentos, etapas del proceso y errores que generan rechazos.",
+    "¿Una IPS atendió un accidente de tránsito sin SOAT? Conozca cómo reclamar ante ADRES, qué documentos preparar, cómo funciona la radicación, auditoría, glosas y pago.",
   alternates: {
     canonical: "https://recaudocarteraipsyeps.com/Blog/reclamar-soat-adres",
   },
   openGraph: {
     title:
-      "Cómo reclamar servicios de accidentes de tránsito ante ADRES en Colombia",
+      "Reclamación ADRES por accidente de tránsito sin SOAT: guía para IPS",
     description:
-      "Guía práctica para IPS, hospitales y clínicas sobre reclamaciones de servicios derivados de accidentes de tránsito ante ADRES.",
+      "Guía práctica para IPS, clínicas y hospitales sobre reclamaciones ante ADRES por accidentes de tránsito sin SOAT: requisitos, soportes, auditoría, glosas y recuperación de recursos.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/reclamar-soat-adres",
   },
@@ -23,9 +23,9 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Cómo reclamar servicios de accidentes de tránsito ante ADRES en Colombia",
+      "Reclamación ADRES por accidente de tránsito sin SOAT: guía para IPS en Colombia",
     description:
-      "Guía completa para IPS y clínicas sobre reclamaciones derivadas de accidentes de tránsito ante ADRES.",
+      "Guía práctica para IPS, clínicas y hospitales sobre reclamaciones ante ADRES por atención a víctimas de accidentes de tránsito sin SOAT o con vehículos no identificados.",
     inLanguage: "es-CO",
     mainEntityOfPage:
       "https://recaudocarteraipsyeps.com/Blog/reclamar-soat-adres",
@@ -38,16 +38,19 @@ export default function Page() {
       name: "PRAVICE",
     },
     keywords: [
-      "ADRES",
-      "SOAT",
-      "accidentes de tránsito",
-      "reclamaciones ADRES",
+      "reclamación ADRES",
+      "reclamación ADRES accidente de tránsito",
+      "accidente de tránsito sin SOAT",
+      "ADRES SOAT",
+      "reclamar ante ADRES",
+      "reclamaciones ADRES IPS",
+      "glosas ADRES",
       "IPS Colombia",
-      "cartera salud",
-      "hospitales Colombia",
       "clínicas Colombia",
-      "recuperación de recursos salud",
-      "servicios de accidentes de tránsito",
+      "hospitales Colombia",
+      "cartera ADRES",
+      "recuperación de recursos ADRES",
+      "servicios médicos accidentes de tránsito",
     ],
   };
 

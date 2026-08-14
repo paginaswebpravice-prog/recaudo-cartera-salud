@@ -2,17 +2,17 @@ import RecobrosSaludColombia from "./RecobrosSaludColombia";
 
 export const metadata = {
   title:
-    "Recobros en salud en Colombia: qué son y cómo gestionarlos correctamente | Guía para IPS y clínicas",
+    "Recobros en salud en Colombia: requisitos, ADRES, MIPRES y cómo evitar rechazos",
   description:
-    "Aprenda qué son los recobros en salud en Colombia, cómo funcionan, cuál es el papel de ADRES y cómo evitar rechazos en procesos de recuperación de recursos para IPS, hospitales y clínicas.",
+    "Recobros en salud en Colombia: conozca qué son, cuándo aplican, requisitos, documentos, MIPRES, ADRES, auditoría y cómo reducir rechazos para IPS, clínicas y hospitales.",
   alternates: {
     canonical: "https://recaudocarteraipsyeps.com/Blog/recobros-salud-colombia",
   },
   openGraph: {
     title:
-      "Recobros en salud en Colombia: qué son y cómo gestionarlos correctamente",
+      "Recobros en salud en Colombia: requisitos, ADRES y cómo evitar rechazos",
     description:
-      "Guía práctica sobre recobros en salud, ADRES, auditoría documental y recuperación de recursos para IPS y clínicas.",
+      "Guía práctica para IPS, clínicas y hospitales sobre recobros en salud, ADRES, MIPRES, documentos, auditoría y recuperación de recursos.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/recobros-salud-colombia",
   },
@@ -23,24 +23,14 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Recobros en salud en Colombia: qué son y cómo gestionarlos correctamente",
+      "Recobros en salud en Colombia: requisitos, ADRES, MIPRES y cómo evitar rechazos",
     description:
-      "Guía sobre recobros en salud, ADRES, auditoría documental y recuperación de recursos para IPS, hospitales y clínicas en Colombia.",
+      "Guía práctica sobre recobros en salud en Colombia, su relación con ADRES y MIPRES, requisitos documentales, auditoría, errores frecuentes y recuperación de recursos para IPS, clínicas y hospitales.",
     inLanguage: "es-CO",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/recobros-salud-colombia",
-    keywords: [
-      "recobros en salud",
-      "ADRES",
-      "recuperación de recursos",
-      "IPS Colombia",
-      "hospitales Colombia",
-      "clínicas Colombia",
-      "recobros ADRES",
-      "auditoría ADRES",
-      "cartera salud Colombia",
-      "servicios de salud Colombia",
-    ],
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://recaudocarteraipsyeps.com/Blog/recobros-salud-colombia",
+    },
     author: {
       "@type": "Organization",
       name: "PRAVICE",
@@ -49,6 +39,23 @@ export default function Page() {
       "@type": "Organization",
       name: "PRAVICE",
     },
+    keywords: [
+      "recobros en salud",
+      "recobros en salud Colombia",
+      "recobro ADRES",
+      "recobros ADRES",
+      "recobros No UPC",
+      "MIPRES",
+      "requisitos recobro ADRES",
+      "documentos recobro ADRES",
+      "rechazo de recobros",
+      "auditoría de recobros",
+      "IPS Colombia",
+      "clínicas Colombia",
+      "hospitales Colombia",
+      "recuperación de recursos en salud",
+      "cartera salud Colombia",
+    ],
   };
 
   return (
