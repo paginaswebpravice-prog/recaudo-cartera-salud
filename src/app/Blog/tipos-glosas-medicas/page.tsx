@@ -1,20 +1,24 @@
+import { Metadata } from "next";
 import TiposGlosasMedicasColombia from "./TiposGlosasMedicasColombia";
 
-export const metadata = {
+export const metadata: Metadata = {
   title:
-    "Tipos de glosas médicas más comunes en Colombia y cómo evitarlas | Guía para IPS y clínicas",
+    "Tipos de glosas médicas en Colombia: las más comunes y cómo reducirlas",
   description:
-    "Conozca los tipos de glosas médicas más frecuentes en Colombia y cómo reducir devoluciones y rechazos de EPS en IPS y clínicas.",
+    "Conozca los tipos de glosas médicas más frecuentes en Colombia, por qué se generan y qué pueden hacer las IPS y clínicas para reducir devoluciones, rechazos y cartera pendiente.",
   alternates: {
     canonical:
       "https://recaudocarteraipsyeps.com/Blog/tipos-glosas-medicas-colombia",
   },
   openGraph: {
-    title: "Tipos de glosas médicas más comunes en Colombia y cómo evitarlas",
+    title:
+      "Tipos de glosas médicas en Colombia: las más comunes y cómo reducirlas",
     description:
-      "Guía práctica sobre glosas médicas, devoluciones y errores frecuentes en IPS y clínicas en Colombia.",
+      "Guía práctica para IPS y clínicas sobre glosas médicas, errores de facturación, soportes, devoluciones y estrategias para evitar que afecten la cartera.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/tipos-glosas-medicas-colombia",
+    locale: "es_CO",
+    siteName: "PRAVICE",
   },
 };
 
@@ -23,12 +27,15 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Tipos de glosas médicas más comunes en Colombia y cómo evitarlas",
+      "Tipos de glosas médicas en Colombia: las más comunes y cómo reducirlas",
     description:
-      "Guía completa sobre tipos de glosas médicas, errores frecuentes y estrategias para reducir devoluciones y rechazos de EPS en Colombia.",
+      "Guía para IPS, clínicas y prestadores de servicios de salud sobre los tipos de glosas médicas más frecuentes en Colombia, sus principales causas y las estrategias para reducir devoluciones, rechazos y cartera pendiente.",
     inLanguage: "es-CO",
-    mainEntityOfPage:
-      "https://recaudocarteraipsyeps.com/Blog/tipos-glosas-medicas-colombia",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id":
+        "https://recaudocarteraipsyeps.com/Blog/tipos-glosas-medicas-colombia",
+    },
     author: {
       "@type": "Organization",
       name: "PRAVICE",
@@ -37,11 +44,23 @@ export default function Page() {
       "@type": "Organization",
       name: "PRAVICE",
     },
+    keywords: [
+      "tipos de glosas médicas Colombia",
+      "glosas médicas",
+      "glosas EPS",
+      "cómo evitar glosas médicas",
+      "devoluciones de facturas médicas",
+      "rechazo de cuentas médicas",
+      "facturación IPS",
+      "cartera IPS",
+      "auditoría de cuentas médicas",
+      "respuesta a glosas EPS",
+      "recuperación de cartera salud",
+    ],
   };
 
   return (
     <>
-      {/* SCHEMA SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -49,7 +68,6 @@ export default function Page() {
         }}
       />
 
-      {/* CONTENT */}
       <TiposGlosasMedicasColombia />
     </>
   );

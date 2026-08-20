@@ -2,17 +2,18 @@ import TransformacionDigitalFinancieraIPS from "./TransformacionDigitalFinancier
 
 export const metadata = {
   title:
-    "Transformación digital financiera para IPS en Colombia | Recaudo, facturación y control financiero",
+    "Transformación digital financiera para IPS: cómo mejorar cartera, recaudo y flujo de caja",
   description:
-    "Conozca cómo la transformación digital financiera ayuda a las IPS en Colombia a optimizar recaudo, cartera, facturación médica, glosas y flujo de caja.",
+    "Descubra cómo la transformación digital financiera ayuda a las IPS en Colombia a mejorar la gestión de cartera, recaudo, facturación, glosas y flujo de caja mediante tecnología y automatización.",
   alternates: {
     canonical:
       "https://recaudocarteraipsyeps.com/Blog/transformacion-digital-financiera-ips",
   },
   openGraph: {
-    title: "Transformación digital financiera para IPS en Colombia",
+    title:
+      "Transformación digital financiera para IPS: cartera, recaudo y flujo de caja",
     description:
-      "Tecnología aplicada a recaudo, cartera, facturación y sostenibilidad financiera para IPS y clínicas.",
+      "Cómo aplicar tecnología y automatización para mejorar la facturación, reducir errores, controlar la cartera y fortalecer la gestión financiera de una IPS.",
     type: "article",
     url: "https://recaudocarteraipsyeps.com/Blog/transformacion-digital-financiera-ips",
   },
@@ -22,23 +23,29 @@ export default function Page() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Transformación digital financiera para IPS en Colombia",
+    headline:
+      "Transformación digital financiera para IPS: cómo mejorar cartera, recaudo y flujo de caja",
     description:
-      "Guía sobre digitalización financiera para IPS, clínicas y hospitales en Colombia.",
+      "Guía para IPS, clínicas y hospitales en Colombia sobre transformación digital financiera, automatización de procesos, gestión de cartera, recaudo, facturación, glosas e indicadores financieros.",
     inLanguage: "es-CO",
     mainEntityOfPage:
       "https://recaudocarteraipsyeps.com/Blog/transformacion-digital-financiera-ips",
     keywords: [
       "transformación digital financiera IPS",
+      "digitalización financiera IPS",
       "tecnología para IPS",
-      "digitalización financiera salud",
+      "automatización financiera salud",
       "gestión de cartera IPS",
-      "facturación médica electrónica",
       "recaudo EPS",
+      "facturación médica",
+      "gestión de glosas",
       "flujo de caja IPS",
-      "salud Colombia",
-      "automatización financiera IPS",
-      "software financiero para IPS",
+      "software para IPS",
+      "indicadores financieros IPS",
+      "automatización de cartera",
+      "digitalización sector salud Colombia",
+      "gestión financiera clínicas",
+      "tecnología financiera salud",
     ],
     author: {
       "@type": "Organization",
