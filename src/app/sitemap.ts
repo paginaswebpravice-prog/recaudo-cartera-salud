@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { articles } from "./Blog/Articles";
+import { rutasRedirigidas } from "../../redirects.consolidacion";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -91,5 +92,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: pillarArticles.includes(article.slug) ? 0.9 : 0.8,
   }));
 
-  return [...staticPages, ...blogPages];
+  // No listar URL que ya redirigen a recaudodecartera.com
+  return [...staticPages, ...blogPages].filter(
+    (p) => !rutasRedirigidas.has(new URL(p.url).pathname)
+  );
 }
